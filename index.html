@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="あの迫力あるライブが最新のVRと3D音響であなたの部屋がライブ会場に！どうしても体感したかったあのライブ・もう一度感じたいあの興奮をいつでも体験してください。" />
+  <!-- OGP -->
+  <meta property="og:title" content="Live 0n Room" />
+  <meta property="og:type" content="website" />
+  <!-- 
+
+    コードの中に「ページのURL」のようなコメント要素を記述するのは良くないです。
+    urlは"/"で良いですし、imageは一旦localhostや相対パスで指定しても良いでしょう。（サーバー上では機能しませんが）
+
+    また、cardの指定も今のままでは課題の指定サイズでは表示されないです。
+    summary_large_imageをちゃんと指定しましょう。
+
+    それ以外はヘッダー要素は良いと思います！
+
+   -->
+  <meta property="og:url" content="ページのURL" />
+  <meta property="og:image" content="https://ページのURL/img/ogp.jpg" />
+  <meta property="og:site_name" content="Live 0n Room" />
+  <meta property="og:description" content="あの迫力あるライブが最新のVRと3D音響であなたの部屋がライブ会場に！どうしても体感したかったあのライブ・もう一度感じたいあの興奮をいつでも体験してください。" />
+  <!-- Facebook用 -->
+  <meta property="fb:app_id" content="App-ID（15文字の半角数字）" />
+  <!-- ※Twitter用 -->
+  <meta name="twitter:card" content="Twitterカードの種類" />
+  <link rel="icon" href="img/live.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/live.png">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Oswald:wght@700&display=swap" rel="stylesheet">
+  <title>Live 0n Room</title>
+</head>
+<body>
+  <!-- 
+
+    いいですね！
+    ピクセルパーフェクトが完全にできています。
+    また、コードの書き方も良いです。
+
+    なのであまりツッコミどころがないのですが、少しだけコメント書いておきましたのでご確認ください。
+
+   -->
+  <header>
+    <div class="btn">
+      <p>無料で1ヶ月間お試しキャンペーン</p>
+      <a href="#">さっそく無料で試してみる</a>
+    </div>
+  </header>
+  <main>
+    <section class="fv">
+      <div class="container">
+        <h3>あなたの部屋を<br>迫力のライブハウスに</h3>
+        <h1>Live<br>on Room</h1>
+        <div class="btn">
+          <p>無料で1週間お試しキャンペーン</p>
+          <a href="#">さっそく無料で試してみる</a>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <!-- 
+        
+        これはこれで問題はないですが、
+        このタグ自体を擬似要素にして背景にすることで省略することもできると思います。
+       
+      -->
+      <div class="about-inner">
+      </div>
+      <div class="container">
+        <div class="about-box">
+          <div class="about-wrap">
+            <div class="about-text">
+              <h2>What is<br>Live on Room</h2>
+              <h4>見たかったあの音楽ライブが<br>月額8,980円(税込)からいつでも見放題</h4>
+              <p>あの迫力あるライブが最新のVRと3D音響であなたの部屋がライブ会場に！<br><br>
+              どうしても体感したかったあのライブ・もう一度感じたいあの興奮をいつでも体験してください。</p>
+            </div>
+          </div>
+          <div class="about-img">
+            <img class="pc" src="img/about-main.png" alt="VRと3D音響でライブ会場感を体験する様子">
+            <img class="sp" src="img/about-main-sp.png" alt="VRと3D音響でライブ会場感を体験する様子">
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+    <section class="feature">
+      <div class="container">
+        <h2>Feature</h2>
+        <h3>すべてのライブが<br>1週間無料で体験できます</h3>
+        <div class="feature-box">
+          <div class="feature-item">
+            <img src="img/feature1.jpg" alt="実際のライブ会場の様な迫力ある空間を体感する様子">
+            <p>VRと3D音響で完全再現した<br>迫力のライブ体験</p>
+          </div>
+          <div class="feature-item">
+            <img src="img/feature2.jpg" alt="過去のライブ配信を確認している様子">
+            <p>過去6ヶ月間のライブ配信が<br>いつでも見返せる</p>
+          </div>
+          <div class="feature-item">
+            <img src="img/feature3.jpg" alt="ライブ配信の様子">
+            <p>ダウンロードしておけば<br>いつでも・どこでも見放題</p>
+            <span>※会員登録中のみ使用可能です</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="schedule">
+      <div class="container">
+        <h2>Schedule</h2>
+        <div class="schedule-box">
+          <div class="schedule-item">
+            <!-- 
+            
+              altにはアーティスト名を入れてあげると良いですね。 
+            
+            -->
+            <img src="img/schedule1.jpg" alt="アーティストの写真">
+            <div class="schedule-item-text">
+              <h5>10.10 sun<span>19:00~</span></h5>
+              <h6>Michel Landy</h6>
+            </div>
+            <p>月額5,980円(税込)で音楽ライブが見放題</p>
+          </div>
+          <div class="schedule-item">
+            <img src="img/schedule2.jpg" alt="アーティストの写真">
+            <div class="schedule-item-text">
+              <h5>10.10 sun<span>19:00~</span></h5>
+              <h6>Michel Landy</h6>
+            </div>
+            <p>月額5,980円(税込)で音楽ライブが見放題</p>
+          </div>
+          <div class="schedule-item">
+            <img src="img/schedule3.jpg" alt="アーティストの写真">
+            <div class="schedule-item-text">
+              <h5>10.10 sun<span>19:00~</span></h5>
+              <h6>Michel Landy</h6>
+            </div>
+            <p>月額5,980円(税込)で音楽ライブが見放題</p>
+          </div>
+          <div class="schedule-item">
+            <img src="img/schedule4.jpg" alt="アーティストの写真">
+            <div class="schedule-item-text">
+              <h5>10.10 sun<span>19:00~</span></h5>
+              <h6>Michel Landy</h6>
+            </div>
+            <p>月額5,980円(税込)で音楽ライブが見放題</p>
+          </div>
+          <div class="schedule-item">
+            <img src="img/schedule5.jpg" alt="アーティストの写真">
+            <div class="schedule-item-text">
+              <h5>10.10 sun<span>19:00~</span></h5>
+              <h6>Michel Landy</h6>
+            </div>
+            <p>月額5,980円(税込)で音楽ライブが見放題</p>
+          </div>
+          <div class="schedule-item">
+            <img src="img/schedule6.jpg" alt="アーティストの写真">
+            <div class="schedule-item-text">
+              <h5>10.10 sun<span>19:00~</span></h5>
+              <h6>Michel Landy</h6>
+            </div>
+            <p>月額5,980円(税込)で音楽ライブが見放題</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cta">
+      <div class="container">
+        <h3>あなたの部屋を<br>迫力のライブハウスに</h3>
+        <div class="btn">
+          <p>無料で1週間お試しキャンペーン</p>
+          <a href="#">さっそく無料で試してみる</a>
+        </div>
+      </div>
+    </section>
+    <section class="how-to-use">
+      <div class="container">
+        <h2 class="how-to-use-title">How to Use</h2>
+        <!-- 
+          
+          惜しいですね！タブレットのサイズでみると左に余白ができて、右が画面端にくっついています。
+          画面が1040pxを下回るくらいから右側の余白を考慮できるともっと綺麗にできると思います。
+        
+        -->
+        <div class="how-to-use-box">
+          <div class="how-to-use-item">
+            <h2>01</h2>
+            <div class="how-to-use-detail">
+              <h4>環境の準備</h4>
+              <p>通信環境と視聴環境を整えましょう。VRヘッドセットでの希望の場合は購入も可能です。</p>
+              <a href="#">利用ガイドはコチラ</a>
+            </div>
+          </div>
+          <div class="how-to-use-item">
+            <h2>02</h2>
+            <div class="how-to-use-detail">
+              <h4>無料トライアルから利用登録</h4>
+              <p>通信環境と視聴環境を整えましょう。VRヘッドセットでの希望の場合は購入も可能です。</p>
+            </div>
+          </div>
+          <div class="how-to-use-item">
+            <h2>03</h2>
+            <div class="how-to-use-detail">
+              <h4>その日からライブを体験しよう</h4>
+              <p>ご利用後使い方のチュートリアル動画があります。<br>まずはそちらで確認してから利用を開始しましょう。<br><br>3分程度でマスターできます。</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="special">
+      <div class="container">
+        <h2>Special</h2>
+        <img src="img/special-main.jpg" alt="ライブ配信を視聴している様子">
+        <div class="special-box">
+          <div class="special-item">
+            <h5>Special01</h5>
+            <p>利用開始後、口コミを記入の方限定<span>トライアル期間 2週間延長可能</span></p>
+          </div>
+          <div class="special-item">
+            <h5>Special02</h5>
+            <p>2021.12.31まで入会者限定<span>初月半額4,490円(税込)で利用可能</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cta">
+      <div class="container">
+        <h3>あなたの部屋を<br>迫力のライブハウスに</h3>
+        <div class="btn">
+          <p>無料で1週間お試しキャンペーン</p>
+          <a href="#">さっそく無料で試してみる</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <!-- 
+
+        画像の切り替えはこれでも良いですが、CSSで使用画像を切り替えても良いかもしれませんね。
+       
+      -->
+      <img class="logo-pc" src="img/footer-logo.png" alt="">
+      <img class="logo-sp" src="img/footer-logo-sp.jpg" alt="">
+
+      <nav>
+        <ul>
+          <li>利用規約</li>
+          <li>ご利用ガイド</li>
+          <li>プライバシーポリシー</li>
+          <li>運営会社</li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
