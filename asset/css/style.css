@@ -250,7 +250,7 @@ img{
   /* voice */
   /* cta */
   .cta{
-    background-image: url(../../asset/img/cta.png);
+    background-image: url(../../asset/img/cta.jpg);
     height: 382px;
   }
   .cta-text{
@@ -547,7 +547,7 @@ img{
     max-width: 345px;
   }
   .cta{
-    background-image: url(../../asset/img/cta.png);
+    background-image: url(../../asset/img/cta.jpg);
   }
 }
 /* 画面幅 400~768px*/
