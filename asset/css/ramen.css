@@ -1,0 +1,388 @@
+body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+main {
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+span {
+  display: block;
+}
+
+h1 {
+  font-size: 120px;
+  font-weight: 700;
+  color: black;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 500;
+  color: black;
+  font-family: 'Noto Sans JP', sans-serif;
+  padding: 50px 0;
+  text-align: center;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: black;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 54px;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 700;
+  color: black;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 36px;
+}
+
+h5 {
+  font-size: 24px;
+  font-weight: 700;
+  color: black;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Oswald', sans-serif;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #333333;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+  width: 80%;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 92%;
+  }
+}
+
+.btn {
+  padding: 10px 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid #7A7A7A;
+  border-radius: 20px;
+  margin: 70px auto 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: #333333;
+}
+
+.btn:hover {
+  background-color: #333333;
+  color: #fff;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeInAnime;
+          animation-name: fadeInAnime;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes fadeInAnime {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInAnime {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+section {
+  padding: 100px 0;
+}
+
+#header-menu {
+  padding: 40px 0;
+  position: fixed;
+  top: -100px;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  z-index: 10;
+}
+
+#header-menu .inner {
+  margin: 0 auto;
+}
+
+#header-menu .header-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#header-menu .header-menu li {
+  padding-left: 20px;
+}
+
+#header-menu .header-menu li a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333333;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+#header-menu.DownMove {
+  -webkit-animation: DownAnime 0.7s forwards;
+          animation: DownAnime 0.7s forwards;
+}
+
+@-webkit-keyframes DownAnime {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes DownAnime {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+#header-menu.UpMove {
+  -webkit-animation: UpAnime 0.7s forwards;
+          animation: UpAnime 0.7s forwards;
+}
+
+@-webkit-keyframes UpAnime {
+  from {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+
+@keyframes UpAnime {
+  from {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+
+#fv {
+  margin: 0 auto;
+  padding: 0;
+}
+
+#fv .fv1 {
+  z-index: 10;
+  background-color: #FFF;
+  height: 100vh;
+}
+
+#fv .fv1 .fv-text {
+  line-height: 100vh;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  color: #333333;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+#fv .fv1 .fv1-header {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#fv .fv1 .fv1-header li {
+  padding-left: 20px;
+}
+
+#fv .fv1 .fv1-header li a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333333;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+#fv .fv2 {
+  height: 100vh;
+  position: relative;
+  z-index: -1;
+}
+
+#fv .fv2 .fv-img {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  background: url(../img/main.jpg) no-repeat center bottom;
+  background-size: cover;
+}
+
+#news {
+  background-color: #FFF;
+}
+
+#news h2 {
+  text-align: left;
+}
+
+#news .news-box .news-item {
+  margin: 30px 0;
+  border-bottom: 1px dotted #aaa;
+  padding-bottom: 25px;
+  max-width: 800px;
+}
+
+#news .news-box .news-item img {
+  width: 200px;
+}
+
+#news .news-box .news-item .news-text {
+  padding-left: 20px;
+}
+
+#news .news-box .news-item .news-text .date {
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+  font-family: 'Noto Sans JP', sans-serif;
+  margin-bottom: 10px;
+}
+
+#news .news-box .news-item .news-text .news-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+  font-family: 'Noto Sans JP', sans-serif;
+  margin-bottom: 10px;
+}
+
+#news .news-box .news-item .news-text .news-contents {
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+#menu {
+  background-color: #FFF;
+}
+
+#menu img {
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+#feature {
+  background-color: #fff;
+}
+
+#feature .feature-img {
+  background: url(../img/feature-top.jpg) no-repeat center bottom;
+  background-size: cover;
+  height: 300px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#feature h4 {
+  margin: 30px 0;
+  font-size: 40px;
+  font-weight: 500;
+  color: black;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+#feature p {
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 40px;
+}
+
+#contact {
+  background-color: ghostwhite;
+}
+
+#contact .contact-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#contact .contact-box .contact-text {
+  margin-left: 30px;
+}
+
+#contact .contact-box .contact-text p {
+  padding: 10px 0;
+  font-weight: 400;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,343 @@
+
+$main-color: black;
+
+// 共通
+body{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+main{
+color: $main-color;
+}
+a{
+  text-decoration: none;
+  display: block;
+}
+img{
+  display: block;
+  max-width: 100%;
+}
+span{
+  display: block;
+}
+// min-width
+$breakpoint-up: (
+ 'xls': 'screen and (max-width: 376px)',
+ 'xxs': 'screen and (min-width: 485px)',
+ 'xs': 'screen and (min-width: 587px)',
+ 'sm': 'screen and (min-width: 690px)',
+ 'md': 'screen and (min-width: 769px)',
+ 'lg': 'screen and (min-width: 965px)',
+ 'xl': 'screen and (min-width: 1441px)',
+ 'xxl': 'screen and (min-width: 1332px)',
+) !default;
+
+// max-width
+$breakpoint-down: (
+ 'xls': 'screen and (max-width: 374px)',
+ 'xxs': 'screen and (max-width: 484px)',
+ 'xs': 'screen and (max-width: 586px)',
+ 'sm': 'screen and (max-width: 689px)',
+ 'md': 'screen and (max-width: 768px)',
+ 'lg': 'screen and (max-width: 1030px)',
+ 'xl': 'screen and (max-width: 1240px)',
+ 'xxl': 'screen and (max-width: 1331px)',
+) !default;
+
+@mixin mq-up($breakpoint: md) {
+  @media #{map-get($breakpoint-up, $breakpoint)} {
+    @content;
+  }
+}
+
+@mixin mq-down($breakpoint: md) {
+  @media #{map-get($breakpoint-down, $breakpoint)} {
+    @content;
+  }
+}
+
+@mixin font($size: 18px, $weight: 700, $color: $main-color) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+h1 {
+  @include font(120px);
+  font-family: 'Oswald', sans-serif;
+}
+h2 {
+  @include font(40px, 500);
+  padding: 50px 0;
+  text-align: center;
+}
+h3 {
+  @include font(36px);
+  line-height: 54px;
+}
+h4 {
+  @include font(24px);
+  line-height: 36px
+}
+h5 {
+  @include font(24px);
+  font-family: 'Oswald', sans-serif;
+}
+p {
+  @include font(20px,500,#333333);
+}
+
+.container{
+  max-width: 1040px;
+  margin: 0 auto;
+  width: 80%;
+  @include mq-down {
+  width: 92%;
+  }
+}
+
+
+@mixin btn-a($width:368px, $top:80px) {
+  width: $width;
+  text-align: center;
+  margin-top: $top;
+}
+
+@mixin btn-b($bg-color:#fff, $padding:23px 40px, $h-gb-color:#333333, $h-color:#fff) {
+  background-color: $bg-color;
+  transition: .3s;
+  padding: $padding ;
+  &:hover{
+          background-color: $h-gb-color;
+          color: $h-color;
+          transition: .3s;
+        }
+}
+
+@mixin img($url: url(), $bg-size: cover) {
+  background-image: $url;
+  background-size: $bg-size;
+  background-repeat: no-repeat;
+}
+@mixin section-title(
+  $url: url(),
+  $margin: 0 auto 80px auto,
+  $title-position: center,
+  $bg-position: center,
+  $height: 200px
+) {
+  background-image: $url;
+  background-size: contain;
+  background-position: $bg-position;
+  background-repeat: no-repeat;
+  margin: $margin;
+  height: $height;
+  display: flex;
+  align-items: flex-end;
+  justify-content: $title-position;
+}
+
+
+  .btn{
+    padding: 10px 20px;
+    width: fit-content;
+    border: 1px solid #7A7A7A;
+    border-radius: 20px;
+    margin: 70px auto 0;
+    transition: .3s;
+    color: #333333;
+    &:hover{
+          background-color: #333333;
+          color: #fff;
+          transition: .3s;
+        }
+  }
+
+.fadeIn{
+animation-name: fadeInAnime;
+animation-duration:3s;
+animation-fill-mode:forwards;
+opacity: 0;
+}
+
+@keyframes fadeInAnime{
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+//各セクションの上下微調整
+section{
+  padding: 100px 0;
+}
+
+#header-menu{
+  padding: 40px 0;
+  position: fixed;
+  top: -100px;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  z-index: 10;
+  .inner{
+    margin: 0 auto;
+  }
+  .header-menu{
+    display: flex;
+      li{
+        padding-left: 20px;
+        a{
+          @include font(14px, 500 , #333333 );
+        }
+      }
+  }
+}
+
+#header-menu.DownMove{
+  animation: DownAnime 0.7s forwards;
+}
+@keyframes DownAnime{
+  from {
+    opacity: 0;
+  transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+  transform: translateY(0);
+  }
+}
+
+#header-menu.UpMove{
+  animation: UpAnime 0.7s forwards;
+}
+
+@keyframes UpAnime{
+  from {
+    opacity: 1;
+  transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+  transform: translateY(-100px);
+  }
+}
+#fv{
+  margin: 0 auto;
+  padding: 0;
+  .fv1{
+    z-index: 10;
+    background-color: #FFF;
+    height: 100vh;
+    .fv-text{
+      line-height: 100vh;
+      text-align: center;
+      @include font(30px, 500 , #333333 );
+    }
+    .fv1-header{
+      position: absolute;
+      bottom: 30px;
+      left: 0;
+      display: flex;
+      li{
+        padding-left: 20px;
+        a{
+          @include font(14px, 500 , #333333 );
+        }
+      }
+    }
+  }
+  .fv2{
+    height: 100vh;
+    position: relative;
+    //overflow: hidden;
+    z-index: -1;
+    .fv-img{
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      transform: translate3d(0, 0, 0);
+      background: url(../img/main.jpg) no-repeat  center bottom;
+      background-size: cover;
+    }
+  }
+}
+#news{
+  background-color: #FFF;
+  h2{
+    text-align: left;
+  }
+  .news-box{
+    .news-item{
+      margin: 30px 0;
+      border-bottom: 1px dotted #aaa;
+      padding-bottom: 25px;
+      max-width: 800px;
+      img{
+        width: 200px;
+      }
+      .news-text{
+        padding-left: 20px;
+        .date{
+          @include font(14px, 400,#333333);
+          margin-bottom: 10px
+        }
+        .news-title{
+          @include font(20px, 500);
+          margin-bottom: 10px;
+        }
+        .news-contents{
+          @include font(14px, 400);
+        }
+      }
+
+    }
+  }
+}
+#menu{
+  background-color: #FFF;
+  img{
+    margin: 0 auto;
+    max-width: 80%;
+  }
+
+
+}
+#feature{
+  background-color: #fff;
+  .feature-img{
+    background: url(../img/feature-top.jpg) no-repeat  center bottom;
+    background-size: cover;
+    height: 300px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  h4{
+    margin: 30px 0;
+    @include font(40px, 500);
+  }
+  p{
+    @include font(20px,400);
+    line-height: 40px;
+  }
+
+}
+#contact{
+  background-color: ghostwhite;
+  .contact-box{
+    display: flex;
+    .contact-text{
+      margin-left: 30px;
+      p{
+        padding: 10px 0;
+        font-weight: 400;
+      }
+    }
+  }
+}
