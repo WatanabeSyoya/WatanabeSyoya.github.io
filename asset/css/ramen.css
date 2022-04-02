@@ -280,7 +280,7 @@ section {
   bottom: 0;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
-  background: url(../img/main.jpg) no-repeat center bottom;
+  background: url(../../asset/img/main.jpg) no-repeat center bottom;
   background-size: cover;
 }
 
@@ -344,7 +344,7 @@ section {
 }
 
 #feature .feature-img {
-  background: url(../img/feature-top.jpg) no-repeat center bottom;
+  background: url(../../asset/img/feature-top.jpg) no-repeat center bottom;
   background-size: cover;
   height: 300px;
   max-width: 1200px;
@@ -385,4 +385,4 @@ section {
   padding: 10px 0;
   font-weight: 400;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=ramen.css.map */

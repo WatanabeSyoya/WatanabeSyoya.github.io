@@ -263,7 +263,7 @@ section{
       left: 0;
       bottom: 0;
       transform: translate3d(0, 0, 0);
-      background: url(../img/main.jpg) no-repeat  center bottom;
+      background: url(../../asset/img/main.jpg) no-repeat  center bottom;
       background-size: cover;
     }
   }
@@ -312,7 +312,7 @@ section{
 #feature{
   background-color: #fff;
   .feature-img{
-    background: url(../img/feature-top.jpg) no-repeat  center bottom;
+    background: url(../../asset/img/feature-top.jpg) no-repeat  center bottom;
     background-size: cover;
     height: 300px;
     max-width: 1200px;
