@@ -1,5 +1,5 @@
 
-$main-color: black;
+$main-color: #13174f;
 
 // 共通
 body{
@@ -19,9 +19,7 @@ img{
   display: block;
   max-width: 100%;
 }
-span{
-  display: block;
-}
+
 // min-width
 $breakpoint-up: (
  'xls': 'screen and (max-width: 376px)',
@@ -66,12 +64,18 @@ $breakpoint-down: (
 }
 h1 {
   @include font(120px);
-  font-family: 'Oswald', sans-serif;
 }
 h2 {
-  @include font(40px, 500);
-  padding: 50px 0;
+  @include font(30px, 300);
   text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  border-bottom: 1px #13174f solid;
+  line-height: 0;
+  margin: 50px auto;
+  span{
+    background-color: #FFF;
+    padding:0 10px;
+  }
 }
 h3 {
   @include font(36px);
@@ -90,7 +94,7 @@ p {
 }
 
 .container{
-  max-width: 1040px;
+  max-width: 1400px;
   margin: 0 auto;
   width: 80%;
   @include mq-down {
@@ -271,9 +275,6 @@ section{
 }
 #news{
   background-color: #FFF;
-  h2{
-    text-align: left;
-  }
   .news-box{
     .news-item{
       margin: 30px 0;
@@ -330,7 +331,7 @@ section{
 
 }
 #contact{
-  background-color: ghostwhite;
+  background-color: #fff;
   .contact-box{
     display: flex;
     .contact-text{
