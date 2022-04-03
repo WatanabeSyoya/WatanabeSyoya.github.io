@@ -17,7 +17,6 @@ a{
 }
 img{
   display: block;
-  max-width: 100%;
 }
 
 // min-width
@@ -145,13 +144,15 @@ p {
 
 
   .btn{
-    padding: 10px 20px;
+    padding: 10px 30px;
     width: fit-content;
     border: 1px solid #7A7A7A;
     border-radius: 20px;
     margin: 70px auto 0;
     transition: .3s;
-    color: #333333;
+    @include font(16px, 300 ,#333333 );
+    font-family: 'Josefin Sans', sans-serif;
+
     &:hover{
           background-color: #333333;
           color: #fff;
@@ -305,8 +306,11 @@ section{
 #menu{
   background-color: #FFF;
   img{
+    width: 80%;
     margin: 0 auto;
-    max-width: 80%;
+    @include mq-down(){
+      width: 100%;
+    }
   }
 
 
