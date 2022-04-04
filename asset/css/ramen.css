@@ -19,7 +19,7 @@ img {
 
 h1 {
   font-size: 120px;
-  font-weight: 700;
+  font-weight: 400;
   color: #13174f;
   font-family: 'Noto Sans JP', sans-serif;
 }
@@ -43,7 +43,7 @@ h2 span {
 
 h3 {
   font-size: 36px;
-  font-weight: 700;
+  font-weight: 400;
   color: #13174f;
   font-family: 'Noto Sans JP', sans-serif;
   line-height: 54px;
@@ -51,7 +51,7 @@ h3 {
 
 h4 {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 400;
   color: #13174f;
   font-family: 'Noto Sans JP', sans-serif;
   line-height: 36px;
@@ -59,7 +59,7 @@ h4 {
 
 h5 {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 400;
   color: #13174f;
   font-family: 'Noto Sans JP', sans-serif;
   font-family: 'Oswald', sans-serif;
@@ -67,8 +67,8 @@ h5 {
 
 p {
   font-size: 20px;
-  font-weight: 500;
-  color: #333333;
+  font-weight: 400;
+  color: #13174f;
   font-family: 'Noto Sans JP', sans-serif;
 }
 
@@ -319,8 +319,8 @@ section {
 }
 
 #news .news-box .news-item .news-text .news-title {
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 400;
   color: #13174f;
   font-family: 'Noto Sans JP', sans-serif;
   margin-bottom: 10px;
@@ -353,7 +353,7 @@ section {
 }
 
 #feature .feature-img {
-  background: url(../../asset/img/feature-top.jpg) no-repeat center bottom;
+  background: url(../../asset/img/menu1.jpg) no-repeat center bottom;
   background-size: cover;
   height: 300px;
   max-width: 1200px;
@@ -362,8 +362,8 @@ section {
 
 #feature h4 {
   margin: 30px 0;
-  font-size: 40px;
-  font-weight: 500;
+  font-size: 24px;
+  font-weight: 400;
   color: #13174f;
   font-family: 'Noto Sans JP', sans-serif;
 }
