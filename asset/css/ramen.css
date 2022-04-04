@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -33,7 +37,7 @@ h2 {
   font-family: 'Josefin Sans', sans-serif;
   border-bottom: 1px #13174f solid;
   line-height: 0;
-  margin: 50px auto;
+  margin: 50px auto 70px;
 }
 
 h2 span {
@@ -85,27 +89,28 @@ p {
 }
 
 .btn {
-  padding: 10px 30px;
+  padding: 15px 30px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  border: 1px solid #7A7A7A;
-  border-radius: 20px;
+  border-radius: 5px;
   margin: 70px auto 0;
   -webkit-transition: .3s;
   transition: .3s;
   font-size: 16px;
-  font-weight: 300;
-  color: #333333;
+  font-weight: 400;
+  color: #13174f;
   font-family: 'Noto Sans JP', sans-serif;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Noto Sans JP',sans-serif;
+  background-color: #FFE5E5;
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, #FFEFEF 10px, #FFEFEF 12px);
 }
 
 .btn:hover {
-  background-color: #333333;
-  color: #fff;
+  opacity: 0.7;
   -webkit-transition: .3s;
   transition: .3s;
+  color: black;
 }
 
 .fadeIn {
@@ -137,7 +142,7 @@ p {
 }
 
 section {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 #header-menu {
@@ -167,7 +172,7 @@ section {
 #header-menu .header-menu li a {
   font-size: 14px;
   font-weight: 500;
-  color: #333333;
+  color: #13174f;
   font-family: 'Noto Sans JP', sans-serif;
 }
 
@@ -247,9 +252,9 @@ section {
 #fv .fv1 .fv-text {
   line-height: 100vh;
   text-align: center;
-  font-size: 30px;
-  font-weight: 500;
-  color: #333333;
+  font-size: 24px;
+  font-weight: 400;
+  color: #13174f;
   font-family: 'Noto Sans JP', sans-serif;
 }
 
@@ -269,7 +274,7 @@ section {
 #fv .fv1 .fv1-header li a {
   font-size: 14px;
   font-weight: 500;
-  color: #333333;
+  color: #13174f;
   font-family: 'Noto Sans JP', sans-serif;
 }
 
@@ -348,50 +353,79 @@ section {
   }
 }
 
-#feature {
+#about {
   background-color: #fff;
 }
 
-#feature .feature-img {
-  background: url(../../asset/img/menu1.jpg) no-repeat center bottom;
+#about .feature-img {
+  background: url(../../asset/img/menu2.jpg) no-repeat center bottom;
   background-size: cover;
   height: 300px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-#feature h4 {
+#about h4 {
   margin: 30px 0;
-  font-size: 24px;
-  font-weight: 400;
-  color: #13174f;
-  font-family: 'Noto Sans JP', sans-serif;
-}
-
-#feature p {
   font-size: 20px;
   font-weight: 400;
   color: #13174f;
   font-family: 'Noto Sans JP', sans-serif;
-  line-height: 40px;
 }
 
-#contact {
+#about p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #13174f;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 30px;
+}
+
+#access {
   background-color: #fff;
 }
 
-#contact .contact-box {
+#access .contact-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#contact .contact-box .contact-text {
+#access .contact-box .contact-text {
   margin-left: 30px;
 }
 
-#contact .contact-box .contact-text p {
+#access .contact-box .contact-text p {
   padding: 10px 0;
   font-weight: 400;
+}
+
+footer {
+  padding: 50px 0 10px;
+  background-color: #FFE5E5;
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, #FFEFEF 10px, #FFEFEF 12px);
+}
+
+footer .footer-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+footer .footer-menu li {
+  padding-left: 20px;
+}
+
+footer .footer-menu li a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #13174f;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+footer p {
+  font-size: 12px;
+  text-align: center;
 }
 /*# sourceMappingURL=ramen.css.map */
