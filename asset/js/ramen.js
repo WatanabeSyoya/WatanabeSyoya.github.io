@@ -5,13 +5,13 @@ $(function () {
   var height = $(window).height();
   var nav_pos = $('.fv1').offset().top;
   //画面上から#global_navまでの高さを取得
-  var nav_height = $('.fv1').outerHeight();
+  var nav_height = $('.fv2').outerHeight();
   //#global_navの高さを取得
   $(window).scroll(function () {
     // windowがスクロールされた時に実行する処理
     if ($(this).scrollTop() > nav_height) {
       //スクロール位置が#global_nav以上になったら
-      $('.fv-img').css('position', 'absolute');
+      //$('.fv-img').css('position', 'absolute');
       $('#header-menu').css('top', '0');
       $('#header-menu').removeClass('UpMove');
       $('#header-menu').addClass('DownMove');
@@ -20,7 +20,7 @@ $(function () {
       //$("").addClass("fixed");
       //#global_navにfixedクラスを付与
     } else {
-      $('.fv-img').css('position', 'fixed');
+      //$('.fv-img').css('position', 'fixed');
       $('#header-menu').css('top', '-100px');
       $('#header-menu').removeClass('DownMove');
       $('#header-menu').addClass('UpMove');
@@ -39,10 +39,17 @@ $(function () {
     speed: 1000,		//スライドするスピード
 
   });
+  $('.fv2').slick({
+    fade: true,
+    autoplay: true,         //自動再生
+    autoplaySpeed: 3000,  //自動再生のスピード
+    speed: 1000,		//スライドするスピード
+    pauseOnHover: false,
+  });
 
 
 
 });
-$(window).on('load', function () {
-  $('.fv1').addClass('fadeIn');
-});
+//$(window).on('load', function () {
+//  $('.fv1').addClass('fadeIn');
+//});
