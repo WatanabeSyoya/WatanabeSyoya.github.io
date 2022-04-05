@@ -1,49 +1,50 @@
-
 $main-color: #13174f;
 
 // 共通
-html{
+html {
   scroll-behavior: smooth;
 }
-body{
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    font-family: josefin-sans,  sans-serif;
+
+body {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: josefin-sans, sans-serif;
 }
-main{
-color: $main-color;
+
+main {
+  color: $main-color;
 }
-a{
+
+a {
   text-decoration: none;
   display: block;
 }
-img{
+
+img {
   display: block;
 }
 
 // min-width
-$breakpoint-up: (
- 'xls': 'screen and (max-width: 376px)',
- 'xxs': 'screen and (min-width: 485px)',
- 'xs': 'screen and (min-width: 587px)',
- 'sm': 'screen and (min-width: 690px)',
- 'md': 'screen and (min-width: 769px)',
- 'lg': 'screen and (min-width: 965px)',
- 'xl': 'screen and (min-width: 1441px)',
- 'xxl': 'screen and (min-width: 1332px)',
+$breakpoint-up: ('xls': 'screen and (max-width: 376px)',
+  'xxs': 'screen and (min-width: 485px)',
+  'xs': 'screen and (min-width: 587px)',
+  'sm': 'screen and (min-width: 690px)',
+  'md': 'screen and (min-width: 769px)',
+  'lg': 'screen and (min-width: 965px)',
+  'xl': 'screen and (min-width: 1441px)',
+  'xxl': 'screen and (min-width: 1332px)',
 ) !default;
 
 // max-width
-$breakpoint-down: (
- 'xls': 'screen and (max-width: 374px)',
- 'xxs': 'screen and (max-width: 484px)',
- 'xs': 'screen and (max-width: 586px)',
- 'sm': 'screen and (max-width: 689px)',
- 'md': 'screen and (max-width: 768px)',
- 'lg': 'screen and (max-width: 1030px)',
- 'xl': 'screen and (max-width: 1240px)',
- 'xxl': 'screen and (max-width: 1331px)',
+$breakpoint-down: ('xls': 'screen and (max-width: 374px)',
+  'xxs': 'screen and (max-width: 484px)',
+  'xs': 'screen and (max-width: 586px)',
+  'sm': 'screen and (max-width: 689px)',
+  'md': 'screen and (max-width: 768px)',
+  'lg': 'screen and (max-width: 1030px)',
+  'xl': 'screen and (max-width: 1240px)',
+  'xxl': 'screen and (max-width: 1331px)',
 ) !default;
 
 @mixin mq-up($breakpoint: md) {
@@ -64,9 +65,11 @@ $breakpoint-down: (
   color: $color;
   font-family: 'Noto Sans JP', sans-serif;
 }
+
 h1 {
   @include font(120px);
 }
+
 h2 {
   @include font(30px, 300);
   text-align: center;
@@ -74,33 +77,39 @@ h2 {
   border-bottom: 1px #13174f solid;
   line-height: 0;
   margin: 50px auto 70px;
-  span{
+
+  span {
     background-color: #FFF;
-    padding:0 10px;
+    padding: 0 10px;
   }
 }
+
 h3 {
   @include font(36px);
   line-height: 54px;
 }
+
 h4 {
   @include font(24px);
   line-height: 36px
 }
+
 h5 {
   @include font(24px);
   font-family: 'Oswald', sans-serif;
 }
+
 p {
   @include font(20px);
 }
 
-.container{
+.container {
   max-width: 1400px;
   margin: 0 auto;
   width: 80%;
+
   @include mq-down {
-  width: 92%;
+    width: 92%;
   }
 }
 
@@ -114,12 +123,13 @@ p {
 @mixin btn-b($bg-color:#fff, $padding:23px 40px, $h-gb-color:#333333, $h-color:#fff) {
   background-color: $bg-color;
   transition: .3s;
-  padding: $padding ;
-  &:hover{
-          background-color: $h-gb-color;
-          color: $h-color;
-          transition: .3s;
-        }
+  padding: $padding;
+
+  &:hover {
+    background-color: $h-gb-color;
+    color: $h-color;
+    transition: .3s;
+  }
 }
 
 @mixin img($url: url(), $bg-size: cover) {
@@ -127,13 +137,12 @@ p {
   background-size: $bg-size;
   background-repeat: no-repeat;
 }
-@mixin section-title(
-  $url: url(),
+
+@mixin section-title($url: url(),
   $margin: 0 auto 80px auto,
   $title-position: center,
   $bg-position: center,
-  $height: 200px
-) {
+  $height: 200px) {
   background-image: $url;
   background-size: contain;
   background-position: $bg-position;
@@ -146,32 +155,33 @@ p {
 }
 
 
-  .btn{
-    padding: 15px 30px;
-    width: fit-content;
-    //border: 1px solid #7A7A7A;
-    border-radius: 5px;
-    margin: 70px auto 0;
-    transition: .3s;
-    @include font(16px, 400);
-    font-family: 'Noto Sans JP',sans-serif;
-    background-color: #FFE5E5;
-    background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, #FFEFEF 10px, #FFEFEF 12px );
-    &:hover{
-          opacity:0.7;
-          transition: .3s;
-          color: black;
-        }
-  }
+.btn {
+  padding: 15px 30px;
+  width: fit-content;
+  //border: 1px solid #7A7A7A;
+  border-radius: 5px;
+  margin: 70px auto 0;
+  transition: .3s;
+  @include font(16px, 400);
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #FFE5E5;
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, #FFEFEF 10px, #FFEFEF 12px);
 
-.fadeIn{
-animation-name: fadeInAnime;
-animation-duration:3s;
-animation-fill-mode:forwards;
-opacity: 0;
+  &:hover {
+    opacity: 0.7;
+    transition: .3s;
+    color: black;
+  }
 }
 
-@keyframes fadeInAnime{
+.fadeIn {
+  animation-name: fadeInAnime;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInAnime {
   0% {
     opacity: 0;
   }
@@ -182,11 +192,11 @@ opacity: 0;
 }
 
 //各セクションの上下微調整
-section{
+section {
   padding: 60px 0;
 }
 
-#header-menu{
+#header-menu {
   padding: 40px 0;
   position: fixed;
   top: -100px;
@@ -194,79 +204,110 @@ section{
   background-color: #fff;
   width: 100%;
   z-index: 10;
-  .inner{
+
+  .inner {
     margin: 0 auto;
   }
-  .header-menu{
+
+  .header-menu {
     display: flex;
-      li{
-        padding-left: 20px;
-        a{
-          @include font(14px, 500);
-        }
+
+    li {
+      padding-left: 20px;
+
+      a {
+        @include font(14px, 500);
       }
+    }
   }
 }
 
-#header-menu.DownMove{
+#header-menu.DownMove {
   animation: DownAnime 0.7s forwards;
 }
-@keyframes DownAnime{
+
+@keyframes DownAnime {
   from {
     opacity: 0;
-  transform: translateY(-100px);
+    transform: translateY(-100px);
   }
+
   to {
     opacity: 1;
-  transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
-#header-menu.UpMove{
+#header-menu.UpMove {
   animation: UpAnime 0.7s forwards;
 }
 
-@keyframes UpAnime{
+@keyframes UpAnime {
   from {
     opacity: 1;
-  transform: translateY(0);
+    transform: translateY(0);
   }
+
   to {
     opacity: 0;
-  transform: translateY(-100px);
+    transform: translateY(-100px);
   }
 }
-#fv{
+
+@keyframes fadezoom {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.1);
+    /* 拡大率 */
+  }
+}
+
+.add-animation {
+  animation: fadezoom 24s 0s forwards;
+}
+
+#fv {
   margin: 0 auto;
   padding: 0;
-  .fv1{
+
+  .fv1 {
     z-index: 10;
-    .fv-text{
+
+    .fv-text {
       line-height: 100vh;
       text-align: center;
       @include font(24px, 400);
     }
-    .fv1-header{
+
+    .fv1-header {
       position: absolute;
       top: 0;
       left: 0;
       z-index: 10;
       display: flex;
       padding: 40px;
-      li{
+
+      li {
         padding-left: 20px;
-        a{
+
+        a {
           @include font(14px, 500);
         }
       }
     }
   }
-  .fv2{
+
+  .fv2 {
     height: 100vh;
+
     //position: relative;
-    //overflow: hidden;
+    overflow: hidden;
+
     //z-index: -1;
-    .fv-img{
+    .fv-img {
       width: 100%;
       height: 100vh;
       //position: fixed;
@@ -275,42 +316,53 @@ section{
       background-position: center bottom;
       background-repeat: no-repeat;
     }
-    .fv-1{
-      background: url(../../asset/img/main1.jpg) ;
+
+    .fv-1 {
+      background: url(../../asset/img/main1.jpg);
     }
-    .fv-2{
-      background: url(../../asset/img/menu2.jpg) ;
+
+    .fv-2 {
+      background: url(../../asset/img/main2.jpg);
     }
-    .fv-3{
-      background: url(../../asset/img/menu3.jpg) ;
+
+    .fv-3 {
+      background: url(../../asset/img/main3.jpg);
     }
-    .fv-4{
-      background: url(../../asset/img/menu4.jpg) ;
+
+    .fv-4 {
+      background: url(../../asset/img/main4.jpg);
     }
   }
 }
-#news{
+
+#news {
   background-color: #FFF;
-  .news-box{
-    .news-item{
+
+  .news-box {
+    .news-item {
       margin: 30px 0;
       border-bottom: 1px dotted #aaa;
       padding-bottom: 25px;
       max-width: 800px;
-      img{
+
+      img {
         width: 200px;
       }
-      .news-text{
+
+      .news-text {
         padding-left: 20px;
-        .date{
-          @include font(14px, 400,#333333);
+
+        .date {
+          @include font(14px, 400, #333333);
           margin-bottom: 10px
         }
-        .news-title{
+
+        .news-title {
           @include font(18px, 400);
           margin-bottom: 10px;
         }
-        .news-contents{
+
+        .news-contents {
           @include font(14px, 400);
         }
       }
@@ -318,44 +370,55 @@ section{
     }
   }
 }
-#menu{
+
+#menu {
   background-color: #FFF;
-  img{
+
+  img {
     width: 80%;
     margin: 0 auto;
-    @include mq-down(){
+
+    @include mq-down() {
       width: 100%;
     }
   }
 
 
 }
-#about{
+
+#about {
   background-color: #fff;
-  .feature-img{
-    background: url(../../asset/img/menu2.jpg) no-repeat  center bottom;
+
+  .feature-img {
+    background: url(../../asset/img/menu2.jpg) no-repeat center bottom;
     background-size: cover;
     height: 300px;
     max-width: 1200px;
     margin: 0 auto;
   }
-  h4{
+
+  h4 {
     margin: 30px 0;
     @include font(20px, 400);
   }
-  p{
-    @include font(16px,400);
+
+  p {
+    @include font(16px, 400);
     line-height: 30px;
   }
 
 }
-#access{
+
+#access {
   background-color: #fff;
-  .contact-box{
+
+  .contact-box {
     display: flex;
-    .contact-text{
+
+    .contact-text {
       margin-left: 30px;
-      p{
+
+      p {
         padding: 10px 0;
         font-weight: 400;
       }
@@ -363,21 +426,25 @@ section{
   }
 }
 
-footer{
+footer {
   padding: 50px 0 10px;
   background-color: #FFE5E5;
-  background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, #FFEFEF 10px, #FFEFEF 12px );
-  .footer-menu{
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, #FFEFEF 10px, #FFEFEF 12px);
+
+  .footer-menu {
     display: flex;
     margin-bottom: 50px;
-      li{
-        padding-left: 20px;
-        a{
-          @include font(14px, 500);
-        }
+
+    li {
+      padding-left: 20px;
+
+      a {
+        @include font(14px, 500);
       }
+    }
   }
-  p{
+
+  p {
     font-size: 12px;
     text-align: center;
   }

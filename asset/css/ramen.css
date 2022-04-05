@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   scroll-behavior: smooth;
 }
@@ -5,7 +6,7 @@ html {
 body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: josefin-sans,  sans-serif;
+  font-family: josefin-sans, sans-serif;
 }
 
 main {
@@ -101,7 +102,7 @@ p {
   font-weight: 400;
   color: #13174f;
   font-family: 'Noto Sans JP', sans-serif;
-  font-family: 'Noto Sans JP',sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   background-color: #FFE5E5;
   background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, #FFEFEF 10px, #FFEFEF 12px);
 }
@@ -238,6 +239,35 @@ section {
   }
 }
 
+@-webkit-keyframes fadezoom {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    /* 拡大率 */
+  }
+}
+
+@keyframes fadezoom {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    /* 拡大率 */
+  }
+}
+
+.add-animation {
+  -webkit-animation: fadezoom 24s 0s forwards;
+          animation: fadezoom 24s 0s forwards;
+}
+
 #fv {
   margin: 0 auto;
   padding: 0;
@@ -280,6 +310,7 @@ section {
 
 #fv .fv2 {
   height: 100vh;
+  overflow: hidden;
 }
 
 #fv .fv2 .fv-img {
@@ -295,15 +326,15 @@ section {
 }
 
 #fv .fv2 .fv-2 {
-  background: url(../../asset/img/menu2.jpg);
+  background: url(../../asset/img/main2.jpg);
 }
 
 #fv .fv2 .fv-3 {
-  background: url(../../asset/img/menu3.jpg);
+  background: url(../../asset/img/main3.jpg);
 }
 
 #fv .fv2 .fv-4 {
-  background: url(../../asset/img/menu4.jpg);
+  background: url(../../asset/img/main4.jpg);
 }
 
 #news {
