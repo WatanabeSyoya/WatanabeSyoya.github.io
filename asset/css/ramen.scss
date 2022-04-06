@@ -263,7 +263,7 @@ section {
   }
 
   100% {
-    transform: scale(1.0);
+    transform: scale(1);
     /* 拡大率 */
   }
 }
@@ -317,25 +317,34 @@ section {
       height: 100vh;
       //position: fixed;
       //transform: translate3d(0, 0, 0);
+    }
+
+    .fv-1 {
+      background: url(../../asset/img/main1.jpg);
       background-size: cover;
       background-position: center bottom;
       background-repeat: no-repeat;
     }
 
-    .fv-1 {
-      background: url(../../asset/img/main1.jpg);
-    }
-
     .fv-2 {
       background: url(../../asset/img/main2.jpg);
+      background-size: cover;
+      background-position: center bottom;
+      background-repeat: no-repeat;
     }
 
     .fv-3 {
       background: url(../../asset/img/main3.jpg);
+      background-size: cover;
+      background-position: center bottom;
+      background-repeat: no-repeat;
     }
 
     .fv-4 {
       background: url(../../asset/img/main4.jpg);
+      background-size: cover;
+      background-position: center bottom;
+      background-repeat: no-repeat;
     }
   }
 }
@@ -395,10 +404,9 @@ section {
   background-color: #fff;
 
   .feature-img {
-    background: url(../../asset/img/menu2.jpg) no-repeat center bottom;
+    background: url(../../asset/img/feature.jpg) no-repeat center;
     background-size: cover;
     height: 300px;
-    max-width: 1200px;
     margin: 0 auto;
   }
 

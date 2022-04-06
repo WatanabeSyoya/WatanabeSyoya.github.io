@@ -320,25 +320,34 @@ section {
 #fv .fv2 .fv-img {
   width: 100%;
   height: 100vh;
+}
+
+#fv .fv2 .fv-1 {
+  background: url(../../asset/img/main1.jpg);
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
 }
 
-#fv .fv2 .fv-1 {
-  background: url(../../asset/img/main1.jpg);
-}
-
 #fv .fv2 .fv-2 {
   background: url(../../asset/img/main2.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
 }
 
 #fv .fv2 .fv-3 {
   background: url(../../asset/img/main3.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
 }
 
 #fv .fv2 .fv-4 {
   background: url(../../asset/img/main4.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
 }
 
 #news {
@@ -403,10 +412,9 @@ section {
 }
 
 #about .feature-img {
-  background: url(../../asset/img/menu2.jpg) no-repeat center bottom;
+  background: url(../../asset/img/feature.jpg) no-repeat center;
   background-size: cover;
   height: 300px;
-  max-width: 1200px;
   margin: 0 auto;
 }
 
