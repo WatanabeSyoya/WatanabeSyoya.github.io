@@ -1,4 +1,4 @@
-$main-color: #13174f;
+$main-color: #24296c;
 
 // 共通
 html {
@@ -193,17 +193,18 @@ p {
 
 //各セクションの上下微調整
 section {
-  padding: 60px 0;
+  padding: 70px 0 20px;
 }
 
 #header-menu {
-  padding: 40px 0;
+  padding: 30px;
   position: fixed;
   top: -100px;
   left: 0;
   background-color: #fff;
   width: 100%;
   z-index: 10;
+  box-shadow: 0 0 4px grey;
 
   .inner {
     margin: 0 auto;
@@ -216,7 +217,9 @@ section {
       padding-left: 20px;
 
       a {
-        @include font(14px, 500);
+        @include font(24px, 500);
+        font-family: 'Josefin Sans',
+          sans-serif;
       }
     }
   }
@@ -256,17 +259,17 @@ section {
 
 @keyframes fadezoom {
   0% {
-    transform: scale(1);
+    transform: scale(1.2);
   }
 
   100% {
-    transform: scale(1.1);
+    transform: scale(1.0);
     /* 拡大率 */
   }
 }
 
 .add-animation {
-  animation: fadezoom 24s 0s forwards;
+  animation: fadezoom 16s 0s forwards;
 }
 
 #fv {
@@ -294,7 +297,9 @@ section {
         padding-left: 20px;
 
         a {
-          @include font(14px, 500);
+          @include font(24px, 500);
+          font-family: 'Josefin Sans',
+            sans-serif;
         }
       }
     }
@@ -434,12 +439,15 @@ footer {
   .footer-menu {
     display: flex;
     margin-bottom: 50px;
+    padding: 40px;
 
     li {
       padding-left: 20px;
 
       a {
-        @include font(14px, 500);
+        @include font(24px, 500);
+        font-family: 'Josefin Sans',
+          sans-serif;
       }
     }
   }

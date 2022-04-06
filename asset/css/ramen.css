@@ -10,7 +10,7 @@ body {
 }
 
 main {
-  color: #13174f;
+  color: #24296c;
 }
 
 a {
@@ -25,14 +25,14 @@ img {
 h1 {
   font-size: 120px;
   font-weight: 400;
-  color: #13174f;
+  color: #24296c;
   font-family: 'Noto Sans JP', sans-serif;
 }
 
 h2 {
   font-size: 30px;
   font-weight: 300;
-  color: #13174f;
+  color: #24296c;
   font-family: 'Noto Sans JP', sans-serif;
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
@@ -49,7 +49,7 @@ h2 span {
 h3 {
   font-size: 36px;
   font-weight: 400;
-  color: #13174f;
+  color: #24296c;
   font-family: 'Noto Sans JP', sans-serif;
   line-height: 54px;
 }
@@ -57,7 +57,7 @@ h3 {
 h4 {
   font-size: 24px;
   font-weight: 400;
-  color: #13174f;
+  color: #24296c;
   font-family: 'Noto Sans JP', sans-serif;
   line-height: 36px;
 }
@@ -65,7 +65,7 @@ h4 {
 h5 {
   font-size: 24px;
   font-weight: 400;
-  color: #13174f;
+  color: #24296c;
   font-family: 'Noto Sans JP', sans-serif;
   font-family: 'Oswald', sans-serif;
 }
@@ -73,7 +73,7 @@ h5 {
 p {
   font-size: 20px;
   font-weight: 400;
-  color: #13174f;
+  color: #24296c;
   font-family: 'Noto Sans JP', sans-serif;
 }
 
@@ -100,7 +100,7 @@ p {
   transition: .3s;
   font-size: 16px;
   font-weight: 400;
-  color: #13174f;
+  color: #24296c;
   font-family: 'Noto Sans JP', sans-serif;
   font-family: 'Noto Sans JP', sans-serif;
   background-color: #FFE5E5;
@@ -143,17 +143,19 @@ p {
 }
 
 section {
-  padding: 60px 0;
+  padding: 70px 0 20px;
 }
 
 #header-menu {
-  padding: 40px 0;
+  padding: 30px;
   position: fixed;
   top: -100px;
   left: 0;
   background-color: #fff;
   width: 100%;
   z-index: 10;
+  -webkit-box-shadow: 0 0 4px grey;
+          box-shadow: 0 0 4px grey;
 }
 
 #header-menu .inner {
@@ -171,10 +173,11 @@ section {
 }
 
 #header-menu .header-menu li a {
-  font-size: 14px;
+  font-size: 24px;
   font-weight: 500;
-  color: #13174f;
+  color: #24296c;
   font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 #header-menu.DownMove {
@@ -241,31 +244,31 @@ section {
 
 @-webkit-keyframes fadezoom {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   100% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
     /* 拡大率 */
   }
 }
 
 @keyframes fadezoom {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   100% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
     /* 拡大率 */
   }
 }
 
 .add-animation {
-  -webkit-animation: fadezoom 24s 0s forwards;
-          animation: fadezoom 24s 0s forwards;
+  -webkit-animation: fadezoom 16s 0s forwards;
+          animation: fadezoom 16s 0s forwards;
 }
 
 #fv {
@@ -282,7 +285,7 @@ section {
   text-align: center;
   font-size: 24px;
   font-weight: 400;
-  color: #13174f;
+  color: #24296c;
   font-family: 'Noto Sans JP', sans-serif;
 }
 
@@ -302,10 +305,11 @@ section {
 }
 
 #fv .fv1 .fv1-header li a {
-  font-size: 14px;
+  font-size: 24px;
   font-weight: 500;
-  color: #13174f;
+  color: #24296c;
   font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 #fv .fv2 {
@@ -367,7 +371,7 @@ section {
 #news .news-box .news-item .news-text .news-title {
   font-size: 18px;
   font-weight: 400;
-  color: #13174f;
+  color: #24296c;
   font-family: 'Noto Sans JP', sans-serif;
   margin-bottom: 10px;
 }
@@ -375,7 +379,7 @@ section {
 #news .news-box .news-item .news-text .news-contents {
   font-size: 14px;
   font-weight: 400;
-  color: #13174f;
+  color: #24296c;
   font-family: 'Noto Sans JP', sans-serif;
 }
 
@@ -410,14 +414,14 @@ section {
   margin: 30px 0;
   font-size: 20px;
   font-weight: 400;
-  color: #13174f;
+  color: #24296c;
   font-family: 'Noto Sans JP', sans-serif;
 }
 
 #about p {
   font-size: 16px;
   font-weight: 400;
-  color: #13174f;
+  color: #24296c;
   font-family: 'Noto Sans JP', sans-serif;
   line-height: 30px;
 }
@@ -452,6 +456,7 @@ footer .footer-menu {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 50px;
+  padding: 40px;
 }
 
 footer .footer-menu li {
@@ -459,10 +464,11 @@ footer .footer-menu li {
 }
 
 footer .footer-menu li a {
-  font-size: 14px;
+  font-size: 24px;
   font-weight: 500;
-  color: #13174f;
+  color: #24296c;
   font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 footer p {
