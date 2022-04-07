@@ -313,7 +313,11 @@ section {
   }
 
   .fv2 {
-    //height: 100vh;
+    height: 100vh;
+
+    @include mq-down() {
+      height: 60vh;
+    }
 
     //position: relative;
     overflow: hidden;

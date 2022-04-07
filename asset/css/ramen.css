@@ -324,7 +324,14 @@ section {
 }
 
 #fv .fv2 {
+  height: 100vh;
   overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  #fv .fv2 {
+    height: 60vh;
+  }
 }
 
 #fv .fv2 .fv-img {
