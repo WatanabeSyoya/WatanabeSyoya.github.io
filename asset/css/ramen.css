@@ -208,6 +208,116 @@ section {
   font-family: 'Josefin Sans', sans-serif;
 }
 
+/*　ハンバーガーボタン　*/
+.hamburger {
+  display: block;
+  position: fixed;
+  z-index: 3;
+  right: 3em;
+  top: 3em;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  text-align: center;
+}
+
+@media screen and (min-width: 769px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+.hamburger span {
+  display: block;
+  position: absolute;
+  width: 45px;
+  height: 3px;
+  left: 6px;
+  background: #24296c;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.hamburger span:nth-child(1) {
+  top: 6px;
+}
+
+.hamburger span:nth-child(2) {
+  top: 22px;
+}
+
+.hamburger span:nth-child(3) {
+  top: 38px;
+}
+
+/* ナビ開いてる時のボタン */
+.hamburger.active span:nth-child(1) {
+  top: 16px;
+  left: 6px;
+  background: #24296c;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.hamburger.active span:nth-child(2),
+.hamburger.active span:nth-child(3) {
+  top: 16px;
+  background: #24296c;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+nav.globalMenuSp {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  color: #24296c;
+  background-color: #fae3e3;
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 8px, #f6ecec 8px, #f6ecec 9px);
+  text-align: center;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: opacity .6s ease, visibility .6s ease;
+  transition: opacity .6s ease, visibility .6s ease;
+  visibility: hidden;
+}
+
+nav.globalMenuSp ul {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+nav.globalMenuSp ul li {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  -webkit-transition: .4s all;
+  transition: .4s all;
+}
+
+nav.globalMenuSp ul li:last-child {
+  padding-bottom: 0;
+}
+
+nav.globalMenuSp ul li:hover {
+  background: #fff6f6;
+}
+
+nav.globalMenuSp ul li a {
+  display: block;
+  color: #24296c;
+  padding: 1em 0;
+  text-decoration: none;
+}
+
+/* このクラスを、jQueryで付与・削除する */
+nav.globalMenuSp.active {
+  opacity: 100;
+  visibility: visible;
+}
+
 #header-menu.DownMove {
   -webkit-animation: DownAnime 0.7s forwards;
           animation: DownAnime 0.7s forwards;
@@ -478,6 +588,12 @@ section {
   background-size: cover;
   height: 300px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 484px) {
+  #about .feature-img {
+    height: 200px;
+  }
 }
 
 #about h4 {

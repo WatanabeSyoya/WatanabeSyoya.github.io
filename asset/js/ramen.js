@@ -75,6 +75,18 @@ $(function () {
     $('.fv2').slick('slickPlay');
   });
 
+  //ハンバーガーメニュー
+  $('.hamburger').click(function () {
+    $(this).toggleClass('active');
+    if ($(this).hasClass('active')) {
+      $('.globalMenuSp').addClass('active');
+    } else {
+      $('.globalMenuSp').removeClass('active');
+    }
+    $(".globalMenuSp a[href]").click(function () {
+      $(".hamburger").trigger("click");
+    });
+  });
 
 });
 //$(window).on('load', function () {
