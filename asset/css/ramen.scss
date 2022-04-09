@@ -3,6 +3,7 @@ $main-color: #24296c;
 // 共通
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -81,6 +82,11 @@ h2 {
   span {
     padding: 10px;
   }
+
+  @include mq-down() {
+    margin: 20px auto 40px;
+    font-size: 24px;
+  }
 }
 
 h3 {
@@ -89,7 +95,7 @@ h3 {
 }
 
 h4 {
-  @include font(24px);
+  @include font(20px, 400, #b61c61);
   line-height: 36px
 }
 
@@ -159,12 +165,20 @@ p {
   width: fit-content;
   //border: 1px solid #7A7A7A;
   border-radius: 5px;
-  margin: 70px auto 0;
+  margin: 60px auto 0;
   transition: .3s;
-  @include font(16px, 400);
-  font-family: 'Noto Sans JP', sans-serif;
-  background-color: #FFE5E5;
+  @include font(24px, 300);
+  font-family: 'Josefin Sans',
+    sans-serif;
+  background-color: rgb(250, 227, 227);
   background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, #FFEFEF 10px, #FFEFEF 12px);
+
+  @include mq-down() {
+    padding: 10px 24px;
+    margin: 40px auto 0;
+    font-size: 20px;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 8px, rgb(246, 236, 236) 8px, rgb(246, 236, 236) 9px);
+  }
 
   &:hover {
     opacity: 0.7;
@@ -193,6 +207,10 @@ p {
 //各セクションの上下微調整
 section {
   padding: 70px 0 20px;
+
+  @include mq-down() {
+    padding: 30px 0;
+  }
 }
 
 #header-menu {
@@ -262,7 +280,7 @@ section {
 
 @keyframes fadezoom {
   0% {
-    transform: scale(1.1);
+    transform: scale(1.2);
   }
 
   100% {
@@ -316,7 +334,7 @@ section {
     height: 100vh;
 
     @include mq-down() {
-      height: 60vh;
+      height: 50vh;
     }
 
     //position: relative;
@@ -328,7 +346,7 @@ section {
       height: 100vh;
 
       @include mq-down() {
-        height: 60vh;
+        height: 50vh;
       }
 
       //position: fixed;
@@ -375,25 +393,36 @@ section {
       padding-bottom: 25px;
       max-width: 800px;
 
-      img {
-        width: 200px;
+      @include mq-down() {
+        margin: 15px 0;
+        padding-bottom: 10px;
       }
 
       .news-text {
         padding-left: 20px;
 
+        @include mq-down() {
+          padding-left: 10px;
+        }
+
         .date {
           @include font(14px, 400, #333333);
-          margin-bottom: 10px
+          margin-bottom: 10px;
+
+          @include mq-down() {
+            font-size: 12px;
+            margin-bottom: 5px;
+          }
         }
 
         .news-title {
           @include font(18px, 400);
           margin-bottom: 10px;
-        }
 
-        .news-contents {
-          @include font(14px, 400);
+          @include mq-down() {
+            font-size: 16px;
+            margin-bottom: 5px;
+          }
         }
       }
 
@@ -428,12 +457,31 @@ section {
 
   h4 {
     margin: 30px 0;
-    @include font(20px, 400);
+
+    .about-sp {
+      display: none;
+    }
+
+    @include mq-down(xxs) {
+      font-size: 16px;
+      line-height: 24px;
+      margin: 20px 0;
+      letter-spacing: 0.04rem;
+
+      .about-sp {
+        display: inline;
+      }
+    }
   }
 
   p {
     @include font(16px, 400);
     line-height: 30px;
+
+    @include mq-down(xxs) {
+      font-size: 14px;
+      line-height: 24px;
+    }
   }
 
 }
@@ -444,12 +492,34 @@ section {
   .contact-box {
     display: flex;
 
+    @include mq-down() {
+      flex-direction: column;
+      margin: 0 auto;
+    }
+
+    iframe {
+      width: 50%;
+
+      @include mq-down() {
+        width: 100%;
+      }
+    }
+
     .contact-text {
       margin-left: 30px;
 
+      @include mq-down() {
+        margin-left: 0;
+        margin-top: 10px;
+      }
+
       p {
         padding: 10px 0;
-        font-weight: 400;
+
+        @include mq-down(xxs) {
+          font-size: 16px;
+          padding: 8px 0;
+        }
       }
     }
   }
@@ -457,8 +527,12 @@ section {
 
 footer {
   padding: 50px 0 10px;
-  background-color: #FFE5E5;
+  background-color: rgb(250, 227, 227);
   background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, #FFEFEF 10px, #FFEFEF 12px);
+
+  @include mq-down() {
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 8px, rgb(246, 236, 236) 8px, rgb(246, 236, 236) 9px);
+  }
 
   .footer-menu {
     display: flex;
@@ -469,13 +543,27 @@ footer {
       flex-direction: column;
     }
 
+    @include mq-down(xxs) {
+      margin-bottom: 20px;
+      padding: 0;
+    }
+
     li {
       padding-left: 20px;
+
+      @include mq-down() {
+        padding-bottom: 10px
+      }
 
       a {
         @include font(24px, 500);
         font-family: 'Josefin Sans',
           sans-serif;
+
+        @include mq-down(xxs) {
+          font-size: 20px;
+          font-weight: 300;
+        }
       }
     }
   }

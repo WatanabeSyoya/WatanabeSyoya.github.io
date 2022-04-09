@@ -50,7 +50,7 @@ $(function () {
       fade: true, // フェードON
       arrows: false, // 矢印OFF
       speed: 3000, // スライド、フェードアニメーションの速度1000ミリ秒
-      autoplaySpeed: 5000, // 自動再生速度3000ミリ秒
+      autoplaySpeed: 6000, // 自動再生速度3000ミリ秒
       pauseOnFocus: false, // フォーカスで一時停止OFF
       pauseOnHover: false, // マウスホバーで一時停止OFF
     })
