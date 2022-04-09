@@ -310,6 +310,7 @@ nav.globalMenuSp ul li a {
   color: #24296c;
   padding: 1em 0;
   text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 /* このクラスを、jQueryで付与・削除する */
