@@ -316,6 +316,7 @@ nav.globalMenuSp ul li a {
 nav.globalMenuSp.active {
   opacity: 100;
   visibility: visible;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 #header-menu.DownMove {
