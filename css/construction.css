@@ -822,6 +822,81 @@ header nav.globalMenuSp.active {
   transition: all 0.3s ease;
 }
 
+#recruit {
+  background-image: url(../img/recruit.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 115px;
+  height: 520px;
+}
+
+@media screen and (min-width: 1441px) {
+  #recruit {
+    background-size: cover;
+  }
+}
+
+#recruit h4 {
+  color: #fff;
+  padding-top: 61px;
+  padding-left: 312px;
+}
+
+#recruit h5 {
+  color: #fff;
+  letter-spacing: 1.5px;
+  padding-bottom: 232px;
+  padding-left: 287px;
+}
+
+#recruit .recruit-name {
+  position: relative;
+  margin-left: 235px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 36px;
+  background-color: #359B87;
+  border-radius: 25px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 7px 73px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#recruit .recruit-name::after {
+  content: '';
+  margin-left: 28px;
+  display: inline-block;
+  width: 21px;
+  height: 12px;
+  background-image: url(../img/arrow-w.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 19px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#recruit .recruit-name:hover {
+  background-color: #359B87;
+  opacity: 0.8;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#recruit .recruit-name:hover::after {
+  position: absolute;
+  top: 19px;
+  right: 20px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
 footer {
   padding: 100px 0 28px;
 }

@@ -819,6 +819,70 @@ header {
   }
 }
 
+#recruit {
+  background-image: url(../img/recruit.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 115px;
+
+  @include mq-up(xl) {
+    background-size: cover;
+  }
+
+  height: 520px;
+
+  h4 {
+    color: #fff;
+    padding-top: 61px;
+    padding-left: 312px;
+  }
+
+  h5 {
+    color: #fff;
+    letter-spacing: 1.5px;
+    padding-bottom: 232px;
+    padding-left: 287px;
+  }
+
+  .recruit-name {
+    position: relative;
+    margin-left: 235px;
+    @include font(20px, 700, #fff);
+    line-height: 36px;
+    background-color: $section-color;
+    border-radius: 25px;
+    width: fit-content;
+    padding: 7px 73px;
+    transition: all 0.3s ease;
+
+    &::after {
+      content: '';
+      margin-left: 28px;
+      display: inline-block;
+      width: 21px;
+      height: 12px;
+      background-image: url(../img/arrow-w.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 19px;
+      transition: all 0.3s ease;
+    }
+
+    &:hover {
+      background-color: $section-color;
+      opacity: 0.8;
+      transition: all 0.3s ease;
+
+      &::after {
+        position: absolute;
+        top: 19px;
+        right: 20px;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+}
 
 footer {
   padding: 100px 0 28px;
