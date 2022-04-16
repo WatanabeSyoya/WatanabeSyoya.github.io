@@ -368,10 +368,8 @@ header nav.globalMenuSp.active {
   letter-spacing: 1.5px;
   padding-top: 1px;
   position: relative;
-  -webkit-transition: -webkit-transform .5s;
-  transition: -webkit-transform .5s;
-  transition: transform .5s;
-  transition: transform .5s, -webkit-transform .5s;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 #news .container .page::after {
@@ -386,28 +384,22 @@ header nav.globalMenuSp.active {
   padding-top: 1px;
   position: absolute;
   top: 10px;
-  -webkit-transition: -webkit-transform .5s;
-  transition: -webkit-transform .5s;
-  transition: transform .5s;
-  transition: transform .5s, -webkit-transform .5s;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 #news .container .page:hover {
   color: #359B87;
-  -webkit-transition: -webkit-transform .5s;
-  transition: -webkit-transform .5s;
-  transition: transform .5s;
-  transition: transform .5s, -webkit-transform .5s;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 #news .container .page:hover::after {
   position: absolute;
   top: 10px;
   right: -40px;
-  -webkit-transition: -webkit-transform .5s;
-  transition: -webkit-transform .5s;
-  transition: transform .5s;
-  transition: transform .5s, -webkit-transform .5s;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 #about {
@@ -548,6 +540,8 @@ header nav.globalMenuSp.active {
   width: -moz-fit-content;
   width: fit-content;
   padding: 7px 73px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 #business .business-box .business-item:nth-child(1) .business-name span {
@@ -572,10 +566,23 @@ header nav.globalMenuSp.active {
   padding-top: 1px;
   position: absolute;
   top: 19px;
-  -webkit-transition: -webkit-transform .5s;
-  transition: -webkit-transform .5s;
-  transition: transform .5s;
-  transition: transform .5s, -webkit-transform .5s;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#business .business-box .business-item:nth-child(1) .business-name:hover {
+  background-color: #E38619;
+  opacity: 0.8;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#business .business-box .business-item:nth-child(1) .business-name:hover::after {
+  position: absolute;
+  top: 19px;
+  right: 20px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 #business .business-box .business-item:nth-child(2) .business-img {
@@ -612,6 +619,8 @@ header nav.globalMenuSp.active {
   width: -moz-fit-content;
   width: fit-content;
   padding: 7px 73px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 #business .business-box .business-item:nth-child(2) .business-name span {
@@ -636,10 +645,23 @@ header nav.globalMenuSp.active {
   padding-top: 1px;
   position: absolute;
   top: 19px;
-  -webkit-transition: -webkit-transform .5s;
-  transition: -webkit-transform .5s;
-  transition: transform .5s;
-  transition: transform .5s, -webkit-transform .5s;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#business .business-box .business-item:nth-child(2) .business-name:hover {
+  background-color: #4E9100;
+  opacity: 0.8;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#business .business-box .business-item:nth-child(2) .business-name:hover::after {
+  position: absolute;
+  top: 19px;
+  right: 20px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 #business .business-box .business-item:nth-child(3) .business-img {
@@ -676,6 +698,8 @@ header nav.globalMenuSp.active {
   width: -moz-fit-content;
   width: fit-content;
   padding: 7px 73px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 #business .business-box .business-item:nth-child(3) .business-name span {
@@ -700,10 +724,23 @@ header nav.globalMenuSp.active {
   padding-top: 1px;
   position: absolute;
   top: 19px;
-  -webkit-transition: -webkit-transform .5s;
-  transition: -webkit-transform .5s;
-  transition: transform .5s;
-  transition: transform .5s, -webkit-transform .5s;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#business .business-box .business-item:nth-child(3) .business-name:hover {
+  background-color: #5A5FBA;
+  opacity: 0.8;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#business .business-box .business-item:nth-child(3) .business-name:hover::after {
+  position: absolute;
+  top: 19px;
+  right: 20px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 #business .business-box .business-item:nth-child(4) .business-img {
@@ -739,7 +776,7 @@ header nav.globalMenuSp.active {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 7px 73px;
+  padding: 7px 66px 6px 22px;
 }
 
 #business .business-box .business-item:nth-child(4) .business-name span {
@@ -754,7 +791,7 @@ header nav.globalMenuSp.active {
 
 #business .business-box .business-item:nth-child(4) .business-name::after {
   content: '';
-  margin-left: 24px;
+  margin-left: 17px;
   display: inline-block;
   width: 21px;
   height: 12px;
@@ -768,6 +805,21 @@ header nav.globalMenuSp.active {
   transition: -webkit-transform .5s;
   transition: transform .5s;
   transition: transform .5s, -webkit-transform .5s;
+}
+
+#business .business-box .business-item:nth-child(4) .business-name:hover {
+  background-color: #876850;
+  opacity: 0.8;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#business .business-box .business-item:nth-child(4) .business-name:hover::after {
+  position: absolute;
+  top: 19px;
+  right: 20px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 footer {

@@ -413,7 +413,7 @@ header {
       letter-spacing: 1.5px;
       padding-top: 1px;
       position: relative;
-      transition: transform .5s;
+      transition: all 0.3s ease;
 
       &::after {
         content: '';
@@ -427,18 +427,18 @@ header {
         padding-top: 1px;
         position: absolute;
         top: 10px;
-        transition: transform .5s;
+        transition: all 0.3s ease;
       }
 
       &:hover {
         color: $section-color;
-        transition: transform .5s;
+        transition: all 0.3s ease;
 
         &::after {
           position: absolute;
           top: 10px;
           right: -40px;
-          transition: transform .5s;
+          transition: all 0.3s ease;
         }
       }
     }
@@ -572,6 +572,7 @@ header {
         border-radius: 25px;
         width: fit-content;
         padding: 7px 73px;
+        transition: all 0.3s ease;
 
         span {
           @include font(16px, 500, #fff);
@@ -592,7 +593,20 @@ header {
           padding-top: 1px;
           position: absolute;
           top: 19px;
-          transition: transform .5s;
+          transition: all 0.3s ease;
+        }
+
+        &:hover {
+          background-color: #E38619;
+          opacity: 0.8;
+          transition: all 0.3s ease;
+
+          &::after {
+            position: absolute;
+            top: 19px;
+            right: 20px;
+            transition: all 0.3s ease;
+          }
         }
       }
     }
@@ -627,6 +641,7 @@ header {
         border-radius: 25px;
         width: fit-content;
         padding: 7px 73px;
+        transition: all 0.3s ease;
 
         span {
           @include font(16px, 500, #fff);
@@ -647,7 +662,20 @@ header {
           padding-top: 1px;
           position: absolute;
           top: 19px;
-          transition: transform .5s;
+          transition: all 0.3s ease;
+        }
+
+        &:hover {
+          background-color: #4E9100;
+          opacity: 0.8;
+          transition: all 0.3s ease;
+
+          &::after {
+            position: absolute;
+            top: 19px;
+            right: 20px;
+            transition: all 0.3s ease;
+          }
         }
       }
     }
@@ -682,6 +710,7 @@ header {
         border-radius: 25px;
         width: fit-content;
         padding: 7px 73px;
+        transition: all 0.3s ease;
 
         span {
           @include font(16px, 500, #fff);
@@ -702,7 +731,20 @@ header {
           padding-top: 1px;
           position: absolute;
           top: 19px;
-          transition: transform .5s;
+          transition: all 0.3s ease;
+        }
+
+        &:hover {
+          background-color: #5A5FBA;
+          opacity: 0.8;
+          transition: all 0.3s ease;
+
+          &::after {
+            position: absolute;
+            top: 19px;
+            right: 20px;
+            transition: all 0.3s ease;
+          }
         }
       }
     }
@@ -736,7 +778,7 @@ header {
         background-color: #876850;
         border-radius: 25px;
         width: fit-content;
-        padding: 7px 73px;
+        padding: 7px 66px 6px 22px;
 
         span {
           @include font(16px, 500, #fff);
@@ -747,7 +789,7 @@ header {
 
         &::after {
           content: '';
-          margin-left: 24px;
+          margin-left: 17px;
           display: inline-block;
           width: 21px;
           height: 12px;
@@ -758,6 +800,19 @@ header {
           position: absolute;
           top: 19px;
           transition: transform .5s;
+        }
+
+        &:hover {
+          background-color: #876850;
+          opacity: 0.8;
+          transition: all 0.3s ease;
+
+          &::after {
+            position: absolute;
+            top: 19px;
+            right: 20px;
+            transition: all 0.3s ease;
+          }
         }
       }
     }
