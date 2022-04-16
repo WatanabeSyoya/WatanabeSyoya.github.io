@@ -272,6 +272,7 @@ header {
     width: 100%;
     opacity: 0;
     transition: opacity .6s ease, visibility .6s ease;
+    visibility: hidden;
   }
 
   nav.globalMenuSp ul {
