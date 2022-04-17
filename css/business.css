@@ -1,0 +1,264 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+main {
+  color: #1F2833;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+span {
+  display: block;
+}
+
+h1 {
+  font-size: 44px;
+  font-weight: 400;
+  color: #1F2833;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #1F2833;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Epilogue', sans-serif;
+  opacity: 0.6;
+}
+
+h3 {
+  font-size: 52px;
+  font-weight: 700;
+  color: #1F2833;
+  font-family: 'Noto Sans JP', sans-serif;
+  letter-spacing: -4px;
+  font-family: 'Epilogue', sans-serif;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1F2833;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Epilogue', sans-serif;
+  line-height: 36px;
+}
+
+h5 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #1F2833;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 52px;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #1F2833;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 760px) {
+  .container {
+    width: 92%;
+  }
+}
+
+#business-fv {
+  background-image: url(../img/business.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 555px;
+  margin-top: 100px;
+}
+
+#business-fv .container {
+  padding-left: 135px;
+  padding-top: 158px;
+}
+
+#business-fv .container h4 {
+  color: #359B87;
+  padding-top: 7px;
+  text-align: center;
+}
+
+#business-fv .container h5 {
+  text-align: center;
+  letter-spacing: 1.5px;
+  padding-bottom: 59px;
+}
+
+#business-page {
+  background-color: #E5E5E5;
+}
+
+#business-page .page-container {
+  background-color: #fff;
+  width: 90%;
+  padding-top: 300px;
+  position: relative;
+  top: -65px;
+}
+
+#business-page .business-box {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#business-page .business-box .business-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#business-page .business-box .business-item .business-img {
+  background-image: url(../img/business1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 555px;
+  height: 343px;
+}
+
+#business-page .business-box .business-item .business-img::before {
+  background-image: url(../img/icon-architecture.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 66px;
+  height: 66px;
+  position: relative;
+  top: -253px;
+  left: 24px;
+}
+
+#contact {
+  background-color: #359B87;
+  height: 540px;
+  position: relative;
+}
+
+#contact .container {
+  background-color: #fff;
+  width: 1000px;
+  height: 360px;
+  border-radius: 8px;
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#contact .container .contact-text {
+  padding-top: 88px;
+  padding-left: 143px;
+}
+
+#contact .container .contact-text h4 {
+  color: #359B87;
+  text-align: center;
+  line-height: 20px;
+  margin-bottom: 11px;
+  padding-right: 6px;
+}
+
+#contact .container .contact-text h5 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #1F2833;
+  font-family: 'Noto Sans JP', sans-serif;
+  text-align: center;
+  letter-spacing: 1.5px;
+  padding-bottom: 40px;
+  padding-right: 10px;
+}
+
+#contact .container .contact-text p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1F2833;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 28px;
+  letter-spacing: 1.5px;
+}
+
+#contact .container .call-number {
+  padding-top: 85px;
+  padding-left: 134px;
+}
+
+#contact .container .call-number h3 {
+  padding-left: 18px;
+}
+
+#contact .container .call-number p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 1.5px;
+  padding-bottom: 34px;
+}
+
+#contact .container .call-number .recruit-name {
+  margin: 0 auto;
+  border-radius: 40px;
+  padding: 22px 120px;
+}
+
+#contact .container .call-number .recruit-name::after {
+  top: 35px;
+  left: 65%;
+  margin-left: 50px;
+}
+
+#contact .container .call-number .recruit-name:hover::after {
+  left: 68%;
+}
+
+footer {
+  background-color: #1F2833;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer p {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 28px;
+  font-family: 'Epilogue', sans-serif;
+}
+/*# sourceMappingURL=business.css.map */
