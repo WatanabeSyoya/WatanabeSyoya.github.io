@@ -154,6 +154,18 @@ p {
   left: 1px;
 }
 
+#business-page .business-box .business-item .business-text h4 {
+  color: #359B87;
+  padding-top: 7px;
+  text-align: center;
+}
+
+#business-page .business-box .business-item .business-text h5 {
+  text-align: center;
+  letter-spacing: 1.5px;
+  padding-bottom: 59px;
+}
+
 #contact {
   background-color: #359B87;
   height: 540px;

@@ -222,6 +222,20 @@ p {
           left: 1px;
         }
       }
+
+      .business-text {
+        h4 {
+          color: $section-color;
+          padding-top: 7px;
+          text-align: center;
+        }
+
+        h5 {
+          text-align: center;
+          letter-spacing: 1.5px;
+          padding-bottom: 59px
+        }
+      }
     }
   }
 }
