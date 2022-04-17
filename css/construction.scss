@@ -325,7 +325,7 @@ header {
   letter-spacing: 1.5px;
   padding-top: 1px;
   position: relative;
-  transition: all 0.3s ease;
+  transition: all .3s;
 
   &::after {
     content: '';
@@ -339,18 +339,15 @@ header {
     padding-top: 1px;
     position: absolute;
     top: 10px;
-    transition: all 0.3s ease;
+    right: -30px;
+    transition: all .3s;
   }
 
   &:hover {
     color: $section-color;
-    transition: all 0.3s ease;
 
     &::after {
-      position: absolute;
-      top: 10px;
-      right: -40px;
-      transition: all 0.3s ease;
+      right: -42px;
     }
   }
 }
@@ -364,11 +361,10 @@ header {
   border-radius: 25px;
   width: fit-content;
   padding: 7px 73px;
-  transition: all 0.3s ease;
+  transition: 1s;
 
   &::after {
     content: '';
-    margin-left: 28px;
     display: inline-block;
     width: 21px;
     height: 12px;
@@ -376,20 +372,17 @@ header {
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    top: 19px;
-    transition: all 0.3s ease;
+    left: 78%;
+    top: 20px;
+    transition: all .3s;
   }
 
   &:hover {
-    background-color: $section-color;
-    opacity: 0.8;
-    transition: all 0.3s ease;
+    background-color: #5DAF9F;
 
     &::after {
-      position: absolute;
-      top: 19px;
-      right: 20px;
-      transition: all 0.3s ease;
+      //top: 19px;
+      left: 82%;
     }
   }
 }
@@ -635,19 +628,18 @@ header {
           background-repeat: no-repeat;
           padding-top: 1px;
           position: absolute;
-          top: 19px;
+          top: 20px;
+          right: 30px;
           transition: all 0.3s ease;
         }
 
         &:hover {
-          opacity: 0.8;
-          transition: all 0.3s ease;
+          background-color: #E99E47;
 
           &::after {
             position: absolute;
-            top: 19px;
+            top: 20px;
             right: 20px;
-            transition: all 0.3s ease;
           }
         }
       }
@@ -664,6 +656,10 @@ header {
 
       .business-name {
         background-color: #4E9100;
+
+        &:hover {
+          background-color: #71A733;
+        }
       }
     }
 
@@ -678,6 +674,10 @@ header {
 
       .business-name {
         background-color: #5A5FBA;
+
+        &:hover {
+          background-color: #7B7FC8;
+        }
       }
     }
 
@@ -693,6 +693,10 @@ header {
       .business-name {
         background-color: #876850;
         padding: 7px 66px 6px 22px;
+
+        &:hover {
+          background-color: #9F8673;
+        }
 
         &::after {
           margin-left: 17px;
@@ -869,29 +873,50 @@ header {
 
     .call-number {
       padding-top: 85px;
-      padding-left: 147px;
+      padding-left: 134px;
+
+      h3 {
+        padding-left: 18px;
+      }
 
       p {
         text-align: center;
         font-size: 16px;
         line-height: 28px;
         letter-spacing: 1.5px;
-        padding-right: 9px;
         padding-bottom: 34px;
       }
 
       .recruit-name {
         margin: 0 auto;
         border-radius: 40px;
-        padding: 22px 100px;
+        padding: 22px 120px;
 
         &::after {
           top: 35px;
+          left: 65%;
           margin-left: 50px;
+        }
+
+        &:hover::after {
+          left: 68%;
         }
       }
     }
   }
 }
 
-footer {}
+footer {
+  background-color: $main-color;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    @include font(16px, 700, #fff);
+    line-height: 28px;
+    font-family: 'Epilogue',
+      sans-serif;
+  }
+}

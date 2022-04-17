@@ -267,8 +267,8 @@ header nav.globalMenuSp.active {
   letter-spacing: 1.5px;
   padding-top: 1px;
   position: relative;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 .page::after {
@@ -283,22 +283,17 @@ header nav.globalMenuSp.active {
   padding-top: 1px;
   position: absolute;
   top: 10px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  right: -30px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 .page:hover {
   color: #359B87;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
 }
 
 .page:hover::after {
-  position: absolute;
-  top: 10px;
-  right: -40px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  right: -42px;
 }
 
 .recruit-name {
@@ -315,13 +310,12 @@ header nav.globalMenuSp.active {
   width: -moz-fit-content;
   width: fit-content;
   padding: 7px 73px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .recruit-name::after {
   content: '';
-  margin-left: 28px;
   display: inline-block;
   width: 21px;
   height: 12px;
@@ -329,24 +323,18 @@ header nav.globalMenuSp.active {
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
-  top: 19px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  left: 78%;
+  top: 20px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 .recruit-name:hover {
-  background-color: #359B87;
-  opacity: 0.8;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  background-color: #5DAF9F;
 }
 
 .recruit-name:hover::after {
-  position: absolute;
-  top: 19px;
-  right: 20px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  left: 82%;
 }
 
 #fv {
@@ -615,23 +603,20 @@ header nav.globalMenuSp.active {
   background-repeat: no-repeat;
   padding-top: 1px;
   position: absolute;
-  top: 19px;
+  top: 20px;
+  right: 30px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 #business .business-box .business-item .business-name:hover {
-  opacity: 0.8;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  background-color: #E99E47;
 }
 
 #business .business-box .business-item .business-name:hover::after {
   position: absolute;
-  top: 19px;
+  top: 20px;
   right: 20px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
 }
 
 #business .business-box .business-item:nth-child(2) .business-img {
@@ -646,6 +631,10 @@ header nav.globalMenuSp.active {
   background-color: #4E9100;
 }
 
+#business .business-box .business-item:nth-child(2) .business-name:hover {
+  background-color: #71A733;
+}
+
 #business .business-box .business-item:nth-child(3) .business-img {
   background-image: url(../img/design.jpg);
 }
@@ -656,6 +645,10 @@ header nav.globalMenuSp.active {
 
 #business .business-box .business-item:nth-child(3) .business-name {
   background-color: #5A5FBA;
+}
+
+#business .business-box .business-item:nth-child(3) .business-name:hover {
+  background-color: #7B7FC8;
 }
 
 #business .business-box .business-item:nth-child(4) .business-img {
@@ -669,6 +662,10 @@ header nav.globalMenuSp.active {
 #business .business-box .business-item:nth-child(4) .business-name {
   background-color: #876850;
   padding: 7px 66px 6px 22px;
+}
+
+#business .business-box .business-item:nth-child(4) .business-name:hover {
+  background-color: #9F8673;
 }
 
 #business .business-box .business-item:nth-child(4) .business-name::after {
@@ -852,7 +849,11 @@ header nav.globalMenuSp.active {
 
 #contact .container .call-number {
   padding-top: 85px;
-  padding-left: 147px;
+  padding-left: 134px;
+}
+
+#contact .container .call-number h3 {
+  padding-left: 18px;
 }
 
 #contact .container .call-number p {
@@ -860,18 +861,45 @@ header nav.globalMenuSp.active {
   font-size: 16px;
   line-height: 28px;
   letter-spacing: 1.5px;
-  padding-right: 9px;
   padding-bottom: 34px;
 }
 
 #contact .container .call-number .recruit-name {
   margin: 0 auto;
   border-radius: 40px;
-  padding: 22px 100px;
+  padding: 22px 120px;
 }
 
 #contact .container .call-number .recruit-name::after {
   top: 35px;
+  left: 65%;
   margin-left: 50px;
+}
+
+#contact .container .call-number .recruit-name:hover::after {
+  left: 68%;
+}
+
+footer {
+  background-color: #1F2833;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer p {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 28px;
+  font-family: 'Epilogue', sans-serif;
 }
 /*# sourceMappingURL=construction.css.map */
