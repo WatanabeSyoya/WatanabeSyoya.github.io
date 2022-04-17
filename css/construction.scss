@@ -313,6 +313,83 @@ header {
   /*　ハンバーガーボタン　*/
 }
 
+.page {
+  text-align: end;
+  @include font(16px, 700, $sub-color);
+  line-height: 28px;
+  margin: 39px 50px 0 auto;
+  width: fit-content;
+  letter-spacing: 1.5px;
+  padding-top: 1px;
+  position: relative;
+  transition: all 0.3s ease;
+
+  &::after {
+    content: '';
+    margin-left: 11px;
+    display: inline-block;
+    width: 21px;
+    height: 12px;
+    background-image: url(../img/arrow-g.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 1px;
+    position: absolute;
+    top: 10px;
+    transition: all 0.3s ease;
+  }
+
+  &:hover {
+    color: $section-color;
+    transition: all 0.3s ease;
+
+    &::after {
+      position: absolute;
+      top: 10px;
+      right: -40px;
+      transition: all 0.3s ease;
+    }
+  }
+}
+
+.recruit-name {
+  position: relative;
+  margin-left: 235px;
+  @include font(20px, 700, #fff);
+  line-height: 36px;
+  background-color: $section-color;
+  border-radius: 25px;
+  width: fit-content;
+  padding: 7px 73px;
+  transition: all 0.3s ease;
+
+  &::after {
+    content: '';
+    margin-left: 28px;
+    display: inline-block;
+    width: 21px;
+    height: 12px;
+    background-image: url(../img/arrow-w.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 19px;
+    transition: all 0.3s ease;
+  }
+
+  &:hover {
+    background-color: $section-color;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+
+    &::after {
+      position: absolute;
+      top: 19px;
+      right: 20px;
+      transition: all 0.3s ease;
+    }
+  }
+}
 
 #fv {
   background-image: url(../img/main.jpg);
@@ -404,44 +481,7 @@ header {
       }
     }
 
-    .page {
-      text-align: end;
-      @include font(16px, 700, $sub-color);
-      line-height: 28px;
-      margin: 39px 50px 0 auto;
-      width: fit-content;
-      letter-spacing: 1.5px;
-      padding-top: 1px;
-      position: relative;
-      transition: all 0.3s ease;
 
-      &::after {
-        content: '';
-        margin-left: 11px;
-        display: inline-block;
-        width: 21px;
-        height: 12px;
-        background-image: url(../img/arrow-g.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        padding-top: 1px;
-        position: absolute;
-        top: 10px;
-        transition: all 0.3s ease;
-      }
-
-      &:hover {
-        color: $section-color;
-        transition: all 0.3s ease;
-
-        &::after {
-          position: absolute;
-          top: 10px;
-          right: -40px;
-          transition: all 0.3s ease;
-        }
-      }
-    }
   }
 
 }
@@ -542,7 +582,7 @@ header {
     width: 90%;
     margin: 0 auto;
 
-    .business-item:nth-child(1) {
+    .business-item {
       .business-img {
         background-image: url(../img/architecture.jpg);
         background-repeat: no-repeat;
@@ -597,7 +637,6 @@ header {
         }
 
         &:hover {
-          background-color: #E38619;
           opacity: 0.8;
           transition: all 0.3s ease;
 
@@ -614,205 +653,46 @@ header {
     .business-item:nth-child(2) {
       .business-img {
         background-image: url(../img/civil.jpg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 270px;
-        height: 220px;
       }
 
       .icon {
         background-image: url(../img/icon-civil.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 66px;
-        height: 66px;
-        position: relative;
-        top: -253px;
-        left: 24px;
       }
 
       .business-name {
-        position: relative;
-        top: -90px;
-        left: 25px;
-        @include font(20px, 700, #fff);
-        line-height: 36px;
         background-color: #4E9100;
-        border-radius: 25px;
-        width: fit-content;
-        padding: 7px 73px;
-        transition: all 0.3s ease;
-
-        span {
-          @include font(16px, 500, #fff);
-          line-height: 28px;
-          letter-spacing: 1.5px;
-          display: inline;
-        }
-
-        &::after {
-          content: '';
-          margin-left: 24px;
-          display: inline-block;
-          width: 21px;
-          height: 12px;
-          background-image: url(../img/arrow-w.png);
-          background-size: contain;
-          background-repeat: no-repeat;
-          padding-top: 1px;
-          position: absolute;
-          top: 19px;
-          transition: all 0.3s ease;
-        }
-
-        &:hover {
-          background-color: #4E9100;
-          opacity: 0.8;
-          transition: all 0.3s ease;
-
-          &::after {
-            position: absolute;
-            top: 19px;
-            right: 20px;
-            transition: all 0.3s ease;
-          }
-        }
       }
     }
 
     .business-item:nth-child(3) {
       .business-img {
         background-image: url(../img/design.jpg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 270px;
-        height: 220px;
       }
 
       .icon {
         background-image: url(../img/icon-design.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 66px;
-        height: 66px;
-        position: relative;
-        top: -253px;
-        left: 24px;
       }
 
       .business-name {
-        position: relative;
-        top: -90px;
-        left: 25px;
-        @include font(20px, 700, #fff);
-        line-height: 36px;
         background-color: #5A5FBA;
-        border-radius: 25px;
-        width: fit-content;
-        padding: 7px 73px;
-        transition: all 0.3s ease;
-
-        span {
-          @include font(16px, 500, #fff);
-          line-height: 28px;
-          letter-spacing: 1.5px;
-          display: inline;
-        }
-
-        &::after {
-          content: '';
-          margin-left: 24px;
-          display: inline-block;
-          width: 21px;
-          height: 12px;
-          background-image: url(../img/arrow-w.png);
-          background-size: contain;
-          background-repeat: no-repeat;
-          padding-top: 1px;
-          position: absolute;
-          top: 19px;
-          transition: all 0.3s ease;
-        }
-
-        &:hover {
-          background-color: #5A5FBA;
-          opacity: 0.8;
-          transition: all 0.3s ease;
-
-          &::after {
-            position: absolute;
-            top: 19px;
-            right: 20px;
-            transition: all 0.3s ease;
-          }
-        }
       }
     }
 
     .business-item:nth-child(4) {
       .business-img {
         background-image: url(../img/remodeling.jpg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 270px;
-        height: 220px;
       }
 
       .icon {
         background-image: url(../img/icon-remodeling.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 66px;
-        height: 66px;
-        position: relative;
-        top: -253px;
-        left: 24px;
       }
 
       .business-name {
-        position: relative;
-        top: -90px;
-        left: 25px;
-        @include font(20px, 700, #fff);
-        line-height: 36px;
         background-color: #876850;
-        border-radius: 25px;
-        width: fit-content;
         padding: 7px 66px 6px 22px;
 
-        span {
-          @include font(16px, 500, #fff);
-          line-height: 28px;
-          letter-spacing: 1.5px;
-          display: inline;
-        }
-
         &::after {
-          content: '';
           margin-left: 17px;
-          display: inline-block;
-          width: 21px;
-          height: 12px;
-          background-image: url(../img/arrow-w.png);
-          background-size: contain;
-          background-repeat: no-repeat;
-          padding-top: 1px;
-          position: absolute;
-          top: 19px;
-          transition: transform .5s;
-        }
-
-        &:hover {
-          background-color: #876850;
-          opacity: 0.8;
-          transition: all 0.3s ease;
-
-          &::after {
-            position: absolute;
-            top: 19px;
-            right: 20px;
-            transition: all 0.3s ease;
-          }
         }
       }
     }
@@ -824,6 +704,7 @@ header {
   background-repeat: no-repeat;
   background-size: contain;
   margin-top: 115px;
+  margin-bottom: 80px;
 
   @include mq-up(xl) {
     background-size: cover;
@@ -843,44 +724,97 @@ header {
     padding-bottom: 232px;
     padding-left: 287px;
   }
+}
 
-  .recruit-name {
-    position: relative;
-    margin-left: 235px;
-    @include font(20px, 700, #fff);
-    line-height: 36px;
-    background-color: $section-color;
-    border-radius: 25px;
-    width: fit-content;
-    padding: 7px 73px;
-    transition: all 0.3s ease;
+#works {
+  h4 {
+    color: $section-color;
+    text-align: center;
+  }
 
-    &::after {
-      content: '';
-      margin-left: 28px;
-      display: inline-block;
-      width: 21px;
-      height: 12px;
-      background-image: url(../img/arrow-w.png);
-      background-size: contain;
-      background-repeat: no-repeat;
-      position: absolute;
-      top: 19px;
-      transition: all 0.3s ease;
-    }
+  h5 {
+    text-align: center;
+    letter-spacing: 1.5px;
+    padding-bottom: 120px
+  }
 
-    &:hover {
-      background-color: $section-color;
-      opacity: 0.8;
-      transition: all 0.3s ease;
+  .works-box {
+    display: grid;
+    display: -ms-grid;
+    grid-template-columns: repeat(auto-fit, 555px);
+    grid-auto-rows: 463px;
+    grid-gap: 60px;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
 
-      &::after {
+    .works-item {
+      position: relative;
+
+      .works-img {
+        background-image: url(../img/works1.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 555px;
+        height: 345px;
+      }
+
+      .works-icon {
+        background-image: url(../img/icon-architecture.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 66px;
+        height: 66px;
         position: absolute;
-        top: 19px;
-        right: 20px;
-        transition: all 0.3s ease;
+        top: -33px;
+        left: 36px;
+      }
+
+      .works-date {
+        padding-top: 22px;
+        padding-left: 60px;
+        @include font(16px, 700);
+        font-family: 'Epilogue',
+          sans-serif;
+      }
+
+      .works-text {
+        @include font(16px, 700);
+        line-height: 28px;
+        padding-top: 9px;
+        padding-left: 60px;
+      }
+
+      .page {
+        margin: 14px 61px 0 auto;
       }
     }
+
+    .works-item:nth-child(2) {
+      .works-img {
+        background-image: url(../img/works2.jpg);
+      }
+    }
+
+    .works-item:nth-child(3) {
+      .works-img {
+        background-image: url(../img/works3.jpg);
+      }
+    }
+
+    .works-item:nth-child(4) {
+      .works-img {
+        background-image: url(../img/works4.jpg);
+      }
+
+      .works-icon {
+        background-image: url(../img/icon-civil.png);
+      }
+    }
+  }
+
+  .recruit-name {
+    margin: 80px auto;
   }
 }
 
