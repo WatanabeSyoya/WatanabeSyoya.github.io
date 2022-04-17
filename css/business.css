@@ -130,6 +130,7 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 120px;
 }
 
 #business-page .business-box .business-item .business-img {
@@ -138,17 +139,19 @@ p {
   background-size: contain;
   width: 555px;
   height: 343px;
+  position: relative;
 }
 
 #business-page .business-box .business-item .business-img::before {
+  content: "";
   background-image: url(../img/icon-architecture.png);
   background-repeat: no-repeat;
   background-size: contain;
   width: 66px;
   height: 66px;
-  position: relative;
-  top: -253px;
-  left: 24px;
+  position: absolute;
+  top: 1px;
+  left: 1px;
 }
 
 #contact {
