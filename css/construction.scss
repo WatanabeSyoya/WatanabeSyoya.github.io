@@ -84,7 +84,10 @@ h2 {
 }
 
 h3 {
-  @include font(90px);
+  @include font(52px, 700);
+  letter-spacing: -4px;
+  font-family: 'Epilogue',
+    sans-serif;
 }
 
 h4 {
@@ -814,68 +817,81 @@ header {
   }
 
   .recruit-name {
-    margin: 80px auto;
+    margin: 80px auto 60px;
   }
 }
 
-footer {
-  padding: 100px 0 28px;
+#contact {
+  background-color: $section-color;
+  height: 540px;
+  position: relative;
 
-  .header-container {
+  .container {
+    background-color: #fff;
+    width: 1000px;
+    height: 360px;
+    border-radius: 8px;
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    margin: auto;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
 
-    @include mq-down(lg) {
-      justify-content: space-around;
-    }
-  }
+    .contact-text {
+      padding-top: 88px;
+      padding-left: 143px;
 
-  .logo {
-    padding-left: 72px;
-    padding-top: 46px;
+      h4 {
+        color: $section-color;
+        text-align: center;
+        line-height: 20px;
+        margin-bottom: 11px;
+        padding-right: 6px
+      }
 
-    @include mq-down(lg) {
-      padding-left: 0px;
-      padding-top: 0px;
-    }
-  }
+      h5 {
+        @include font(30px, 700);
+        text-align: center;
+        letter-spacing: 1.5px;
+        padding-bottom: 40px;
+        padding-right: 10px
+      }
 
-  ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 50px;
-    padding-right: 245px;
+      p {
+        @include font(16px, 500);
+        line-height: 28px;
+        letter-spacing: 1.5px;
 
-    @include mq-down(lg) {
-      flex-direction: column;
-      padding-top: 0px;
-      padding-right: 0px;
+      }
     }
 
-    li {
-      a {
-        font-family: 'Jost', sans-serif;
-        font-size: 20px;
-        font-weight: 700;
-        color: black;
-        padding-left: 60px;
+    .call-number {
+      padding-top: 85px;
+      padding-left: 147px;
 
-        @include mq-down(lg) {
-          margin-bottom: 20px;
-          padding-left: 0;
+      p {
+        text-align: center;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 1.5px;
+        padding-right: 9px;
+        padding-bottom: 34px;
+      }
+
+      .recruit-name {
+        margin: 0 auto;
+        border-radius: 40px;
+        padding: 22px 100px;
+
+        &::after {
+          top: 35px;
+          margin-left: 50px;
         }
       }
     }
   }
-
-  p {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 14px;
-    line-height: 16.1px;
-    font-weight: 400;
-    text-align: center;
-    margin-top: 71px;
-  }
 }
+
+footer {}
