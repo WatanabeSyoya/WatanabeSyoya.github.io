@@ -84,65 +84,70 @@ p {
   }
 }
 
-#business-fv {
-  background-image: url(../img/business.jpg);
+#works-fv {
+  background-image: url(../img/works.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 555px;
   margin-top: 100px;
 }
 
-#business-fv .container {
+#works-fv .container {
   padding-left: 135px;
   padding-top: 228px;
 }
 
-#business-fv .container h4 {
+#works-fv .container h4 {
   color: #359B87;
   padding-top: 7px;
 }
 
-#business-fv .container h5 {
+#works-fv .container h5 {
   letter-spacing: 1.5px;
   padding-bottom: 59px;
 }
 
-#business-page {
+#works-page {
   background-color: #E5E5E5;
   padding-bottom: 5px;
 }
 
-#business-page .page-container {
+#works-page .page-container {
   background-color: #fff;
   width: 90.3%;
   padding-top: 145px;
+  padding-bottom: 80px;
   position: relative;
   top: -65px;
 }
 
-#business-page .business-box {
+#works-page .works-box {
+  display: grid;
+  display: -ms-grid;
+  -ms-grid-columns: (555px)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 555px);
+  grid-auto-rows: 463px;
+  grid-gap: 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 90%;
   margin: 0 auto;
 }
 
-#business-page .business-box .business-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-bottom: 120px;
-}
-
-#business-page .business-box .business-item .business-img {
-  background-image: url(../img/business1.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 555px;
-  height: 343px;
+#works-page .works-box .works-item {
   position: relative;
 }
 
-#business-page .business-box .business-item .business-img::before {
-  content: "";
+#works-page .works-box .works-item .works-img {
+  background-image: url(../img/works1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 555px;
+  height: 345px;
+}
+
+#works-page .works-box .works-item .works-icon {
   background-image: url(../img/icon-architecture.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -150,84 +155,78 @@ p {
   height: 66px;
   position: absolute;
   top: -33px;
-  right: 36px;
-}
-
-#business-page .business-box .business-item .business-text {
-  padding-left: 59px;
-}
-
-#business-page .business-box .business-item .business-text h4 {
-  font-size: 16px;
-  font-weight: 700;
-  color: #359B87;
-  font-family: 'Noto Sans JP', sans-serif;
-  line-height: 28px;
-  font-family: 'Epilogue', sans-serif;
-}
-
-#business-page .business-box .business-item .business-text h5 {
-  letter-spacing: 1.5px;
-  padding-bottom: 40px;
-}
-
-#business-page .business-box .business-item .business-text p {
-  font-size: 16px;
-  font-weight: 500;
-  color: #1F2833;
-  font-family: 'Noto Sans JP', sans-serif;
-  line-height: 28px;
-  letter-spacing: 1.5px;
-  width: 350px;
-}
-
-#business-page .business-box .business-item:nth-child(2) .business-img {
-  background-image: url(../img/business2.jpg);
-}
-
-#business-page .business-box .business-item:nth-child(2) .business-img::before {
-  background-image: url(../img/icon-civil.png);
-}
-
-#business-page .business-box .business-item:nth-child(3) .business-img {
-  background-image: url(../img/business3.jpg);
-}
-
-#business-page .business-box .business-item:nth-child(3) .business-img::before {
-  background-image: url(../img/icon-design.png);
-}
-
-#business-page .business-box .business-item:nth-child(4) {
-  padding-bottom: 80px;
-}
-
-#business-page .business-box .business-item:nth-child(4) .business-img {
-  background-image: url(../img/business4.jpg);
-}
-
-#business-page .business-box .business-item:nth-child(4) .business-img::before {
-  background-image: url(../img/icon-remodeling.png);
-}
-
-#business-page .business-box .business-item:nth-child(4) .business-text h5 {
-  padding-right: 10px;
-}
-
-#business-page .business-box .business-item:nth-child(even) {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-}
-
-#business-page .business-box .business-item:nth-child(even) .business-img::before {
-  right: 0;
   left: 36px;
 }
 
-#business-page .business-box .business-item:nth-child(even) .business-text {
-  padding-left: 0;
-  padding-right: 60px;
+#works-page .works-box .works-item .works-date {
+  padding-top: 22px;
+  padding-left: 60px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1F2833;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Epilogue', sans-serif;
+}
+
+#works-page .works-box .works-item .works-text {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1F2833;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 28px;
+  padding-top: 9px;
+  padding-left: 60px;
+}
+
+#works-page .works-box .works-item .page {
+  margin: 14px 61px 0 auto;
+}
+
+#works-page .works-box .works-item:nth-child(2) .works-img {
+  background-image: url(../img/works2.jpg);
+}
+
+#works-page .works-box .works-item:nth-child(3) .works-img {
+  background-image: url(../img/works3.jpg);
+}
+
+#works-page .works-box .works-item:nth-child(4) .works-img {
+  background-image: url(../img/works4.jpg);
+}
+
+#works-page .works-box .works-item:nth-child(4) .works-icon {
+  background-image: url(../img/icon-civil.png);
+}
+
+#works-page .works-box .works-item:nth-child(5) .works-img {
+  background-image: url(../img/works5.jpg);
+}
+
+#works-page .works-box .works-item:nth-child(6) .works-img {
+  background-image: url(../img/works6.jpg);
+}
+
+#works-page .works-box .works-item:nth-child(7) .works-img {
+  background-image: url(../img/works7.jpg);
+}
+
+#works-page .works-box .works-item:nth-child(7) .works-icon2 {
+  background-image: url(../img/icon-design.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 66px;
+  height: 66px;
+  position: absolute;
+  top: -33px;
+  left: 108px;
+}
+
+#works-page .works-box .works-item:nth-child(8) .works-img {
+  background-image: url(../img/works8.jpg);
+}
+
+#works-page .works-box .works-item:nth-child(8) .works-icon {
+  background-image: url(../img/icon-civil.png);
 }
 
 #contact {

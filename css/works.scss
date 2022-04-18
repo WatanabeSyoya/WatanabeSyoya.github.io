@@ -155,8 +155,8 @@ p {
   justify-content: $title-position;
 }
 
-#business-fv {
-  background-image: url(../img/business.jpg);
+#works-fv {
+  background-image: url(../img/works.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 555px;
@@ -181,7 +181,7 @@ p {
 }
 
 
-#business-page {
+#works-page {
   background-color: #E5E5E5;
   padding-bottom: 5px;
 
@@ -189,113 +189,121 @@ p {
     background-color: #fff;
     width: 90.3%;
     padding-top: 145px;
+    padding-bottom: 80px;
     position: relative;
     top: -65px;
   }
 
-  .business-box {
+  .works-box {
+    display: grid;
+    display: -ms-grid;
+    grid-template-columns: repeat(auto-fit, 555px);
+    grid-auto-rows: 463px;
+    grid-gap: 60px;
+    justify-content: center;
     width: 90%;
     margin: 0 auto;
 
-    .business-item {
-      display: flex;
-      padding-bottom: 120px;
+    .works-item {
+      position: relative;
 
-      .business-img {
-        background-image: url(../img/business1.jpg);
+      .works-img {
+        background-image: url(../img/works1.jpg);
         background-repeat: no-repeat;
         background-size: contain;
         width: 555px;
-        height: 343px;
-        position: relative;
-
-        &::before {
-          content: "";
-          background-image: url(../img/icon-architecture.png);
-          background-repeat: no-repeat;
-          background-size: contain;
-          width: 66px;
-          height: 66px;
-          position: absolute;
-          top: -33px;
-          right: 36px;
-        }
+        height: 345px;
       }
 
-      .business-text {
-        padding-left: 59px;
-
-        h4 {
-          @include font(16px, 700, $section-color);
-          line-height: 28px;
-          font-family: 'Epilogue',
-            sans-serif;
-
-        }
-
-        h5 {
-          letter-spacing: 1.5px;
-          padding-bottom: 40px;
-        }
-
-        p {
-          @include font(16px, 500);
-          line-height: 28px;
-          letter-spacing: 1.5px;
-          width: 350px;
-        }
-      }
-    }
-
-    .business-item:nth-child(2) {
-      .business-img {
-        background-image: url(../img/business2.jpg);
-
-        &::before {
-          background-image: url(../img/icon-civil.png);
-        }
-      }
-    }
-
-    .business-item:nth-child(3) {
-      .business-img {
-        background-image: url(../img/business3.jpg);
-
-        &::before {
-          background-image: url(../img/icon-design.png);
-        }
-      }
-    }
-
-    .business-item:nth-child(4) {
-      padding-bottom: 80px;
-
-      .business-img {
-        background-image: url(../img/business4.jpg);
-
-        &::before {
-          background-image: url(../img/icon-remodeling.png);
-        }
-      }
-
-      .business-text {
-        h5 {
-          padding-right: 10px;
-        }
-      }
-    }
-
-    .business-item:nth-child(even) {
-      flex-direction: row-reverse;
-
-      .business-img::before {
-        right: 0;
+      .works-icon {
+        background-image: url(../img/icon-architecture.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 66px;
+        height: 66px;
+        position: absolute;
+        top: -33px;
         left: 36px;
       }
 
-      .business-text {
-        padding-left: 0;
-        padding-right: 60px;
+      .works-date {
+        padding-top: 22px;
+        padding-left: 60px;
+        @include font(16px, 700);
+        font-family: 'Epilogue',
+          sans-serif;
+      }
+
+      .works-text {
+        @include font(16px, 700);
+        line-height: 28px;
+        padding-top: 9px;
+        padding-left: 60px;
+      }
+
+      .page {
+        margin: 14px 61px 0 auto;
+      }
+    }
+
+    .works-item:nth-child(2) {
+      .works-img {
+        background-image: url(../img/works2.jpg);
+      }
+    }
+
+    .works-item:nth-child(3) {
+      .works-img {
+        background-image: url(../img/works3.jpg);
+      }
+    }
+
+    .works-item:nth-child(4) {
+      .works-img {
+        background-image: url(../img/works4.jpg);
+      }
+
+      .works-icon {
+        background-image: url(../img/icon-civil.png);
+      }
+    }
+
+    .works-item:nth-child(5) {
+      .works-img {
+        background-image: url(../img/works5.jpg);
+      }
+    }
+
+    .works-item:nth-child(6) {
+      .works-img {
+        background-image: url(../img/works6.jpg);
+      }
+    }
+
+    .works-item:nth-child(7) {
+      .works-img {
+        background-image: url(../img/works7.jpg);
+      }
+
+      .works-icon2 {
+        background-image: url(../img/icon-design.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 66px;
+        height: 66px;
+        position: absolute;
+        top: -33px;
+        left: 108px;
+      }
+    }
+
+    .works-item:nth-child(8) {
+      .works-img {
+        background-image: url(../img/works8.jpg);
+      }
+
+      .works-icon {
+        background-image: url(../img/icon-civil.png);
       }
     }
   }
