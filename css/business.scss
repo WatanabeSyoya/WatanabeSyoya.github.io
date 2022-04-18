@@ -183,6 +183,7 @@ p {
 
 #business-page {
   background-color: #E5E5E5;
+  padding-bottom: 5px;
 
   .page-container {
     background-color: #fff;
@@ -267,6 +268,8 @@ p {
     }
 
     .business-item:nth-child(4) {
+      padding-bottom: 80px;
+
       .business-img {
         background-image: url(../img/business4.jpg);
 

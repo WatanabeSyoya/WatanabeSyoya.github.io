@@ -109,6 +109,7 @@ p {
 
 #business-page {
   background-color: #E5E5E5;
+  padding-bottom: 5px;
 }
 
 #business-page .page-container {
@@ -194,6 +195,10 @@ p {
 
 #business-page .business-box .business-item:nth-child(3) .business-img::before {
   background-image: url(../img/icon-design.png);
+}
+
+#business-page .business-box .business-item:nth-child(4) {
+  padding-bottom: 80px;
 }
 
 #business-page .business-box .business-item:nth-child(4) .business-img {
