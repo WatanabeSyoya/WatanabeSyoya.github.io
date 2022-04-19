@@ -256,6 +256,18 @@ p {
       h5 {
         width: 471px;
         color: $section-color;
+        padding-bottom: 46px;
+      }
+
+      h4 {
+        padding-bottom: 24px;
+        @include font(24px, 700);
+        line-height: 42px;
+        letter-spacing: 1.5px;
+      }
+
+      p {
+        width: 541px;
       }
     }
   }

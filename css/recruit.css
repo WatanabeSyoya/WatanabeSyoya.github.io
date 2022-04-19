@@ -189,6 +189,21 @@ p {
 #recruit-page .recruit-text-sub .recruit-message h5 {
   width: 471px;
   color: #359B87;
+  padding-bottom: 46px;
+}
+
+#recruit-page .recruit-text-sub .recruit-message h4 {
+  padding-bottom: 24px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #1F2833;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 42px;
+  letter-spacing: 1.5px;
+}
+
+#recruit-page .recruit-text-sub .recruit-message p {
+  width: 541px;
 }
 
 #contact {
