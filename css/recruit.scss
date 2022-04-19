@@ -155,16 +155,33 @@ p {
   justify-content: $title-position;
 }
 
-#business-fv {
-  background-image: url(../img/business.jpg);
+#recruit-fv {
+  background-color: $section-color;
   background-repeat: no-repeat;
   background-size: cover;
   height: 555px;
-  margin-top: 100px;
+  margin-top: 280px;
+  position: relative;
+
+  &::after {
+    content: '';
+    background: url(../img/recruit-main.jpg) no-repeat;
+    background-size: cover;
+    width: 1170px;
+    height: 350px;
+    position: absolute;
+    top: -114px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+  }
 
   .container {
-    padding-left: 135px;
-    padding-top: 228px;
+    padding-left: 248px;
+    padding-top: 54px;
+    position: absolute;
+    z-index: 2;
 
     h4 {
       color: $section-color;
@@ -181,121 +198,64 @@ p {
 }
 
 
-#business-page {
-  background-color: #F3F3F3;
+#recruit-page {
+  background-color: #fff;
   padding-bottom: 5px;
 
   .page-container {
     background-color: #fff;
     width: 90.3%;
-    padding-top: 145px;
+    padding-top: 129px;
+    padding-bottom: 200px;
     position: relative;
-    top: -65px;
+    top: -49px;
   }
 
-  .business-box {
-    width: 90%;
-    margin: 0 auto;
+  .container {
+    margin: 0;
+  }
 
-    .business-item {
-      display: flex;
-      padding-bottom: 120px;
+  .recruit-text-main {
+    display: flex;
+    padding-left: 175px;
 
-      .business-img {
-        background-image: url(../img/business1.jpg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 555px;
-        height: 343px;
-        position: relative;
-
-        &::before {
-          content: "";
-          background-image: url(../img/icon-architecture.png);
-          background-repeat: no-repeat;
-          background-size: contain;
-          width: 66px;
-          height: 66px;
-          position: absolute;
-          top: -33px;
-          right: 36px;
-        }
-      }
-
-      .business-text {
-        padding-left: 59px;
-
-        h4 {
-          @include font(16px, 700, $section-color);
-          line-height: 28px;
-          font-family: 'Epilogue',
-            sans-serif;
-
-        }
-
-        h5 {
-          letter-spacing: 1.5px;
-          padding-bottom: 40px;
-        }
-
-        p {
-          @include font(16px, 500);
-          line-height: 28px;
-          letter-spacing: 1.5px;
-          width: 350px;
-        }
-      }
+    h5 {
+      font-family: 'Epilogue',
+        sans-serif;
     }
 
-    .business-item:nth-child(2) {
-      .business-img {
-        background-image: url(../img/business2.jpg);
-
-        &::before {
-          background-image: url(../img/icon-civil.png);
-        }
-      }
+    .first {
+      color: $section-color;
+      width: 270px;
+      padding-right: 83px;
     }
 
-    .business-item:nth-child(3) {
-      .business-img {
-        background-image: url(../img/business3.jpg);
+    .text-side {
+      h5 {
+        padding-bottom: 24px;
+      }
 
-        &::before {
-          background-image: url(../img/icon-design.png);
-        }
+      p {
+        width: 750px;
+        @include font(16px);
+        line-height: 28px;
+        letter-spacing: 1.5px;
+        padding-top: 16px;
+        padding-bottom: 16px;
       }
     }
+  }
 
-    .business-item:nth-child(4) {
-      padding-bottom: 80px;
+  .recruit-text-sub {
+    display: flex;
+    padding-top: 116px;
 
-      .business-img {
-        background-image: url(../img/business4.jpg);
+    .recruit-message {
+      padding-left: 135px;
 
-        &::before {
-          background-image: url(../img/icon-remodeling.png);
-        }
-      }
-
-      .business-text {
-        h5 {
-          padding-right: 10px;
-        }
-      }
-    }
-
-    .business-item:nth-child(even) {
-      flex-direction: row-reverse;
-
-      .business-img::before {
-        right: 0;
-        left: 36px;
-      }
-
-      .business-text {
-        padding-left: 0;
-        padding-right: 60px;
+      h5 {
+        width: 471px;
+        color: $section-color;
       }
     }
   }
