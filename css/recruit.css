@@ -240,6 +240,38 @@ p {
   right: 40px;
 }
 
+#recruit-page .next-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #F3F3F3;
+  position: relative;
+  top: -245px;
+  margin-bottom: -245px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border-bottom: 2px rgba(31, 40, 51, 0.16) solid;
+}
+
+#recruit-page .next-btn .next-company {
+  padding: 57px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #777777;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 36px;
+}
+
+#recruit-page .next-btn .next-contact {
+  padding: 57px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #777777;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 36px;
+}
+
 #contact {
   background-color: #359B87;
   height: 540px;

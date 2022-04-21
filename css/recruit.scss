@@ -302,6 +302,28 @@ p {
       }
     }
   }
+
+  .next-btn {
+    display: flex;
+    background-color: #F3F3F3;
+    position: relative;
+    top: -245px;
+    margin-bottom: -245px;
+    justify-content: space-evenly;
+    border-bottom: 2px rgba(31, 40, 51, 0.16) solid;
+
+    .next-company {
+      padding: 57px;
+      @include font(20px, 700, #777777);
+      line-height: 36px;
+    }
+
+    .next-contact {
+      padding: 57px;
+      @include font(20px, 700, #777777);
+      line-height: 36px;
+    }
+  }
 }
 
 #contact {
