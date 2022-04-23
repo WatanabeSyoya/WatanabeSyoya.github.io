@@ -155,33 +155,16 @@ p {
   justify-content: $title-position;
 }
 
-#recruit-fv {
-  background-color: $section-color;
+#company-fv {
+  background-image: url(../img/company.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 555px;
-  margin-top: 280px;
-  position: relative;
-
-  &::after {
-    content: '';
-    background: url(../img/recruit-main.jpg) no-repeat;
-    background-size: cover;
-    width: 1170px;
-    height: 350px;
-    position: absolute;
-    top: -114px;
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-  }
+  margin-top: 100px;
 
   .container {
-    padding-left: 248px;
-    padding-top: 48px;
-    position: absolute;
-    z-index: 2;
+    padding-left: 135px;
+    padding-top: 228px;
 
     h4 {
       color: $section-color;
@@ -198,192 +181,98 @@ p {
 }
 
 
-#recruit-page {
-  background-color: #fff;
+#company-page {
+  background-color: #F3F3F3;
   padding-bottom: 5px;
-  position: relative;
-
-  &::after {
-    position: absolute;
-    content: "";
-    background-image: url(../img/recruit-message.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 574px;
-    height: 396px;
-    top: 212px;
-    left: 135px;
-  }
 
   .page-container {
     background-color: #fff;
-    width: 95.2%;
-    padding-top: 185px;
-    padding-bottom: 72px;
+    width: 90.3%;
+    padding-top: 129px;
+    padding-bottom: 200px;
     position: relative;
-    top: -245px;
-  }
+    top: -65px;
 
-  .container {
-    margin: 0;
-  }
+    .message {
+      display: flex;
 
-  .recruit-text-main {
-    display: flex;
-    padding-left: 175px;
+      .president {
+        &-img {
+          background-color: $section-color;
+          width: 350px;
+          height: 216px;
+          margin-left: 240px;
+          margin-top: 27px;
+          position: relative;
 
-    h5 {
-      font-family: 'Epilogue',
-        sans-serif;
-    }
+          &::after {
+            content: "";
+            position: absolute;
+            background-image: url(../img/company-img.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 350px;
+            height: 216px;
+            top: 30px;
+            left: 30px;
+          }
+        }
 
-    .first {
-      color: $section-color;
-      width: 270px;
-      padding-right: 83px;
-    }
-
-    .text-side {
-      h5 {
-        padding-bottom: 24px;
+        &-name {
+          margin-left: 270px;
+          margin-top: 60px;
+          @include font(16px, 500, $main-color);
+          line-height: 28px;
+          letter-spacing: 1.5px;
+        }
       }
 
-      p {
-        width: 753px;
-        @include font(16px);
-        line-height: 28px;
-        letter-spacing: 1.5px;
-        padding-top: 16px;
-        padding-bottom: 16px;
-        padding-left: 15px;
-      }
-    }
-  }
+      .president-message {
+        margin-left: 90px;
+        margin-top: 57px;
 
-  .recruit-text-sub {
-    display: flex;
-    padding-top: 125px;
-    padding-bottom: 179px;
-    position: relative;
-    top: -245px;
-    border-left: 8px $section-color solid;
-    border-bottom: 8px $section-color solid;
+        h5 {
+          font-size: 20px;
+          line-height: 36px;
+        }
 
-    .recruit-message {
-      padding-left: 127px;
-
-      h5 {
-        width: 474px;
-        color: $section-color;
-        padding-bottom: 46px;
-        letter-spacing: 1.5px;
-      }
-
-      h4 {
-        padding-bottom: 24px;
-        @include font(24px, 700);
-        line-height: 42px;
-        letter-spacing: 1.5px;
-      }
-
-      p {
-        width: 546px;
-        @include font(16px, 500);
-        line-height: 28px;
-        letter-spacing: 1.5px;
-      }
-    }
-
-    .message-img {
-      background-color: $section-color;
-      width: 555px;
-      height: 350px;
-      margin-left: 109px;
-      margin-top: 10px;
-      position: relative;
-
-      &::after {
-        content: "";
-        position: absolute;
-        background-image: url(../img/recurit-img.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 555px;
-        height: 350px;
-        top: -40px;
-        right: 40px;
-      }
-    }
-  }
-
-  .next-btn {
-    display: flex;
-    background-color: #F3F3F3;
-    position: relative;
-    top: -245px;
-    margin-bottom: -245px;
-    justify-content: space-evenly;
-    border-bottom: 2px rgba(31, 40, 51, 0.16) solid;
-
-    .next-name {
-      position: relative;
-      @include font(20px, 700, #777777);
-      line-height: 36px;
-      transition: 1s;
-
-      &::after {
-        content: '';
-        display: inline-block;
-        width: 21px;
-        height: 12px;
-        background-image: url(../img/arrow-gr.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        position: absolute;
-        left: 73%;
-        top: 69px;
-        transition: all .3s;
-      }
-
-      &:hover {
-        color: $main-color;
-
-        &::after {
-          left: 76%;
-          background-image: url(../img/arrow-b.png);
+        p {
+          font-size: 16px;
+          line-height: 28px;
+          letter-spacing: 1.5px;
+          width: 350px;
+          margin-top: -1px;
         }
       }
     }
 
-    .next-company {
-      position: relative;
-      padding: 58px 180px 55px 209px;
+    .info {
+      margin-top: 81px;
 
-      &::before {
-        content: "";
-        position: absolute;
-        /*絶対位置指定*/
-        right: -88px;
-        /*横位置の指定*/
-        top: 25%;
-        /*縦位置の指定*/
-        background: rgba(31, 40, 51, 0.16);
-        /*線の色指定*/
-        width: 2px;
-        /*線の幅指定*/
-        height: 50%;
-        /*線の高さ指定*/
+      h4 {
+        color: $section-color;
+        text-align: center;
+      }
+
+      h5 {
+        text-align: center;
+        letter-spacing: 1.5px;
+      }
+
+      .kaisha {
+        width: 58.5%;
+        margin: 0 auto;
+
+        th {
+          text-align: start;
+          padding: 10px;
+        }
+
+        td {
+          padding: 10px;
+        }
       }
     }
-
-    .next-contact {
-      padding: 58px 180px 55px 180px;
-    }
-  }
-
-  .btn-bottom {
-    background-color: #F3F3F3;
-    height: 94px;
   }
 }
 

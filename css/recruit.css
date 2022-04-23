@@ -128,6 +128,19 @@ p {
 #recruit-page {
   background-color: #fff;
   padding-bottom: 5px;
+  position: relative;
+}
+
+#recruit-page::after {
+  position: absolute;
+  content: "";
+  background-image: url(../img/recruit-message.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 574px;
+  height: 396px;
+  top: 212px;
+  left: 135px;
 }
 
 #recruit-page .page-container {
