@@ -312,17 +312,65 @@ p {
     justify-content: space-evenly;
     border-bottom: 2px rgba(31, 40, 51, 0.16) solid;
 
-    .next-company {
-      padding: 57px;
+    .next-name {
+      position: relative;
       @include font(20px, 700, #777777);
       line-height: 36px;
+      transition: 1s;
+
+      &::after {
+        content: '';
+        display: inline-block;
+        width: 21px;
+        height: 12px;
+        background-image: url(../img/arrow-gr.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 73%;
+        top: 69px;
+        transition: all .3s;
+      }
+
+      &:hover {
+        color: $main-color;
+
+        &::after {
+          left: 76%;
+          background-image: url(../img/arrow-b.png);
+        }
+      }
+    }
+
+    .next-company {
+      position: relative;
+      padding: 58px 180px 55px 209px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        /*絶対位置指定*/
+        right: -88px;
+        /*横位置の指定*/
+        top: 25%;
+        /*縦位置の指定*/
+        background: rgba(31, 40, 51, 0.16);
+        /*線の色指定*/
+        width: 2px;
+        /*線の幅指定*/
+        height: 50%;
+        /*線の高さ指定*/
+      }
     }
 
     .next-contact {
-      padding: 57px;
-      @include font(20px, 700, #777777);
-      line-height: 36px;
+      padding: 58px 180px 55px 180px;
     }
+  }
+
+  .btn-bottom {
+    background-color: #F3F3F3;
+    height: 94px;
   }
 }
 

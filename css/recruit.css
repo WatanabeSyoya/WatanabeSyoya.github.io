@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   scroll-behavior: smooth;
 }
@@ -254,22 +255,69 @@ p {
   border-bottom: 2px rgba(31, 40, 51, 0.16) solid;
 }
 
-#recruit-page .next-btn .next-company {
-  padding: 57px;
+#recruit-page .next-btn .next-name {
+  position: relative;
   font-size: 20px;
   font-weight: 700;
   color: #777777;
   font-family: 'Noto Sans JP', sans-serif;
   line-height: 36px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#recruit-page .next-btn .next-name::after {
+  content: '';
+  display: inline-block;
+  width: 21px;
+  height: 12px;
+  background-image: url(../img/arrow-gr.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 73%;
+  top: 69px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+#recruit-page .next-btn .next-name:hover {
+  color: #1F2833;
+}
+
+#recruit-page .next-btn .next-name:hover::after {
+  left: 76%;
+  background-image: url(../img/arrow-b.png);
+}
+
+#recruit-page .next-btn .next-company {
+  position: relative;
+  padding: 58px 180px 55px 209px;
+}
+
+#recruit-page .next-btn .next-company::before {
+  content: "";
+  position: absolute;
+  /*絶対位置指定*/
+  right: -88px;
+  /*横位置の指定*/
+  top: 25%;
+  /*縦位置の指定*/
+  background: rgba(31, 40, 51, 0.16);
+  /*線の色指定*/
+  width: 2px;
+  /*線の幅指定*/
+  height: 50%;
+  /*線の高さ指定*/
 }
 
 #recruit-page .next-btn .next-contact {
-  padding: 57px;
-  font-size: 20px;
-  font-weight: 700;
-  color: #777777;
-  font-family: 'Noto Sans JP', sans-serif;
-  line-height: 36px;
+  padding: 58px 180px 55px 180px;
+}
+
+#recruit-page .btn-bottom {
+  background-color: #F3F3F3;
+  height: 94px;
 }
 
 #contact {
