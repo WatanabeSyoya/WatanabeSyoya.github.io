@@ -122,6 +122,46 @@ p {
   top: -65px;
 }
 
+#contact-page .page-container .list {
+  position: absolute;
+  top: 51px;
+  left: 63px;
+}
+
+#contact-page .page-container .list .home {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1F2833;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Epilogue', sans-serif;
+  letter-spacing: .02em;
+  display: inline;
+}
+
+#contact-page .page-container .list .next {
+  font-size: 14px;
+  font-weight: 500;
+  color: #359B87;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Epilogue', sans-serif;
+  letter-spacing: -.02em;
+  display: inline;
+}
+
+#contact-page .page-container .list .arrow {
+  display: inline-block;
+}
+
+#contact-page .page-container .list .arrow::after {
+  content: "";
+  background: url(../img/arrow.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 8px;
+  height: 10.7px;
+  display: inline-block;
+}
+
 #contact-page .page-container .tel {
   width: 760px;
   height: 240px;

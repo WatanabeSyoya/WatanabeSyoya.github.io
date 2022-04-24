@@ -193,6 +193,43 @@ p {
     position: relative;
     top: -65px;
 
+    .list {
+      position: absolute;
+      top: 51px;
+      left: 63px;
+
+      .home {
+        @include font(14px, 500, $main-color);
+        font-family: 'Epilogue',
+          sans-serif;
+        letter-spacing: .02em;
+        display: inline;
+      }
+
+      .next {
+        @include font(14px, 500, $section-color);
+        font-family: 'Epilogue',
+          sans-serif;
+        letter-spacing: -.02em;
+        display: inline;
+      }
+
+
+      .arrow {
+        display: inline-block;
+
+        &::after {
+          content: "";
+          background: url(../img/arrow.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+          width: 8px;
+          height: 10.7px;
+          display: inline-block;
+        }
+      }
+    }
+
     .tel {
       width: 760px;
       height: 240px;
