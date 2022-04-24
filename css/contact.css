@@ -228,6 +228,40 @@ p {
   color: #D0D0D0;
 }
 
+#contact-page .page-container form .form-textarea {
+  border: 2px solid #EEEEEE;
+  border-radius: 6px;
+  margin-bottom: 24px;
+  height: 200px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  max-width: 760px;
+  background: #F3F3F3;
+  font-size: 16px;
+  font-weight: 500;
+  color: #1F2833;
+  font-family: 'Noto Sans JP', sans-serif;
+  letter-spacing: 1.5px;
+}
+
+#contact-page .page-container form .form-textarea::-webkit-input-placeholder {
+  color: #D0D0D0;
+}
+
+#contact-page .page-container form .form-textarea:-ms-input-placeholder {
+  color: #D0D0D0;
+}
+
+#contact-page .page-container form .form-textarea::-ms-input-placeholder {
+  color: #D0D0D0;
+}
+
+#contact-page .page-container form .form-textarea::placeholder {
+  color: #D0D0D0;
+}
+
 #contact-page .page-container form .any {
   border-radius: 2px;
   margin-right: 8px;
