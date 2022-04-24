@@ -71,49 +71,55 @@
           <p>お電話でのお問い合わせ</p>
           <h3>098-888-8888</h3>
         </div>
-        <h4>フォームからお問い合わせ</h4>
-        <p>以下の専用フォームに必要項目を入力し「送信ボタン」を押してください。<br>ご入力後は一度ご確認し、送信ボタンをクリックしてくださいますようお願いします。</p>
         <form action="" method="" name="form">
+          <h4>フォームからお問い合わせ</h4>
+          <p>以下の専用フォームに必要項目を入力し「送信ボタン」を押してください。<br>ご入力後は一度ご確認し、送信ボタンをクリックしてくださいますようお願いします。</p>
           <div>
             <div>
-              <label><span>任意</span>会社名・組織名</label>
-              <input type="text" name="organization" placeholder="例)沖縄建設株式会社" value="">
+              <label><span class="any">任意</span>会社名・組織名</label>
+              <input class="form-input" type="text" name="organization" placeholder="例）沖縄建設株式会社" value="">
             </div>
             <div>
-              <label><span>必須</span>お名前</label>
-              <input type="text" name="name" placeholder="例）やまだたろう" value="">
+              <label><span class="any mandatory">必須</span>お名前</label>
+              <input class="form-input" type="text" name="name" placeholder="例）比嘉 杏寿郎" value="">
             </div>
             <div>
-              <label><span>必須</span>ふりがな</label>
-              <input type="text" name="name" placeholder="例）やまだたろう" value="">
+              <label><span class="any mandatory">必須</span>ふりがな</label>
+              <input class="form-input" type="text" name="name" placeholder="例）ひが きょうじゅろう" value="">
             </div>
             <div>
-              <label><span>必須</span>メールアドレス</label>
-              <input type="text" name="email" placeholder="例）guest@example.com" value="">
+              <label><span class="any mandatory">必須</span>メールアドレス</label>
+              <input class="form-input" type="text" name="email" placeholder="例）sample@okinawakensetsu.co.jp" value="">
             </div>
             <div>
-              <label><span>任意</span>お電話番号</label>
-              <input type="text" name="tel" placeholder="例）0000000000" value="">
+              <label><span class="any">任意</span>お電話番号</label>
+              <input class="form-input" type="text" name="tel" placeholder="例）080-8888-8888" value="">
             </div>
             <div>
-              <label><span>任意</span>ご希望の返答方法</label>
-              <input type="radio" name="contact" value="メール" checked>メール
-              <input type="radio" name="contact" value="電話">電話
-              <input type="radio" name="contact" value="どちらでも可">どちらでも可
+              <label><span class="any">任意</span>ご希望の返答方法</label>
+              <div class="radio-btn">
+                <input class="radio" type="radio" name="contact" value="メール" checked>メール
+                <input class="radio" type="radio" name="contact" value="電話">電話
+                <input class="radio" type="radio" name="contact" value="どちらでも可">どちらでも可
+              </div>
+
             </div>
             <div>
-              <label><span>必須</span>件名</label>
-              <textarea name="content" rows="1" placeholder="お問合せ内容を入力"></textarea>
+              <label><span class="any mandatory">必須</span>件名</label>
+              <textarea class="form-input" name="content" rows="1" placeholder="例）マンションの内覧について"></textarea>
             </div>
             <div>
-              <label><span>必須</span>お問い合わせ内容</label>
-              <textarea name="content" rows="5" placeholder="お問合せ内容を入力"></textarea>
+              <label><span class="any mandatory">必須</span>お問い合わせ内容</label>
+              <textarea name="content" rows="5" placeholder="沖縄建設株式会社の事業内容に関するご質問やご相談は
+こちらに入力をお願いします。（全角1,000文字以内）"></textarea>
             </div>
             <div>
               <label>
-                <label><span>必須</span>個人情報の取り扱いについて</label>
-                <input type="checkbox" name="acceptance-714" value="1" aria-invalid="false" class="agree"><span class="check">プライバシーポリシーに同意します。</span>
-                <p>※個人情報の取扱いに関しましては<a href="#"><u>「プライバシーポリシー<span></span>」</u></a>をご確認ください。</p>
+                <label><span class="any mandatory">必須</span>個人情報の取り扱いについて</label>
+                <div class="check-btn">
+                  <input type="checkbox" name="acceptance-714" value="1" aria-invalid="false" class="agree"><span class="check">プライバシーポリシーに同意します。</span>
+                </div>
+                <p>※個人情報の取扱いに関しましては<a href="#" class="privacy"><u>「プライバシーポリシー&thinsp;&ensp;&ensp;<span></span>」</u></a>をご確認ください。</p>
               </label>
             </div>
           </div>

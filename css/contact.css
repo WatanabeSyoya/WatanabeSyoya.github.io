@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   scroll-behavior: smooth;
 }
@@ -119,6 +120,179 @@ p {
   padding-bottom: 65px;
   position: relative;
   top: -65px;
+}
+
+#contact-page .page-container .tel {
+  width: 760px;
+  height: 240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 160px auto 80px;
+  border-radius: 8px;
+  background-color: #F3F3F3;
+}
+
+#contact-page .page-container .tel p {
+  padding-left: 78px;
+}
+
+#contact-page .page-container .tel h3 {
+  padding-right: 68px;
+  padding-bottom: 7px;
+  position: relative;
+}
+
+#contact-page .page-container .tel h3::after {
+  content: "受付時間：平日9時〜17時";
+  font-size: 16px;
+  font-weight: 500;
+  color: #1F2833;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 28px;
+  letter-spacing: 1.5px;
+  position: absolute;
+  display: block;
+  padding-left: 60px;
+}
+
+#contact-page .page-container form {
+  width: 58.5%;
+  margin: 0 auto;
+}
+
+#contact-page .page-container form h4 {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+#contact-page .page-container form p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #1F2833;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 24px;
+  letter-spacing: 1.5px;
+  margin-bottom: 40px;
+}
+
+#contact-page .page-container form span {
+  display: inline-block;
+}
+
+#contact-page .page-container form label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1F2833;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 28px;
+  letter-spacing: 1.5px;
+}
+
+#contact-page .page-container form .form-input {
+  border: 2px solid #EEEEEE;
+  border-radius: 6px;
+  margin-bottom: 24px;
+  height: 46px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  max-width: 760px;
+  background: #F3F3F3;
+  font-size: 16px;
+  font-weight: 500;
+  color: #1F2833;
+  font-family: 'Noto Sans JP', sans-serif;
+  letter-spacing: 1.5px;
+}
+
+#contact-page .page-container form .form-input::-webkit-input-placeholder {
+  color: #D0D0D0;
+}
+
+#contact-page .page-container form .form-input:-ms-input-placeholder {
+  color: #D0D0D0;
+}
+
+#contact-page .page-container form .form-input::-ms-input-placeholder {
+  color: #D0D0D0;
+}
+
+#contact-page .page-container form .form-input::placeholder {
+  color: #D0D0D0;
+}
+
+#contact-page .page-container form .any {
+  border-radius: 2px;
+  margin-right: 8px;
+  width: 40px;
+  display: inline-block;
+  text-align: center;
+  background: #777777;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 20px;
+  letter-spacing: 1.5px;
+}
+
+#contact-page .page-container form .mandatory {
+  background: #FF6B6E;
+}
+
+#contact-page .page-container form input {
+  display: block;
+}
+
+#contact-page .page-container form textarea {
+  display: block;
+}
+
+#contact-page .page-container form .check-btn {
+  display: block;
+}
+
+#contact-page .page-container form .check-btn .check {
+  display: inline;
+}
+
+#contact-page .page-container form .check-btn .agree {
+  display: inline;
+}
+
+#contact-page .page-container form .privacy {
+  display: inline;
+}
+
+#contact-page .page-container form .privacy span {
+  position: relative;
+}
+
+#contact-page .page-container form .privacy span::after {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url(../img/contact-icon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 3px;
+}
+
+#contact-page .page-container form .radio-btn {
+  display: block;
+}
+
+#contact-page .page-container form .radio {
+  display: inline;
 }
 
 #contact {

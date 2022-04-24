@@ -193,6 +193,150 @@ p {
     position: relative;
     top: -65px;
 
+    .tel {
+      width: 760px;
+      height: 240px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 160px auto 80px;
+      border-radius: 8px;
+      background-color: #F3F3F3;
+
+      p {
+        padding-left: 78px;
+      }
+
+      h3 {
+        padding-right: 68px;
+        padding-bottom: 7px;
+        position: relative;
+
+        &::after {
+          content: "受付時間：平日9時〜17時";
+          @include font(16px, 500);
+          line-height: 28px;
+          letter-spacing: 1.5px;
+          position: absolute;
+          display: block;
+          padding-left: 60px;
+
+        }
+      }
+    }
+
+    form {
+      width: 58.5%;
+      margin: 0 auto;
+
+      h4 {
+        font-family: 'Noto Sans JP',
+          sans-serif;
+      }
+
+      p {
+        @include font(14px, 400);
+        line-height: 24px;
+        letter-spacing: 1.5px;
+        margin-bottom: 40px;
+      }
+
+      span {
+        display: inline-block;
+      }
+
+      label {
+        @include font(16px, 500);
+        line-height: 28px;
+        letter-spacing: 1.5px;
+      }
+
+      .form-input {
+        border: 2px solid #EEEEEE;
+        border-radius: 6px;
+        margin-bottom: 24px;
+        height: 46px;
+        flex: 1;
+        width: 100%;
+        max-width: 760px;
+        background: #F3F3F3;
+        @include font(16px, 500);
+        letter-spacing: 1.5px;
+
+        &::placeholder {
+          color: #D0D0D0;
+        }
+      }
+
+      .any {
+        border-radius: 2px;
+        margin-right: 8px;
+        width: 40px;
+        display: inline-block;
+        text-align: center;
+        background: #777777;
+        @include font(12px, 700, #fff);
+        line-height: 20px;
+        letter-spacing: 1.5px;
+      }
+
+      .mandatory {
+        background: #FF6B6E;
+      }
+
+
+
+      input {
+        display: block;
+      }
+
+      textarea {
+        display: block;
+      }
+
+      .check-btn {
+        display: block;
+
+        .check {
+          display: inline;
+        }
+
+        .agree {
+          display: inline;
+        }
+      }
+
+
+
+      .privacy {
+        display: inline;
+
+        span {
+          position: relative;
+
+          &::after {
+            content: "";
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background-image: url(../img/contact-icon.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+            right: 3px;
+          }
+        }
+
+      }
+
+      .radio-btn {
+        display: block;
+      }
+
+      .radio {
+        display: inline;
+      }
+    }
   }
 }
 
