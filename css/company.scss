@@ -193,6 +193,77 @@ p {
     position: relative;
     top: -65px;
 
+    .list {
+      position: absolute;
+      top: 51px;
+      left: 63px;
+
+      .home {
+        @include font(14px, 500, $main-color);
+        font-family: 'Epilogue',
+          sans-serif;
+        letter-spacing: .02em;
+        display: inline;
+      }
+
+      .next {
+        @include font(14px, 500, $section-color);
+        font-family: 'Epilogue',
+          sans-serif;
+        letter-spacing: -.02em;
+        display: inline;
+      }
+
+      .arrow {
+        display: inline-block;
+
+        &::after {
+          content: "";
+          background: url(../img/arrow.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+          width: 8px;
+          height: 10.7px;
+          display: inline-block;
+        }
+      }
+    }
+
+    .scroll {
+      position: absolute;
+      top: 55px;
+      right: 91px;
+      @include font(14px, 500, $main-color);
+      font-family: 'Epilogue',
+        sans-serif;
+      letter-spacing: .02em;
+      display: inline;
+      transition: all .3s;
+
+      &::after {
+        content: "";
+        background: url(../img/arrow-d.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 10.7px;
+        height: 8px;
+        display: inline-block;
+        position: absolute;
+        top: 2px;
+        right: -23px;
+        transition: all .3s;
+      }
+
+      &:hover {
+        color: #777777;
+
+        &::after {
+          background: url(../img/arrow-d-g.png);
+          top: 10px;
+        }
+      }
+    }
+
     .message {
       display: flex;
 

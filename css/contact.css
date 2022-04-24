@@ -162,6 +162,45 @@ p {
   display: inline-block;
 }
 
+#contact-page .page-container .scroll {
+  position: absolute;
+  top: 55px;
+  right: 91px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1F2833;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Epilogue', sans-serif;
+  letter-spacing: .02em;
+  display: inline;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+#contact-page .page-container .scroll::after {
+  content: "";
+  background: url(../img/arrow-d.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 10.7px;
+  height: 8px;
+  display: inline-block;
+  position: absolute;
+  top: 2px;
+  right: -23px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+#contact-page .page-container .scroll:hover {
+  color: #777777;
+}
+
+#contact-page .page-container .scroll:hover::after {
+  background: url(../img/arrow-d-g.png);
+  top: 10px;
+}
+
 #contact-page .page-container .tel {
   width: 760px;
   height: 240px;
