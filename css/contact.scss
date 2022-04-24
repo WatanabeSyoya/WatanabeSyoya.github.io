@@ -155,8 +155,8 @@ p {
   justify-content: $title-position;
 }
 
-#company-fv {
-  background-image: url(../img/company.jpg);
+#contact-fv {
+  background-image: url(../img/contact.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 555px;
@@ -181,7 +181,7 @@ p {
 }
 
 
-#company-page {
+#contact-page {
   background-color: #F3F3F3;
   padding-bottom: 5px;
 
@@ -193,117 +193,6 @@ p {
     position: relative;
     top: -65px;
 
-    .message {
-      display: flex;
-
-      .president {
-        &-img {
-          background-color: $section-color;
-          width: 350px;
-          height: 216px;
-          margin-left: 240px;
-          margin-top: 27px;
-          position: relative;
-
-          &::after {
-            content: "";
-            position: absolute;
-            background-image: url(../img/company-img.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 350px;
-            height: 216px;
-            top: 30px;
-            left: 30px;
-          }
-        }
-
-        &-name {
-          margin-left: 270px;
-          margin-top: 60px;
-          @include font(16px, 500, $main-color);
-          line-height: 28px;
-          letter-spacing: 1.5px;
-        }
-      }
-
-      .president-message {
-        margin-left: 90px;
-        margin-top: 57px;
-
-        h5 {
-          font-size: 20px;
-          line-height: 36px;
-        }
-
-        p {
-          font-size: 16px;
-          line-height: 28px;
-          letter-spacing: 1.5px;
-          width: 350px;
-          margin-top: -1px;
-        }
-      }
-    }
-
-    .info {
-      margin-top: 81px;
-
-      h4 {
-        color: $section-color;
-        text-align: center;
-      }
-
-      h5 {
-        text-align: center;
-        letter-spacing: 1.5px;
-      }
-
-      .kaisha {
-        width: 60%;
-        margin: 15px auto 0;
-
-        tr {
-          border-bottom: 1px #D1D3D4 solid;
-        }
-
-        th {
-          text-align: start;
-          padding: 24px 8px;
-          @include font(20px, 700);
-          line-height: 36px;
-        }
-
-        td {
-          padding-left: 95px;
-          @include font(16px, 500);
-          line-height: 28px;
-          letter-spacing: 1.5px;
-        }
-      }
-    }
-
-    .access {
-      margin-top: 80px;
-
-      h4 {
-        color: $section-color;
-        text-align: center;
-      }
-
-      h5 {
-        text-align: center;
-        letter-spacing: 1.5px;
-        margin-bottom: 60px;
-      }
-
-      iframe {
-        width: 90%;
-        height: 724px;
-        margin: 0 auto;
-        display: block;
-      }
-    }
   }
 }
 

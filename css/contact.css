@@ -84,162 +84,41 @@ p {
   }
 }
 
-#company-fv {
-  background-image: url(../img/company.jpg);
+#contact-fv {
+  background-image: url(../img/contact.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 555px;
   margin-top: 100px;
 }
 
-#company-fv .container {
+#contact-fv .container {
   padding-left: 135px;
   padding-top: 228px;
 }
 
-#company-fv .container h4 {
+#contact-fv .container h4 {
   color: #359B87;
   padding-top: 7px;
 }
 
-#company-fv .container h5 {
+#contact-fv .container h5 {
   letter-spacing: 1.5px;
   padding-bottom: 59px;
 }
 
-#company-page {
+#contact-page {
   background-color: #F3F3F3;
   padding-bottom: 5px;
 }
 
-#company-page .page-container {
+#contact-page .page-container {
   background-color: #fff;
   width: 90.3%;
   padding-top: 129px;
   padding-bottom: 65px;
   position: relative;
   top: -65px;
-}
-
-#company-page .page-container .message {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#company-page .page-container .message .president-img {
-  background-color: #359B87;
-  width: 350px;
-  height: 216px;
-  margin-left: 240px;
-  margin-top: 27px;
-  position: relative;
-}
-
-#company-page .page-container .message .president-img::after {
-  content: "";
-  position: absolute;
-  background-image: url(../img/company-img.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 350px;
-  height: 216px;
-  top: 30px;
-  left: 30px;
-}
-
-#company-page .page-container .message .president-name {
-  margin-left: 270px;
-  margin-top: 60px;
-  font-size: 16px;
-  font-weight: 500;
-  color: #1F2833;
-  font-family: 'Noto Sans JP', sans-serif;
-  line-height: 28px;
-  letter-spacing: 1.5px;
-}
-
-#company-page .page-container .message .president-message {
-  margin-left: 90px;
-  margin-top: 57px;
-}
-
-#company-page .page-container .message .president-message h5 {
-  font-size: 20px;
-  line-height: 36px;
-}
-
-#company-page .page-container .message .president-message p {
-  font-size: 16px;
-  line-height: 28px;
-  letter-spacing: 1.5px;
-  width: 350px;
-  margin-top: -1px;
-}
-
-#company-page .page-container .info {
-  margin-top: 81px;
-}
-
-#company-page .page-container .info h4 {
-  color: #359B87;
-  text-align: center;
-}
-
-#company-page .page-container .info h5 {
-  text-align: center;
-  letter-spacing: 1.5px;
-}
-
-#company-page .page-container .info .kaisha {
-  width: 60%;
-  margin: 15px auto 0;
-}
-
-#company-page .page-container .info .kaisha tr {
-  border-bottom: 1px #D1D3D4 solid;
-}
-
-#company-page .page-container .info .kaisha th {
-  text-align: start;
-  padding: 24px 8px;
-  font-size: 20px;
-  font-weight: 700;
-  color: #1F2833;
-  font-family: 'Noto Sans JP', sans-serif;
-  line-height: 36px;
-}
-
-#company-page .page-container .info .kaisha td {
-  padding-left: 95px;
-  font-size: 16px;
-  font-weight: 500;
-  color: #1F2833;
-  font-family: 'Noto Sans JP', sans-serif;
-  line-height: 28px;
-  letter-spacing: 1.5px;
-}
-
-#company-page .page-container .access {
-  margin-top: 80px;
-}
-
-#company-page .page-container .access h4 {
-  color: #359B87;
-  text-align: center;
-}
-
-#company-page .page-container .access h5 {
-  text-align: center;
-  letter-spacing: 1.5px;
-  margin-bottom: 60px;
-}
-
-#company-page .page-container .access iframe {
-  width: 90%;
-  height: 724px;
-  margin: 0 auto;
-  display: block;
 }
 
 #contact {
@@ -352,4 +231,4 @@ footer p {
   line-height: 28px;
   font-family: 'Epilogue', sans-serif;
 }
-/*# sourceMappingURL=company.css.map */
+/*# sourceMappingURL=contact.css.map */

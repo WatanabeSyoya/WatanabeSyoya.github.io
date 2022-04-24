@@ -20,7 +20,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="img/live.png">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/construction.css">
-  <link rel="stylesheet" href="css/works.css">
+  <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,7 +38,7 @@
           <li><a href="works.html"><span>Works</span>施工事例</a></li>
           <li><a href="recruit.html"><span>Recruit</span>採用情報</a></li>
           <li><a href="company.html"><span>Company</span>会社情報</a></li>
-          <li><a href="contact.html"><span>Contact</span>お問い合わせ</a></li>
+          <li><a href="contact.html" style="color: #359B87;"><span style="color: #359B87;">Contact</span>お問い合わせ</a></li>
         </ul>
       </nav>
     </div>
@@ -58,74 +58,67 @@
       </ul>
     </nav>
   </header>
-  <section id="works-fv">
+  <section id="contact-fv">
     <div class="container">
-      <h4>Works</h4>
-      <h5>施工事例</h5>
+      <h4>Contact</h4>
+      <h5>お問い合わせ</h5>
     </div>
   </section>
-  <section id="works-page">
+  <section id="contact-page">
     <div class="inner">
       <div class="container page-container">
-        <div class="works-box">
-          <div class="works-item">
-            <div class="works-img"></div>
-            <div class="works-icon"></div>
-            <p class="works-date">2021.10.13</p>
-            <p class="works-text">かりゆし中学校校舎増築およびその他工事</p>
-            <a class="page" href="#">詳細へ</a>
-          </div>
-          <div class="works-item">
-            <div class="works-img"></div>
-            <div class="works-icon"></div>
-            <p class="works-date">2021.09.15</p>
-            <p class="works-text">ゆいまーる幼稚園園舎改築工事</p>
-            <a class="page" href="#">詳細へ</a>
-          </div>
-          <div class="works-item">
-            <div class="works-img"></div>
-            <div class="works-icon"></div>
-            <p class="works-date">2021.08.10</p>
-            <p class="works-text">にふぇーでービル新築工事</p>
-            <a class="page" href="#">詳細へ</a>
-          </div>
-          <div class="works-item">
-            <div class="works-img"></div>
-            <div class="works-icon"></div>
-            <p class="works-date">2021.07.13</p>
-            <p class="works-text">マブイ大橋整備工事</p>
-            <a class="page" href="#">詳細へ</a>
-          </div>
-          <div class="works-item">
-            <div class="works-img"></div>
-            <div class="works-icon"></div>
-            <p class="works-date">2021.06.16</p>
-            <p class="works-text">あかばなー中学校校舎増築およびその他工事</p>
-            <a class="page" href="#">詳細へ</a>
-          </div>
-          <div class="works-item">
-            <div class="works-img"></div>
-            <div class="works-icon"></div>
-            <p class="works-date">2021.05.11</p>
-            <p class="works-text">ナイハンチ幼稚園園舎改築工事</p>
-            <a class="page" href="#">詳細へ</a>
-          </div>
-          <div class="works-item">
-            <div class="works-img"></div>
-            <div class="works-icon"></div>
-            <div class="works-icon2"></div>
-            <p class="works-date">2021.04.13</p>
-            <p class="works-text">でいごビル新築工事</p>
-            <a class="page" href="#">詳細へ</a>
-          </div>
-          <div class="works-item">
-            <div class="works-img"></div>
-            <div class="works-icon"></div>
-            <p class="works-date">2021.03.16</p>
-            <p class="works-text">くんち高架橋整備工事</p>
-            <a class="page" href="#">詳細へ</a>
-          </div>
+        <div class="tel">
+          <p>お電話でのお問い合わせ</p>
+          <h3>098-888-8888</h3>
         </div>
+        <h4>フォームからお問い合わせ</h4>
+        <p>以下の専用フォームに必要項目を入力し「送信ボタン」を押してください。<br>ご入力後は一度ご確認し、送信ボタンをクリックしてくださいますようお願いします。</p>
+        <form action="" method="" name="form">
+          <div>
+            <div>
+              <label><span>任意</span>会社名・組織名</label>
+              <input type="text" name="organization" placeholder="例)沖縄建設株式会社" value="">
+            </div>
+            <div>
+              <label><span>必須</span>お名前</label>
+              <input type="text" name="name" placeholder="例）やまだたろう" value="">
+            </div>
+            <div>
+              <label><span>必須</span>ふりがな</label>
+              <input type="text" name="name" placeholder="例）やまだたろう" value="">
+            </div>
+            <div>
+              <label><span>必須</span>メールアドレス</label>
+              <input type="text" name="email" placeholder="例）guest@example.com" value="">
+            </div>
+            <div>
+              <label><span>任意</span>お電話番号</label>
+              <input type="text" name="tel" placeholder="例）0000000000" value="">
+            </div>
+            <div>
+              <label><span>任意</span>ご希望の返答方法</label>
+              <input type="radio" name="contact" value="メール" checked>メール
+              <input type="radio" name="contact" value="電話">電話
+              <input type="radio" name="contact" value="どちらでも可">どちらでも可
+            </div>
+            <div>
+              <label><span>必須</span>件名</label>
+              <textarea name="content" rows="1" placeholder="お問合せ内容を入力"></textarea>
+            </div>
+            <div>
+              <label><span>必須</span>お問い合わせ内容</label>
+              <textarea name="content" rows="5" placeholder="お問合せ内容を入力"></textarea>
+            </div>
+            <div>
+              <label>
+                <label><span>必須</span>個人情報の取り扱いについて</label>
+                <input type="checkbox" name="acceptance-714" value="1" aria-invalid="false" class="agree"><span class="check">プライバシーポリシーに同意します。</span>
+                <p>※個人情報の取扱いに関しましては<a href="#"><u>「プライバシーポリシー<span></span>」</u></a>をご確認ください。</p>
+              </label>
+            </div>
+          </div>
+          <button type="submit">送信</button>
+        </form>
       </div>
     </div>
   </section>
