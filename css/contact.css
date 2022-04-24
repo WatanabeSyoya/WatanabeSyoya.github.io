@@ -421,8 +421,8 @@ p {
   width: -moz-fit-content;
   width: fit-content;
   padding: 7px 78px;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: .5s;
+  transition: .5s;
   display: block;
   margin: 0 auto;
 }
