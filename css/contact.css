@@ -117,7 +117,7 @@ p {
   background-color: #fff;
   width: 90.3%;
   padding-top: 129px;
-  padding-bottom: 65px;
+  padding-bottom: 60px;
   position: relative;
   top: -65px;
 }
@@ -197,7 +197,7 @@ p {
 #contact-page .page-container form .form-input {
   border: 2px solid #EEEEEE;
   border-radius: 6px;
-  margin-bottom: 24px;
+  margin-bottom: 21px;
   height: 46px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -210,6 +210,7 @@ p {
   color: #1F2833;
   font-family: 'Noto Sans JP', sans-serif;
   letter-spacing: 1.5px;
+  padding-left: 21px;
 }
 
 #contact-page .page-container form .form-input::-webkit-input-placeholder {
@@ -232,7 +233,7 @@ p {
   border: 2px solid #EEEEEE;
   border-radius: 6px;
   margin-bottom: 24px;
-  height: 200px;
+  height: 180px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -244,6 +245,8 @@ p {
   color: #1F2833;
   font-family: 'Noto Sans JP', sans-serif;
   letter-spacing: 1.5px;
+  padding-left: 21px;
+  padding-top: 14px;
 }
 
 #contact-page .page-container form .form-textarea::-webkit-input-placeholder {
@@ -291,6 +294,10 @@ p {
 
 #contact-page .page-container form .check-btn {
   display: block;
+  background-color: #F3F3F3;
+  padding: 20px 40px 20px 48px;
+  border-radius: 8px;
+  margin-bottom: 89px;
 }
 
 #contact-page .page-container form .check-btn .check {
@@ -299,17 +306,30 @@ p {
 
 #contact-page .page-container form .check-btn .agree {
   display: inline;
+  margin-right: 10px;
 }
 
-#contact-page .page-container form .privacy {
+#contact-page .page-container form .check-btn .privacy-text {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: #777777;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 24px;
+  letter-spacing: 1.5px;
+}
+
+#contact-page .page-container form .check-btn .privacy {
   display: inline;
+  color: #777777;
 }
 
-#contact-page .page-container form .privacy span {
+#contact-page .page-container form .check-btn .privacy span {
   position: relative;
 }
 
-#contact-page .page-container form .privacy span::after {
+#contact-page .page-container form .check-btn .privacy span::after {
   content: "";
   display: inline-block;
   width: 16px;
@@ -319,14 +339,96 @@ p {
   background-repeat: no-repeat;
   position: absolute;
   right: 3px;
+  bottom: 1px;
 }
 
 #contact-page .page-container form .radio-btn {
   display: block;
+  margin-top: 12px;
+  margin-bottom: 30px;
 }
 
-#contact-page .page-container form .radio {
-  display: inline;
+#contact-page .page-container form .radio-btn input[type=radio] {
+  display: none;
+}
+
+#contact-page .page-container form .radio-btn .radio01 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 30px;
+  position: relative;
+  width: auto;
+}
+
+#contact-page .page-container form .radio-btn .radio01:nth-child(2) {
+  padding: 5px 47px 5px 30px;
+}
+
+#contact-page .page-container form .radio-btn .radio01:nth-child(4) {
+  padding: 5px 48px 5px 30px;
+}
+
+#contact-page .page-container form .radio-btn .radio01::before {
+  background: #fff;
+  border: 2px solid #359B87;
+  border-radius: 50%;
+  content: '';
+  display: block;
+  height: 16px;
+  left: -1px;
+  margin-top: -8px;
+  position: absolute;
+  top: 47%;
+  width: 16px;
+}
+
+#contact-page .page-container form .radio-btn .radio01::after {
+  background: #359B87;
+  border-radius: 50%;
+  content: '';
+  display: block;
+  height: 10px;
+  left: 4px;
+  margin-top: -4px;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  width: 10px;
+}
+
+#contact-page .page-container form .radio-btn input[type=radio]:checked + .radio01::after {
+  opacity: 1;
+}
+
+#contact-page .page-container form .radio-btn input[type="radio"],
+#contact-page .page-container form .radio-btn input[type="checkbox"] {
+  position: relative;
+  top: 2px;
+}
+
+#contact-page .page-container form button {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 36px;
+  background-color: #359B87;
+  border-radius: 25px;
+  border: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 7px 78px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  display: block;
+  margin: 0 auto;
+}
+
+#contact-page .page-container form button:hover {
+  background-color: #5DAF9F;
 }
 
 #contact {
