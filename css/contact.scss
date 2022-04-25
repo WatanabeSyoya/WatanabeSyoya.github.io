@@ -322,6 +322,12 @@ p {
         letter-spacing: 1.5px;
       }
 
+      .name-2:focus {
+        outline: solid 2px rgba(53, 155, 135, 0.8);
+        box-shadow: 1px 1px 10px rgba(53, 155, 135, 0.5);
+        ;
+      }
+
       .form-input {
         border: 2px solid #EEEEEE;
         border-radius: 6px;
