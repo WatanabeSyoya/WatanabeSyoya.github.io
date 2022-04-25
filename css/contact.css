@@ -374,9 +374,55 @@ p {
 #contact-page .page-container form .check-btn {
   display: block;
   background-color: #F3F3F3;
-  padding: 20px 40px 20px 48px;
+  padding: 13px 40px 20px 43px;
   border-radius: 8px;
   margin-bottom: 89px;
+}
+
+#contact-page .page-container form .check-btn input {
+  display: inline;
+  cursor: pointer;
+}
+
+#contact-page .page-container form .check-btn input[type=checkbox]:checked {
+  display: none;
+}
+
+#contact-page .page-container form .check-btn input[type=checkbox]:checked + label {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+  padding: 5px 20px;
+  position: relative;
+  width: auto;
+}
+
+#contact-page .page-container form .check-btn input[type=checkbox]:checked + label::before {
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  display: block;
+  margin-top: -9px;
+  width: 16px;
+  height: 16px;
+  content: '';
+  background: #359B87;
+  border-radius: 4px;
+}
+
+#contact-page .page-container form .check-btn input[type=checkbox]:checked + label::after {
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  content: '';
+  display: block;
+  height: 7px;
+  left: 8px;
+  margin-top: -7px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  width: 5px;
 }
 
 #contact-page .page-container form .check-btn .check {
@@ -389,7 +435,8 @@ p {
 }
 
 #contact-page .page-container form .check-btn .privacy-text {
-  margin-top: 10px;
+  margin-top: 7px;
+  margin-left: 6px;
   margin-bottom: 0;
   font-size: 14px;
   font-weight: 400;
@@ -504,6 +551,7 @@ p {
   transition: .5s;
   display: block;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 #contact-page .page-container form button:hover {
