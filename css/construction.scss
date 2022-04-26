@@ -278,9 +278,9 @@ header {
   .hamburger span {
     display: block;
     position: absolute;
-    width: 35px;
-    height: 2px;
-    left: 6px;
+    width: 25px;
+    height: 1px;
+    left: 24px;
     background: $main-color;
     -webkit-transition: 0.3s ease-in-out;
     -moz-transition: 0.3s ease-in-out;
@@ -288,11 +288,11 @@ header {
   }
 
   .hamburger span:nth-child(1) {
-    top: 9px;
+    top: 15px;
   }
 
   .hamburger span:nth-child(2) {
-    top: 22px;
+    top: 23px;
   }
 
   /* ナビ開いてる時のボタン */
@@ -651,6 +651,16 @@ header {
   position: relative;
   padding-bottom: 227px;
 
+  .about-inner {
+    width: 100%;
+
+    @include mq-down(xxs) {
+      margin: 0 auto;
+      width: 92%;
+    }
+
+  }
+
   .midori {
     background-color: $section-color;
     width: 340px;
@@ -660,6 +670,8 @@ header {
     @include mq-down(xxs) {
       width: 100%;
       height: 160px;
+      margin-top: 160px;
+      position: relative;
     }
   }
 
@@ -676,6 +688,10 @@ header {
     @include mq-down(xxs) {
       width: 180px;
       height: 240px;
+      top: -13px;
+      left: 0;
+      right: 0;
+      margin: auto;
     }
   }
 
@@ -913,6 +929,10 @@ header {
 
   @include mq-up(xl) {
     background-size: cover;
+  }
+
+  @include mq-down(xxs) {
+    display: none;
   }
 
   height: 520px;
