@@ -658,6 +658,12 @@ header nav.globalMenuSp.active {
   }
 }
 
+@media screen and (max-width: 484px) {
+  #news .container .page {
+    margin: 23px 54px 0 auto;
+  }
+}
+
 #about {
   position: relative;
   padding-bottom: 227px;

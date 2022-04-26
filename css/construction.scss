@@ -637,6 +637,11 @@ header {
       }
     }
 
+    .page {
+      @include mq-down(xxs) {
+        margin: 23px 54px 0 auto;
+      }
+    }
 
   }
 
