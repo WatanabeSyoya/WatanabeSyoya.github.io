@@ -309,7 +309,7 @@ header {
   nav.globalMenuSp {
     position: fixed;
     z-index: 3;
-    top: 0;
+    top: 56px;
     left: 0;
     color: $main-color;
     background: rgba(255, 255, 255, 0.9);
@@ -318,6 +318,49 @@ header {
     opacity: 0;
     transition: opacity .6s ease, visibility .6s ease;
     visibility: hidden;
+
+    ul {
+      li {
+        padding-left: 50px;
+
+        @include mq-down(xl) {
+          padding-left: 30px;
+        }
+
+        @include mq-down(lg) {
+          padding-left: 25px;
+        }
+      }
+
+      a {
+        text-align: center;
+        @include font(16px, 500);
+        letter-spacing: 1.5px;
+
+        @include mq-down(lg) {
+          font-size: 14px;
+        }
+
+        span {
+          @include font(12px, 500, $sub-color);
+          font-family: 'Epilogue',
+            sans-serif;
+          margin-bottom: 4px;
+          letter-spacing: -0.01em;
+        }
+      }
+
+      h3 {
+        font-size: 32px;
+        padding-top: 10px;
+      }
+
+      p {
+        font-size: 14px;
+        font-weight: 400;
+        padding-bottom: 48px;
+      }
+    }
   }
 
   nav.globalMenuSp ul {
