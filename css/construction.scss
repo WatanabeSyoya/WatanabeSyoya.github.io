@@ -542,6 +542,8 @@ header {
     padding-left: 292px;
     padding-top: 81px;
 
+
+
     @include mq-down(xl) {
       padding-left: 100px;
     }
@@ -552,6 +554,11 @@ header {
       padding-left: 0;
     }
 
+    @include mq-down(xxs) {
+      padding-top: 60px;
+      width: 95%;
+    }
+
     h4 {
       border-bottom: 1px solid;
       height: 39px;
@@ -559,6 +566,10 @@ header {
 
       @include mq-down(lg) {
         margin: 0px auto 50px;
+      }
+
+      @include mq-down(xxs) {
+        margin: 0px auto 34px;
       }
     }
 
@@ -579,6 +590,14 @@ header {
       padding-bottom: 30px;
       padding-right: 130px;
       padding-top: 30px;
+
+      @include mq-down(xxs) {
+        padding-bottom: 22px;
+      }
+
+      @include mq-down(sm) {
+        display: block;
+      }
 
       &:first-child {
         padding-top: 0;
@@ -610,6 +629,11 @@ header {
       .news-text {
         @include font(16px, 500);
         letter-spacing: 1.5px;
+
+        @include mq-down(sm) {
+          margin-top: 20px;
+          margin-left: 6px;
+        }
       }
     }
 
@@ -627,6 +651,11 @@ header {
     width: 340px;
     height: 600px;
     position: absolute;
+
+    @include mq-down(xxs) {
+      width: 100%;
+      height: 160px;
+    }
   }
 
   .machine {
@@ -638,6 +667,11 @@ header {
     left: 135px;
     width: 350px;
     height: 460px;
+
+    @include mq-down(xxs) {
+      width: 180px;
+      height: 240px;
+    }
   }
 
   .message {
@@ -666,12 +700,25 @@ header {
     color: $section-color;
     padding-top: 72px;
     text-align: center;
+
+    @include mq-down(xxs) {
+      font-size: 16px;
+      text-align: start;
+      line-height: 16px;
+    }
   }
 
   h5 {
     text-align: center;
     letter-spacing: 1.5px;
-    padding-bottom: 60px
+    padding-bottom: 60px;
+
+    @include mq-down(xxs) {
+      font-size: 20px;
+      text-align: start;
+      line-height: 20px;
+      padding-bottom: 288px
+    }
   }
 
   h6 {
@@ -681,6 +728,12 @@ header {
     padding-bottom: 40px;
     padding-left: 543px;
 
+    @include mq-down(xxs) {
+      font-size: 20px;
+      text-align: start;
+      line-height: 30px;
+      padding-left: 0;
+    }
   }
 
   p {
@@ -688,6 +741,10 @@ header {
     line-height: 28px;
     letter-spacing: 1.5px;
     padding-left: 543px;
+
+    @include mq-down(xxs) {
+      padding-left: 0;
+    }
   }
 }
 
@@ -891,6 +948,12 @@ header {
     width: 90%;
     margin: 0 auto;
 
+    @include mq-down() {
+      grid-template-columns: repeat(auto-fit, 250px);
+      grid-auto-rows: 156px;
+      grid-gap: 60px;
+    }
+
     .works-item {
       position: relative;
 
@@ -900,6 +963,11 @@ header {
         background-size: contain;
         width: 555px;
         height: 345px;
+
+        @include mq-down() {
+          width: 250px;
+          height: 156px;
+        }
       }
 
       .works-icon {
@@ -966,6 +1034,10 @@ header {
   height: 540px;
   position: relative;
 
+  @include mq-down() {
+    display: none;
+  }
+
   .container {
     background-color: #fff;
     width: 1000px;
@@ -978,6 +1050,11 @@ header {
     -webkit-transform: translateY(-50%) translateX(-50%);
     margin: auto;
     display: flex;
+
+    @include mq-down(xxs) {
+      flex-direction: column;
+      width: 80%;
+    }
 
     .contact-text {
       padding-top: 88px;
