@@ -199,6 +199,15 @@ header .header-container ul a span {
   letter-spacing: -0.01em;
 }
 
+header .header-sp {
+  width: 100%;
+  height: 56px;
+  background-color: #fff;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+}
+
 @media screen and (min-width: 761px) {
   header .header-sp {
     display: none;
@@ -329,6 +338,7 @@ header nav.globalMenuSp ul p {
   font-size: 14px;
   font-weight: 400;
   padding-bottom: 48px;
+  line-height: 24px;
 }
 
 header nav.globalMenuSp ul {
@@ -355,10 +365,8 @@ header nav.globalMenuSp ul li:hover {
 
 header nav.globalMenuSp ul li a {
   display: block;
-  color: #1F2833;
-  padding: 1em 0;
+  padding: 1.2em 0;
   text-decoration: none;
-  font-family: 'Jost', sans-serif;
 }
 
 header nav.globalMenuSp.active {
@@ -458,9 +466,28 @@ header nav.globalMenuSp.active {
   margin-top: 100px;
 }
 
+@media screen and (max-width: 484px) {
+  #fv {
+    background-image: url(../img/sp-main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 320px;
+    margin-top: 260px;
+  }
+}
+
 #fv .container {
   padding-left: 135px;
   padding-top: 158px;
+}
+
+@media screen and (max-width: 484px) {
+  #fv .container {
+    position: absolute;
+    top: 0;
+    padding-left: 15px;
+    padding-top: 96px;
+  }
 }
 
 #fv h1 {
@@ -469,8 +496,31 @@ header nav.globalMenuSp.active {
   margin-bottom: 27px;
 }
 
+@media screen and (max-width: 484px) {
+  #fv h1 {
+    font-size: 32px;
+    font-weight: 400;
+    color: #1F2833;
+    font-family: 'Noto Sans JP', sans-serif;
+    margin-bottom: 24px;
+    line-height: 39px;
+  }
+}
+
 #fv h2 {
   line-height: 52px;
+}
+
+@media screen and (max-width: 484px) {
+  #fv h2 {
+    line-height: 40.8px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #1F2833;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Epilogue', sans-serif;
+    opacity: 0.6;
+  }
 }
 
 #news {
@@ -485,10 +535,33 @@ header nav.globalMenuSp.active {
   padding-top: 81px;
 }
 
+@media screen and (max-width: 1230px) {
+  #news .container {
+    padding-left: 100px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  #news .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 80%;
+    padding-left: 0;
+  }
+}
+
 #news .container h4 {
   border-bottom: 1px solid;
   height: 39px;
   margin-right: 123px;
+}
+
+@media screen and (max-width: 1023px) {
+  #news .container h4 {
+    margin: 0px auto 50px;
+  }
 }
 
 #news .container .news-box {
@@ -514,6 +587,12 @@ header nav.globalMenuSp.active {
 
 #news .container .news-item:first-child {
   padding-top: 0;
+}
+
+@media screen and (max-width: 1023px) {
+  #news .container .news-item {
+    padding-right: 0;
+  }
 }
 
 #news .container .news-item .date {

@@ -239,6 +239,13 @@ header {
   }
 
   .header-sp {
+    width: 100%;
+    height: 56px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+
     @include mq-up() {
       display: none;
     }
@@ -359,6 +366,7 @@ header {
         font-size: 14px;
         font-weight: 400;
         padding-bottom: 48px;
+        line-height: 24px;
       }
     }
   }
@@ -386,11 +394,8 @@ header {
 
   nav.globalMenuSp ul li a {
     display: block;
-    color: $main-color;
-    padding: 1em 0;
+    padding: 1.2em 0;
     text-decoration: none;
-    font-family: 'Jost',
-      sans-serif;
   }
 
   /* このクラスを、jQueryで付与・削除する */
@@ -481,19 +486,50 @@ header {
   height: 555px;
   margin-top: 100px;
 
+  @include mq-down(xxs) {
+    background-image: url(../img/sp-main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 320px;
+    margin-top: 260px;
+  }
+
   .container {
     padding-left: 135px;
     padding-top: 158px;
+
+    @include mq-down(xxs) {
+      position: absolute;
+      top: 0;
+      padding-left: 15px;
+      padding-top: 96px;
+
+    }
   }
 
   h1 {
     line-height: 53px;
     letter-spacing: 1.5px;
     margin-bottom: 27px;
+
+    @include mq-down(xxs) {
+      @include font(32px, 400);
+      margin-bottom: 24px;
+      line-height: 39px;
+
+    }
   }
 
   h2 {
     line-height: 52px;
+
+    @include mq-down(xxs) {
+      line-height: 40.8px;
+      @include font(24px, 600);
+      font-family: 'Epilogue',
+        sans-serif;
+      opacity: 0.6;
+    }
   }
 
 }
@@ -506,10 +542,24 @@ header {
     padding-left: 292px;
     padding-top: 81px;
 
+    @include mq-down(xl) {
+      padding-left: 100px;
+    }
+
+    @include mq-down(lg) {
+      flex-direction: column;
+      width: 80%;
+      padding-left: 0;
+    }
+
     h4 {
       border-bottom: 1px solid;
       height: 39px;
       margin-right: 123px;
+
+      @include mq-down(lg) {
+        margin: 0px auto 50px;
+      }
     }
 
     .news-box {
@@ -532,6 +582,10 @@ header {
 
       &:first-child {
         padding-top: 0;
+      }
+
+      @include mq-down(lg) {
+        padding-right: 0;
       }
 
       .date {
