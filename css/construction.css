@@ -1272,9 +1272,9 @@ header nav.globalMenuSp.active {
   position: relative;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 484px) {
   #contact {
-    display: none;
+    height: 508px;
   }
 }
 
@@ -1300,7 +1300,9 @@ header nav.globalMenuSp.active {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 80%;
+    width: 92%;
+    top: 263px;
+    padding-bottom: 48px;
   }
 }
 
@@ -1309,12 +1311,27 @@ header nav.globalMenuSp.active {
   padding-left: 143px;
 }
 
+@media screen and (max-width: 484px) {
+  #contact .container .contact-text {
+    padding-top: 40px;
+    padding-left: 0;
+  }
+}
+
 #contact .container .contact-text h4 {
   color: #359B87;
   text-align: center;
   line-height: 20px;
   margin-bottom: 11px;
   padding-right: 6px;
+}
+
+@media screen and (max-width: 484px) {
+  #contact .container .contact-text h4 {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 7px;
+  }
 }
 
 #contact .container .contact-text h5 {
@@ -1328,6 +1345,15 @@ header nav.globalMenuSp.active {
   padding-right: 10px;
 }
 
+@media screen and (max-width: 484px) {
+  #contact .container .contact-text h5 {
+    font-size: 24px;
+    line-height: 24px;
+    padding-right: 0;
+    padding-bottom: 24px;
+  }
+}
+
 #contact .container .contact-text p {
   font-size: 16px;
   font-weight: 500;
@@ -1337,13 +1363,39 @@ header nav.globalMenuSp.active {
   letter-spacing: 1.5px;
 }
 
+@media screen and (max-width: 484px) {
+  #contact .container .contact-text p {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+  }
+}
+
 #contact .container .call-number {
   padding-top: 85px;
   padding-left: 134px;
 }
 
+@media screen and (max-width: 484px) {
+  #contact .container .call-number {
+    padding-top: 0;
+    padding-left: 0;
+  }
+}
+
 #contact .container .call-number h3 {
   padding-left: 18px;
+}
+
+@media screen and (max-width: 484px) {
+  #contact .container .call-number h3 {
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    margin-top: 39px;
+    padding-left: 0;
+    letter-spacing: -.05em;
+  }
 }
 
 #contact .container .call-number p {
@@ -1354,10 +1406,23 @@ header nav.globalMenuSp.active {
   padding-bottom: 34px;
 }
 
+@media screen and (max-width: 484px) {
+  #contact .container .call-number p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
 #contact .container .call-number .recruit-name {
   margin: 0 auto;
   border-radius: 40px;
   padding: 22px 120px;
+}
+
+@media screen and (max-width: 484px) {
+  #contact .container .call-number .recruit-name {
+    padding: 22px 90px;
+  }
 }
 
 #contact .container .call-number .recruit-name::after {
@@ -1391,5 +1456,12 @@ footer p {
   font-family: 'Noto Sans JP', sans-serif;
   line-height: 28px;
   font-family: 'Epilogue', sans-serif;
+}
+
+@media screen and (max-width: 484px) {
+  footer p {
+    font-size: 12px;
+    font-weight: 500;
+  }
 }
 /*# sourceMappingURL=construction.css.map */

@@ -1192,8 +1192,8 @@ header {
   height: 540px;
   position: relative;
 
-  @include mq-down() {
-    display: none;
+  @include mq-down(xxs) {
+    height: 508px;
   }
 
   .container {
@@ -1211,19 +1211,32 @@ header {
 
     @include mq-down(xxs) {
       flex-direction: column;
-      width: 80%;
+      width: 92%;
+      top: 263px;
+      padding-bottom: 48px;
     }
 
     .contact-text {
       padding-top: 88px;
       padding-left: 143px;
 
+      @include mq-down(xxs) {
+        padding-top: 40px;
+        padding-left: 0;
+      }
+
       h4 {
         color: $section-color;
         text-align: center;
         line-height: 20px;
         margin-bottom: 11px;
-        padding-right: 6px
+        padding-right: 6px;
+
+        @include mq-down(xxs) {
+          font-size: 16px;
+          line-height: 16px;
+          margin-bottom: 7px;
+        }
       }
 
       h5 {
@@ -1231,7 +1244,14 @@ header {
         text-align: center;
         letter-spacing: 1.5px;
         padding-bottom: 40px;
-        padding-right: 10px
+        padding-right: 10px;
+
+        @include mq-down(xxs) {
+          font-size: 24px;
+          line-height: 24px;
+          padding-right: 0;
+          padding-bottom: 24px;
+        }
       }
 
       p {
@@ -1239,6 +1259,11 @@ header {
         line-height: 28px;
         letter-spacing: 1.5px;
 
+        @include mq-down(xxs) {
+          font-size: 14px;
+          line-height: 24px;
+          text-align: center;
+        }
       }
     }
 
@@ -1246,8 +1271,22 @@ header {
       padding-top: 85px;
       padding-left: 134px;
 
+      @include mq-down(xxs) {
+        padding-top: 0;
+        padding-left: 0;
+      }
+
       h3 {
         padding-left: 18px;
+
+        @include mq-down(xxs) {
+          font-size: 32px;
+          line-height: 32px;
+          text-align: center;
+          margin-top: 39px;
+          padding-left: 0;
+          letter-spacing: -.05em;
+        }
       }
 
       p {
@@ -1256,12 +1295,21 @@ header {
         line-height: 28px;
         letter-spacing: 1.5px;
         padding-bottom: 34px;
+
+        @include mq-down(xxs) {
+          font-size: 14px;
+          line-height: 24px;
+        }
       }
 
       .recruit-name {
         margin: 0 auto;
         border-radius: 40px;
         padding: 22px 120px;
+
+        @include mq-down(xxs) {
+          padding: 22px 90px;
+        }
 
         &::after {
           top: 35px;
@@ -1289,5 +1337,10 @@ footer {
     line-height: 28px;
     font-family: 'Epilogue',
       sans-serif;
+
+    @include mq-down(xxs) {
+      font-size: 12px;
+      font-weight: 500;
+    }
   }
 }
