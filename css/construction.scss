@@ -253,7 +253,7 @@ header {
     .logo {
       position: fixed;
       width: 196px;
-      top: 8px;
+      top: 10px;
       left: 15px;
     }
   }
@@ -688,7 +688,7 @@ header {
     @include mq-down(xxs) {
       width: 180px;
       height: 240px;
-      top: -13px;
+      top: -16px;
       left: 0;
       right: 0;
       margin: auto;
@@ -704,6 +704,13 @@ header {
     left: 26px;
     width: 42%;
     height: 62%;
+
+    @include mq-down(xxs) {
+      top: 607px;
+      left: 35px;
+      width: 81%;
+      height: 16%;
+    }
   }
 
   .okinawa {
@@ -715,6 +722,13 @@ header {
     right: 53px;
     width: 344px;
     height: 438px;
+
+    @include mq-down(xxs) {
+      top: 381px;
+      right: 15px;
+      width: 180px;
+      height: 229px;
+    }
   }
 
   h4 {
@@ -726,6 +740,8 @@ header {
       font-size: 16px;
       text-align: start;
       line-height: 16px;
+      position: relative;
+      top: -328px;
     }
   }
 
@@ -735,10 +751,12 @@ header {
     padding-bottom: 60px;
 
     @include mq-down(xxs) {
-      font-size: 20px;
+      font-size: 24px;
       text-align: start;
       line-height: 20px;
-      padding-bottom: 288px
+      padding-bottom: 288px;
+      position: relative;
+      top: -317px;
     }
   }
 
@@ -754,6 +772,9 @@ header {
       text-align: start;
       line-height: 30px;
       padding-left: 0;
+      padding-right: 10px;
+      position: relative;
+      top: -299px;
     }
   }
 
@@ -765,6 +786,19 @@ header {
 
     @include mq-down(xxs) {
       padding-left: 0;
+      position: relative;
+      top: -316px;
+      padding-right: 40px;
+
+      .not-sp {
+        display: none;
+      }
+    }
+
+    @include mq-up(xxs) {
+      .yes-sp {
+        display: none;
+      }
     }
   }
 }

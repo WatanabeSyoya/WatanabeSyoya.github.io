@@ -217,7 +217,7 @@ header .header-sp {
 header .header-sp .logo {
   position: fixed;
   width: 196px;
-  top: 8px;
+  top: 10px;
   left: 15px;
 }
 
@@ -711,7 +711,7 @@ header nav.globalMenuSp.active {
   #about .machine {
     width: 180px;
     height: 240px;
-    top: -13px;
+    top: -16px;
     left: 0;
     right: 0;
     margin: auto;
@@ -729,6 +729,15 @@ header nav.globalMenuSp.active {
   height: 62%;
 }
 
+@media screen and (max-width: 484px) {
+  #about .message {
+    top: 607px;
+    left: 35px;
+    width: 81%;
+    height: 16%;
+  }
+}
+
 #about .okinawa {
   background-image: url(../img/okinawa.png);
   background-repeat: no-repeat;
@@ -738,6 +747,15 @@ header nav.globalMenuSp.active {
   right: 53px;
   width: 344px;
   height: 438px;
+}
+
+@media screen and (max-width: 484px) {
+  #about .okinawa {
+    top: 381px;
+    right: 15px;
+    width: 180px;
+    height: 229px;
+  }
 }
 
 #about h4 {
@@ -751,6 +769,8 @@ header nav.globalMenuSp.active {
     font-size: 16px;
     text-align: start;
     line-height: 16px;
+    position: relative;
+    top: -328px;
   }
 }
 
@@ -762,10 +782,12 @@ header nav.globalMenuSp.active {
 
 @media screen and (max-width: 484px) {
   #about h5 {
-    font-size: 20px;
+    font-size: 24px;
     text-align: start;
     line-height: 20px;
     padding-bottom: 288px;
+    position: relative;
+    top: -317px;
   }
 }
 
@@ -786,6 +808,9 @@ header nav.globalMenuSp.active {
     text-align: start;
     line-height: 30px;
     padding-left: 0;
+    padding-right: 10px;
+    position: relative;
+    top: -299px;
   }
 }
 
@@ -802,6 +827,18 @@ header nav.globalMenuSp.active {
 @media screen and (max-width: 484px) {
   #about p {
     padding-left: 0;
+    position: relative;
+    top: -316px;
+    padding-right: 40px;
+  }
+  #about p .not-sp {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 485px) {
+  #about p .yes-sp {
+    display: none;
   }
 }
 
