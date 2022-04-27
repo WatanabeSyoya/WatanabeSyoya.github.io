@@ -651,6 +651,10 @@ header {
   position: relative;
   padding-bottom: 227px;
 
+  @include mq-down(xxs) {
+    padding-bottom: 0px;
+  }
+
   .about-inner {
     width: 100%;
 
@@ -706,10 +710,10 @@ header {
     height: 62%;
 
     @include mq-down(xxs) {
-      top: 607px;
-      left: 35px;
-      width: 81%;
-      height: 16%;
+      top: 609px;
+      left: 36px;
+      width: 80%;
+      height: 20%;
     }
   }
 
@@ -789,6 +793,7 @@ header {
       position: relative;
       top: -316px;
       padding-right: 40px;
+      margin-bottom: -110px;
 
       .not-sp {
         display: none;
@@ -808,12 +813,22 @@ header {
     color: $section-color;
     padding-top: 7px;
     text-align: center;
+
+    @include mq-down(xxs) {
+      font-size: 16px;
+    }
   }
 
   h5 {
     text-align: center;
     letter-spacing: 1.5px;
-    padding-bottom: 59px
+    padding-bottom: 59px;
+
+    @include mq-down(xxs) {
+      font-size: 24px;
+      line-height: 20px;
+      padding-bottom: 67px;
+    }
   }
 
   .business-box {
@@ -966,7 +981,8 @@ header {
   }
 
   @include mq-down(xxs) {
-    display: none;
+    background-image: url(../img/recruit-sp.jpg);
+    margin-top: 45px;
   }
 
   height: 520px;
@@ -975,6 +991,13 @@ header {
     color: #fff;
     padding-top: 61px;
     padding-left: 312px;
+
+    @include mq-down(xxs) {
+      padding-left: 0;
+      font-size: 16px;
+      text-align: center;
+      padding-top: 50px;
+    }
   }
 
   h5 {
@@ -982,6 +1005,13 @@ header {
     letter-spacing: 1.5px;
     padding-bottom: 232px;
     padding-left: 287px;
+
+    @include mq-down(xxs) {
+      padding-left: 0;
+      font-size: 24px;
+      text-align: center;
+      line-height: 20px;
+    }
   }
 }
 

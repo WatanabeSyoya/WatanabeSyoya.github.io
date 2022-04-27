@@ -669,6 +669,12 @@ header nav.globalMenuSp.active {
   padding-bottom: 227px;
 }
 
+@media screen and (max-width: 484px) {
+  #about {
+    padding-bottom: 0px;
+  }
+}
+
 #about .about-inner {
   width: 100%;
 }
@@ -731,10 +737,10 @@ header nav.globalMenuSp.active {
 
 @media screen and (max-width: 484px) {
   #about .message {
-    top: 607px;
-    left: 35px;
-    width: 81%;
-    height: 16%;
+    top: 609px;
+    left: 36px;
+    width: 80%;
+    height: 20%;
   }
 }
 
@@ -830,6 +836,7 @@ header nav.globalMenuSp.active {
     position: relative;
     top: -316px;
     padding-right: 40px;
+    margin-bottom: -110px;
   }
   #about p .not-sp {
     display: none;
@@ -848,10 +855,24 @@ header nav.globalMenuSp.active {
   text-align: center;
 }
 
+@media screen and (max-width: 484px) {
+  #business h4 {
+    font-size: 16px;
+  }
+}
+
 #business h5 {
   text-align: center;
   letter-spacing: 1.5px;
   padding-bottom: 59px;
+}
+
+@media screen and (max-width: 484px) {
+  #business h5 {
+    font-size: 24px;
+    line-height: 20px;
+    padding-bottom: 67px;
+  }
 }
 
 #business .business-box {
@@ -1013,7 +1034,8 @@ header nav.globalMenuSp.active {
 
 @media screen and (max-width: 484px) {
   #recruit {
-    display: none;
+    background-image: url(../img/recruit-sp.jpg);
+    margin-top: 45px;
   }
 }
 
@@ -1023,11 +1045,29 @@ header nav.globalMenuSp.active {
   padding-left: 312px;
 }
 
+@media screen and (max-width: 484px) {
+  #recruit h4 {
+    padding-left: 0;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 50px;
+  }
+}
+
 #recruit h5 {
   color: #fff;
   letter-spacing: 1.5px;
   padding-bottom: 232px;
   padding-left: 287px;
+}
+
+@media screen and (max-width: 484px) {
+  #recruit h5 {
+    padding-left: 0;
+    font-size: 24px;
+    text-align: center;
+    line-height: 20px;
+  }
 }
 
 #works h4 {
