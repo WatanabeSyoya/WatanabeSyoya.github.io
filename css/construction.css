@@ -1037,6 +1037,7 @@ header nav.globalMenuSp.active {
     background-image: url(../img/recruit-sp.jpg);
     margin-top: 45px;
     margin-bottom: 50px;
+    background-size: cover;
   }
 }
 
