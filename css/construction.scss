@@ -486,6 +486,11 @@ header {
   height: 555px;
   margin-top: 100px;
 
+  @include mq-down(xl) {
+    background-size: contain;
+    margin-bottom: -100px;
+  }
+
   @include mq-down(xxs) {
     background-image: url(../img/sp-main.jpg);
     background-repeat: no-repeat;
@@ -494,13 +499,18 @@ header {
     margin-top: 260px;
   }
 
-  @include mq-down(xxs) {
+  @include mq-down(xls) {
     background-size: contain;
   }
 
   .container {
     padding-left: 135px;
     padding-top: 158px;
+
+    @include mq-down(xl) {
+      padding-left: 80px;
+      padding-top: 80px;
+    }
 
     @include mq-down(xxs) {
       position: absolute;
@@ -516,6 +526,11 @@ header {
     letter-spacing: 1.5px;
     margin-bottom: 27px;
 
+    @include mq-down(xl) {
+      font-size: 35px;
+      line-height: 44px;
+    }
+
     @include mq-down(xxs) {
       @include font(32px, 400);
       margin-bottom: 24px;
@@ -526,6 +541,11 @@ header {
 
   h2 {
     line-height: 52px;
+
+    @include mq-down(xl) {
+      font-size: 30px;
+      line-height: 44px;
+    }
 
     @include mq-down(xxs) {
       line-height: 40.8px;
@@ -663,14 +683,14 @@ header {
   position: relative;
   padding-bottom: 227px;
 
-  @include mq-down(xxs) {
+  @include mq-down() {
     padding-bottom: 0px;
   }
 
   .about-inner {
     width: 100%;
 
-    @include mq-down(xxs) {
+    @include mq-down() {
       margin: 0 auto;
       width: 92%;
     }
@@ -683,7 +703,12 @@ header {
     height: 600px;
     position: absolute;
 
-    @include mq-down(xxs) {
+    @include mq-down(xl) {
+      width: 225px;
+      height: 300px;
+    }
+
+    @include mq-down() {
       width: 100%;
       height: 160px;
       margin-top: 160px;
@@ -701,7 +726,14 @@ header {
     width: 350px;
     height: 460px;
 
-    @include mq-down(xxs) {
+    @include mq-down(xl) {
+      top: 120px;
+      left: 70px;
+      width: 225px;
+      height: 345px;
+    }
+
+    @include mq-down() {
       width: 180px;
       height: 240px;
       top: -16px;
@@ -721,14 +753,14 @@ header {
     width: 42%;
     height: 62%;
 
-    @include mq-down(xxs) {
+    @include mq-down() {
       top: 609px;
       left: 36px;
       width: 80%;
       height: 20%;
     }
 
-    @include mq-down(xxs) {
+    @include mq-down() {
       top: 640px;
     }
   }
@@ -743,7 +775,11 @@ header {
     width: 344px;
     height: 438px;
 
-    @include mq-down(xxs) {
+    @include mq-down(xl) {
+      right: 120px;
+    }
+
+    @include mq-down() {
       top: 381px;
       right: 15px;
       width: 180px;
@@ -756,12 +792,17 @@ header {
     padding-top: 72px;
     text-align: center;
 
-    @include mq-down(xxs) {
+    @include mq-down(xl) {
+      padding-top: 0px;
+    }
+
+    @include mq-down() {
       font-size: 16px;
       text-align: start;
       line-height: 16px;
       position: relative;
       top: -328px;
+      padding-top: 72px;
     }
   }
 
@@ -770,7 +811,7 @@ header {
     letter-spacing: 1.5px;
     padding-bottom: 60px;
 
-    @include mq-down(xxs) {
+    @include mq-down() {
       font-size: 24px;
       text-align: start;
       line-height: 20px;
@@ -787,7 +828,12 @@ header {
     padding-bottom: 40px;
     padding-left: 543px;
 
-    @include mq-down(xxs) {
+    @include mq-down(xl) {
+      padding-left: 330px;
+      width: 400px;
+    }
+
+    @include mq-down() {
       font-size: 20px;
       text-align: start;
       line-height: 30px;
@@ -795,6 +841,7 @@ header {
       padding-right: 10px;
       position: relative;
       top: -299px;
+      width: 100%;
     }
 
     @include mq-down(xxs) {
@@ -809,16 +856,18 @@ header {
     letter-spacing: 1.5px;
     padding-left: 543px;
 
-    @include mq-down(xxs) {
+    @include mq-down(xl) {
+      padding-left: 330px;
+    }
+
+    @include mq-down() {
       padding-left: 0;
       position: relative;
       top: -316px;
       padding-right: 40px;
       margin-bottom: -110px;
 
-      .not-sp {
-        display: none;
-      }
+
     }
 
     @include mq-up(xxs) {
@@ -830,6 +879,10 @@ header {
     @include mq-down(xxs) {
       font-size: 15px;
       padding-right: 0;
+
+      .not-sp {
+        display: none;
+      }
     }
   }
 }
@@ -1026,6 +1079,11 @@ header {
     padding-top: 61px;
     padding-left: 312px;
 
+    @include mq-down(xxl) {
+      padding-top: 2%;
+      padding-left: 20%;
+    }
+
     @include mq-down(xxs) {
       padding-left: 0;
       font-size: 16px;
@@ -1040,15 +1098,25 @@ header {
     padding-bottom: 232px;
     padding-left: 287px;
 
+    @include mq-down(xxl) {
+      padding-bottom: 15%;
+      padding-left: 18%;
+    }
+
     @include mq-down(xxs) {
       padding-left: 0;
       font-size: 24px;
       text-align: center;
       line-height: 20px;
+      padding-bottom: 232px;
     }
   }
 
   .recruit-name {
+    @include mq-down(xxl) {
+      margin-left: 20%;
+    }
+
     @include mq-down(xxs) {
       margin-left: 0;
       margin: 42px auto 0;
@@ -1270,7 +1338,7 @@ header {
   height: 540px;
   position: relative;
 
-  @include mq-down(xxs) {
+  @include mq-down() {
     height: 508px;
   }
 
@@ -1287,20 +1355,30 @@ header {
     margin: auto;
     display: flex;
 
-    @include mq-down(xxs) {
+    @include mq-down(xl) {
+      justify-content: space-around;
+      width: 85%;
+    }
+
+    @include mq-down() {
       flex-direction: column;
       width: 92%;
       top: 263px;
       padding-bottom: 48px;
+      justify-content: flex-start;
     }
 
     .contact-text {
       padding-top: 88px;
       padding-left: 143px;
 
-      @include mq-down(xxs) {
-        padding-top: 40px;
+      @include mq-down(xl) {
         padding-left: 0;
+      }
+
+      @include mq-down() {
+        padding-top: 40px;
+
       }
 
       h4 {
@@ -1310,7 +1388,7 @@ header {
         margin-bottom: 11px;
         padding-right: 6px;
 
-        @include mq-down(xxs) {
+        @include mq-down() {
           font-size: 16px;
           line-height: 16px;
           margin-bottom: 7px;
@@ -1324,7 +1402,7 @@ header {
         padding-bottom: 40px;
         padding-right: 10px;
 
-        @include mq-down(xxs) {
+        @include mq-down() {
           font-size: 24px;
           line-height: 24px;
           padding-right: 0;
@@ -1337,7 +1415,7 @@ header {
         line-height: 28px;
         letter-spacing: 1.5px;
 
-        @include mq-down(xxs) {
+        @include mq-down() {
           font-size: 14px;
           line-height: 24px;
           text-align: center;
@@ -1349,15 +1427,24 @@ header {
       padding-top: 85px;
       padding-left: 134px;
 
-      @include mq-down(xxs) {
-        padding-top: 0;
+      @include mq-down(xl) {
         padding-left: 0;
+      }
+
+      @include mq-down() {
+        padding-top: 0;
+
       }
 
       h3 {
         padding-left: 18px;
 
-        @include mq-down(xxs) {
+        @include mq-down(xl) {
+          font-size: 40px;
+
+        }
+
+        @include mq-down() {
           font-size: 32px;
           line-height: 32px;
           text-align: center;
@@ -1374,7 +1461,7 @@ header {
         letter-spacing: 1.5px;
         padding-bottom: 34px;
 
-        @include mq-down(xxs) {
+        @include mq-down() {
           font-size: 14px;
           line-height: 24px;
         }
@@ -1385,7 +1472,12 @@ header {
         border-radius: 40px;
         padding: 22px 120px;
 
-        @include mq-down(xxs) {
+        @include mq-down(xl) {
+          padding: 22px 70px;
+
+        }
+
+        @include mq-down() {
           padding: 22px 90px;
         }
 
