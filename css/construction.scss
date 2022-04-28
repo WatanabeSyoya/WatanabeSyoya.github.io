@@ -298,7 +298,7 @@ header {
   /* ナビ開いてる時のボタン */
   .hamburger.active span:nth-child(1) {
     top: 16px;
-    left: 6px;
+    left: 23px;
     background: $main-color;
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
@@ -494,6 +494,10 @@ header {
     margin-top: 260px;
   }
 
+  @include mq-down(xxs) {
+    background-size: contain;
+  }
+
   .container {
     padding-left: 135px;
     padding-top: 158px;
@@ -613,6 +617,10 @@ header {
           sans-serif;
         margin-left: 6px;
 
+        @include mq-down(xxs) {
+          font-size: 13px;
+        }
+
         &::after {
           content: "TOPICS";
           @include font(14px, 500);
@@ -633,6 +641,10 @@ header {
         @include mq-down(sm) {
           margin-top: 20px;
           margin-left: 6px;
+        }
+
+        @include mq-down(xxs) {
+          font-size: 13px;
         }
       }
     }
@@ -715,6 +727,10 @@ header {
       width: 80%;
       height: 20%;
     }
+
+    @include mq-down(xxs) {
+      top: 640px;
+    }
   }
 
   .okinawa {
@@ -780,6 +796,11 @@ header {
       position: relative;
       top: -299px;
     }
+
+    @include mq-down(xxs) {
+      font-size: 18px;
+      padding-right: 0;
+    }
   }
 
   p {
@@ -804,6 +825,11 @@ header {
       .yes-sp {
         display: none;
       }
+    }
+
+    @include mq-down(xxs) {
+      font-size: 15px;
+      padding-right: 0;
     }
   }
 }
@@ -976,6 +1002,8 @@ header {
   margin-top: 115px;
   margin-bottom: 80px;
 
+
+
   @include mq-up(xl) {
     background-size: cover;
   }
@@ -985,6 +1013,10 @@ header {
     margin-top: 45px;
     margin-bottom: 50px;
     background-size: cover;
+  }
+
+  @include mq-down(xls) {
+    margin-bottom: 60px;
   }
 
   height: 520px;
@@ -1044,6 +1076,10 @@ header {
       line-height: 20px;
       padding-bottom: 54px;
     }
+
+    @include mq-down(xls) {
+      padding-bottom: 40px;
+    }
   }
 
   .works-box {
@@ -1062,12 +1098,20 @@ header {
       grid-gap: 60px;
     }
 
+
+
     @include mq-down(xxs) {
       grid-template-columns: repeat(auto-fit, 160px);
       grid-auto-rows: 187px;
       grid-column-gap: 25px;
       grid-row-gap: 43px;
       width: 100%;
+    }
+
+    @include mq-down(xls) {
+      grid-template-columns: repeat(auto-fit, 134px);
+      grid-auto-rows: 170px;
+      grid-row-gap: 0px;
     }
 
     .works-item {
@@ -1089,6 +1133,11 @@ header {
           width: 160px;
           height: 99.5px;
         }
+
+        @include mq-down(xls) {
+          width: 134px;
+          height: 91px;
+        }
       }
 
       .works-icon {
@@ -1107,6 +1156,13 @@ header {
           top: -20px;
           left: 8px;
         }
+
+        @include mq-down(xls) {
+          width: 30px;
+          height: 30px;
+          top: -15px;
+          left: 8px;
+        }
       }
 
       .works-date {
@@ -1123,6 +1179,12 @@ header {
           padding-left: 0;
           font-weight: 500;
         }
+
+        @include mq-down(xls) {
+          font-size: 12px;
+          line-height: 12px;
+        }
+
       }
 
       .works-text {
@@ -1138,6 +1200,11 @@ header {
           padding-left: 0;
           font-weight: 500;
           letter-spacing: 1.5px;
+        }
+
+        @include mq-down(xls) {
+          font-size: 11px;
+          line-height: 15px;
         }
       }
 
@@ -1166,6 +1233,12 @@ header {
           width: 155px;
         }
       }
+
+      @include mq-down(xls) {
+        .works-text {
+          width: 134px;
+        }
+      }
     }
 
     .works-item:nth-child(4) {
@@ -1184,6 +1257,10 @@ header {
 
     @include mq-down(xxs) {
       margin: 42px auto 56px;
+    }
+
+    @include mq-down(xls) {
+      margin: 0px auto 71px;
     }
   }
 }
@@ -1312,6 +1389,10 @@ header {
           padding: 22px 90px;
         }
 
+        @include mq-down(xls) {
+          padding: 22px 70px;
+        }
+
         &::after {
           top: 35px;
           left: 65%;
@@ -1342,6 +1423,11 @@ footer {
     @include mq-down(xxs) {
       font-size: 12px;
       font-weight: 500;
+    }
+
+    @include mq-down(xxs) {
+      font-size: 10px;
+      font-weight: 400;
     }
   }
 }
