@@ -47,7 +47,8 @@ $breakpoint-down: ('xls': 'screen and (max-width: 374px)',
   'xxs': 'screen and (max-width: 484px)',
   'xs': 'screen and (max-width: 586px)',
   'sm': 'screen and (max-width: 689px)',
-  'md': 'screen and (max-width: 760px)',
+  'md': 'screen and (max-width: 768px)',
+  'm': 'screen and (max-width: 900px)',
   'lg': 'screen and (max-width: 1023px)',
   'xl': 'screen and (max-width: 1230px)',
   'xxl': 'screen and (max-width: 1400px)',
@@ -112,8 +113,12 @@ p {
   @include mq-down {
     width: 92%;
   }
-}
 
+  @include mq-down(xxs) {
+    margin: 0;
+  }
+
+}
 
 @mixin btn-a($width:368px, $top:80px) {
   width: $width;
@@ -162,18 +167,49 @@ p {
   height: 555px;
   margin-top: 100px;
 
+  @include mq-down(xxs) {
+    background-image: url(../img/works-sp.jpg);
+    height: 304px;
+    margin-top: 56px;
+  }
+
+  @include mq-down(xls) {
+    background-size: contain;
+  }
+
   .container {
     padding-left: 135px;
     padding-top: 228px;
 
+    @include mq-down() {
+      padding-left: 20px;
+    }
+
+    @include mq-down(xxs) {
+      padding-left: 15px;
+      padding-top: 128px;
+    }
+
     h4 {
       color: $section-color;
       padding-top: 7px;
+
+      @include mq-down(xxs) {
+        font-size: 16px;
+        line-height: 16px;
+        padding-top: 0;
+      }
     }
 
     h5 {
       letter-spacing: 1.5px;
-      padding-bottom: 59px
+      padding-bottom: 59px;
+
+      @include mq-down(xxs) {
+        font-size: 24px;
+        padding-bottom: 0;
+        line-height: 40px;
+      }
     }
   }
 
@@ -185,18 +221,33 @@ p {
   background-color: #F3F3F3;
   padding-bottom: 5px;
 
+  @include mq-down(xxs) {
+    background-color: #fff;
+    padding-bottom: 0;
+  }
+
   .page-container {
     background-color: #fff;
     width: 90.3%;
-    padding-top: 129px;
-    padding-bottom: 200px;
+    padding-top: 145px;
     position: relative;
-    top: -49px;
+    top: -65px;
+
+    @include mq-down(xxs) {
+      top: -40px;
+      width: 96.3%;
+      padding-top: 116px;
+    }
 
     .list {
       position: absolute;
       top: 51px;
       left: 63px;
+
+      @include mq-down(xxs) {
+        top: 18px;
+        left: 14px;
+      }
 
       .home {
         @include font(14px, 500, $main-color);
@@ -240,6 +291,10 @@ p {
       display: inline;
       transition: all .3s;
 
+      @include mq-down() {
+        display: none;
+      }
+
       &::after {
         content: "";
         background: url(../img/arrow-d.png);
@@ -273,6 +328,35 @@ p {
     grid-gap: 60px;
     justify-content: center;
 
+    @include mq-down(xxl) {
+      grid-template-columns: repeat(auto-fit, 300px);
+      grid-auto-rows: 280px;
+      grid-gap: 70px;
+    }
+
+    @include mq-down() {
+      grid-template-columns: repeat(auto-fit, 250px);
+      grid-auto-rows: 200px;
+      grid-gap: 60px;
+      width: 100%;
+    }
+
+
+
+    @include mq-down(xxs) {
+      grid-template-columns: repeat(auto-fit, 160px);
+      grid-auto-rows: 187px;
+      grid-column-gap: 25px;
+      grid-row-gap: 43px;
+
+    }
+
+    @include mq-down(xls) {
+      grid-template-columns: repeat(auto-fit, 134px);
+      grid-auto-rows: 170px;
+      grid-row-gap: 0px;
+    }
+
     .works-item {
       position: relative;
 
@@ -282,6 +366,26 @@ p {
         background-size: contain;
         width: 555px;
         height: 345px;
+
+        @include mq-down(xxl) {
+          width: 300px;
+          height: 187px;
+        }
+
+        @include mq-down() {
+          width: 250px;
+          height: 160px;
+        }
+
+        @include mq-down(xxs) {
+          width: 160px;
+          height: 99.5px;
+        }
+
+        @include mq-down(xls) {
+          width: 134px;
+          height: 91px;
+        }
       }
 
       .works-icon {
@@ -293,6 +397,27 @@ p {
         position: absolute;
         top: -33px;
         left: 36px;
+
+        @include mq-down(xxl) {
+          width: 50px;
+          height: 50px;
+          top: -25px;
+          left: 25px;
+        }
+
+        @include mq-down(xxs) {
+          width: 40px;
+          height: 40px;
+          top: -20px;
+          left: 8px;
+        }
+
+        @include mq-down(xls) {
+          width: 30px;
+          height: 30px;
+          top: -15px;
+          left: 8px;
+        }
       }
 
       .works-date {
@@ -301,6 +426,25 @@ p {
         @include font(16px, 700);
         font-family: 'Epilogue',
           sans-serif;
+
+        @include mq-down(xxl) {
+          font-size: 14px;
+          padding-top: 0;
+          padding-left: 0;
+        }
+
+        @include mq-down(xxs) {
+          font-size: 14px;
+          line-height: 40px;
+          padding-top: 0;
+          padding-left: 0;
+          font-weight: 500;
+        }
+
+        @include mq-down(xls) {
+          font-size: 12px;
+          line-height: 12px;
+        }
       }
 
       .works-text {
@@ -308,10 +452,43 @@ p {
         line-height: 28px;
         padding-top: 9px;
         padding-left: 60px;
+
+        @include mq-down(xxl) {
+          font-size: 15px;
+          padding-top: 0;
+          padding-left: 0;
+          font-weight: 500;
+        }
+
+        @include mq-down() {
+          font-size: 12px;
+        }
+
+        @include mq-down(xxs) {
+          font-size: 14px;
+          line-height: 24px;
+          padding-top: 0;
+          padding-left: 0;
+          font-weight: 500;
+          letter-spacing: 1.5px;
+        }
+
+        @include mq-down(xls) {
+          font-size: 11px;
+          line-height: 15px;
+        }
       }
 
       .page {
         margin: 14px 61px 0 auto;
+
+        @include mq-down(xxl) {
+          margin: 0px 61px 0 auto;
+        }
+
+        @include mq-down(xxs) {
+          display: none;
+        }
       }
     }
 
@@ -324,6 +501,18 @@ p {
     .works-item:nth-child(3) {
       .works-img {
         background-image: url(../img/works3.jpg);
+      }
+
+      @include mq-down(xxs) {
+        .works-text {
+          width: 155px;
+        }
+      }
+
+      @include mq-down(xls) {
+        .works-text {
+          width: 134px;
+        }
       }
     }
 
@@ -363,6 +552,27 @@ p {
         position: absolute;
         top: -33px;
         left: 108px;
+
+        @include mq-down(xxl) {
+          width: 50px;
+          height: 50px;
+          top: -25px;
+          left: 82px;
+        }
+
+        @include mq-down(xxs) {
+          width: 40px;
+          height: 40px;
+          top: -20px;
+          left: 52px;
+        }
+
+        @include mq-down(xls) {
+          width: 30px;
+          height: 30px;
+          top: -15px;
+          left: 42px;
+        }
       }
     }
 

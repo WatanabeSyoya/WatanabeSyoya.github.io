@@ -328,6 +328,13 @@ p {
     width: 100%;
     max-width: 400px;
     height: 250px;
+    min-width: 270px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  #business-page .business-box .business-item .business-img {
+    height: 190px;
   }
 }
 
