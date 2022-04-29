@@ -1782,10 +1782,11 @@ footer p {
   footer p {
     font-size: 12px;
     font-weight: 500;
+    letter-spacing: -.02em;
   }
 }
 
-@media screen and (max-width: 484px) {
+@media screen and (max-width: 374px) {
   footer p {
     font-size: 10px;
     font-weight: 400;

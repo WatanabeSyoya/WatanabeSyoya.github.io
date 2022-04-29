@@ -47,7 +47,8 @@ $breakpoint-down: ('xls': 'screen and (max-width: 374px)',
   'xxs': 'screen and (max-width: 484px)',
   'xs': 'screen and (max-width: 586px)',
   'sm': 'screen and (max-width: 689px)',
-  'md': 'screen and (max-width: 760px)',
+  'md': 'screen and (max-width: 768px)',
+  'm': 'screen and (max-width: 900px)',
   'lg': 'screen and (max-width: 1023px)',
   'xl': 'screen and (max-width: 1230px)',
   'xxl': 'screen and (max-width: 1400px)',
@@ -112,6 +113,11 @@ p {
   @include mq-down {
     width: 92%;
   }
+
+  @include mq-down(xxs) {
+    margin: 0;
+  }
+
 }
 
 
@@ -162,18 +168,45 @@ p {
   height: 555px;
   margin-top: 100px;
 
+  @include mq-down(xxs) {
+    background-image: url(../img/business-sp.jpg);
+    height: 304px;
+    margin-top: 56px;
+  }
+
   .container {
     padding-left: 135px;
     padding-top: 228px;
 
+    @include mq-down() {
+      padding-left: 20px;
+    }
+
+    @include mq-down(xxs) {
+      padding-left: 15px;
+      padding-top: 128px;
+    }
+
     h4 {
       color: $section-color;
       padding-top: 7px;
+
+      @include mq-down(xxs) {
+        font-size: 16px;
+        line-height: 16px;
+        padding-top: 0;
+      }
     }
 
     h5 {
       letter-spacing: 1.5px;
-      padding-bottom: 59px
+      padding-bottom: 59px;
+
+      @include mq-down(xxs) {
+        font-size: 24px;
+        padding-bottom: 0;
+        line-height: 40px;
+      }
     }
   }
 
@@ -185,6 +218,11 @@ p {
   background-color: #F3F3F3;
   padding-bottom: 5px;
 
+  @include mq-down(xxs) {
+    background-color: #fff;
+    padding-bottom: 0;
+  }
+
   .page-container {
     background-color: #fff;
     width: 90.3%;
@@ -192,10 +230,21 @@ p {
     position: relative;
     top: -65px;
 
+    @include mq-down(xxs) {
+      top: -40px;
+      width: 96.3%;
+      padding-top: 116px;
+    }
+
     .list {
       position: absolute;
       top: 51px;
       left: 63px;
+
+      @include mq-down(xxs) {
+        top: 18px;
+        left: 14px;
+      }
 
       .home {
         @include font(14px, 500, $main-color);
@@ -239,6 +288,10 @@ p {
       display: inline;
       transition: all .3s;
 
+      @include mq-down() {
+        display: none;
+      }
+
       &::after {
         content: "";
         background: url(../img/arrow-d.png);
@@ -272,17 +325,40 @@ p {
       width: 60%;
     }
 
+    @include mq-down(xxs) {
+      width: 96%;
+      margin: 0;
+      margin-left: auto;
+    }
+
     .business-item {
       display: flex;
       padding-bottom: 120px;
+
+      @include mq-down() {
+        flex-direction: column;
+        padding-bottom: 76px;
+      }
 
       .business-img {
         background-image: url(../img/business1.jpg);
         background-repeat: no-repeat;
         background-size: contain;
         width: 555px;
+        min-width: 350px;
         height: 343px;
         position: relative;
+
+        @include mq-down(sm) {
+          width: 400px;
+          height: 250px;
+        }
+
+        @include mq-down(xxs) {
+          width: 100%;
+          max-width: 400px;
+          height: 250px;
+        }
 
         &::before {
           content: "";
@@ -294,11 +370,28 @@ p {
           position: absolute;
           top: -33px;
           right: 36px;
+
+
+
+          @include mq-down(xxs) {
+            width: 40px;
+            height: 40px;
+            top: -20px;
+            left: 18px;
+          }
         }
       }
 
       .business-text {
         padding-left: 59px;
+
+        @include mq-down(m) {
+          padding-left: 40px;
+        }
+
+        @include mq-down() {
+          padding-left: 0;
+        }
 
         h4 {
           @include font(16px, 700, $section-color);
@@ -306,11 +399,24 @@ p {
           font-family: 'Epilogue',
             sans-serif;
 
+          @include mq-down(xxs) {
+            line-height: 16px;
+            margin-bottom: 8px;
+          }
         }
 
         h5 {
           letter-spacing: 1.5px;
           padding-bottom: 40px;
+
+          @include mq-down() {
+            padding-bottom: 30px;
+          }
+
+          @include mq-down(xxs) {
+            font-size: 24px;
+            line-height: 24px;
+          }
         }
 
         p {
@@ -318,6 +424,14 @@ p {
           line-height: 28px;
           letter-spacing: 1.5px;
           width: 350px;
+
+          @include mq-down(m) {
+            width: auto;
+          }
+
+          @include mq-down(xxs) {
+            width: 100%;
+          }
         }
       }
     }
@@ -345,6 +459,10 @@ p {
     .business-item:nth-child(4) {
       padding-bottom: 80px;
 
+      @include mq-down(xxs) {
+        padding-bottom: 57px;
+      }
+
       .business-img {
         background-image: url(../img/business4.jpg);
 
@@ -363,14 +481,30 @@ p {
     .business-item:nth-child(even) {
       flex-direction: row-reverse;
 
+      @include mq-down() {
+        flex-direction: column;
+      }
+
       .business-img::before {
         right: 0;
         left: 36px;
+
+        @include mq-down(xxs) {
+          left: 18px;
+        }
       }
 
       .business-text {
         padding-left: 0;
         padding-right: 60px;
+
+        @include mq-down(m) {
+          padding-right: 40px;
+        }
+
+        @include mq-down() {
+          padding-right: 0;
+        }
       }
     }
   }

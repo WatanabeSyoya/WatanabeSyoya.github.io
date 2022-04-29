@@ -48,6 +48,7 @@ $breakpoint-down: ('xls': 'screen and (max-width: 374px)',
   'xs': 'screen and (max-width: 586px)',
   'sm': 'screen and (max-width: 689px)',
   'md': 'screen and (max-width: 768px)',
+  'm': 'screen and (max-width: 900px)',
   'lg': 'screen and (max-width: 1023px)',
   'xl': 'screen and (max-width: 1230px)',
   'xxl': 'screen and (max-width: 1400px)',
@@ -1580,9 +1581,10 @@ footer {
     @include mq-down(xxs) {
       font-size: 12px;
       font-weight: 500;
+      letter-spacing: -.02em;
     }
 
-    @include mq-down(xxs) {
+    @include mq-down(xls) {
       font-size: 10px;
       font-weight: 400;
     }

@@ -78,9 +78,15 @@ p {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 768px) {
   .container {
     width: 92%;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  .container {
+    margin: 0;
   }
 }
 
@@ -92,9 +98,30 @@ p {
   margin-top: 100px;
 }
 
+@media screen and (max-width: 484px) {
+  #business-fv {
+    background-image: url(../img/business-sp.jpg);
+    height: 304px;
+    margin-top: 56px;
+  }
+}
+
 #business-fv .container {
   padding-left: 135px;
   padding-top: 228px;
+}
+
+@media screen and (max-width: 768px) {
+  #business-fv .container {
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  #business-fv .container {
+    padding-left: 15px;
+    padding-top: 128px;
+  }
 }
 
 #business-fv .container h4 {
@@ -102,14 +129,37 @@ p {
   padding-top: 7px;
 }
 
+@media screen and (max-width: 484px) {
+  #business-fv .container h4 {
+    font-size: 16px;
+    line-height: 16px;
+    padding-top: 0;
+  }
+}
+
 #business-fv .container h5 {
   letter-spacing: 1.5px;
   padding-bottom: 59px;
 }
 
+@media screen and (max-width: 484px) {
+  #business-fv .container h5 {
+    font-size: 24px;
+    padding-bottom: 0;
+    line-height: 40px;
+  }
+}
+
 #business-page {
   background-color: #F3F3F3;
   padding-bottom: 5px;
+}
+
+@media screen and (max-width: 484px) {
+  #business-page {
+    background-color: #fff;
+    padding-bottom: 0;
+  }
 }
 
 #business-page .page-container {
@@ -120,10 +170,25 @@ p {
   top: -65px;
 }
 
+@media screen and (max-width: 484px) {
+  #business-page .page-container {
+    top: -40px;
+    width: 96.3%;
+    padding-top: 116px;
+  }
+}
+
 #business-page .page-container .list {
   position: absolute;
   top: 51px;
   left: 63px;
+}
+
+@media screen and (max-width: 484px) {
+  #business-page .page-container .list {
+    top: 18px;
+    left: 14px;
+  }
 }
 
 #business-page .page-container .list .home {
@@ -175,6 +240,12 @@ p {
   transition: all .3s;
 }
 
+@media screen and (max-width: 768px) {
+  #business-page .page-container .scroll {
+    display: none;
+  }
+}
+
 #business-page .page-container .scroll::after {
   content: "";
   background: url(../img/arrow-d.png);
@@ -210,6 +281,14 @@ p {
   }
 }
 
+@media screen and (max-width: 484px) {
+  #business-page .business-box {
+    width: 96%;
+    margin: 0;
+    margin-left: auto;
+  }
+}
+
 #business-page .business-box .business-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -217,13 +296,39 @@ p {
   padding-bottom: 120px;
 }
 
+@media screen and (max-width: 768px) {
+  #business-page .business-box .business-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 76px;
+  }
+}
+
 #business-page .business-box .business-item .business-img {
   background-image: url(../img/business1.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   width: 555px;
+  min-width: 350px;
   height: 343px;
   position: relative;
+}
+
+@media screen and (max-width: 689px) {
+  #business-page .business-box .business-item .business-img {
+    width: 400px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  #business-page .business-box .business-item .business-img {
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+  }
 }
 
 #business-page .business-box .business-item .business-img::before {
@@ -238,8 +343,29 @@ p {
   right: 36px;
 }
 
+@media screen and (max-width: 484px) {
+  #business-page .business-box .business-item .business-img::before {
+    width: 40px;
+    height: 40px;
+    top: -20px;
+    left: 18px;
+  }
+}
+
 #business-page .business-box .business-item .business-text {
   padding-left: 59px;
+}
+
+@media screen and (max-width: 900px) {
+  #business-page .business-box .business-item .business-text {
+    padding-left: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #business-page .business-box .business-item .business-text {
+    padding-left: 0;
+  }
 }
 
 #business-page .business-box .business-item .business-text h4 {
@@ -251,9 +377,29 @@ p {
   font-family: 'Epilogue', sans-serif;
 }
 
+@media screen and (max-width: 484px) {
+  #business-page .business-box .business-item .business-text h4 {
+    line-height: 16px;
+    margin-bottom: 8px;
+  }
+}
+
 #business-page .business-box .business-item .business-text h5 {
   letter-spacing: 1.5px;
   padding-bottom: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  #business-page .business-box .business-item .business-text h5 {
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  #business-page .business-box .business-item .business-text h5 {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
 
 #business-page .business-box .business-item .business-text p {
@@ -264,6 +410,18 @@ p {
   line-height: 28px;
   letter-spacing: 1.5px;
   width: 350px;
+}
+
+@media screen and (max-width: 900px) {
+  #business-page .business-box .business-item .business-text p {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  #business-page .business-box .business-item .business-text p {
+    width: 100%;
+  }
 }
 
 #business-page .business-box .business-item:nth-child(2) .business-img {
@@ -286,6 +444,12 @@ p {
   padding-bottom: 80px;
 }
 
+@media screen and (max-width: 484px) {
+  #business-page .business-box .business-item:nth-child(4) {
+    padding-bottom: 57px;
+  }
+}
+
 #business-page .business-box .business-item:nth-child(4) .business-img {
   background-image: url(../img/business4.jpg);
 }
@@ -305,13 +469,40 @@ p {
           flex-direction: row-reverse;
 }
 
+@media screen and (max-width: 768px) {
+  #business-page .business-box .business-item:nth-child(even) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 #business-page .business-box .business-item:nth-child(even) .business-img::before {
   right: 0;
   left: 36px;
 }
 
+@media screen and (max-width: 484px) {
+  #business-page .business-box .business-item:nth-child(even) .business-img::before {
+    left: 18px;
+  }
+}
+
 #business-page .business-box .business-item:nth-child(even) .business-text {
   padding-left: 0;
   padding-right: 60px;
+}
+
+@media screen and (max-width: 900px) {
+  #business-page .business-box .business-item:nth-child(even) .business-text {
+    padding-right: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #business-page .business-box .business-item:nth-child(even) .business-text {
+    padding-right: 0;
+  }
 }
 /*# sourceMappingURL=business.css.map */
