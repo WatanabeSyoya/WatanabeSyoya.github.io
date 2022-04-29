@@ -1185,10 +1185,17 @@ header {
     width: 90%;
     margin: 0 auto;
 
+    @include mq-down(xxl) {
+      grid-template-columns: repeat(auto-fit, 300px);
+      grid-auto-rows: 280px;
+      grid-gap: 70px;
+    }
+
     @include mq-down() {
       grid-template-columns: repeat(auto-fit, 250px);
-      grid-auto-rows: 156px;
+      grid-auto-rows: 200px;
       grid-gap: 60px;
+      width: 100%;
     }
 
 
@@ -1198,7 +1205,7 @@ header {
       grid-auto-rows: 187px;
       grid-column-gap: 25px;
       grid-row-gap: 43px;
-      width: 100%;
+
     }
 
     @include mq-down(xls) {
@@ -1217,9 +1224,14 @@ header {
         width: 555px;
         height: 345px;
 
+        @include mq-down(xxl) {
+          width: 300px;
+          height: 187px;
+        }
+
         @include mq-down() {
           width: 250px;
-          height: 156px;
+          height: 160px;
         }
 
         @include mq-down(xxs) {
@@ -1243,6 +1255,13 @@ header {
         top: -33px;
         left: 36px;
 
+        @include mq-down(xxl) {
+          width: 50px;
+          height: 50px;
+          top: -25px;
+          left: 25px;
+        }
+
         @include mq-down(xxs) {
           width: 40px;
           height: 40px;
@@ -1265,6 +1284,12 @@ header {
         font-family: 'Epilogue',
           sans-serif;
 
+        @include mq-down(xxl) {
+          font-size: 14px;
+          padding-top: 0;
+          padding-left: 0;
+        }
+
         @include mq-down(xxs) {
           font-size: 14px;
           line-height: 40px;
@@ -1286,6 +1311,17 @@ header {
         padding-top: 9px;
         padding-left: 60px;
 
+        @include mq-down(xxl) {
+          font-size: 15px;
+          padding-top: 0;
+          padding-left: 0;
+          font-weight: 500;
+        }
+
+        @include mq-down() {
+          font-size: 13px;
+        }
+
         @include mq-down(xxs) {
           font-size: 14px;
           line-height: 24px;
@@ -1303,6 +1339,10 @@ header {
 
       .page {
         margin: 14px 61px 0 auto;
+
+        @include mq-down(xxl) {
+          margin: 0px 61px 0 auto;
+        }
 
         @include mq-down(xxs) {
           display: none;
