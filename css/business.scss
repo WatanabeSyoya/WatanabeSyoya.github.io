@@ -39,7 +39,7 @@ $breakpoint-up: ('xls': 'screen and (max-width: 376px)',
   'md': 'screen and (min-width: 761px)',
   'lg': 'screen and (min-width: 965px)',
   'xl': 'screen and (min-width: 1441px)',
-  'xxl': 'screen and (min-width: 1024px)',
+  'xxl': 'screen and (min-width: 2000px)',
 ) !default;
 
 // max-width
@@ -267,6 +267,10 @@ p {
   .business-box {
     width: 90%;
     margin: 0 auto;
+
+    @include mq-up(xxl) {
+      width: 60%;
+    }
 
     .business-item {
       display: flex;

@@ -204,6 +204,12 @@ p {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 2000px) {
+  #business-page .business-box {
+    width: 60%;
+  }
+}
+
 #business-page .business-box .business-item {
   display: -webkit-box;
   display: -ms-flexbox;
