@@ -36,7 +36,7 @@ $breakpoint-up: ('xls': 'screen and (max-width: 376px)',
   'xxs': 'screen and (min-width: 485px)',
   'xs': 'screen and (min-width: 587px)',
   'sm': 'screen and (min-width: 690px)',
-  'md': 'screen and (min-width: 761px)',
+  'md': 'screen and (min-width: 769px)',
   'lg': 'screen and (min-width: 965px)',
   'xl': 'screen and (min-width: 1441px)',
   'xxl': 'screen and (min-width: 1024px)',
@@ -47,7 +47,7 @@ $breakpoint-down: ('xls': 'screen and (max-width: 374px)',
   'xxs': 'screen and (max-width: 484px)',
   'xs': 'screen and (max-width: 586px)',
   'sm': 'screen and (max-width: 689px)',
-  'md': 'screen and (max-width: 760px)',
+  'md': 'screen and (max-width: 768px)',
   'lg': 'screen and (max-width: 1023px)',
   'xl': 'screen and (max-width: 1230px)',
   'xxl': 'screen and (max-width: 1400px)',
@@ -491,12 +491,17 @@ header {
     margin-bottom: -100px;
   }
 
+  @include mq-down() {
+    margin-bottom: -300px;
+  }
+
   @include mq-down(xxs) {
     background-image: url(../img/sp-main.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 320px;
     margin-top: 260px;
+    margin-bottom: 0;
   }
 
   @include mq-down(xls) {
@@ -510,6 +515,11 @@ header {
     @include mq-down(xl) {
       padding-left: 80px;
       padding-top: 80px;
+    }
+
+    @include mq-down() {
+      padding-left: 20px;
+      padding-top: 20px;
     }
 
     @include mq-down(xxs) {
@@ -531,6 +541,11 @@ header {
       line-height: 44px;
     }
 
+    @include mq-down() {
+      font-size: 32px;
+      line-height: 35px;
+    }
+
     @include mq-down(xxs) {
       @include font(32px, 400);
       margin-bottom: 24px;
@@ -545,6 +560,11 @@ header {
     @include mq-down(xl) {
       font-size: 30px;
       line-height: 44px;
+    }
+
+    @include mq-down() {
+      font-size: 25px;
+      line-height: 35px;
     }
 
     @include mq-down(xxs) {
@@ -1061,14 +1081,17 @@ header {
     background-size: cover;
   }
 
-  @include mq-down(xxs) {
-    background-image: url(../img/recruit-sp.jpg);
+  @include mq-down() {
+    background-image: url(../img/recruit-ipad.jpg);
     margin-top: 45px;
     margin-bottom: 50px;
     background-size: cover;
   }
 
   @include mq-down(xls) {
+    background-image: url(../img/recruit-min.jpg);
+    margin-top: 45px;
+    background-size: cover;
     margin-bottom: 60px;
   }
 
@@ -1082,13 +1105,15 @@ header {
     @include mq-down(xxl) {
       padding-top: 2%;
       padding-left: 20%;
+      line-height: 20px;
     }
 
-    @include mq-down(xxs) {
+    @include mq-down() {
       padding-left: 0;
       font-size: 16px;
       text-align: center;
       padding-top: 50px;
+      line-height: 36px;
     }
   }
 
@@ -1103,7 +1128,7 @@ header {
       padding-left: 18%;
     }
 
-    @include mq-down(xxs) {
+    @include mq-down() {
       padding-left: 0;
       font-size: 24px;
       text-align: center;
@@ -1117,7 +1142,7 @@ header {
       margin-left: 20%;
     }
 
-    @include mq-down(xxs) {
+    @include mq-down() {
       margin-left: 0;
       margin: 42px auto 0;
     }
