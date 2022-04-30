@@ -85,6 +85,12 @@ p {
   }
 }
 
+@media screen and (max-width: 484px) {
+  .container {
+    margin: 0;
+  }
+}
+
 #recruit-fv {
   background-color: #359B87;
   background-repeat: no-repeat;
@@ -168,6 +174,7 @@ p {
   #recruit-fv .container {
     padding-left: 47px;
     padding-top: 24px;
+    width: auto;
   }
 }
 
@@ -477,6 +484,7 @@ p {
     line-height: 36px;
     letter-spacing: 1.5px;
     padding-bottom: 33px;
+    width: auto;
   }
 }
 

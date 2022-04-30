@@ -112,6 +112,11 @@ p {
   @include mq-down {
     width: 92%;
   }
+
+  @include mq-down(xxs) {
+    margin: 0;
+  }
+
 }
 
 
@@ -221,6 +226,7 @@ p {
     @include mq-down(xxs) {
       padding-left: 47px;
       padding-top: 24px;
+      width: auto;
     }
 
     h4 {
@@ -494,6 +500,7 @@ p {
           line-height: 36px;
           letter-spacing: 1.5px;
           padding-bottom: 33px;
+          width: auto;
         }
       }
 
