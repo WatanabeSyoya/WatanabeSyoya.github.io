@@ -79,7 +79,7 @@ p {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 768px) {
   .container {
     width: 92%;
   }
@@ -92,6 +92,13 @@ p {
   height: 555px;
   margin-top: 280px;
   position: relative;
+}
+
+@media screen and (max-width: 484px) {
+  #recruit-fv {
+    height: 320px;
+    margin-top: 160px;
+  }
 }
 
 #recruit-fv::after {
@@ -108,6 +115,30 @@ p {
   -ms-transform: translateX(-50%);
 }
 
+@media screen and (max-width: 1230px) {
+  #recruit-fv::after {
+    width: 90%;
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #recruit-fv::after {
+    background: url(../img/recruit-min-m.jpg);
+    background-position: right;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  #recruit-fv::after {
+    background: url(../img/recruit-sp-min.jpg) no-repeat;
+    background-position: right;
+    width: 92%;
+    top: -60px;
+    height: 180px;
+  }
+}
+
 #recruit-fv .container {
   padding-left: 248px;
   padding-top: 48px;
@@ -115,14 +146,55 @@ p {
   z-index: 2;
 }
 
+@media screen and (min-width: 1441px) {
+  #recruit-fv .container {
+    padding-left: 30%;
+  }
+}
+
+@media screen and (max-width: 1230px) {
+  #recruit-fv .container {
+    padding-left: 20%;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  #recruit-fv .container {
+    padding-left: 10%;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  #recruit-fv .container {
+    padding-left: 13%;
+    padding-top: 24px;
+  }
+}
+
 #recruit-fv .container h4 {
   color: #359B87;
   padding-top: 7px;
 }
 
+@media screen and (max-width: 484px) {
+  #recruit-fv .container h4 {
+    font-size: 16px;
+    line-height: 16px;
+    padding-top: 0;
+  }
+}
+
 #recruit-fv .container h5 {
   letter-spacing: 1.5px;
   padding-bottom: 59px;
+}
+
+@media screen and (max-width: 484px) {
+  #recruit-fv .container h5 {
+    font-size: 24px;
+    padding-bottom: 0;
+    line-height: 40px;
+  }
 }
 
 #recruit-page {
@@ -143,6 +215,15 @@ p {
   left: 135px;
 }
 
+@media screen and (max-width: 484px) {
+  #recruit-page::after {
+    width: 363px;
+    height: 220px;
+    top: 656px;
+    left: 14px;
+  }
+}
+
 #recruit-page .page-container {
   background-color: #fff;
   width: 95.2%;
@@ -152,10 +233,26 @@ p {
   top: -245px;
 }
 
+@media screen and (max-width: 484px) {
+  #recruit-page .page-container {
+    width: 96.2%;
+    top: -160px;
+    padding-top: 96px;
+    padding-bottom: 246px;
+  }
+}
+
 #recruit-page .page-container .list {
   position: absolute;
   top: 51px;
   left: 63px;
+}
+
+@media screen and (max-width: 484px) {
+  #recruit-page .page-container .list {
+    top: 18px;
+    left: 14px;
+  }
 }
 
 #recruit-page .page-container .list .home {
@@ -207,6 +304,12 @@ p {
   transition: all .3s;
 }
 
+@media screen and (max-width: 768px) {
+  #recruit-page .page-container .scroll {
+    display: none;
+  }
+}
+
 #recruit-page .page-container .scroll::after {
   content: "";
   background: url(../img/arrow-d.png);
@@ -242,8 +345,14 @@ p {
   padding-left: 175px;
 }
 
-#recruit-page .recruit-text-main h5 {
-  font-family: 'Epilogue', sans-serif;
+@media screen and (max-width: 484px) {
+  #recruit-page .recruit-text-main {
+    padding-left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 #recruit-page .recruit-text-main .first {
@@ -252,8 +361,35 @@ p {
   padding-right: 83px;
 }
 
+@media screen and (max-width: 484px) {
+  #recruit-page .recruit-text-main .first {
+    padding-right: 0;
+    padding-left: 15px;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 1.5px;
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  #recruit-page .recruit-text-main .text-side {
+    margin-top: 26px;
+  }
+}
+
 #recruit-page .recruit-text-main .text-side h5 {
   padding-bottom: 24px;
+}
+
+@media screen and (max-width: 484px) {
+  #recruit-page .recruit-text-main .text-side h5 {
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 1.5px;
+    padding-left: 15px;
+    padding-bottom: 26px;
+  }
 }
 
 #recruit-page .recruit-text-main .text-side p {
@@ -269,6 +405,30 @@ p {
   padding-left: 15px;
 }
 
+@media screen and (max-width: 484px) {
+  #recruit-page .recruit-text-main .text-side p {
+    padding-top: 6px;
+    width: 343px;
+    padding-bottom: 18px;
+  }
+}
+
+#recruit-page .text-side-br {
+  display: inline;
+}
+
+@media screen and (min-width: 769px) {
+  #recruit-page .text-side-br-br {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #recruit-page .text-side-pc {
+    display: none;
+  }
+}
+
 #recruit-page .recruit-text-sub {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -281,8 +441,27 @@ p {
   border-bottom: 8px #359B87 solid;
 }
 
+@media screen and (max-width: 484px) {
+  #recruit-page .recruit-text-sub {
+    top: -244px;
+    border-left: 6px #359B87 solid;
+    border-bottom: 10px #359B87 solid;
+    padding-top: 32px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 #recruit-page .recruit-text-sub .recruit-message {
   padding-left: 127px;
+}
+
+@media screen and (max-width: 484px) {
+  #recruit-page .recruit-text-sub .recruit-message {
+    padding-left: 9px;
+  }
 }
 
 #recruit-page .recruit-text-sub .recruit-message h5 {
@@ -290,6 +469,15 @@ p {
   color: #359B87;
   padding-bottom: 46px;
   letter-spacing: 1.5px;
+}
+
+@media screen and (max-width: 484px) {
+  #recruit-page .recruit-text-sub .recruit-message h5 {
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 1.5px;
+    padding-bottom: 33px;
+  }
 }
 
 #recruit-page .recruit-text-sub .recruit-message h4 {
@@ -302,6 +490,14 @@ p {
   letter-spacing: 1.5px;
 }
 
+@media screen and (max-width: 484px) {
+  #recruit-page .recruit-text-sub .recruit-message h4 {
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 32px;
+  }
+}
+
 #recruit-page .recruit-text-sub .recruit-message p {
   width: 546px;
   font-size: 16px;
@@ -312,6 +508,12 @@ p {
   letter-spacing: 1.5px;
 }
 
+@media screen and (max-width: 484px) {
+  #recruit-page .recruit-text-sub .recruit-message p {
+    width: 340px;
+  }
+}
+
 #recruit-page .recruit-text-sub .message-img {
   background-color: #359B87;
   width: 555px;
@@ -319,6 +521,17 @@ p {
   margin-left: 109px;
   margin-top: 10px;
   position: relative;
+}
+
+@media screen and (max-width: 484px) {
+  #recruit-page .recruit-text-sub .message-img {
+    width: 345px;
+    height: 217.5px;
+    top: 63px;
+    right: -24px;
+    margin-left: 0;
+    margin-top: 0;
+  }
 }
 
 #recruit-page .recruit-text-sub .message-img::after {
@@ -331,6 +544,15 @@ p {
   height: 350px;
   top: -40px;
   right: 40px;
+}
+
+@media screen and (max-width: 484px) {
+  #recruit-page .recruit-text-sub .message-img::after {
+    width: 345px;
+    height: 217.5px;
+    top: -24px;
+    right: 15px;
+  }
 }
 
 #recruit-page .next-btn {

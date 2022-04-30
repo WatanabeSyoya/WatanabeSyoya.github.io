@@ -36,7 +36,7 @@ $breakpoint-up: ('xls': 'screen and (max-width: 376px)',
   'xxs': 'screen and (min-width: 485px)',
   'xs': 'screen and (min-width: 587px)',
   'sm': 'screen and (min-width: 690px)',
-  'md': 'screen and (min-width: 761px)',
+  'md': 'screen and (min-width: 769px)',
   'lg': 'screen and (min-width: 965px)',
   'xl': 'screen and (min-width: 1441px)',
   'xxl': 'screen and (min-width: 1024px)',
@@ -47,7 +47,7 @@ $breakpoint-down: ('xls': 'screen and (max-width: 374px)',
   'xxs': 'screen and (max-width: 484px)',
   'xs': 'screen and (max-width: 586px)',
   'sm': 'screen and (max-width: 689px)',
-  'md': 'screen and (max-width: 760px)',
+  'md': 'screen and (max-width: 768px)',
   'lg': 'screen and (max-width: 1023px)',
   'xl': 'screen and (max-width: 1230px)',
   'xxl': 'screen and (max-width: 1400px)',
@@ -163,6 +163,11 @@ p {
   margin-top: 280px;
   position: relative;
 
+  @include mq-down(xxs) {
+    height: 320px;
+    margin-top: 160px;
+  }
+
   &::after {
     content: '';
     background: url(../img/recruit-main.jpg) no-repeat;
@@ -175,6 +180,24 @@ p {
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
+
+    @include mq-down(xl) {
+      width: 90%;
+      background-position: center;
+    }
+
+    @include mq-down() {
+      background: url(../img/recruit-min-m.jpg);
+      background-position: right;
+    }
+
+    @include mq-down(xxs) {
+      background: url(../img/recruit-sp-min.jpg) no-repeat;
+      background-position: right;
+      width: 92%;
+      top: -60px;
+      height: 180px;
+    }
   }
 
   .container {
@@ -183,14 +206,43 @@ p {
     position: absolute;
     z-index: 2;
 
+    @include mq-up(xl) {
+      padding-left: 30%;
+    }
+
+    @include mq-down(xl) {
+      padding-left: 20%;
+    }
+
+    @include mq-down(lg) {
+      padding-left: 10%;
+    }
+
+    @include mq-down(xxs) {
+      padding-left: 13%;
+      padding-top: 24px;
+    }
+
     h4 {
       color: $section-color;
       padding-top: 7px;
+
+      @include mq-down(xxs) {
+        font-size: 16px;
+        line-height: 16px;
+        padding-top: 0;
+      }
     }
 
     h5 {
       letter-spacing: 1.5px;
-      padding-bottom: 59px
+      padding-bottom: 59px;
+
+      @include mq-down(xxs) {
+        font-size: 24px;
+        padding-bottom: 0;
+        line-height: 40px;
+      }
     }
   }
 
@@ -199,6 +251,7 @@ p {
 
 
 #recruit-page {
+
   background-color: #fff;
   padding-bottom: 5px;
   position: relative;
@@ -213,6 +266,14 @@ p {
     height: 396px;
     top: 212px;
     left: 135px;
+
+    @include mq-down(xxs) {
+      width: 363px;
+      height: 220px;
+      top: 656px;
+      left: 14px;
+
+    }
   }
 
   .page-container {
@@ -223,10 +284,22 @@ p {
     position: relative;
     top: -245px;
 
+    @include mq-down(xxs) {
+      width: 96.2%;
+      top: -160px;
+      padding-top: 96px;
+      padding-bottom: 246px;
+    }
+
     .list {
       position: absolute;
       top: 51px;
       left: 63px;
+
+      @include mq-down(xxs) {
+        top: 18px;
+        left: 14px;
+      }
 
       .home {
         @include font(14px, 500, $main-color);
@@ -270,6 +343,10 @@ p {
       display: inline;
       transition: all .3s;
 
+      @include mq-down() {
+        display: none;
+      }
+
       &::after {
         content: "";
         background: url(../img/arrow-d.png);
@@ -303,21 +380,47 @@ p {
     display: flex;
     padding-left: 175px;
 
-    h5 {
-      font-family: 'Epilogue',
-        sans-serif;
+    @include mq-down(xxs) {
+      padding-left: 0;
+      flex-direction: column;
     }
 
     .first {
       color: $section-color;
       width: 270px;
       padding-right: 83px;
+
+      @include mq-down(xxs) {
+        padding-right: 0;
+        padding-left: 15px;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: 1.5px;
+        width: 250px;
+      }
     }
 
     .text-side {
+      @include mq-down(xxs) {
+        margin-top: 26px;
+      }
+
       h5 {
         padding-bottom: 24px;
+
+        @include mq-down(xxs) {
+          font-size: 24px;
+          line-height: 36px;
+          letter-spacing: 1.5px;
+          padding-left: 15px;
+          padding-bottom: 26px;
+        }
       }
+
+
+
+
+
 
       p {
         width: 753px;
@@ -327,7 +430,32 @@ p {
         padding-top: 16px;
         padding-bottom: 16px;
         padding-left: 15px;
+
+        @include mq-down(xxs) {
+          padding-top: 6px;
+          width: 343px;
+          padding-bottom: 18px;
+        }
       }
+
+
+
+    }
+  }
+
+  .text-side-br {
+    display: inline;
+
+    @include mq-up() {
+      &-br {
+        display: none;
+      }
+    }
+  }
+
+  .text-side-pc {
+    @include mq-down() {
+      display: none;
     }
   }
 
@@ -340,14 +468,34 @@ p {
     border-left: 8px $section-color solid;
     border-bottom: 8px $section-color solid;
 
+    @include mq-down(xxs) {
+      top: -244px;
+      border-left: 6px $section-color solid;
+      border-bottom: 10px $section-color solid;
+      padding-top: 32px;
+      flex-direction: column;
+
+    }
+
     .recruit-message {
       padding-left: 127px;
+
+      @include mq-down(xxs) {
+        padding-left: 9px;
+      }
 
       h5 {
         width: 474px;
         color: $section-color;
         padding-bottom: 46px;
         letter-spacing: 1.5px;
+
+        @include mq-down(xxs) {
+          font-size: 24px;
+          line-height: 36px;
+          letter-spacing: 1.5px;
+          padding-bottom: 33px;
+        }
       }
 
       h4 {
@@ -355,6 +503,12 @@ p {
         @include font(24px, 700);
         line-height: 42px;
         letter-spacing: 1.5px;
+
+        @include mq-down(xxs) {
+          font-size: 20px;
+          line-height: 30px;
+          padding-bottom: 32px;
+        }
       }
 
       p {
@@ -362,6 +516,10 @@ p {
         @include font(16px, 500);
         line-height: 28px;
         letter-spacing: 1.5px;
+
+        @include mq-down(xxs) {
+          width: 340px;
+        }
       }
     }
 
@@ -373,6 +531,15 @@ p {
       margin-top: 10px;
       position: relative;
 
+      @include mq-down(xxs) {
+        width: 345px;
+        height: 217.5px;
+        top: 63px;
+        right: -24px;
+        margin-left: 0;
+        margin-top: 0;
+      }
+
       &::after {
         content: "";
         position: absolute;
@@ -383,6 +550,13 @@ p {
         height: 350px;
         top: -40px;
         right: 40px;
+
+        @include mq-down(xxs) {
+          width: 345px;
+          height: 217.5px;
+          top: -24px;
+          right: 15px;
+        }
       }
     }
   }
