@@ -501,6 +501,8 @@ p {
           letter-spacing: 1.5px;
           padding-bottom: 33px;
           width: auto;
+          position: relative;
+          z-index: 1;
         }
       }
 
