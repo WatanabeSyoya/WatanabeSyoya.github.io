@@ -608,6 +608,8 @@ p {
         sans-serif;
       position: relative;
       margin-right: 46px;
+      background-color: #fff;
+      transition: .3s;
 
       &::after {
         content: "";
@@ -621,6 +623,40 @@ p {
         margin-right: 15px;
       }
 
+      &:nth-child(1) {
+        color: #fff;
+        z-index: 1;
+
+        &::after {
+          background-color: $section-color;
+          z-index: -1;
+        }
+      }
+
+      &:nth-child(2) {
+        &:hover {
+          color: #fff;
+          z-index: 1;
+
+          &::after {
+            background-color: #5DAF9F;
+            z-index: -1;
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        &:hover {
+          color: #fff;
+          z-index: 1;
+
+          &::after {
+            background-color: #5DAF9F;
+            z-index: -1;
+          }
+        }
+      }
+
       &:nth-child(4) {
         &::before {
           content: "";
@@ -630,7 +666,19 @@ p {
           left: 2px;
           width: 10px;
           height: 13.4px;
+          transition: .3s;
+        }
 
+        &:hover {
+
+          &::after {
+            background-color: #5DAF9F;
+          }
+
+          &::before {
+            background: url(../img/arrow-num-w.png);
+            z-index: 1;
+          }
         }
       }
 
