@@ -44,9 +44,11 @@ $breakpoint-up: ('xls': 'screen and (max-width: 376px)',
 
 // max-width
 $breakpoint-down: ('xls': 'screen and (max-width: 374px)',
+  'x': 'screen and (max-width: 430px)',
   'xxs': 'screen and (max-width: 484px)',
   'xs': 'screen and (max-width: 586px)',
   'sm': 'screen and (max-width: 660px)',
+  'm': 'screen and (max-width: 690px)',
   'md': 'screen and (max-width: 768px)',
   'lg': 'screen and (max-width: 1023px)',
   'xl': 'screen and (max-width: 1230px)',
@@ -224,10 +226,21 @@ p {
       width: auto;
     }
 
+    @include mq-down(m) {
+      padding-left: 10%;
+      padding-top: 0;
+      margin-top: -110px;
+    }
+
     @include mq-down(xxs) {
-      padding-left: 47px;
+      padding-left: 121px;
       padding-top: 24px;
+      margin-top: 0;
       width: auto;
+    }
+
+    @include mq-down(x) {
+      padding-left: 80px;
     }
 
     @include mq-down(xls) {
@@ -574,6 +587,10 @@ p {
     .recruit-message {
       padding-left: 127px;
 
+      @include mq-down(lg) {
+        padding-left: 100px;
+      }
+
       @include mq-down(xxs) {
         padding-left: 9px;
       }
@@ -589,12 +606,15 @@ p {
           line-height: 30px;
         }
 
+        @include mq-down() {
+          width: auto;
+        }
+
         @include mq-down(xxs) {
           font-size: 24px;
           line-height: 36px;
           letter-spacing: 1.5px;
           padding-bottom: 33px;
-          width: auto;
           position: relative;
           z-index: 1;
         }
@@ -667,7 +687,7 @@ p {
         margin-top: 0;
       }
 
-      @include mq-down(xxs) {
+      @include mq-down(xls) {
         top: 63px;
         right: -32px;
         width: 270px;

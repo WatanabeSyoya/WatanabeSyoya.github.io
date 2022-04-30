@@ -171,11 +171,26 @@ p {
   }
 }
 
+@media screen and (max-width: 690px) {
+  #recruit-fv .container {
+    padding-left: 10%;
+    padding-top: 0;
+    margin-top: -110px;
+  }
+}
+
 @media screen and (max-width: 484px) {
   #recruit-fv .container {
-    padding-left: 47px;
+    padding-left: 121px;
     padding-top: 24px;
+    margin-top: 0;
     width: auto;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  #recruit-fv .container {
+    padding-left: 80px;
   }
 }
 
@@ -586,6 +601,12 @@ p {
   padding-left: 127px;
 }
 
+@media screen and (max-width: 1023px) {
+  #recruit-page .recruit-text-sub .recruit-message {
+    padding-left: 100px;
+  }
+}
+
 @media screen and (max-width: 484px) {
   #recruit-page .recruit-text-sub .recruit-message {
     padding-left: 9px;
@@ -606,13 +627,18 @@ p {
   }
 }
 
+@media screen and (max-width: 768px) {
+  #recruit-page .recruit-text-sub .recruit-message h5 {
+    width: auto;
+  }
+}
+
 @media screen and (max-width: 484px) {
   #recruit-page .recruit-text-sub .recruit-message h5 {
     font-size: 24px;
     line-height: 36px;
     letter-spacing: 1.5px;
     padding-bottom: 33px;
-    width: auto;
     position: relative;
     z-index: 1;
   }
@@ -708,7 +734,7 @@ p {
   }
 }
 
-@media screen and (max-width: 484px) {
+@media screen and (max-width: 374px) {
   #recruit-page .recruit-text-sub .message-img {
     top: 63px;
     right: -32px;
