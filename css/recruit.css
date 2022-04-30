@@ -221,6 +221,13 @@ p {
   left: 135px;
 }
 
+@media screen and (max-width: 1023px) {
+  #recruit-page::after {
+    top: 427px;
+    left: 74px;
+  }
+}
+
 @media screen and (max-width: 484px) {
   #recruit-page::after {
     width: 363px;
@@ -351,7 +358,13 @@ p {
   padding-left: 175px;
 }
 
-@media screen and (max-width: 484px) {
+@media screen and (max-width: 1400px) {
+  #recruit-page .recruit-text-main {
+    padding-left: 20%;
+  }
+}
+
+@media screen and (max-width: 1023px) {
   #recruit-page .recruit-text-main {
     padding-left: 0;
     -webkit-box-orient: vertical;
@@ -367,9 +380,29 @@ p {
   padding-right: 83px;
 }
 
+@media screen and (max-width: 1400px) {
+  #recruit-page .recruit-text-main .first {
+    width: 57%;
+    padding-right: 34px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  #recruit-page .recruit-text-main .first {
+    width: 70%;
+    padding-right: 0px;
+    padding-left: 100px;
+    font-size: 24px;
+    line-height: 30px;
+    padding-bottom: 60px;
+  }
+}
+
 @media screen and (max-width: 484px) {
   #recruit-page .recruit-text-main .first {
-    padding-right: 0;
+    padding-bottom: 0px;
     padding-left: 15px;
     font-size: 24px;
     line-height: 36px;
@@ -388,10 +421,23 @@ p {
   padding-bottom: 24px;
 }
 
-@media screen and (max-width: 484px) {
+@media screen and (max-width: 1400px) {
+  #recruit-page .recruit-text-main .text-side h5 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
   #recruit-page .recruit-text-main .text-side h5 {
     font-size: 24px;
     line-height: 36px;
+    padding-left: 100px;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  #recruit-page .recruit-text-main .text-side h5 {
     letter-spacing: 1.5px;
     padding-left: 15px;
     padding-bottom: 26px;
@@ -409,10 +455,29 @@ p {
   padding-top: 16px;
   padding-bottom: 16px;
   padding-left: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1400px) {
+  #recruit-page .recruit-text-main .text-side p {
+    width: 70%;
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  #recruit-page .recruit-text-main .text-side p {
+    padding-left: 100px;
+  }
 }
 
 @media screen and (max-width: 484px) {
   #recruit-page .recruit-text-main .text-side p {
+    padding-left: 15px;
+    line-height: 28px;
+    font-size: 16px;
     padding-top: 6px;
     width: 343px;
     padding-bottom: 18px;
@@ -445,6 +510,17 @@ p {
   top: -245px;
   border-left: 8px #359B87 solid;
   border-bottom: 8px #359B87 solid;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1023px) {
+  #recruit-page .recruit-text-sub {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 100px;
+  }
 }
 
 @media screen and (max-width: 484px) {
@@ -453,10 +529,6 @@ p {
     border-left: 6px #359B87 solid;
     border-bottom: 10px #359B87 solid;
     padding-top: 32px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     padding-bottom: 123px;
   }
 }
@@ -476,6 +548,13 @@ p {
   color: #359B87;
   padding-bottom: 46px;
   letter-spacing: 1.5px;
+}
+
+@media screen and (max-width: 1400px) {
+  #recruit-page .recruit-text-sub .recruit-message h5 {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 @media screen and (max-width: 484px) {
@@ -500,10 +579,15 @@ p {
   letter-spacing: 1.5px;
 }
 
-@media screen and (max-width: 484px) {
+@media screen and (max-width: 1400px) {
   #recruit-page .recruit-text-sub .recruit-message h4 {
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  #recruit-page .recruit-text-sub .recruit-message h4 {
     padding-bottom: 32px;
   }
 }
@@ -516,6 +600,12 @@ p {
   font-family: 'Noto Sans JP', sans-serif;
   line-height: 28px;
   letter-spacing: 1.5px;
+}
+
+@media screen and (max-width: 1400px) {
+  #recruit-page .recruit-text-sub .recruit-message p {
+    width: 400px;
+  }
 }
 
 @media screen and (max-width: 484px) {
@@ -533,10 +623,23 @@ p {
   position: relative;
 }
 
-@media screen and (max-width: 484px) {
+@media screen and (max-width: 1400px) {
   #recruit-page .recruit-text-sub .message-img {
     width: 345px;
     height: 217.5px;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  #recruit-page .recruit-text-sub .message-img {
+    margin-left: 170px;
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  #recruit-page .recruit-text-sub .message-img {
     top: 63px;
     right: -24px;
     margin-left: 0;
@@ -556,10 +659,15 @@ p {
   right: 40px;
 }
 
-@media screen and (max-width: 484px) {
+@media screen and (max-width: 1400px) {
   #recruit-page .recruit-text-sub .message-img::after {
     width: 345px;
     height: 217.5px;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  #recruit-page .recruit-text-sub .message-img::after {
     top: -24px;
     right: 15px;
   }
@@ -612,6 +720,13 @@ p {
   transition: all .3s;
 }
 
+@media screen and (max-width: 1023px) {
+  #recruit-page .next-btn .next-name::after {
+    left: 76%;
+    top: 44px;
+  }
+}
+
 @media screen and (max-width: 484px) {
   #recruit-page .next-btn .next-name::after {
     left: 81%;
@@ -628,6 +743,12 @@ p {
   background-image: url(../img/arrow-b.png);
 }
 
+@media screen and (max-width: 1023px) {
+  #recruit-page .next-btn .next-name:hover::after {
+    left: 79%;
+  }
+}
+
 @media screen and (max-width: 484px) {
   #recruit-page .next-btn .next-name:hover::after {
     left: 84%;
@@ -637,6 +758,12 @@ p {
 #recruit-page .next-btn .next-company {
   position: relative;
   padding: 58px 180px 55px 209px;
+}
+
+@media screen and (max-width: 1023px) {
+  #recruit-page .next-btn .next-company {
+    padding: 30px 80px;
+  }
 }
 
 @media screen and (max-width: 484px) {
@@ -671,6 +798,12 @@ p {
 
 #recruit-page .next-btn .next-contact {
   padding: 58px 180px 55px 180px;
+}
+
+@media screen and (max-width: 1023px) {
+  #recruit-page .next-btn .next-contact {
+    padding: 30px 80px;
+  }
 }
 
 @media screen and (max-width: 484px) {

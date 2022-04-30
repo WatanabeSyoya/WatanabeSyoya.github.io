@@ -272,6 +272,12 @@ p {
     top: 212px;
     left: 135px;
 
+    @include mq-down(lg) {
+      top: 427px;
+      left: 74px;
+
+    }
+
     @include mq-down(xxs) {
       width: 363px;
       height: 220px;
@@ -385,7 +391,11 @@ p {
     display: flex;
     padding-left: 175px;
 
-    @include mq-down(xxs) {
+    @include mq-down(xxl) {
+      padding-left: 20%;
+    }
+
+    @include mq-down(lg) {
       padding-left: 0;
       flex-direction: column;
     }
@@ -395,8 +405,24 @@ p {
       width: 270px;
       padding-right: 83px;
 
+      @include mq-down(xxl) {
+        width: 57%;
+        padding-right: 34px;
+        font-size: 20px;
+        line-height: 30px;
+      }
+
+      @include mq-down(lg) {
+        width: 70%;
+        padding-right: 0px;
+        padding-left: 100px;
+        font-size: 24px;
+        line-height: 30px;
+        padding-bottom: 60px;
+      }
+
       @include mq-down(xxs) {
-        padding-right: 0;
+        padding-bottom: 0px;
         padding-left: 15px;
         font-size: 24px;
         line-height: 36px;
@@ -413,9 +439,18 @@ p {
       h5 {
         padding-bottom: 24px;
 
-        @include mq-down(xxs) {
+        @include mq-down(xxl) {
+          font-size: 20px;
+          line-height: 30px;
+        }
+
+        @include mq-down(lg) {
           font-size: 24px;
           line-height: 36px;
+          padding-left: 100px;
+        }
+
+        @include mq-down(xxs) {
           letter-spacing: 1.5px;
           padding-left: 15px;
           padding-bottom: 26px;
@@ -435,8 +470,23 @@ p {
         padding-top: 16px;
         padding-bottom: 16px;
         padding-left: 15px;
+        position: relative;
+        z-index: 1;
+
+        @include mq-down(xxl) {
+          width: 70%;
+          font-size: 15px;
+          line-height: 25px;
+        }
+
+        @include mq-down(lg) {
+          padding-left: 100px;
+        }
 
         @include mq-down(xxs) {
+          padding-left: 15px;
+          line-height: 28px;
+          font-size: 16px;
           padding-top: 6px;
           width: 343px;
           padding-bottom: 18px;
@@ -472,13 +522,18 @@ p {
     top: -245px;
     border-left: 8px $section-color solid;
     border-bottom: 8px $section-color solid;
+    z-index: 1;
+
+    @include mq-down(lg) {
+      flex-direction: column;
+      padding-bottom: 100px;
+    }
 
     @include mq-down(xxs) {
       top: -244px;
       border-left: 6px $section-color solid;
       border-bottom: 10px $section-color solid;
       padding-top: 32px;
-      flex-direction: column;
       padding-bottom: 123px;
     }
 
@@ -494,6 +549,11 @@ p {
         color: $section-color;
         padding-bottom: 46px;
         letter-spacing: 1.5px;
+
+        @include mq-down(xxl) {
+          font-size: 20px;
+          line-height: 30px;
+        }
 
         @include mq-down(xxs) {
           font-size: 24px;
@@ -512,9 +572,12 @@ p {
         line-height: 42px;
         letter-spacing: 1.5px;
 
-        @include mq-down(xxs) {
+        @include mq-down(xxl) {
           font-size: 20px;
           line-height: 30px;
+        }
+
+        @include mq-down(xxs) {
           padding-bottom: 32px;
         }
       }
@@ -524,6 +587,10 @@ p {
         @include font(16px, 500);
         line-height: 28px;
         letter-spacing: 1.5px;
+
+        @include mq-down(xxl) {
+          width: 400px;
+        }
 
         @include mq-down(xxs) {
           width: 340px;
@@ -539,9 +606,18 @@ p {
       margin-top: 10px;
       position: relative;
 
-      @include mq-down(xxs) {
+      @include mq-down(xxl) {
         width: 345px;
         height: 217.5px;
+        margin-left: 0;
+      }
+
+      @include mq-down(lg) {
+        margin-left: 170px;
+        margin-top: 100px;
+      }
+
+      @include mq-down(xxs) {
         top: 63px;
         right: -24px;
         margin-left: 0;
@@ -559,9 +635,12 @@ p {
         top: -40px;
         right: 40px;
 
-        @include mq-down(xxs) {
+        @include mq-down(xxl) {
           width: 345px;
           height: 217.5px;
+        }
+
+        @include mq-down(xxs) {
           top: -24px;
           right: 15px;
         }
@@ -602,6 +681,11 @@ p {
         top: 69px;
         transition: all .3s;
 
+        @include mq-down(lg) {
+          left: 76%;
+          top: 44px;
+        }
+
         @include mq-down(xxs) {
           left: 81%;
           top: 42px;
@@ -617,6 +701,10 @@ p {
           left: 76%;
           background-image: url(../img/arrow-b.png);
 
+          @include mq-down(lg) {
+            left: 79%;
+          }
+
           @include mq-down(xxs) {
             left: 84%;
           }
@@ -627,6 +715,10 @@ p {
     .next-company {
       position: relative;
       padding: 58px 180px 55px 209px;
+
+      @include mq-down(lg) {
+        padding: 30px 80px;
+      }
 
       @include mq-down(xxs) {
         padding: 40px 40px 38px 20px;
@@ -657,6 +749,10 @@ p {
 
     .next-contact {
       padding: 58px 180px 55px 180px;
+
+      @include mq-down(lg) {
+        padding: 30px 80px;
+      }
 
       @include mq-down(xxs) {
         padding: 40px 33px 38px 13px;
