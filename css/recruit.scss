@@ -219,7 +219,7 @@ p {
     }
 
     @include mq-down(xxs) {
-      padding-left: 13%;
+      padding-left: 47px;
       padding-top: 24px;
     }
 
@@ -253,7 +253,6 @@ p {
 #recruit-page {
 
   background-color: #fff;
-  padding-bottom: 5px;
   position: relative;
 
   &::after {
@@ -593,12 +592,14 @@ p {
         left: 73%;
         top: 69px;
         transition: all .3s;
+
+        @include mq-down(xxs) {
+          left: 81%;
+          top: 42px;
+        }
       }
 
-      @include mq-down(xxs) {
-        left: 81%;
-        top: 42px;
-      }
+
 
       &:hover {
         color: $main-color;
@@ -657,5 +658,9 @@ p {
   .btn-bottom {
     background-color: #F3F3F3;
     height: 94px;
+
+    @include mq-down(xxs) {
+      height: 40px;
+    }
   }
 }

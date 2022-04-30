@@ -166,7 +166,7 @@ p {
 
 @media screen and (max-width: 484px) {
   #recruit-fv .container {
-    padding-left: 13%;
+    padding-left: 47px;
     padding-top: 24px;
   }
 }
@@ -199,7 +199,6 @@ p {
 
 #recruit-page {
   background-color: #fff;
-  padding-bottom: 5px;
   position: relative;
 }
 
@@ -604,7 +603,7 @@ p {
 }
 
 @media screen and (max-width: 484px) {
-  #recruit-page .next-btn .next-name {
+  #recruit-page .next-btn .next-name::after {
     left: 81%;
     top: 42px;
   }
@@ -673,5 +672,11 @@ p {
 #recruit-page .btn-bottom {
   background-color: #F3F3F3;
   height: 94px;
+}
+
+@media screen and (max-width: 484px) {
+  #recruit-page .btn-bottom {
+    height: 40px;
+  }
 }
 /*# sourceMappingURL=recruit.css.map */
