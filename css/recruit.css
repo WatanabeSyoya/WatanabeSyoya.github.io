@@ -179,6 +179,13 @@ p {
   }
 }
 
+@media screen and (max-width: 374px) {
+  #recruit-fv .container {
+    padding-left: 23px;
+    padding-top: 35px;
+  }
+}
+
 #recruit-fv .container h4 {
   color: #359B87;
   padding-top: 7px;
@@ -249,6 +256,15 @@ p {
   #recruit-page::after {
     top: 656px;
     left: 14px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  #recruit-page::after {
+    top: 700px;
+    left: 7px;
+    width: 280px;
+    height: 180px;
   }
 }
 
@@ -426,6 +442,12 @@ p {
   }
 }
 
+@media screen and (max-width: 374px) {
+  #recruit-page .recruit-text-main .first {
+    font-size: 23px;
+  }
+}
+
 @media screen and (max-width: 484px) {
   #recruit-page .recruit-text-main .text-side {
     margin-top: 26px;
@@ -456,6 +478,12 @@ p {
     letter-spacing: 1.5px;
     padding-left: 15px;
     padding-bottom: 26px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  #recruit-page .recruit-text-main .text-side h5 {
+    font-size: 20px;
   }
 }
 
@@ -496,6 +524,12 @@ p {
     padding-top: 6px;
     width: 343px;
     padding-bottom: 18px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  #recruit-page .recruit-text-main .text-side p {
+    width: 290px;
   }
 }
 
@@ -584,6 +618,12 @@ p {
   }
 }
 
+@media screen and (max-width: 374px) {
+  #recruit-page .recruit-text-sub .recruit-message h5 {
+    font-size: 21px;
+  }
+}
+
 #recruit-page .recruit-text-sub .recruit-message h4 {
   padding-bottom: 24px;
   font-size: 24px;
@@ -629,6 +669,12 @@ p {
   }
 }
 
+@media screen and (max-width: 374px) {
+  #recruit-page .recruit-text-sub .recruit-message p {
+    width: 290px;
+  }
+}
+
 #recruit-page .recruit-text-sub .message-img {
   background-color: #359B87;
   width: 555px;
@@ -662,6 +708,15 @@ p {
   }
 }
 
+@media screen and (max-width: 484px) {
+  #recruit-page .recruit-text-sub .message-img {
+    top: 63px;
+    right: -32px;
+    width: 270px;
+    height: 170px;
+  }
+}
+
 #recruit-page .recruit-text-sub .message-img::after {
   content: "";
   position: absolute;
@@ -685,6 +740,15 @@ p {
   #recruit-page .recruit-text-sub .message-img::after {
     top: -24px;
     right: 15px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  #recruit-page .recruit-text-sub .message-img::after {
+    top: -20px;
+    right: 20px;
+    width: 270px;
+    height: 170px;
   }
 }
 
@@ -808,6 +872,12 @@ p {
     right: -28px;
     top: 11%;
     height: 80%;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  #recruit-page .next-btn .next-company::before {
+    right: -18px;
   }
 }
 
