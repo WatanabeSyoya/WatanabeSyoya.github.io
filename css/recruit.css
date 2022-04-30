@@ -451,6 +451,7 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-bottom: 123px;
   }
 }
 
@@ -580,6 +581,13 @@ p {
   transition: 1s;
 }
 
+@media screen and (max-width: 484px) {
+  #recruit-page .next-btn .next-name {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
 #recruit-page .next-btn .next-name::after {
   content: '';
   display: inline-block;
@@ -595,6 +603,13 @@ p {
   transition: all .3s;
 }
 
+@media screen and (max-width: 484px) {
+  #recruit-page .next-btn .next-name {
+    left: 81%;
+    top: 42px;
+  }
+}
+
 #recruit-page .next-btn .next-name:hover {
   color: #1F2833;
 }
@@ -604,9 +619,21 @@ p {
   background-image: url(../img/arrow-b.png);
 }
 
+@media screen and (max-width: 484px) {
+  #recruit-page .next-btn .next-name:hover::after {
+    left: 84%;
+  }
+}
+
 #recruit-page .next-btn .next-company {
   position: relative;
   padding: 58px 180px 55px 209px;
+}
+
+@media screen and (max-width: 484px) {
+  #recruit-page .next-btn .next-company {
+    padding: 40px 40px 38px 20px;
+  }
 }
 
 #recruit-page .next-btn .next-company::before {
@@ -625,8 +652,22 @@ p {
   /*線の高さ指定*/
 }
 
+@media screen and (max-width: 484px) {
+  #recruit-page .next-btn .next-company::before {
+    right: -28px;
+    top: 11%;
+    height: 80%;
+  }
+}
+
 #recruit-page .next-btn .next-contact {
   padding: 58px 180px 55px 180px;
+}
+
+@media screen and (max-width: 484px) {
+  #recruit-page .next-btn .next-contact {
+    padding: 40px 33px 38px 13px;
+  }
 }
 
 #recruit-page .btn-bottom {

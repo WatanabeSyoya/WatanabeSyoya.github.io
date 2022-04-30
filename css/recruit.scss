@@ -474,7 +474,7 @@ p {
       border-bottom: 10px $section-color solid;
       padding-top: 32px;
       flex-direction: column;
-
+      padding-bottom: 123px;
     }
 
     .recruit-message {
@@ -576,6 +576,11 @@ p {
       line-height: 36px;
       transition: 1s;
 
+      @include mq-down(xxs) {
+        font-size: 16px;
+        line-height: 16px;
+      }
+
       &::after {
         content: '';
         display: inline-block;
@@ -590,12 +595,21 @@ p {
         transition: all .3s;
       }
 
+      @include mq-down(xxs) {
+        left: 81%;
+        top: 42px;
+      }
+
       &:hover {
         color: $main-color;
 
         &::after {
           left: 76%;
           background-image: url(../img/arrow-b.png);
+
+          @include mq-down(xxs) {
+            left: 84%;
+          }
         }
       }
     }
@@ -603,6 +617,10 @@ p {
     .next-company {
       position: relative;
       padding: 58px 180px 55px 209px;
+
+      @include mq-down(xxs) {
+        padding: 40px 40px 38px 20px;
+      }
 
       &::before {
         content: "";
@@ -617,12 +635,22 @@ p {
         width: 2px;
         /*線の幅指定*/
         height: 50%;
+
         /*線の高さ指定*/
+        @include mq-down(xxs) {
+          right: -28px;
+          top: 11%;
+          height: 80%;
+        }
       }
     }
 
     .next-contact {
       padding: 58px 180px 55px 180px;
+
+      @include mq-down(xxs) {
+        padding: 40px 33px 38px 13px;
+      }
     }
   }
 
