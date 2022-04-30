@@ -223,13 +223,14 @@ p {
 
   @include mq-down(xxs) {
     background-color: #fff;
-    padding-bottom: 0;
+    padding-bottom: 66px;
   }
 
   .page-container {
     background-color: #fff;
     width: 90.3%;
     padding-top: 145px;
+    padding-bottom: 80px;
     position: relative;
     top: -65px;
 
@@ -237,6 +238,7 @@ p {
       top: -40px;
       width: 96.3%;
       padding-top: 116px;
+      padding-bottom: 0;
     }
 
     .list {
@@ -347,7 +349,10 @@ p {
       grid-template-columns: repeat(auto-fit, 160px);
       grid-auto-rows: 187px;
       grid-column-gap: 25px;
-      grid-row-gap: 43px;
+      grid-row-gap: 44px;
+      margin-left: auto;
+      margin-right: 0;
+      width: 104%;
 
     }
 
@@ -584,6 +589,51 @@ p {
       .works-icon {
         background-image: url(../img/icon-civil.png);
       }
+    }
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 80px auto 0;
+
+    @include mq-down(xxs) {
+      margin: 56px auto 0;
+    }
+
+    li {
+      @include font(20px, 700, #777777);
+      font-family: 'Epilogue',
+        sans-serif;
+      position: relative;
+      margin-right: 46px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: -15px;
+        left: -17px;
+        border-radius: 30px;
+        width: 40px;
+        height: 40px;
+        border: 3px $section-color solid;
+        margin-right: 15px;
+      }
+
+      &:nth-child(4) {
+        &::before {
+          content: "";
+          background: url(../img/arrow-num.png);
+          position: absolute;
+          top: 0px;
+          left: 2px;
+          width: 10px;
+          height: 13.4px;
+
+        }
+      }
+
     }
   }
 }
