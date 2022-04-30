@@ -167,6 +167,7 @@ p {
 @media screen and (max-width: 1023px) {
   #recruit-fv .container {
     padding-left: 10%;
+    width: auto;
   }
 }
 
@@ -228,10 +229,24 @@ p {
   }
 }
 
-@media screen and (max-width: 484px) {
+@media screen and (max-width: 768px) {
   #recruit-page::after {
     width: 363px;
     height: 220px;
+    top: 468px;
+    left: 104px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  #recruit-page::after {
+    top: 568px;
+    left: 104px;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  #recruit-page::after {
     top: 656px;
     left: 14px;
   }

@@ -46,7 +46,7 @@ $breakpoint-up: ('xls': 'screen and (max-width: 376px)',
 $breakpoint-down: ('xls': 'screen and (max-width: 374px)',
   'xxs': 'screen and (max-width: 484px)',
   'xs': 'screen and (max-width: 586px)',
-  'sm': 'screen and (max-width: 689px)',
+  'sm': 'screen and (max-width: 660px)',
   'md': 'screen and (max-width: 768px)',
   'lg': 'screen and (max-width: 1023px)',
   'xl': 'screen and (max-width: 1230px)',
@@ -221,6 +221,7 @@ p {
 
     @include mq-down(lg) {
       padding-left: 10%;
+      width: auto;
     }
 
     @include mq-down(xxs) {
@@ -278,12 +279,21 @@ p {
 
     }
 
-    @include mq-down(xxs) {
+    @include mq-down() {
       width: 363px;
       height: 220px;
+      top: 468px;
+      left: 104px;
+    }
+
+    @include mq-down(sm) {
+      top: 568px;
+      left: 104px;
+    }
+
+    @include mq-down(xxs) {
       top: 656px;
       left: 14px;
-
     }
   }
 
