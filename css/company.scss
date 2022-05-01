@@ -641,13 +641,15 @@ p {
         }
 
         .pc-business {
-          @include mq-down(xxs) {
+          display: inline;
+
+          @include mq-down() {
             display: none;
           }
         }
 
         .sp-business {
-          @include mq-up(xxs) {
+          @include mq-up() {
             display: none;
           }
         }

@@ -680,13 +680,17 @@ p {
   padding-top: 8px;
 }
 
-@media screen and (max-width: 484px) {
+#company-page .page-container .info .kaisha .pc-business {
+  display: inline;
+}
+
+@media screen and (max-width: 760px) {
   #company-page .page-container .info .kaisha .pc-business {
     display: none;
   }
 }
 
-@media screen and (min-width: 485px) {
+@media screen and (min-width: 761px) {
   #company-page .page-container .info .kaisha .sp-business {
     display: none;
   }
