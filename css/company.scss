@@ -109,9 +109,18 @@ p {
 .container {
   margin: 0 auto;
 
+  @include mq-down(lg) {
+    width: auto;
+  }
+
   @include mq-down {
     width: 92%;
   }
+
+  @include mq-down(xxs) {
+    margin: 0;
+  }
+
 }
 
 
@@ -162,22 +171,51 @@ p {
   height: 555px;
   margin-top: 100px;
 
+  @include mq-down(xxs) {
+    background-image: url(../img/company-sp.jpg);
+    height: 304px;
+    margin-top: 56px;
+  }
+
+  @include mq-down(xls) {
+    background-size: contain;
+  }
+
   .container {
     padding-left: 135px;
     padding-top: 228px;
 
+    @include mq-down() {
+      padding-left: 20px;
+    }
+
+    @include mq-down(xxs) {
+      padding-left: 15px;
+      padding-top: 128px;
+    }
+
     h4 {
       color: $section-color;
       padding-top: 7px;
+
+      @include mq-down(xxs) {
+        font-size: 16px;
+        line-height: 16px;
+        padding-top: 0;
+      }
     }
 
     h5 {
       letter-spacing: 1.5px;
-      padding-bottom: 59px
+      padding-bottom: 59px;
+
+      @include mq-down(xxs) {
+        font-size: 24px;
+        padding-bottom: 0;
+        line-height: 40px;
+      }
     }
   }
-
-
 }
 
 
@@ -185,18 +223,35 @@ p {
   background-color: #F3F3F3;
   padding-bottom: 5px;
 
+  @include mq-down(xxs) {
+    background-color: #fff;
+    padding-bottom: 66px;
+  }
+
   .page-container {
     background-color: #fff;
     width: 90.3%;
-    padding-top: 129px;
-    padding-bottom: 65px;
+    padding-top: 145px;
+    padding-bottom: 80px;
     position: relative;
     top: -65px;
+
+    @include mq-down(xxs) {
+      top: -40px;
+      width: 96.3%;
+      padding-top: 116px;
+      padding-bottom: 0;
+    }
 
     .list {
       position: absolute;
       top: 51px;
       left: 63px;
+
+      @include mq-down(xxs) {
+        top: 18px;
+        left: 14px;
+      }
 
       .home {
         @include font(14px, 500, $main-color);
@@ -240,6 +295,10 @@ p {
       display: inline;
       transition: all .3s;
 
+      @include mq-down() {
+        display: none;
+      }
+
       &::after {
         content: "";
         background: url(../img/arrow-d.png);
@@ -264,8 +323,18 @@ p {
       }
     }
 
+
     .message {
       display: flex;
+
+      @include mq-down(xxl) {
+        justify-content: center;
+      }
+
+      @include mq-down() {
+        flex-direction: column;
+        margin-left: 11%;
+      }
 
       .president {
         &-img {
@@ -275,6 +344,20 @@ p {
           margin-left: 240px;
           margin-top: 27px;
           position: relative;
+
+          @include mq-down(xxl) {
+            margin-left: 0;
+          }
+
+          @include mq-down(lg) {
+            width: 300px;
+            height: 185px;
+          }
+
+          @include mq-down(xxs) {
+            width: 345px;
+            height: 212px;
+          }
 
           &::after {
             content: "";
@@ -286,6 +369,18 @@ p {
             height: 216px;
             top: 30px;
             left: 30px;
+
+            @include mq-down(lg) {
+              width: 300px;
+              height: 185px;
+              top: 16px;
+              left: 16px;
+            }
+
+            @include mq-down(xxs) {
+              width: 345px;
+              height: 212px;
+            }
           }
         }
 
@@ -295,12 +390,47 @@ p {
           @include font(16px, 500, $main-color);
           line-height: 28px;
           letter-spacing: 1.5px;
+
+          @include mq-down(xxl) {
+            margin-left: 0;
+          }
+
+          @include mq-down() {
+            position: relative;
+            top: 280px;
+
+          }
+
+          @include mq-down(sm) {
+            top: 330px;
+
+          }
+
+          @include mq-down(xs) {
+            top: 370px;
+
+          }
+
+          @include mq-down(xxs) {
+            top: 420px;
+
+          }
+
         }
       }
 
       .president-message {
         margin-left: 90px;
         margin-top: 57px;
+
+        @include mq-down(lg) {
+          margin-left: 40px;
+        }
+
+        @include mq-down() {
+          margin-left: 0;
+          margin-top: 0;
+        }
 
         h5 {
           font-size: 20px;
@@ -313,12 +443,36 @@ p {
           letter-spacing: 1.5px;
           width: 350px;
           margin-top: -1px;
+
+          @include mq-down(lg) {
+            width: 300px;
+          }
+
+          @include mq-down() {
+            width: 500px;
+
+          }
+
+          @include mq-down(sm) {
+            width: 90%;
+
+          }
         }
       }
     }
 
     .info {
       margin-top: 81px;
+
+      @include mq-down() {
+        margin-top: 100px;
+
+      }
+
+      @include mq-down(sm) {
+        margin-top: 130px;
+
+      }
 
       h4 {
         color: $section-color;
@@ -334,8 +488,25 @@ p {
         width: 60%;
         margin: 15px auto 0;
 
+        @include mq-down(xxl) {
+          width: 75%;
+        }
+
+        @include mq-down(lg) {
+          width: 92%;
+        }
+
+        @include mq-down() {
+          width: 75%;
+        }
+
         tr {
           border-bottom: 1px #D1D3D4 solid;
+
+          @include mq-down() {
+            display: block;
+
+          }
         }
 
         th {
@@ -343,6 +514,18 @@ p {
           padding: 24px 8px;
           @include font(20px, 700);
           line-height: 36px;
+
+          @include mq-down(lg) {
+            font-weight: 500;
+          }
+
+          @include mq-down() {
+            display: block;
+            padding: 0;
+            padding-left: 10px;
+            padding-top: 10px;
+
+          }
         }
 
         td {
@@ -350,6 +533,21 @@ p {
           @include font(16px, 500);
           line-height: 28px;
           letter-spacing: 1.5px;
+
+          @include mq-down(xxl) {
+            padding-left: 40px;
+          }
+
+          @include mq-down(lg) {
+            font-size: 14px;
+            padding-left: 30px;
+          }
+
+          @include mq-down() {
+            display: block;
+            padding-left: 10px;
+            padding-bottom: 10px;
+          }
         }
       }
     }
@@ -373,6 +571,10 @@ p {
         height: 724px;
         margin: 0 auto;
         display: block;
+
+        @include mq-down() {
+          height: 500px;
+        }
       }
     }
   }

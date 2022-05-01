@@ -78,9 +78,21 @@ p {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1023px) {
+  .container {
+    width: auto;
+  }
+}
+
 @media screen and (max-width: 760px) {
   .container {
     width: 92%;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  .container {
+    margin: 0;
   }
 }
 
@@ -92,9 +104,36 @@ p {
   margin-top: 100px;
 }
 
+@media screen and (max-width: 484px) {
+  #company-fv {
+    background-image: url(../img/company-sp.jpg);
+    height: 304px;
+    margin-top: 56px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  #company-fv {
+    background-size: contain;
+  }
+}
+
 #company-fv .container {
   padding-left: 135px;
   padding-top: 228px;
+}
+
+@media screen and (max-width: 760px) {
+  #company-fv .container {
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  #company-fv .container {
+    padding-left: 15px;
+    padding-top: 128px;
+  }
 }
 
 #company-fv .container h4 {
@@ -102,9 +141,25 @@ p {
   padding-top: 7px;
 }
 
+@media screen and (max-width: 484px) {
+  #company-fv .container h4 {
+    font-size: 16px;
+    line-height: 16px;
+    padding-top: 0;
+  }
+}
+
 #company-fv .container h5 {
   letter-spacing: 1.5px;
   padding-bottom: 59px;
+}
+
+@media screen and (max-width: 484px) {
+  #company-fv .container h5 {
+    font-size: 24px;
+    padding-bottom: 0;
+    line-height: 40px;
+  }
 }
 
 #company-page {
@@ -112,19 +167,42 @@ p {
   padding-bottom: 5px;
 }
 
+@media screen and (max-width: 484px) {
+  #company-page {
+    background-color: #fff;
+    padding-bottom: 66px;
+  }
+}
+
 #company-page .page-container {
   background-color: #fff;
   width: 90.3%;
-  padding-top: 129px;
-  padding-bottom: 65px;
+  padding-top: 145px;
+  padding-bottom: 80px;
   position: relative;
   top: -65px;
+}
+
+@media screen and (max-width: 484px) {
+  #company-page .page-container {
+    top: -40px;
+    width: 96.3%;
+    padding-top: 116px;
+    padding-bottom: 0;
+  }
 }
 
 #company-page .page-container .list {
   position: absolute;
   top: 51px;
   left: 63px;
+}
+
+@media screen and (max-width: 484px) {
+  #company-page .page-container .list {
+    top: 18px;
+    left: 14px;
+  }
 }
 
 #company-page .page-container .list .home {
@@ -176,6 +254,12 @@ p {
   transition: all .3s;
 }
 
+@media screen and (max-width: 760px) {
+  #company-page .page-container .scroll {
+    display: none;
+  }
+}
+
 #company-page .page-container .scroll::after {
   content: "";
   background: url(../img/arrow-d.png);
@@ -206,6 +290,24 @@ p {
   display: flex;
 }
 
+@media screen and (max-width: 1400px) {
+  #company-page .page-container .message {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  #company-page .page-container .message {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 11%;
+  }
+}
+
 #company-page .page-container .message .president-img {
   background-color: #359B87;
   width: 350px;
@@ -213,6 +315,26 @@ p {
   margin-left: 240px;
   margin-top: 27px;
   position: relative;
+}
+
+@media screen and (max-width: 1400px) {
+  #company-page .page-container .message .president-img {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  #company-page .page-container .message .president-img {
+    width: 300px;
+    height: 185px;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  #company-page .page-container .message .president-img {
+    width: 345px;
+    height: 212px;
+  }
 }
 
 #company-page .page-container .message .president-img::after {
@@ -227,6 +349,22 @@ p {
   left: 30px;
 }
 
+@media screen and (max-width: 1023px) {
+  #company-page .page-container .message .president-img::after {
+    width: 300px;
+    height: 185px;
+    top: 16px;
+    left: 16px;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  #company-page .page-container .message .president-img::after {
+    width: 345px;
+    height: 212px;
+  }
+}
+
 #company-page .page-container .message .president-name {
   margin-left: 270px;
   margin-top: 60px;
@@ -238,9 +376,53 @@ p {
   letter-spacing: 1.5px;
 }
 
+@media screen and (max-width: 1400px) {
+  #company-page .page-container .message .president-name {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  #company-page .page-container .message .president-name {
+    position: relative;
+    top: 280px;
+  }
+}
+
+@media screen and (max-width: 689px) {
+  #company-page .page-container .message .president-name {
+    top: 330px;
+  }
+}
+
+@media screen and (max-width: 586px) {
+  #company-page .page-container .message .president-name {
+    top: 370px;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  #company-page .page-container .message .president-name {
+    top: 420px;
+  }
+}
+
 #company-page .page-container .message .president-message {
   margin-left: 90px;
   margin-top: 57px;
+}
+
+@media screen and (max-width: 1023px) {
+  #company-page .page-container .message .president-message {
+    margin-left: 40px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  #company-page .page-container .message .president-message {
+    margin-left: 0;
+    margin-top: 0;
+  }
 }
 
 #company-page .page-container .message .president-message h5 {
@@ -256,8 +438,38 @@ p {
   margin-top: -1px;
 }
 
+@media screen and (max-width: 1023px) {
+  #company-page .page-container .message .president-message p {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  #company-page .page-container .message .president-message p {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 689px) {
+  #company-page .page-container .message .president-message p {
+    width: 90%;
+  }
+}
+
 #company-page .page-container .info {
   margin-top: 81px;
+}
+
+@media screen and (max-width: 760px) {
+  #company-page .page-container .info {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 689px) {
+  #company-page .page-container .info {
+    margin-top: 130px;
+  }
 }
 
 #company-page .page-container .info h4 {
@@ -275,8 +487,32 @@ p {
   margin: 15px auto 0;
 }
 
+@media screen and (max-width: 1400px) {
+  #company-page .page-container .info .kaisha {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  #company-page .page-container .info .kaisha {
+    width: 92%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  #company-page .page-container .info .kaisha {
+    width: 75%;
+  }
+}
+
 #company-page .page-container .info .kaisha tr {
   border-bottom: 1px #D1D3D4 solid;
+}
+
+@media screen and (max-width: 760px) {
+  #company-page .page-container .info .kaisha tr {
+    display: block;
+  }
 }
 
 #company-page .page-container .info .kaisha th {
@@ -289,6 +525,21 @@ p {
   line-height: 36px;
 }
 
+@media screen and (max-width: 1023px) {
+  #company-page .page-container .info .kaisha th {
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  #company-page .page-container .info .kaisha th {
+    display: block;
+    padding: 0;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+}
+
 #company-page .page-container .info .kaisha td {
   padding-left: 95px;
   font-size: 16px;
@@ -297,6 +548,27 @@ p {
   font-family: 'Noto Sans JP', sans-serif;
   line-height: 28px;
   letter-spacing: 1.5px;
+}
+
+@media screen and (max-width: 1400px) {
+  #company-page .page-container .info .kaisha td {
+    padding-left: 40px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  #company-page .page-container .info .kaisha td {
+    font-size: 14px;
+    padding-left: 30px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  #company-page .page-container .info .kaisha td {
+    display: block;
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
 }
 
 #company-page .page-container .access {
@@ -319,5 +591,11 @@ p {
   height: 724px;
   margin: 0 auto;
   display: block;
+}
+
+@media screen and (max-width: 760px) {
+  #company-page .page-container .access iframe {
+    height: 500px;
+  }
 }
 /*# sourceMappingURL=company.css.map */
