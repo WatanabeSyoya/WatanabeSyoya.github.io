@@ -32,7 +32,7 @@ span {
 }
 
 // min-width
-$breakpoint-up: ('xls': 'screen and (max-width: 376px)',
+$breakpoint-up: ('xls': 'screen and (min-width: 375px)',
   'xxs': 'screen and (min-width: 485px)',
   'xs': 'screen and (min-width: 587px)',
   'sm': 'screen and (min-width: 690px)',
@@ -225,7 +225,7 @@ p {
 
   @include mq-down(xxs) {
     background-color: #fff;
-    padding-bottom: 66px;
+    padding-bottom: 40px;
   }
 
   .page-container {
@@ -336,6 +336,10 @@ p {
         margin-left: 11%;
       }
 
+      @include mq-down() {
+        margin-left: 16px;
+      }
+
       .president {
         &-img {
           background-color: $section-color;
@@ -357,6 +361,13 @@ p {
           @include mq-down(xxs) {
             width: 345px;
             height: 212px;
+            margin-left: -16px;
+            margin-top: -20px;
+          }
+
+          @include mq-down(xls) {
+            width: 290px;
+            height: 180px;
           }
 
           &::after {
@@ -380,6 +391,15 @@ p {
             @include mq-down(xxs) {
               width: 345px;
               height: 212px;
+              top: 20px;
+              left: 15px;
+            }
+
+            @include mq-down(xls) {
+              width: 290px;
+              height: 180px;
+              top: 15px;
+              left: 15px;
             }
           }
         }
@@ -412,7 +432,7 @@ p {
           }
 
           @include mq-down(xxs) {
-            top: 420px;
+            top: 365px;
 
           }
 
@@ -430,6 +450,10 @@ p {
         @include mq-down() {
           margin-left: 0;
           margin-top: 0;
+        }
+
+        @include mq-down(xxs) {
+          margin-top: -26px;
         }
 
         h5 {
@@ -455,7 +479,11 @@ p {
 
           @include mq-down(sm) {
             width: 90%;
+          }
 
+          @include mq-down(sm) {
+            width: 97%;
+            margin-top: 15px;
           }
         }
       }
@@ -477,11 +505,20 @@ p {
       h4 {
         color: $section-color;
         text-align: center;
+
+        @include mq-down(xxs) {
+          font-size: 16px;
+        }
       }
 
       h5 {
         text-align: center;
         letter-spacing: 1.5px;
+
+        @include mq-down(xxs) {
+          font-size: 24px;
+          line-height: 20px;
+        }
       }
 
       .kaisha {
@@ -500,6 +537,10 @@ p {
           width: 75%;
         }
 
+        @include mq-down(xxs) {
+          width: 92%;
+        }
+
         tr {
           border-bottom: 1px #D1D3D4 solid;
 
@@ -509,23 +550,49 @@ p {
           }
         }
 
+        tr:nth-child(2) th {
+          padding-top: 16px;
+        }
+
         th {
           text-align: start;
           padding: 24px 8px;
           @include font(20px, 700);
           line-height: 36px;
 
-          @include mq-down(lg) {
-            font-weight: 500;
-          }
 
           @include mq-down() {
             display: block;
             padding: 0;
             padding-left: 10px;
             padding-top: 10px;
-
           }
+
+          @include mq-down(xxs) {
+            padding-left: 0px;
+            padding-top: 27px;
+            font-size: 16px;
+          }
+        }
+
+        tr:nth-child(2) th {
+          padding-top: 16px;
+        }
+
+        tr:nth-child(3) th {
+          padding-top: 16px;
+        }
+
+        tr:nth-child(4) th {
+          padding-top: 16px;
+        }
+
+        tr:nth-child(5) th {
+          padding-top: 16px;
+        }
+
+        tr:nth-child(6) th {
+          padding-top: 16px;
         }
 
         td {
@@ -548,22 +615,79 @@ p {
             padding-left: 10px;
             padding-bottom: 10px;
           }
+
+          @include mq-down(xxs) {
+            padding-left: 0px;
+            padding-top: 8px;
+            font-size: 16px;
+            padding-bottom: 15px;
+          }
+        }
+
+        tr:nth-child(3) td {
+          padding-top: 8px;
+        }
+
+        tr:nth-child(4) td {
+          padding-top: 8px;
+        }
+
+        tr:nth-child(5) td {
+          padding-top: 8px;
+        }
+
+        tr:nth-child(6) td {
+          padding-top: 8px;
+        }
+
+        .pc-business {
+          @include mq-down(xxs) {
+            display: none;
+          }
+        }
+
+        .sp-business {
+          @include mq-up(xxs) {
+            display: none;
+          }
+        }
+
+        .sp-access {
+          @include mq-up(xls) {
+            display: none;
+          }
         }
       }
     }
 
+
+
     .access {
       margin-top: 80px;
+
+      @include mq-down(xxs) {
+        margin-top: 70px;
+      }
 
       h4 {
         color: $section-color;
         text-align: center;
+
+        @include mq-down(xxs) {
+          font-size: 16px;
+        }
       }
 
       h5 {
         text-align: center;
         letter-spacing: 1.5px;
         margin-bottom: 60px;
+
+        @include mq-down(xxs) {
+          font-size: 24px;
+          line-height: 20px;
+          margin-bottom: 42px;
+        }
       }
 
       iframe {
@@ -574,6 +698,12 @@ p {
 
         @include mq-down() {
           height: 500px;
+        }
+
+        @include mq-down(xxs) {
+          height: 320px;
+          margin: 0px 0px 0px auto;
+          width: 96%;
         }
       }
     }

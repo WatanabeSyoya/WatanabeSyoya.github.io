@@ -170,7 +170,7 @@ p {
 @media screen and (max-width: 484px) {
   #company-page {
     background-color: #fff;
-    padding-bottom: 66px;
+    padding-bottom: 40px;
   }
 }
 
@@ -308,6 +308,12 @@ p {
   }
 }
 
+@media screen and (max-width: 760px) {
+  #company-page .page-container .message {
+    margin-left: 16px;
+  }
+}
+
 #company-page .page-container .message .president-img {
   background-color: #359B87;
   width: 350px;
@@ -334,6 +340,15 @@ p {
   #company-page .page-container .message .president-img {
     width: 345px;
     height: 212px;
+    margin-left: -16px;
+    margin-top: -20px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  #company-page .page-container .message .president-img {
+    width: 290px;
+    height: 180px;
   }
 }
 
@@ -362,6 +377,17 @@ p {
   #company-page .page-container .message .president-img::after {
     width: 345px;
     height: 212px;
+    top: 20px;
+    left: 15px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  #company-page .page-container .message .president-img::after {
+    width: 290px;
+    height: 180px;
+    top: 15px;
+    left: 15px;
   }
 }
 
@@ -403,7 +429,7 @@ p {
 
 @media screen and (max-width: 484px) {
   #company-page .page-container .message .president-name {
-    top: 420px;
+    top: 365px;
   }
 }
 
@@ -422,6 +448,12 @@ p {
   #company-page .page-container .message .president-message {
     margin-left: 0;
     margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  #company-page .page-container .message .president-message {
+    margin-top: -26px;
   }
 }
 
@@ -456,6 +488,13 @@ p {
   }
 }
 
+@media screen and (max-width: 689px) {
+  #company-page .page-container .message .president-message p {
+    width: 97%;
+    margin-top: 15px;
+  }
+}
+
 #company-page .page-container .info {
   margin-top: 81px;
 }
@@ -477,9 +516,22 @@ p {
   text-align: center;
 }
 
+@media screen and (max-width: 484px) {
+  #company-page .page-container .info h4 {
+    font-size: 16px;
+  }
+}
+
 #company-page .page-container .info h5 {
   text-align: center;
   letter-spacing: 1.5px;
+}
+
+@media screen and (max-width: 484px) {
+  #company-page .page-container .info h5 {
+    font-size: 24px;
+    line-height: 20px;
+  }
 }
 
 #company-page .page-container .info .kaisha {
@@ -505,6 +557,12 @@ p {
   }
 }
 
+@media screen and (max-width: 484px) {
+  #company-page .page-container .info .kaisha {
+    width: 92%;
+  }
+}
+
 #company-page .page-container .info .kaisha tr {
   border-bottom: 1px #D1D3D4 solid;
 }
@@ -513,6 +571,10 @@ p {
   #company-page .page-container .info .kaisha tr {
     display: block;
   }
+}
+
+#company-page .page-container .info .kaisha tr:nth-child(2) th {
+  padding-top: 16px;
 }
 
 #company-page .page-container .info .kaisha th {
@@ -525,12 +587,6 @@ p {
   line-height: 36px;
 }
 
-@media screen and (max-width: 1023px) {
-  #company-page .page-container .info .kaisha th {
-    font-weight: 500;
-  }
-}
-
 @media screen and (max-width: 760px) {
   #company-page .page-container .info .kaisha th {
     display: block;
@@ -538,6 +594,34 @@ p {
     padding-left: 10px;
     padding-top: 10px;
   }
+}
+
+@media screen and (max-width: 484px) {
+  #company-page .page-container .info .kaisha th {
+    padding-left: 0px;
+    padding-top: 27px;
+    font-size: 16px;
+  }
+}
+
+#company-page .page-container .info .kaisha tr:nth-child(2) th {
+  padding-top: 16px;
+}
+
+#company-page .page-container .info .kaisha tr:nth-child(3) th {
+  padding-top: 16px;
+}
+
+#company-page .page-container .info .kaisha tr:nth-child(4) th {
+  padding-top: 16px;
+}
+
+#company-page .page-container .info .kaisha tr:nth-child(5) th {
+  padding-top: 16px;
+}
+
+#company-page .page-container .info .kaisha tr:nth-child(6) th {
+  padding-top: 16px;
 }
 
 #company-page .page-container .info .kaisha td {
@@ -571,8 +655,57 @@ p {
   }
 }
 
+@media screen and (max-width: 484px) {
+  #company-page .page-container .info .kaisha td {
+    padding-left: 0px;
+    padding-top: 8px;
+    font-size: 16px;
+    padding-bottom: 15px;
+  }
+}
+
+#company-page .page-container .info .kaisha tr:nth-child(3) td {
+  padding-top: 8px;
+}
+
+#company-page .page-container .info .kaisha tr:nth-child(4) td {
+  padding-top: 8px;
+}
+
+#company-page .page-container .info .kaisha tr:nth-child(5) td {
+  padding-top: 8px;
+}
+
+#company-page .page-container .info .kaisha tr:nth-child(6) td {
+  padding-top: 8px;
+}
+
+@media screen and (max-width: 484px) {
+  #company-page .page-container .info .kaisha .pc-business {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 485px) {
+  #company-page .page-container .info .kaisha .sp-business {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  #company-page .page-container .info .kaisha .sp-access {
+    display: none;
+  }
+}
+
 #company-page .page-container .access {
   margin-top: 80px;
+}
+
+@media screen and (max-width: 484px) {
+  #company-page .page-container .access {
+    margin-top: 70px;
+  }
 }
 
 #company-page .page-container .access h4 {
@@ -580,10 +713,24 @@ p {
   text-align: center;
 }
 
+@media screen and (max-width: 484px) {
+  #company-page .page-container .access h4 {
+    font-size: 16px;
+  }
+}
+
 #company-page .page-container .access h5 {
   text-align: center;
   letter-spacing: 1.5px;
   margin-bottom: 60px;
+}
+
+@media screen and (max-width: 484px) {
+  #company-page .page-container .access h5 {
+    font-size: 24px;
+    line-height: 20px;
+    margin-bottom: 42px;
+  }
 }
 
 #company-page .page-container .access iframe {
@@ -596,6 +743,14 @@ p {
 @media screen and (max-width: 760px) {
   #company-page .page-container .access iframe {
     height: 500px;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  #company-page .page-container .access iframe {
+    height: 320px;
+    margin: 0px 0px 0px auto;
+    width: 96%;
   }
 }
 /*# sourceMappingURL=company.css.map */
