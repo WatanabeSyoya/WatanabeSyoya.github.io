@@ -589,24 +589,53 @@ p {
   background-image: url(../img/icon-civil.png);
 }
 
-#works-page ul {
+#works-page .page-next-works {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 90%;
+  width: 9%;
   margin: 80px auto 0;
 }
 
-@media screen and (max-width: 484px) {
-  #works-page ul {
-    margin: 56px auto 0;
+@media screen and (min-width: 1441px) {
+  #works-page .page-next-works {
+    width: 3%;
   }
 }
 
-#works-page ul li {
+@media screen and (max-width: 1230px) {
+  #works-page .page-next-works {
+    width: 14%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #works-page .page-next-works {
+    width: 19%;
+  }
+}
+
+@media screen and (max-width: 586px) {
+  #works-page .page-next-works {
+    width: 22%;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  #works-page .page-next-works {
+    margin: 56px auto 0;
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  #works-page .page-next-works {
+    margin: 56px auto 0;
+    width: 34%;
+  }
+}
+
+#works-page .page-next-works li {
   font-size: 20px;
   font-weight: 700;
   color: #777777;
@@ -619,7 +648,7 @@ p {
   transition: .3s;
 }
 
-#works-page ul li::after {
+#works-page .page-next-works li::after {
   content: "";
   position: absolute;
   top: -15px;
@@ -631,37 +660,37 @@ p {
   margin-right: 15px;
 }
 
-#works-page ul li:nth-child(1) {
+#works-page .page-next-works li:nth-child(1) {
   color: #fff;
   z-index: 1;
 }
 
-#works-page ul li:nth-child(1)::after {
+#works-page .page-next-works li:nth-child(1)::after {
   background-color: #359B87;
   z-index: -1;
 }
 
-#works-page ul li:nth-child(2):hover {
+#works-page .page-next-works li:nth-child(2):hover {
   color: #fff;
   z-index: 1;
 }
 
-#works-page ul li:nth-child(2):hover::after {
+#works-page .page-next-works li:nth-child(2):hover::after {
   background-color: #5DAF9F;
   z-index: -1;
 }
 
-#works-page ul li:nth-child(3):hover {
+#works-page .page-next-works li:nth-child(3):hover {
   color: #fff;
   z-index: 1;
 }
 
-#works-page ul li:nth-child(3):hover::after {
+#works-page .page-next-works li:nth-child(3):hover::after {
   background-color: #5DAF9F;
   z-index: -1;
 }
 
-#works-page ul li:nth-child(4)::before {
+#works-page .page-next-works li:nth-child(4)::before {
   content: "";
   background: url(../img/arrow-num.png);
   position: absolute;
@@ -673,11 +702,11 @@ p {
   transition: .3s;
 }
 
-#works-page ul li:nth-child(4):hover::after {
+#works-page .page-next-works li:nth-child(4):hover::after {
   background-color: #5DAF9F;
 }
 
-#works-page ul li:nth-child(4):hover::before {
+#works-page .page-next-works li:nth-child(4):hover::before {
   background: url(../img/arrow-num-w.png);
   z-index: 1;
 }

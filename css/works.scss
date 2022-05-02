@@ -592,14 +592,35 @@ p {
     }
   }
 
-  ul {
+  .page-next-works {
     display: flex;
-    justify-content: center;
-    width: 90%;
+    width: 9%;
     margin: 80px auto 0;
+
+    @include mq-up(xl) {
+      width: 3%
+    }
+
+    @include mq-down(xl) {
+      width: 14%
+    }
+
+    @include mq-down() {
+      width: 19%
+    }
+
+    @include mq-down(xs) {
+      width: 22%
+    }
 
     @include mq-down(xxs) {
       margin: 56px auto 0;
+      width: 25%
+    }
+
+    @include mq-down(xls) {
+      margin: 56px auto 0;
+      width: 34%
     }
 
     li {

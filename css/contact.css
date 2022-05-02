@@ -79,9 +79,21 @@ p {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1023px) {
+  .container {
+    width: auto;
+  }
+}
+
 @media screen and (max-width: 760px) {
   .container {
     width: 92%;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  .container {
+    margin: 0;
   }
 }
 
@@ -93,9 +105,36 @@ p {
   margin-top: 100px;
 }
 
+@media screen and (max-width: 484px) {
+  #contact-fv {
+    background-image: url(../img/contact-sp.jpg);
+    height: 304px;
+    margin-top: 56px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  #contact-fv {
+    background-size: contain;
+  }
+}
+
 #contact-fv .container {
   padding-left: 135px;
   padding-top: 228px;
+}
+
+@media screen and (max-width: 760px) {
+  #contact-fv .container {
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  #contact-fv .container {
+    padding-left: 15px;
+    padding-top: 128px;
+  }
 }
 
 #contact-fv .container h4 {
@@ -103,9 +142,25 @@ p {
   padding-top: 7px;
 }
 
+@media screen and (max-width: 484px) {
+  #contact-fv .container h4 {
+    font-size: 16px;
+    line-height: 16px;
+    padding-top: 0;
+  }
+}
+
 #contact-fv .container h5 {
   letter-spacing: 1.5px;
   padding-bottom: 59px;
+}
+
+@media screen and (max-width: 484px) {
+  #contact-fv .container h5 {
+    font-size: 24px;
+    padding-bottom: 0;
+    line-height: 40px;
+  }
 }
 
 #contact-page {
@@ -113,19 +168,42 @@ p {
   padding-bottom: 5px;
 }
 
+@media screen and (max-width: 484px) {
+  #contact-page {
+    background-color: #fff;
+    padding-bottom: 72px;
+  }
+}
+
 #contact-page .page-container {
   background-color: #fff;
   width: 90.3%;
-  padding-top: 129px;
-  padding-bottom: 60px;
+  padding-top: 145px;
+  padding-bottom: 80px;
   position: relative;
   top: -65px;
+}
+
+@media screen and (max-width: 484px) {
+  #contact-page .page-container {
+    top: -40px;
+    width: 96.3%;
+    padding-top: 116px;
+    padding-bottom: 0;
+  }
 }
 
 #contact-page .page-container .list {
   position: absolute;
   top: 51px;
   left: 63px;
+}
+
+@media screen and (max-width: 484px) {
+  #contact-page .page-container .list {
+    top: 18px;
+    left: 14px;
+  }
 }
 
 #contact-page .page-container .list .home {
@@ -177,6 +255,12 @@ p {
   transition: all .3s;
 }
 
+@media screen and (max-width: 760px) {
+  #contact-page .page-container .scroll {
+    display: none;
+  }
+}
+
 #contact-page .page-container .scroll::after {
   content: "";
   background: url(../img/arrow-d.png);
@@ -201,6 +285,28 @@ p {
   top: 10px;
 }
 
+#contact-page .page-container .sp-contact {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1F2833;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 28px;
+  letter-spacing: 1.5px;
+  margin-left: 15px;
+  position: relative;
+  top: -20px;
+}
+
+@media screen and (min-width: 485px) {
+  #contact-page .page-container .sp-contact {
+    display: none;
+  }
+}
+
+#contact-page .page-container .second {
+  line-height: 60px;
+}
+
 #contact-page .page-container .tel {
   width: 760px;
   height: 240px;
@@ -218,14 +324,46 @@ p {
   background-color: #F3F3F3;
 }
 
+@media screen and (max-width: 760px) {
+  #contact-page .page-container .tel {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 20px 0 0 auto;
+    width: 96%;
+    height: auto;
+    padding-top: 27px;
+    padding-bottom: 44px;
+  }
+}
+
 #contact-page .page-container .tel p {
   padding-left: 78px;
+}
+
+@media screen and (max-width: 760px) {
+  #contact-page .page-container .tel p {
+    padding-left: 0;
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 18px;
+  }
 }
 
 #contact-page .page-container .tel h3 {
   padding-right: 68px;
   padding-bottom: 7px;
   position: relative;
+}
+
+@media screen and (max-width: 760px) {
+  #contact-page .page-container .tel h3 {
+    font-size: 32px;
+    letter-spacing: -.06em;
+    padding-right: 0;
+    text-align: center;
+  }
 }
 
 #contact-page .page-container .tel h3::after {
@@ -241,13 +379,35 @@ p {
   padding-left: 60px;
 }
 
+@media screen and (max-width: 760px) {
+  #contact-page .page-container .tel h3::after {
+    line-height: 43px;
+    padding-left: 3px;
+  }
+}
+
 #contact-page .page-container form {
   width: 58.5%;
   margin: 0 auto;
 }
 
+@media screen and (max-width: 760px) {
+  #contact-page .page-container form {
+    width: 96%;
+    margin: 0 0 0 auto;
+  }
+}
+
 #contact-page .page-container form h4 {
   font-family: 'Noto Sans JP', sans-serif;
+}
+
+@media screen and (max-width: 760px) {
+  #contact-page .page-container form h4 {
+    font-size: 16px;
+    margin-top: 56px;
+    margin-bottom: 16px;
+  }
 }
 
 #contact-page .page-container form p {
@@ -260,8 +420,20 @@ p {
   margin-bottom: 40px;
 }
 
+@media screen and (max-width: 760px) {
+  #contact-page .page-container form p {
+    margin-bottom: 16px;
+  }
+}
+
 #contact-page .page-container form span {
   display: inline-block;
+}
+
+@media screen and (max-width: 760px) {
+  #contact-page .page-container form .contact-form {
+    margin-top: 56px;
+  }
 }
 
 #contact-page .page-container form label {
@@ -314,6 +486,13 @@ p {
   color: #D0D0D0;
 }
 
+@media screen and (max-width: 760px) {
+  #contact-page .page-container form .form-input {
+    height: 47px;
+    width: 92%;
+  }
+}
+
 #contact-page .page-container form .form-textarea {
   border: 2px solid #EEEEEE;
   border-radius: 6px;
@@ -350,6 +529,12 @@ p {
   color: #D0D0D0;
 }
 
+@media screen and (max-width: 760px) {
+  #contact-page .page-container form .form-textarea {
+    width: 92%;
+  }
+}
+
 #contact-page .page-container form .any {
   border-radius: 2px;
   margin-right: 8px;
@@ -383,6 +568,13 @@ p {
   padding: 13px 40px 20px 43px;
   border-radius: 8px;
   margin-bottom: 89px;
+}
+
+@media screen and (max-width: 760px) {
+  #contact-page .page-container form .check-btn {
+    padding: 19px 0px 32px 13px;
+    margin-bottom: 64px;
+  }
 }
 
 #contact-page .page-container form .check-btn input {
@@ -452,6 +644,20 @@ p {
   letter-spacing: 1.5px;
 }
 
+@media screen and (max-width: 484px) {
+  #contact-page .page-container form .check-btn .privacy-text {
+    font-size: 12px;
+    margin-top: 12px;
+    margin-left: 3px;
+  }
+}
+
+@media screen and (min-width: 761px) {
+  #contact-page .page-container form .check-btn .privacy-sp {
+    display: none;
+  }
+}
+
 #contact-page .page-container form .check-btn .privacy {
   display: inline;
   color: #777777;
@@ -480,6 +686,13 @@ p {
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 760px) {
+  #contact-page .page-container form .radio-btn {
+    margin-top: 7px;
+    margin-bottom: 18px;
+  }
+}
+
 #contact-page .page-container form .radio-btn input[type=radio] {
   display: none;
 }
@@ -494,12 +707,30 @@ p {
   width: auto;
 }
 
+@media screen and (max-width: 760px) {
+  #contact-page .page-container form .radio-btn .radio01 {
+    padding: 5px 1px 5px 24px;
+  }
+}
+
 #contact-page .page-container form .radio-btn .radio01:nth-child(2) {
   padding: 5px 47px 5px 30px;
 }
 
+@media screen and (max-width: 760px) {
+  #contact-page .page-container form .radio-btn .radio01:nth-child(2) {
+    padding: 5px 26px 5px 30px;
+  }
+}
+
 #contact-page .page-container form .radio-btn .radio01:nth-child(4) {
   padding: 5px 48px 5px 30px;
+}
+
+@media screen and (max-width: 760px) {
+  #contact-page .page-container form .radio-btn .radio01:nth-child(4) {
+    padding: 5px 23px 5px 30px;
+  }
 }
 
 #contact-page .page-container form .radio-btn .radio01::before {
