@@ -494,24 +494,7 @@ p {
   }
 }
 
-#contact-page .page-container form label {
-  font-size: 16px;
-  font-weight: 500;
-  color: #1F2833;
-  font-family: 'Noto Sans JP', sans-serif;
-  line-height: 28px;
-  letter-spacing: 1.5px;
-}
-
-#contact-page .page-container form .name-2:focus {
-  outline: none;
-  border-color: rgba(53, 155, 135, 0.8);
-  border-radius: 6px;
-  -webkit-box-shadow: 1px 1px 10px rgba(53, 155, 135, 0.5);
-          box-shadow: 1px 1px 10px rgba(53, 155, 135, 0.5);
-}
-
-#contact-page .page-container form .form-input {
+#contact-page .page-container form .contact-form .form-input {
   border: 2px solid #EEEEEE;
   border-radius: 6px;
   margin-bottom: 21px;
@@ -530,27 +513,64 @@ p {
   padding-left: 21px;
 }
 
-#contact-page .page-container form .form-input::-webkit-input-placeholder {
+#contact-page .page-container form .contact-form .form-input::-webkit-input-placeholder {
   color: #D0D0D0;
 }
 
-#contact-page .page-container form .form-input:-ms-input-placeholder {
+#contact-page .page-container form .contact-form .form-input:-ms-input-placeholder {
   color: #D0D0D0;
 }
 
-#contact-page .page-container form .form-input::-ms-input-placeholder {
+#contact-page .page-container form .contact-form .form-input::-ms-input-placeholder {
   color: #D0D0D0;
 }
 
-#contact-page .page-container form .form-input::placeholder {
+#contact-page .page-container form .contact-form .form-input::placeholder {
   color: #D0D0D0;
 }
 
 @media screen and (max-width: 760px) {
-  #contact-page .page-container form .form-input {
+  #contact-page .page-container form .contact-form .form-input {
     height: 47px;
     width: 92%;
   }
+}
+
+#contact-page .page-container form .contact-form .form-item:nth-child(4) .form-input::-webkit-input-placeholder {
+  font-size: 16px;
+  letter-spacing: -.02em;
+}
+
+#contact-page .page-container form .contact-form .form-item:nth-child(4) .form-input:-ms-input-placeholder {
+  font-size: 16px;
+  letter-spacing: -.02em;
+}
+
+#contact-page .page-container form .contact-form .form-item:nth-child(4) .form-input::-ms-input-placeholder {
+  font-size: 16px;
+  letter-spacing: -.02em;
+}
+
+#contact-page .page-container form .contact-form .form-item:nth-child(4) .form-input::placeholder {
+  font-size: 16px;
+  letter-spacing: -.02em;
+}
+
+#contact-page .page-container form label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1F2833;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 28px;
+  letter-spacing: 1.5px;
+}
+
+#contact-page .page-container form .name-2:focus {
+  outline: none;
+  border-color: rgba(53, 155, 135, 0.8);
+  border-radius: 6px;
+  -webkit-box-shadow: 1px 1px 10px rgba(53, 155, 135, 0.5);
+          box-shadow: 1px 1px 10px rgba(53, 155, 135, 0.5);
 }
 
 #contact-page .page-container form .form-textarea {
