@@ -807,8 +807,8 @@ p {
 }
 
 #contact-page .page-container form .radio-btn .radio01::before {
-  background: #fff;
-  border: 2px solid #359B87;
+  background: #F3F3F3;
+  border: 3px solid #EEEEEE;
   border-radius: 50%;
   content: '';
   display: block;
@@ -826,11 +826,11 @@ p {
   content: '';
   display: block;
   height: 10px;
-  left: 4px;
+  left: 5px;
   margin-top: -4px;
   opacity: 0;
   position: absolute;
-  top: 50%;
+  top: 52%;
   width: 10px;
 }
 
@@ -838,10 +838,13 @@ p {
   opacity: 1;
 }
 
+#contact-page .page-container form .radio-btn input[type=radio]:checked + .radio01::before {
+  border: 3px solid #359B87;
+}
+
 #contact-page .page-container form .radio-btn input[type="radio"],
 #contact-page .page-container form .radio-btn input[type="checkbox"] {
   position: relative;
-  top: 2px;
 }
 
 #contact-page .page-container form button {
