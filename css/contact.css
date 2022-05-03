@@ -324,15 +324,24 @@ p {
   background-color: #F3F3F3;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 900px) {
   #contact-page .page-container .tel {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin: 20px auto 50px;
+    width: 70%;
+    height: auto;
+    padding-top: 27px;
+    padding-bottom: 44px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  #contact-page .page-container .tel {
     margin: 20px 0 0 auto;
     width: 96%;
-    height: auto;
     padding-top: 27px;
     padding-bottom: 44px;
   }
@@ -342,12 +351,17 @@ p {
   padding-left: 78px;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 900px) {
   #contact-page .page-container .tel p {
     padding-left: 0;
-    font-size: 16px;
     text-align: center;
     padding-bottom: 18px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  #contact-page .page-container .tel p {
+    font-size: 16px;
   }
 }
 
@@ -357,12 +371,18 @@ p {
   position: relative;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 900px) {
   #contact-page .page-container .tel h3 {
-    font-size: 32px;
+    font-size: 40px;
     letter-spacing: -.06em;
     padding-right: 0;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  #contact-page .page-container .tel h3 {
+    font-size: 32px;
   }
 }
 
@@ -377,6 +397,13 @@ p {
   position: absolute;
   display: block;
   padding-left: 60px;
+}
+
+@media screen and (max-width: 900px) {
+  #contact-page .page-container .tel h3::after {
+    line-height: 43px;
+    padding-left: 30px;
+  }
 }
 
 @media screen and (max-width: 760px) {
@@ -707,7 +734,7 @@ p {
   width: auto;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 900px) {
   #contact-page .page-container form .radio-btn .radio01 {
     padding: 5px 1px 5px 24px;
   }
@@ -717,7 +744,7 @@ p {
   padding: 5px 47px 5px 30px;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 900px) {
   #contact-page .page-container form .radio-btn .radio01:nth-child(2) {
     padding: 5px 26px 5px 30px;
   }
@@ -727,7 +754,7 @@ p {
   padding: 5px 48px 5px 30px;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 900px) {
   #contact-page .page-container form .radio-btn .radio01:nth-child(4) {
     padding: 5px 23px 5px 30px;
   }

@@ -48,6 +48,7 @@ $breakpoint-down: ('xls': 'screen and (max-width: 374px)',
   'xs': 'screen and (max-width: 586px)',
   'sm': 'screen and (max-width: 689px)',
   'md': 'screen and (max-width: 760px)',
+  'm': 'screen and (max-width: 900px)',
   'lg': 'screen and (max-width: 1023px)',
   'xl': 'screen and (max-width: 1230px)',
   'xxl': 'screen and (max-width: 1400px)',
@@ -350,11 +351,19 @@ p {
       border-radius: 8px;
       background-color: #F3F3F3;
 
-      @include mq-down() {
+      @include mq-down(m) {
         flex-direction: column;
+        margin: 20px auto 50px;
+        width: 70%;
+        height: auto;
+        padding-top: 27px;
+        padding-bottom: 44px;
+
+      }
+
+      @include mq-down() {
         margin: 20px 0 0 auto;
         width: 96%;
-        height: auto;
         padding-top: 27px;
         padding-bottom: 44px;
 
@@ -363,11 +372,14 @@ p {
       p {
         padding-left: 78px;
 
-        @include mq-down() {
+        @include mq-down(m) {
           padding-left: 0;
-          font-size: 16px;
           text-align: center;
           padding-bottom: 18px;
+        }
+
+        @include mq-down() {
+          font-size: 16px;
         }
       }
 
@@ -376,11 +388,15 @@ p {
         padding-bottom: 7px;
         position: relative;
 
-        @include mq-down() {
-          font-size: 32px;
+        @include mq-down(m) {
+          font-size: 40px;
           letter-spacing: -.06em;
           padding-right: 0;
           text-align: center;
+        }
+
+        @include mq-down() {
+          font-size: 32px;
         }
 
         &::after {
@@ -391,6 +407,11 @@ p {
           position: absolute;
           display: block;
           padding-left: 60px;
+
+          @include mq-down(m) {
+            line-height: 43px;
+            padding-left: 30px;
+          }
 
           @include mq-down() {
             line-height: 43px;
@@ -662,14 +683,14 @@ p {
           position: relative;
           width: auto;
 
-          @include mq-down() {
+          @include mq-down(m) {
             padding: 5px 1px 5px 24px;
           }
 
           &:nth-child(2) {
             padding: 5px 47px 5px 30px;
 
-            @include mq-down() {
+            @include mq-down(m) {
               padding: 5px 26px 5px 30px;
             }
           }
@@ -677,7 +698,7 @@ p {
           &:nth-child(4) {
             padding: 5px 48px 5px 30px;
 
-            @include mq-down() {
+            @include mq-down(m) {
               padding: 5px 23px 5px 30px;
             }
           }
