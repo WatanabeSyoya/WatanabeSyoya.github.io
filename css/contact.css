@@ -105,6 +105,24 @@ p {
   margin-top: 100px;
 }
 
+@media screen and (max-width: 1023px) {
+  #contact-fv {
+    background-image: url(../img/contact-m.jpg);
+  }
+}
+
+@media screen and (max-width: 760px) {
+  #contact-fv {
+    background-image: url(../img/contact-mm.jpg);
+  }
+}
+
+@media screen and (max-width: 586px) {
+  #contact-fv {
+    background-image: url(../img/contact-s.jpg);
+  }
+}
+
 @media screen and (max-width: 484px) {
   #contact-fv {
     background-image: url(../img/contact-sp.jpg);
@@ -340,10 +358,16 @@ p {
 
 @media screen and (max-width: 760px) {
   #contact-page .page-container .tel {
-    margin: 20px 0 0 auto;
-    width: 96%;
+    margin: 20px auto;
+    width: 80%;
     padding-top: 27px;
     padding-bottom: 44px;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  #contact-page .page-container .tel {
+    width: 96%;
   }
 }
 
@@ -419,6 +443,13 @@ p {
 }
 
 @media screen and (max-width: 760px) {
+  #contact-page .page-container form {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 484px) {
   #contact-page .page-container form {
     width: 96%;
     margin: 0 0 0 auto;
@@ -599,8 +630,15 @@ p {
 
 @media screen and (max-width: 760px) {
   #contact-page .page-container form .check-btn {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  #contact-page .page-container form .check-btn {
     padding: 19px 0px 32px 13px;
     margin-bottom: 64px;
+    width: 96%;
   }
 }
 
@@ -676,6 +714,12 @@ p {
     font-size: 12px;
     margin-top: 12px;
     margin-left: 3px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  #contact-page .page-container form .check-btn .checkbox01 {
+    font-size: 13px;
   }
 }
 

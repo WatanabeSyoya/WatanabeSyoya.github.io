@@ -172,6 +172,18 @@ p {
   height: 555px;
   margin-top: 100px;
 
+  @include mq-down(lg) {
+    background-image: url(../img/contact-m.jpg);
+  }
+
+  @include mq-down() {
+    background-image: url(../img/contact-mm.jpg);
+  }
+
+  @include mq-down(xs) {
+    background-image: url(../img/contact-s.jpg);
+  }
+
   @include mq-down(xxs) {
     background-image: url(../img/contact-sp.jpg);
     height: 304px;
@@ -362,11 +374,15 @@ p {
       }
 
       @include mq-down() {
-        margin: 20px 0 0 auto;
-        width: 96%;
+        margin: 20px auto;
+        width: 80%;
         padding-top: 27px;
         padding-bottom: 44px;
 
+      }
+
+      @include mq-down(xxs) {
+        width: 96%;
       }
 
       p {
@@ -426,6 +442,11 @@ p {
       margin: 0 auto;
 
       @include mq-down() {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      @include mq-down(xxs) {
         width: 96%;
         margin: 0 0 0 auto;
       }
@@ -555,8 +576,13 @@ p {
         margin-bottom: 89px;
 
         @include mq-down() {
+          width: 80%;
+        }
+
+        @include mq-down(xxs) {
           padding: 19px 0px 32px 13px;
           margin-bottom: 64px;
+          width: 96%;
         }
 
         input {
@@ -624,6 +650,12 @@ p {
             font-size: 12px;
             margin-top: 12px;
             margin-left: 3px;
+          }
+        }
+
+        .checkbox01 {
+          @include mq-down(xls) {
+            font-size: 13px;
           }
         }
 
