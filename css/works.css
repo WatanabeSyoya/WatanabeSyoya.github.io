@@ -551,7 +551,7 @@ p {
   height: 66px;
   position: absolute;
   top: -33px;
-  left: 108px;
+  left: 102px;
 }
 
 @media screen and (max-width: 1400px) {
@@ -559,7 +559,7 @@ p {
     width: 50px;
     height: 50px;
     top: -25px;
-    left: 82px;
+    left: 75px;
   }
 }
 
@@ -577,7 +577,7 @@ p {
     width: 30px;
     height: 30px;
     top: -15px;
-    left: 42px;
+    left: 48px;
   }
 }
 
