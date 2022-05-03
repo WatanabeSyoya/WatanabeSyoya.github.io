@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <!--
-      *********************************************
-      ヘッダー指定の基本はOKです。
-      ファビコンの設定はせっかくなのでapple-touch-iconというスマホ用のアイコンも設定してみることや、OGPというSNSにリンクを張った時に必要な設定もチャンレンジしてみると良いと思います！
-
-      また、descriptionですが、改行は意味ないので改行なしで書いて問題ありません。（ただ、コードが読みやすいようにということであればこの状態でも問題ではありません）
-      あと、フォントの読み込みは3回読み込むよりも、1回にまとめたほうが読み込み回数が少ないので良いです。
-
-    -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,17 +16,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet">
   <title>サクスタ</title>
 </head>
-
-<!--
-      *********************************************
-
-      全体のディレクトリ構成については、基本のCSSとIMGを分けている構成で良いと思います。
-      パーフェクトピクセルを目指してちゃんと重ねてぴったりに再現できていますね。
-      ですが、更にもっとピッタリと併せられると思いますよ、例えば全体としてはフォントがちゃんとあたっていないようなので確認してみると良いでしょう。
-
-      「月額2,480円(税込み)でIT業界で必要とされる基礎知識を楽しく確実に身につけるアプリです」の部分はデザインではNoto Sans JPですが、Hiraginoがあたっています。
-
-    -->
 <body>
   <header>
     <div class="nav-sp">
@@ -45,14 +25,6 @@
       </div>
 
     </div>
-    <!--
-      *********************************************
-
-      navの中ですがここはDIVよりもul > li を使用して作るほうが良いかと思います。
-      あと、デザインをプロトタイプにして見るとわかるのですが、本来はヘッダーが丈夫に固定されています。
-      このようなただの見た目だけでなくて挙動を読み取って再現することも大事です。
-
-    -->
     <nav class="nav-wrap">
       <div class="nav-list">
         <a class="item" href="#about">
@@ -93,35 +65,8 @@
         <div class="title-box1">
           <h2 class="title">About</h2>
           <p class="sub-title">「サクスタ」ってなに？？</p>
-          <!--
-      *********************************************
-
-      circlelの絵は文章と関係ない要素なので疑似要素を使用してHTML上から消してしまうとスマートだと思います。
-
-    -->
           <div class="circle1"></div>
         </div>
-        <!--
-      *********************************************
-
-      PC用とSP用で文章が二重になっていますね。
-      これはよくありません。
-      表示状は見えていませんがページの構成上は同じ文章が二重に入ってきてしまうからです。
-      あくまでもHTMLは文書なので、見た目優先ではなく文書として正しいことを目指しましょう。
-      また、クラスを各タグ全てに設定すると今後の調整が大変です。
-      例えば、about-boxやtext-boxの子要素として指定してしまえばほとんどはクラスを付ける必要がなくなります。
-      cssをキレイに指定するには親要素と子要素のグルーピングを意識して整理すると良いと思います。
-
-
-      また、文章として捉えると「月額2,480円(税込み)でIT業界で〜」の部分ってそれ以外の文章よりも強調されている文章ですよね。
-      そうなるとhタグを使ったりしたほうが文書としてはわかりやすいわけです。
-      あくまでもWORDに文書をつくってそれを装飾しているような意識でマークアップをしてみると良いと思います。
-
-
-      ---
-      「3分で解説」の部分はこのままでも良いのですが、ちょっとしたアイコンのようなテキストなのでここを擬似要素にしてしまってもスッキリしそうですね。
-
-    -->
         <div class="about-box">
           <div class="text-box">
             <p class="about-text">月額2,480円(税込み)でIT業界で必要とされる<br>基礎知識を楽しく確実に身につけるアプリです</p>
@@ -133,7 +78,7 @@
             <p class="video-text1">3分で解説</p>
             <p class="video-text2">ユーザー数2,000人突破「サクスタ」が選ばれる理由</p>
             <p class="video-text3">ユーザー数2,000人突破<br>「サクスタ」が選ばれる理由</p>
-            <iframe width="503" height="283" src="https://www.youtube.com/embed/5Da1Xlau37g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="503" height="283" src="https://www.youtube.com/embed/B1go9DPd_xg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -147,22 +92,6 @@
       <p class="feature-sub">学びやすい「理由」がある<br>最新科学に基づいて設計された学習環境</p>
       <div class="feature-box">
         <img src="asset/img/feature01.png" alt="画像１" class="feature-img">
-        <!--
-          *********************************************
-          ・あまり良いalt属性の使い方ではないです。
-
-          altは代替テキストの役割を果たすので、言葉だけでその画像の様子を説明することになります。ゆえに今回の「feature01の画像」はテキストだけ読んでも様子がわからないです。また下記にも書きますが今回のような元から「情報として意味をなさない画像」は別の方法で対応してもいいでしょう。もしくはalt自体を空にする(alt="")が適切でしょう。そして語尾は画像よりも「~様子」のが一般的に多いですね！
-
-          いい感じにまとめてくださっている参考記事がありましたので参考にどうぞ！細かいですが余力がありそうなので少しずつ慣れましょう！
-          (参考)
-          http://jis8341.net/jirei_sample/jirei_chapter_01.html
-
-
-          また今回の場合はimg要素で作成するよりも、CSSで背景画像として任せてもいいですね。pかfeature-textのbottom背景でOKです！
-
-          もしくはセクションタイトルで作成している無機質な正円のように擬似要素を利用してもいいですね。
-          *********************************************
-        -->
         <div class="feature-text">
           <div class="feature-text-title">Feature<span class="num">01</span></div>
           <p class="feature-text-sub1">体系化された「1分解説動画」で<br>高速インプット</p>
@@ -200,7 +129,6 @@
           <div class="course-item">
             <img class="course-img" src="asset/img/course01.jpg" alt="プログラミング基礎">
             <p class="course-text1">Programming</p>
-            <!-- ↑ こういうのも擬似要素化しても良さそうですね -->
             <p class="course-text2">プログラミング基礎</p>
             <p class="course-text3">コーディングや公式ドキュメントで覚えておくと理解しやすい英単語を覚えよう</p>
           </div>
@@ -211,15 +139,6 @@
             <p class="course-text3">コーディングや公式ドキュメントで覚えておくと理解しやすい英単語を覚えよう</p>
           </div>
           <div class="course-item">
-            <!--
-              画素数が多いのでここはPNGよりJPGが最適でしょう！
-              些細な差ですが、このような基本事項の細かい箇所が積み上がっていくので注意しましょう。
-
-              今回の場合も
-              PNG(480*480)は400KBから100KB
-              JPG(480*480)は280KBから70KB
-              にもなります！
-            -->
             <img class="course-img" src="asset/img/course03.png" alt="プログラミング基礎">
             <p class="course-text1">Programming</p>
             <p class="course-text2">IT・web基礎</p>
