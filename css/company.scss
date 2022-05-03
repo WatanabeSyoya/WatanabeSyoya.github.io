@@ -418,22 +418,22 @@ p {
           @include mq-down() {
             position: relative;
             top: 280px;
-
           }
 
           @include mq-down(sm) {
             top: 330px;
-
           }
 
           @include mq-down(xs) {
             top: 370px;
-
           }
 
           @include mq-down(xxs) {
             top: 365px;
+          }
 
+          @include mq-down(xls) {
+            top: 400px;
           }
 
         }
