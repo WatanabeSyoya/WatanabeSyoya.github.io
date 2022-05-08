@@ -220,22 +220,35 @@ header {
       }
 
       a {
-        text-align: center;
-        @include font(16px, 500);
-        letter-spacing: 1.5px;
-
-        @include mq-down(lg) {
-          font-size: 14px;
-        }
-
         span {
           @include font(12px, 500, $sub-color);
           font-family: 'Epilogue',
             sans-serif;
           margin-bottom: 4px;
           letter-spacing: -0.01em;
+
+          &:hover {
+            color: $section-color;
+          }
+        }
+
+        text-align: center;
+        @include font(16px, 500);
+        letter-spacing: 1.5px;
+        transition: .3s;
+
+
+
+        @include mq-down(lg) {
+          font-size: 14px;
+        }
+
+        &:hover {
+          color: $section-color;
         }
       }
+
+
     }
   }
 

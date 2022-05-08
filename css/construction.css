@@ -181,12 +181,8 @@ header .header-container ul a {
   color: #1F2833;
   font-family: 'Noto Sans JP', sans-serif;
   letter-spacing: 1.5px;
-}
-
-@media screen and (max-width: 1023px) {
-  header .header-container ul a {
-    font-size: 14px;
-  }
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 header .header-container ul a span {
@@ -197,6 +193,20 @@ header .header-container ul a span {
   font-family: 'Epilogue', sans-serif;
   margin-bottom: 4px;
   letter-spacing: -0.01em;
+}
+
+header .header-container ul a span:hover {
+  color: #359B87;
+}
+
+@media screen and (max-width: 1023px) {
+  header .header-container ul a {
+    font-size: 14px;
+  }
+}
+
+header .header-container ul a:hover {
+  color: #359B87;
 }
 
 header .header-sp {
