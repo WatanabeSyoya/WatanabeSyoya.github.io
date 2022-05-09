@@ -1167,21 +1167,36 @@ header nav.globalMenuSp.active {
 #recruit {
   background-image: url(../img/recruit.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   margin-top: 115px;
   margin-bottom: 80px;
   height: 520px;
 }
 
-@media screen and (min-width: 1441px) {
+@media screen and (max-width: 1230px) {
   #recruit {
+    background-position: top;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #recruit {
+    background-image: url(../img/recruit-i.jpg);
+  }
+}
+
+@media screen and (max-width: 484px) {
+  #recruit {
+    background-position: right;
+    margin-top: 45px;
+    margin-bottom: 50px;
     background-size: cover;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 430px) {
   #recruit {
-    background-image: url(../img/recruit-ipad.jpg);
+    background-image: url(../img/recruit-min.jpg);
     margin-top: 45px;
     margin-bottom: 50px;
     background-size: cover;
@@ -1190,30 +1205,19 @@ header nav.globalMenuSp.active {
 
 @media screen and (max-width: 374px) {
   #recruit {
-    background-image: url(../img/recruit-min.jpg);
-    margin-top: 45px;
-    background-size: cover;
     margin-bottom: 60px;
   }
 }
 
 #recruit h4 {
   color: #fff;
-  padding-top: 61px;
-  padding-left: 312px;
+  padding-top: 60px;
+  margin-left: 21.5%;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 484px) {
   #recruit h4 {
-    padding-top: 2%;
-    padding-left: 20%;
-    line-height: 20px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #recruit h4 {
-    padding-left: 0;
+    margin-left: 0;
     font-size: 16px;
     text-align: center;
     padding-top: 50px;
@@ -1225,19 +1229,12 @@ header nav.globalMenuSp.active {
   color: #fff;
   letter-spacing: 1.5px;
   padding-bottom: 232px;
-  padding-left: 287px;
+  margin-left: 19.8%;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 484px) {
   #recruit h5 {
-    padding-bottom: 15%;
-    padding-left: 18%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #recruit h5 {
-    padding-left: 0;
+    margin-left: 0;
     font-size: 24px;
     text-align: center;
     line-height: 20px;
@@ -1245,13 +1242,11 @@ header nav.globalMenuSp.active {
   }
 }
 
-@media screen and (max-width: 1400px) {
-  #recruit .recruit-name {
-    margin-left: 20%;
-  }
+#recruit .recruit-name {
+  margin-left: 16%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 484px) {
   #recruit .recruit-name {
     margin-left: 0;
     margin: 42px auto 0;
