@@ -1215,6 +1215,18 @@ header nav.globalMenuSp.active {
   margin-left: 21.5%;
 }
 
+@media screen and (max-width: 1023px) {
+  #recruit h4 {
+    margin-left: 22.5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #recruit h4 {
+    margin-left: 24%;
+  }
+}
+
 @media screen and (max-width: 484px) {
   #recruit h4 {
     margin-left: 0;
