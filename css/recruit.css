@@ -792,6 +792,29 @@ p {
   border-bottom: 2px rgba(31, 40, 51, 0.16) solid;
 }
 
+#recruit-page .next-btn::before {
+  content: "";
+  position: absolute;
+  /*絶対位置指定*/
+  right: 50%;
+  /*横位置の指定*/
+  top: 25%;
+  /*縦位置の指定*/
+  background: rgba(31, 40, 51, 0.16);
+  /*線の色指定*/
+  width: 2px;
+  /*線の幅指定*/
+  height: 50%;
+  /*線の高さ指定*/
+}
+
+@media screen and (max-width: 586px) {
+  #recruit-page .next-btn::before {
+    top: 11%;
+    height: 80%;
+  }
+}
+
 #recruit-page .next-btn .next-name {
   position: relative;
   font-size: 20px;
@@ -803,7 +826,7 @@ p {
   transition: 1s;
 }
 
-@media screen and (max-width: 484px) {
+@media screen and (max-width: 586px) {
   #recruit-page .next-btn .next-name {
     font-size: 16px;
     line-height: 16px;
@@ -832,7 +855,7 @@ p {
   }
 }
 
-@media screen and (max-width: 484px) {
+@media screen and (max-width: 586px) {
   #recruit-page .next-btn .next-name::after {
     left: 81%;
     top: 42px;
@@ -854,7 +877,7 @@ p {
   }
 }
 
-@media screen and (max-width: 484px) {
+@media screen and (max-width: 586px) {
   #recruit-page .next-btn .next-name:hover::after {
     left: 84%;
   }
@@ -871,39 +894,9 @@ p {
   }
 }
 
-@media screen and (max-width: 484px) {
+@media screen and (max-width: 586px) {
   #recruit-page .next-btn .next-company {
     padding: 40px 40px 38px 20px;
-  }
-}
-
-#recruit-page .next-btn .next-company::before {
-  content: "";
-  position: absolute;
-  /*絶対位置指定*/
-  right: -88px;
-  /*横位置の指定*/
-  top: 25%;
-  /*縦位置の指定*/
-  background: rgba(31, 40, 51, 0.16);
-  /*線の色指定*/
-  width: 2px;
-  /*線の幅指定*/
-  height: 50%;
-  /*線の高さ指定*/
-}
-
-@media screen and (max-width: 484px) {
-  #recruit-page .next-btn .next-company::before {
-    right: -28px;
-    top: 11%;
-    height: 80%;
-  }
-}
-
-@media screen and (max-width: 484px) {
-  #recruit-page .next-btn .next-company::before {
-    right: -18px;
   }
 }
 
@@ -917,7 +910,7 @@ p {
   }
 }
 
-@media screen and (max-width: 484px) {
+@media screen and (max-width: 586px) {
   #recruit-page .next-btn .next-contact {
     padding: 40px 33px 38px 13px;
   }

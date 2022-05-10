@@ -734,13 +734,34 @@ p {
     justify-content: space-evenly;
     border-bottom: 2px rgba(31, 40, 51, 0.16) solid;
 
+    &::before {
+      content: "";
+      position: absolute;
+      /*絶対位置指定*/
+      right: 50%;
+      /*横位置の指定*/
+      top: 25%;
+      /*縦位置の指定*/
+      background: rgba(31, 40, 51, 0.16);
+      /*線の色指定*/
+      width: 2px;
+      /*線の幅指定*/
+      height: 50%;
+
+      /*線の高さ指定*/
+      @include mq-down(xs) {
+        top: 11%;
+        height: 80%;
+      }
+    }
+
     .next-name {
       position: relative;
       @include font(20px, 700, #777777);
       line-height: 36px;
       transition: 1s;
 
-      @include mq-down(xxs) {
+      @include mq-down(xs) {
         font-size: 16px;
         line-height: 16px;
       }
@@ -763,7 +784,7 @@ p {
           top: 44px;
         }
 
-        @include mq-down(xxs) {
+        @include mq-down(xs) {
           left: 81%;
           top: 42px;
         }
@@ -782,7 +803,7 @@ p {
             left: 79%;
           }
 
-          @include mq-down(xxs) {
+          @include mq-down(xs) {
             left: 84%;
           }
         }
@@ -797,34 +818,8 @@ p {
         padding: 30px 80px;
       }
 
-      @include mq-down(xxs) {
+      @include mq-down(xs) {
         padding: 40px 40px 38px 20px;
-      }
-
-      &::before {
-        content: "";
-        position: absolute;
-        /*絶対位置指定*/
-        right: -88px;
-        /*横位置の指定*/
-        top: 25%;
-        /*縦位置の指定*/
-        background: rgba(31, 40, 51, 0.16);
-        /*線の色指定*/
-        width: 2px;
-        /*線の幅指定*/
-        height: 50%;
-
-        /*線の高さ指定*/
-        @include mq-down(xxs) {
-          right: -28px;
-          top: 11%;
-          height: 80%;
-        }
-
-        @include mq-down(xxs) {
-          right: -18px;
-        }
       }
     }
 
@@ -835,7 +830,7 @@ p {
         padding: 30px 80px;
       }
 
-      @include mq-down(xxs) {
+      @include mq-down(xs) {
         padding: 40px 33px 38px 13px;
       }
     }

@@ -422,7 +422,7 @@ p {
 @media screen and (max-width: 1400px) {
   #works-page .works-box .works-item .works-date {
     font-size: 14px;
-    padding-top: 0;
+    padding-top: 10px;
     padding-left: 0;
   }
 }

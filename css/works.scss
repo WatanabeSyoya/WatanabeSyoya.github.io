@@ -434,7 +434,7 @@ p {
 
         @include mq-down(xxl) {
           font-size: 14px;
-          padding-top: 0;
+          padding-top: 10px;
           padding-left: 0;
         }
 

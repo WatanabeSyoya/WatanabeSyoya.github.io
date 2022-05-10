@@ -837,14 +837,26 @@ header nav.globalMenuSp.active {
 
 @media screen and (max-width: 768px) {
   #about .message {
-    top: 609px;
+    top: 520px;
     left: 36px;
     width: 80%;
     height: 20%;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 689px) {
+  #about .message {
+    top: 530px;
+  }
+}
+
+@media screen and (max-width: 586px) {
+  #about .message {
+    top: 590px;
+  }
+}
+
+@media screen and (max-width: 400px) {
   #about .message {
     top: 640px;
   }
@@ -980,13 +992,13 @@ header nav.globalMenuSp.active {
   }
 }
 
-@media screen and (min-width: 485px) {
+@media screen and (min-width: 587px) {
   #about p .yes-sp {
     display: none;
   }
 }
 
-@media screen and (max-width: 484px) {
+@media screen and (max-width: 586px) {
   #about p {
     font-size: 15px;
     padding-right: 0;
@@ -1439,7 +1451,7 @@ header nav.globalMenuSp.active {
 @media screen and (max-width: 1400px) {
   #works .works-box .works-item .works-date {
     font-size: 14px;
-    padding-top: 0;
+    padding-top: 10px;
     padding-left: 0;
   }
 }
