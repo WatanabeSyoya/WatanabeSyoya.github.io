@@ -14,5 +14,10 @@ $(function () {
     $(".globalMenuSp a[href]").click(function () {
       $(".hamburger").trigger("click");
     });
+    $('section').click(function () {
+      $('.globalMenuSp').removeClass('active');
+      $(".hamburger").trigger("click");
+    });
   });
+
 });
