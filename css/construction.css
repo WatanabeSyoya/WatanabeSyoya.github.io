@@ -369,14 +369,18 @@ header nav.globalMenuSp ul li:last-child {
   padding-bottom: 0;
 }
 
-header nav.globalMenuSp ul li:hover {
-  background: #ddd;
-}
-
 header nav.globalMenuSp ul li a {
   display: block;
   padding: 1.2em 0;
   text-decoration: none;
+}
+
+header nav.globalMenuSp ul li a:hover {
+  color: #359B87;
+}
+
+header nav.globalMenuSp ul li a span:hover {
+  color: #359B87;
 }
 
 header nav.globalMenuSp.active {

@@ -404,14 +404,20 @@ header {
     padding-bottom: 0;
   }
 
-  nav.globalMenuSp ul li:hover {
-    background: #ddd;
-  }
+  nav.globalMenuSp ul li:hover {}
 
   nav.globalMenuSp ul li a {
     display: block;
     padding: 1.2em 0;
     text-decoration: none;
+  }
+
+  nav.globalMenuSp ul li a:hover {
+    color: $section-color;
+  }
+
+  nav.globalMenuSp ul li a span:hover {
+    color: $section-color;
   }
 
   /* このクラスを、jQueryで付与・削除する */
