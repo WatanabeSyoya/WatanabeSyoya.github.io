@@ -321,6 +321,8 @@ header nav.globalMenuSp ul a {
   color: #1F2833;
   font-family: 'Noto Sans JP', sans-serif;
   letter-spacing: 1.5px;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 @media screen and (max-width: 1023px) {
@@ -337,6 +339,8 @@ header nav.globalMenuSp ul a span {
   font-family: 'Epilogue', sans-serif;
   margin-bottom: 4px;
   letter-spacing: -0.01em;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 header nav.globalMenuSp ul h3 {
@@ -380,6 +384,14 @@ header nav.globalMenuSp ul li a:hover {
 }
 
 header nav.globalMenuSp ul li a span:hover {
+  color: #359B87;
+}
+
+header nav.globalMenuSp ul li a:active {
+  color: #359B87;
+}
+
+header nav.globalMenuSp ul li a span:active {
   color: #359B87;
 }
 

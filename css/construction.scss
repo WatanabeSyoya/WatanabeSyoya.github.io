@@ -359,6 +359,7 @@ header {
         text-align: center;
         @include font(16px, 500);
         letter-spacing: 1.5px;
+        transition: .5s;
 
         @include mq-down(lg) {
           font-size: 14px;
@@ -370,6 +371,7 @@ header {
             sans-serif;
           margin-bottom: 4px;
           letter-spacing: -0.01em;
+          transition: .5s;
         }
       }
 
@@ -417,6 +419,14 @@ header {
   }
 
   nav.globalMenuSp ul li a span:hover {
+    color: $section-color;
+  }
+
+  nav.globalMenuSp ul li a:active {
+    color: $section-color;
+  }
+
+  nav.globalMenuSp ul li a span:active {
     color: $section-color;
   }
 
