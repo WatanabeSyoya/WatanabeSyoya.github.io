@@ -44,7 +44,8 @@ $breakpoint-up: ('xls': 'screen and (max-width: 376px)',
 
 // max-width
 $breakpoint-down: ('xls': 'screen and (max-width: 374px)',
-  'x': 'screen and (max-width: 430px)',
+  'w': 'screen and (max-width: 390px)',
+  'x': 'screen and (max-width: 400px)',
   'xxs': 'screen and (max-width: 484px)',
   'xs': 'screen and (max-width: 586px)',
   'sm': 'screen and (max-width: 660px)',
@@ -245,6 +246,10 @@ p {
 
     @include mq-down(x) {
       padding-left: 47px;
+    }
+
+    @include mq-down(w) {
+      padding-left: 28px;
     }
 
     @include mq-down(xls) {
