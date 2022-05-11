@@ -874,7 +874,7 @@ header nav.globalMenuSp.active {
 
 @media screen and (max-width: 400px) {
   #about .message {
-    top: 640px;
+    top: 610px;
   }
 }
 
