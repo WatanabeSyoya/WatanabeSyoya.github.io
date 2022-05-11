@@ -196,13 +196,13 @@ p {
 
 @media screen and (max-width: 430px) {
   #recruit-fv .container {
-    padding-left: 80px;
+    padding-left: 47px;
   }
 }
 
 @media screen and (max-width: 374px) {
   #recruit-fv .container {
-    padding-left: 23px;
+    padding-left: 16px;
     padding-top: 35px;
   }
 }

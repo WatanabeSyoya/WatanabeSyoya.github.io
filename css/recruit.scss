@@ -244,11 +244,11 @@ p {
     }
 
     @include mq-down(x) {
-      padding-left: 80px;
+      padding-left: 47px;
     }
 
     @include mq-down(xls) {
-      padding-left: 23px;
+      padding-left: 16px;
       padding-top: 35px;
     }
 
