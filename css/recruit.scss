@@ -205,6 +205,10 @@ p {
       top: -60px;
       height: 180px;
     }
+
+    @include mq-down(xls) {
+      background-position: left;
+    }
   }
 
   .container {

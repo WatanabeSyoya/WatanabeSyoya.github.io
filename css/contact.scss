@@ -337,15 +337,29 @@ p {
     }
 
     .sp-contact {
-      @include font(16px, 500);
+
+      @include font(20px, 500);
       line-height: 28px;
       letter-spacing: 1.5px;
       margin-left: 15px;
       position: relative;
-      top: -20px;
+      top: 100px;
+      width: 760px;
+      margin: 0 auto;
 
-      @include mq-up(xxs) {
-        display: none;
+      @include mq-down(m) {
+        width: 70%;
+        top: 0;
+      }
+
+      @include mq-down() {
+        width: 80%;
+      }
+
+      @include mq-down(xxs) {
+        width: 96%;
+        font-size: 16px;
+        top: -20px;
       }
     }
 
@@ -466,6 +480,13 @@ p {
         @include font(14px, 400);
         line-height: 24px;
         letter-spacing: 1.5px;
+
+        @include mq-down() {
+          margin-bottom: 16px;
+        }
+      }
+
+      .form-t {
         margin-bottom: 40px;
 
         @include mq-down() {
@@ -479,7 +500,7 @@ p {
 
       .contact-form {
         @include mq-down() {
-          margin-top: 56px
+          margin-top: 40px
         }
 
         .form-input {
