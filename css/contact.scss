@@ -635,7 +635,7 @@ p {
         input[type=checkbox]:checked+label {
           box-sizing: border-box;
           cursor: pointer;
-          padding: 5px 20px;
+          padding-left: 20px;
           position: relative;
           width: auto;
         }
@@ -692,6 +692,14 @@ p {
         }
 
         .checkbox01 {
+          @include mq-down(xs) {
+            font-size: 13px;
+          }
+
+          @include mq-down(xxs) {
+            font-size: 16px;
+          }
+
           @include mq-down(xls) {
             font-size: 13px;
           }
