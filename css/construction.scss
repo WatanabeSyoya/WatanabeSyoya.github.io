@@ -1582,8 +1582,12 @@ header {
 
       }
 
-      h3 {
+      .numnum {
         padding-left: 18px;
+        @include font(52px, 700);
+        letter-spacing: -4px;
+        font-family: 'Epilogue',
+          sans-serif;
 
         @include mq-down(xl) {
           font-size: 40px;
