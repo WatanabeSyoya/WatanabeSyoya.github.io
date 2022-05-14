@@ -98,11 +98,18 @@ p {
   margin-top: 100px;
 }
 
+@media screen and (max-width: 1230px) {
+  #works-fv {
+    background-position: center;
+  }
+}
+
 @media screen and (max-width: 484px) {
   #works-fv {
     background-image: url(../img/works-sp.jpg);
     height: 304px;
     margin-top: 56px;
+    background-position: unset;
   }
 }
 

@@ -32,7 +32,8 @@ span {
 }
 
 // min-width
-$breakpoint-up: ('xls': 'screen and (max-width: 376px)',
+$breakpoint-up: (
+  'xls': 'screen and (max-width: 376px)',
   'xxs': 'screen and (min-width: 485px)',
   'xs': 'screen and (min-width: 587px)',
   'sm': 'screen and (min-width: 690px)',
@@ -40,10 +41,11 @@ $breakpoint-up: ('xls': 'screen and (max-width: 376px)',
   'lg': 'screen and (min-width: 965px)',
   'xl': 'screen and (min-width: 1441px)',
   'xxl': 'screen and (min-width: 1024px)',
-) !default;
+  ) !default;
 
 // max-width
-$breakpoint-down: ('xls': 'screen and (max-width: 374px)',
+$breakpoint-down: (
+  'xls': 'screen and (max-width: 374px)',
   'w': 'screen and (max-width: 390px)',
   'x': 'screen and (max-width: 400px)',
   'xxs': 'screen and (max-width: 484px)',
@@ -54,7 +56,7 @@ $breakpoint-down: ('xls': 'screen and (max-width: 374px)',
   'lg': 'screen and (max-width: 1023px)',
   'xl': 'screen and (max-width: 1230px)',
   'xxl': 'screen and (max-width: 1400px)',
-) !default;
+  ) !default;
 
 @mixin mq-up($breakpoint: md) {
   @media #{map-get($breakpoint-up, $breakpoint)} {
@@ -72,11 +74,13 @@ $breakpoint-down: ('xls': 'screen and (max-width: 374px)',
   font-size: $size;
   font-weight: $weight;
   color: $color;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Noto Sans JP',
+    sans-serif;
 }
 
 h1 {
-  @include font(44px, 400);
+  @include font(44px, 400
+);
 }
 
 h2 {
@@ -123,13 +127,13 @@ p {
 }
 
 
-@mixin btn-a($width:368px, $top:80px) {
+@mixin btn-a($width: 368px, $top: 80px) {
   width: $width;
   text-align: center;
   margin-top: $top;
 }
 
-@mixin btn-b($bg-color:#fff, $padding:23px 40px, $h-gb-color:#333333, $h-color:#fff) {
+@mixin btn-b($bg-color: #fff, $padding: 23px 40px, $h-gb-color: #333333, $h-color: #fff) {
   background-color: $bg-color;
   transition: .3s;
   padding: $padding;
@@ -208,7 +212,7 @@ p {
     }
 
     @include mq-down(xls) {
-      background-position: left;
+      //background-position: left;
     }
   }
 

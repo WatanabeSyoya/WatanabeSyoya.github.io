@@ -1548,6 +1548,29 @@ header nav.globalMenuSp.active {
   }
 }
 
+#works .works-box .works-item .sp-w {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#works .works-box .works-item .sp-w:active {
+  opacity: 0.5;
+}
+
+#works .works-box .works-item .sp-w:active .works-date {
+  color: rgba(31, 40, 51, 0.5);
+}
+
+#works .works-box .works-item .sp-w:active .works-text {
+  color: rgba(31, 40, 51, 0.5);
+}
+
+@media screen and (min-width: 485px) {
+  #works .works-box .works-item .sp-w {
+    pointer-events: none;
+  }
+}
+
 #works .works-box .works-item:nth-child(2) .works-img {
   background-image: url(../img/works2.jpg);
 }

@@ -145,12 +145,6 @@ p {
   }
 }
 
-@media screen and (max-width: 374px) {
-  #recruit-fv::after {
-    background-position: left;
-  }
-}
-
 #recruit-fv .container {
   padding-left: 175px;
   padding-top: 48px;
