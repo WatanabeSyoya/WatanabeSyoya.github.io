@@ -664,6 +664,10 @@ p {
           width: 400px;
         }
 
+        @include mq-down() {
+          width: 350px;
+        }
+
         @include mq-down(xxs) {
           width: 340px;
         }

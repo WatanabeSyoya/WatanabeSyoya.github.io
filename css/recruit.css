@@ -682,6 +682,12 @@ p {
   }
 }
 
+@media screen and (max-width: 768px) {
+  #recruit-page .recruit-text-sub .recruit-message p {
+    width: 350px;
+  }
+}
+
 @media screen and (max-width: 484px) {
   #recruit-page .recruit-text-sub .recruit-message p {
     width: 340px;
