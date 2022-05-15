@@ -20,7 +20,6 @@ $(function () {
     });
   });
 
-
   $("#01-A").change(function () {
     // チェックが入っていたら有効化
     if ($(this).is(":checked")) {
@@ -36,20 +35,16 @@ $(function () {
           $('button').css('background-color', '#5DAF9F');
         },
         function () {
-
           //マウスカーソルが離れた時の処理
           $('button').css('background-color', '#359B87');
-
         }
       );
-
     } else {
       // ボタンを無効化
       $("#button").prop("disabled", true);
       // 無効化したらボタンの色を戻す
       $("#button").css({ "background-color": "#c1c1c1" });
       $("#button").css({ "pointer-events": "none" });
-
     }
   });
 });
