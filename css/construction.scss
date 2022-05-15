@@ -232,10 +232,7 @@ header {
             sans-serif;
           margin-bottom: 4px;
           letter-spacing: -0.01em;
-
-          &:hover {
-            color: $section-color;
-          }
+          transition: .3s;
         }
 
         text-align: center;
@@ -251,6 +248,10 @@ header {
 
         &:hover {
           color: $section-color;
+
+          span {
+            color: $section-color;
+          }
         }
       }
 
@@ -410,28 +411,31 @@ header {
     padding-bottom: 0;
   }
 
-  nav.globalMenuSp ul li:hover {}
-
   nav.globalMenuSp ul li a {
     display: block;
     padding: 1.2em 0;
     text-decoration: none;
+    transition: 0.5s;
+  }
+
+  nav.globalMenuSp ul li span {
+    transition: 0.5s;
   }
 
   nav.globalMenuSp ul li a:hover {
     color: $section-color;
-  }
 
-  nav.globalMenuSp ul li a span:hover {
-    color: $section-color;
+    span {
+      color: $section-color;
+    }
   }
 
   nav.globalMenuSp ul li a:active {
     color: $section-color;
-  }
 
-  nav.globalMenuSp ul li a span:active {
-    color: $section-color;
+    span {
+      color: $section-color;
+    }
   }
 
   /* このクラスを、jQueryで付与・削除する */

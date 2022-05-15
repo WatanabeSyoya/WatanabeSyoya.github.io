@@ -193,10 +193,8 @@ header .header-container ul a span {
   font-family: 'Epilogue', sans-serif;
   margin-bottom: 4px;
   letter-spacing: -0.01em;
-}
-
-header .header-container ul a span:hover {
-  color: #359B87;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 @media screen and (max-width: 1023px) {
@@ -206,6 +204,10 @@ header .header-container ul a span:hover {
 }
 
 header .header-container ul a:hover {
+  color: #359B87;
+}
+
+header .header-container ul a:hover span {
   color: #359B87;
 }
 
@@ -377,13 +379,20 @@ header nav.globalMenuSp ul li a {
   display: block;
   padding: 1.2em 0;
   text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header nav.globalMenuSp ul li span {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 header nav.globalMenuSp ul li a:hover {
   color: #359B87;
 }
 
-header nav.globalMenuSp ul li a span:hover {
+header nav.globalMenuSp ul li a:hover span {
   color: #359B87;
 }
 
@@ -391,7 +400,7 @@ header nav.globalMenuSp ul li a:active {
   color: #359B87;
 }
 
-header nav.globalMenuSp ul li a span:active {
+header nav.globalMenuSp ul li a:active span {
   color: #359B87;
 }
 
