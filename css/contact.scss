@@ -846,7 +846,7 @@ p {
       button {
         @include font(20px, 700, #fff);
         line-height: 36px;
-        background-color: $section-color;
+        background-color: #c1c1c1;
         border-radius: 25px;
         border: 0;
         width: fit-content;
@@ -854,10 +854,9 @@ p {
         transition: .5s;
         display: block;
         margin: 0 auto;
-        cursor: pointer;
 
         &:hover {
-          background-color: #5DAF9F;
+          //background-color: #5DAF9F;
         }
       }
 

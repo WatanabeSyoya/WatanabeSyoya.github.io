@@ -929,7 +929,7 @@ p {
   color: #fff;
   font-family: 'Noto Sans JP', sans-serif;
   line-height: 36px;
-  background-color: #359B87;
+  background-color: #c1c1c1;
   border-radius: 25px;
   border: 0;
   width: -webkit-fit-content;
@@ -940,10 +940,5 @@ p {
   transition: .5s;
   display: block;
   margin: 0 auto;
-  cursor: pointer;
-}
-
-#contact-page .page-container form button:hover {
-  background-color: #5DAF9F;
 }
 /*# sourceMappingURL=contact.css.map */
