@@ -1124,50 +1124,83 @@ header {
   margin-bottom: 80px;
   height: 520px;
 
+  @include mq-up(xl) {
+    background-size: contain;
+    height: 930px;
+  }
+
   @include mq-down(xl) {
     background-position: top;
   }
 
   @include mq-down(m) {
     background-image: url(../img/recruit-i.jpg);
+    background-size: contain;
+    height: 630px;
+  }
+
+  @include mq-down(md) {
+    background-size: cover;
+    height: 520px;
   }
 
   @include mq-down(xxs) {
-    background-position: right;
+    background-image: url(../img/recruit-m.jpg);
+    //background-position: right;
     margin-top: 45px;
     margin-bottom: 50px;
-    background-size: cover;
+    background-size: contain;
+    height: 680px;
   }
 
   @include mq-down(x) {
-    background-image: url(../img/recruit-min.jpg);
     margin-top: 45px;
     margin-bottom: 50px;
-    background-size: cover;
+    height: 600px;
+  }
+
+  @include mq-down(xx) {
+    //margin-top: 45px;
+    //margin-bottom: 50px;
   }
 
   @include mq-down(xls) {
-
+    background-size: cover;
+    height: 520px;
     margin-bottom: 60px;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .recruit-t {
+    position: absolute;
+    left: 24%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+
+    @include mq-down(xxs) {
+      left: 50%;
+    }
   }
 
   h4 {
     color: #fff;
     padding-top: 60px;
-    margin-left: 21.5%;
+    text-align: center;
 
     @include mq-down(lg) {
       //padding-top: 2%;
       //padding-left: 20%;
       //line-height: 20px;
-      margin-left: 22.5%;
     }
 
     @include mq-down() {
       //padding-top: 2%;
       //padding-left: 20%;
       //line-height: 20px;
-      margin-left: 24%;
     }
 
     @include mq-down(xxs) {
@@ -1183,7 +1216,6 @@ header {
     color: #fff;
     letter-spacing: 1.5px;
     padding-bottom: 232px;
-    margin-left: 19.8%;
 
     @include mq-down(xxl) {
       //padding-bottom: 15%;
@@ -1200,16 +1232,35 @@ header {
   }
 
   .recruit-name {
-    margin-left: 16%;
+    position: absolute;
+    top: 380px;
+    left: 24%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    margin-left: 0;
 
     @include mq-down(xxl) {
       //margin-left: 20%;
     }
 
     @include mq-down(xxs) {
-      margin-left: 0;
-      margin: 42px auto 0;
+      left: 50%;
+      top: 460px;
     }
+
+    @include mq-down(x) {
+      top: 410px;
+    }
+
+    @include mq-down(xx) {
+      top: 390px;
+    }
+
+    @include mq-down(xls) {
+      top: 380px;
+    }
+
   }
 }
 

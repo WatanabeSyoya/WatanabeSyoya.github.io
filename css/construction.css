@@ -1210,6 +1210,13 @@ header nav.globalMenuSp.active {
   height: 520px;
 }
 
+@media screen and (min-width: 1441px) {
+  #recruit {
+    background-size: contain;
+    height: 930px;
+  }
+}
+
 @media screen and (max-width: 1230px) {
   #recruit {
     background-position: top;
@@ -1219,49 +1226,66 @@ header nav.globalMenuSp.active {
 @media screen and (max-width: 900px) {
   #recruit {
     background-image: url(../img/recruit-i.jpg);
+    background-size: contain;
+    height: 630px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #recruit {
+    background-size: cover;
+    height: 520px;
   }
 }
 
 @media screen and (max-width: 484px) {
   #recruit {
-    background-position: right;
+    background-image: url(../img/recruit-m.jpg);
     margin-top: 45px;
     margin-bottom: 50px;
-    background-size: cover;
+    background-size: contain;
+    height: 680px;
   }
 }
 
 @media screen and (max-width: 430px) {
   #recruit {
-    background-image: url(../img/recruit-min.jpg);
     margin-top: 45px;
     margin-bottom: 50px;
-    background-size: cover;
+    height: 600px;
   }
 }
 
 @media screen and (max-width: 374px) {
   #recruit {
+    background-size: cover;
+    height: 520px;
     margin-bottom: 60px;
+  }
+}
+
+#recruit .container {
+  position: relative;
+}
+
+#recruit .recruit-t {
+  position: absolute;
+  left: 24%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+}
+
+@media screen and (max-width: 484px) {
+  #recruit .recruit-t {
+    left: 50%;
   }
 }
 
 #recruit h4 {
   color: #fff;
   padding-top: 60px;
-  margin-left: 21.5%;
-}
-
-@media screen and (max-width: 1023px) {
-  #recruit h4 {
-    margin-left: 22.5%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #recruit h4 {
-    margin-left: 24%;
-  }
+  text-align: center;
 }
 
 @media screen and (max-width: 484px) {
@@ -1278,7 +1302,6 @@ header nav.globalMenuSp.active {
   color: #fff;
   letter-spacing: 1.5px;
   padding-bottom: 232px;
-  margin-left: 19.8%;
 }
 
 @media screen and (max-width: 484px) {
@@ -1292,13 +1315,37 @@ header nav.globalMenuSp.active {
 }
 
 #recruit .recruit-name {
-  margin-left: 16%;
+  position: absolute;
+  top: 380px;
+  left: 24%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  margin-left: 0;
 }
 
 @media screen and (max-width: 484px) {
   #recruit .recruit-name {
-    margin-left: 0;
-    margin: 42px auto 0;
+    left: 50%;
+    top: 460px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  #recruit .recruit-name {
+    top: 410px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #recruit .recruit-name {
+    top: 390px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  #recruit .recruit-name {
+    top: 380px;
   }
 }
 
