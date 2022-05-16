@@ -55,7 +55,7 @@ $breakpoint-down: (
   'md': 'screen and (max-width: 768px)',
   'd': 'screen and (max-width: 810px)',
   'lg': 'screen and (max-width: 1023px)',
-  'xl': 'screen and (max-width: 1230px)',
+  'xl': 'screen and (max-width: 1330px)',
   'xxl': 'screen and (max-width: 1400px)',
   ) !default;
 
@@ -227,11 +227,11 @@ p {
     z-index: 2;
 
     @include mq-up(xl) {
-      padding-left: 30%;
+      padding-left: 15%;
     }
 
     @include mq-down(xl) {
-      padding-left: 20%;
+      padding-left: 10%;
     }
 
     @include mq-down(lg) {

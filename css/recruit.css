@@ -121,7 +121,7 @@ p {
   -ms-transform: translateX(-50%);
 }
 
-@media screen and (max-width: 1230px) {
+@media screen and (max-width: 1330px) {
   #recruit-fv::after {
     width: 90%;
     background-position: center;
@@ -157,13 +157,13 @@ p {
 
 @media screen and (min-width: 1441px) {
   #recruit-fv .container {
-    padding-left: 30%;
+    padding-left: 15%;
   }
 }
 
-@media screen and (max-width: 1230px) {
+@media screen and (max-width: 1330px) {
   #recruit-fv .container {
-    padding-left: 20%;
+    padding-left: 10%;
   }
 }
 
