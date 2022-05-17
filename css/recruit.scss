@@ -41,6 +41,7 @@ $breakpoint-up: (
   'lg': 'screen and (min-width: 965px)',
   'xl': 'screen and (min-width: 1441px)',
   'xxl': 'screen and (min-width: 1024px)',
+  'xxll': 'screen and (min-width: 1630px)',
   ) !default;
 
 // max-width
@@ -215,7 +216,7 @@ p {
       height: 180px;
     }
 
-    @include mq-down(xls) {
+    @include mq-down(xl) {
       //background-position: left;
     }
   }
@@ -225,6 +226,8 @@ p {
     padding-top: 48px;
     position: absolute;
     z-index: 2;
+
+
 
     @include mq-up(xl) {
       padding-left: 15%;
@@ -261,6 +264,10 @@ p {
     @include mq-down(xls) {
       padding-left: 20px;
       padding-top: 30px;
+    }
+
+    @include mq-up(xxll) {
+      padding-left: 18%;
     }
 
     h4 {

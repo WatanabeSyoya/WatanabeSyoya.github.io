@@ -1210,10 +1210,9 @@ header nav.globalMenuSp.active {
   height: 520px;
 }
 
-@media screen and (min-width: 1441px) {
+@media screen and (min-width: 1630px) {
   #recruit {
-    background-size: contain;
-    height: 930px;
+    background-image: url(../img/recruit-l.jpg);
   }
 }
 
@@ -1276,6 +1275,12 @@ header nav.globalMenuSp.active {
   -ms-transform: translateX(-50%);
 }
 
+@media screen and (min-width: 1630px) {
+  #recruit .recruit-t {
+    left: 30%;
+  }
+}
+
 @media screen and (max-width: 484px) {
   #recruit .recruit-t {
     left: 50%;
@@ -1286,6 +1291,12 @@ header nav.globalMenuSp.active {
   color: #fff;
   padding-top: 60px;
   text-align: center;
+}
+
+@media screen and (min-width: 1630px) {
+  #recruit h4 {
+    padding-top: 40px;
+  }
 }
 
 @media screen and (max-width: 484px) {
@@ -1322,6 +1333,12 @@ header nav.globalMenuSp.active {
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   margin-left: 0;
+}
+
+@media screen and (min-width: 1630px) {
+  #recruit .recruit-name {
+    left: 30%;
+  }
 }
 
 @media screen and (max-width: 484px) {

@@ -41,6 +41,7 @@ $breakpoint-up: (
   'lg': 'screen and (min-width: 965px)',
   'xl': 'screen and (min-width: 1441px)',
   'xxl': 'screen and (min-width: 1024px)',
+  'xll': 'screen and (min-width: 1630px)',
   ) !default;
 
 // max-width
@@ -1124,9 +1125,8 @@ header {
   margin-bottom: 80px;
   height: 520px;
 
-  @include mq-up(xl) {
-    background-size: contain;
-    height: 930px;
+  @include mq-up(xll) {
+    background-image: url(../img/recruit-l.jpg);
   }
 
   @include mq-down(xl) {
@@ -1181,6 +1181,10 @@ header {
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
 
+    @include mq-up(xll) {
+      left: 30%;
+    }
+
     @include mq-down(xxs) {
       left: 50%;
     }
@@ -1190,6 +1194,10 @@ header {
     color: #fff;
     padding-top: 60px;
     text-align: center;
+
+    @include mq-up(xll) {
+      padding-top: 40px;
+    }
 
     @include mq-down(lg) {
       //padding-top: 2%;
@@ -1240,8 +1248,8 @@ header {
     -ms-transform: translateX(-50%);
     margin-left: 0;
 
-    @include mq-down(xxl) {
-      //margin-left: 20%;
+    @include mq-up(xll) {
+      left: 30%;
     }
 
     @include mq-down(xxs) {
