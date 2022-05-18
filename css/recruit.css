@@ -384,15 +384,13 @@ p {
   top: 10px;
 }
 
-#recruit-page .container {
-  margin: 0;
-}
-
 #recruit-page .recruit-text-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-left: 175px;
+  margin: 0 auto;
+  max-width: 1371px;
 }
 
 @media screen and (max-width: 1400px) {
@@ -564,6 +562,8 @@ p {
   border-left: 8px #359B87 solid;
   border-bottom: 8px #359B87 solid;
   z-index: 1;
+  margin: 0 auto;
+  max-width: 1440px;
 }
 
 @media screen and (max-width: 1023px) {
