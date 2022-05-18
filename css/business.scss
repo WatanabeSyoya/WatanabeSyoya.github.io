@@ -326,10 +326,7 @@ p {
   .business-box {
     width: 90%;
     margin: 0 auto;
-
-    @include mq-up(xxl) {
-      width: 60%;
-    }
+    max-width: 1171px;
 
     @include mq-down(xxs) {
       width: 96%;

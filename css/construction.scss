@@ -635,7 +635,7 @@ header {
     display: flex;
     padding-left: 292px;
     padding-top: 81px;
-
+    max-width: 1440px;
 
 
     @include mq-down(xl) {
@@ -752,6 +752,8 @@ header {
 #about {
   position: relative;
   padding-bottom: 227px;
+  margin: 0 auto;
+  max-width: 1440px;
 
   @include mq-down() {
     padding-bottom: 0px;
@@ -998,6 +1000,7 @@ header {
     width: 90%;
     margin: 0 auto;
 
+
     .business-item {
       .business-img {
         background-image: url(../img/architecture.jpg);
@@ -1191,7 +1194,7 @@ header {
     -ms-transform: translateX(-50%);
 
     @include mq-up(xll) {
-      left: 30%;
+      left: 33%;
     }
 
     @include mq-down(xxs) {
@@ -1258,7 +1261,7 @@ header {
     margin-left: 0;
 
     @include mq-up(xll) {
-      left: 30%;
+      left: 33%;
     }
 
     @include mq-down(xxs) {
@@ -1316,6 +1319,7 @@ header {
     justify-content: center;
     width: 90%;
     margin: 0 auto;
+    max-width: 1297px;
 
     @include mq-down(xxl) {
       grid-template-columns: repeat(auto-fit, 300px);

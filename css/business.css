@@ -275,12 +275,7 @@ p {
 #business-page .business-box {
   width: 90%;
   margin: 0 auto;
-}
-
-@media screen and (min-width: 2000px) {
-  #business-page .business-box {
-    width: 60%;
-  }
+  max-width: 1171px;
 }
 
 @media screen and (max-width: 484px) {

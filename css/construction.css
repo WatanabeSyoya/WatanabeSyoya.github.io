@@ -637,6 +637,7 @@ header nav.globalMenuSp.active {
   display: flex;
   padding-left: 292px;
   padding-top: 81px;
+  max-width: 1440px;
 }
 
 @media screen and (max-width: 1230px) {
@@ -783,6 +784,8 @@ header nav.globalMenuSp.active {
 #about {
   position: relative;
   padding-bottom: 227px;
+  margin: 0 auto;
+  max-width: 1440px;
 }
 
 @media screen and (max-width: 768px) {
@@ -1284,7 +1287,7 @@ header nav.globalMenuSp.active {
 
 @media screen and (min-width: 1630px) {
   #recruit .recruit-t {
-    left: 30%;
+    left: 33%;
   }
 }
 
@@ -1344,7 +1347,7 @@ header nav.globalMenuSp.active {
 
 @media screen and (min-width: 1630px) {
   #recruit .recruit-name {
-    left: 30%;
+    left: 33%;
   }
 }
 
@@ -1416,6 +1419,7 @@ header nav.globalMenuSp.active {
           justify-content: center;
   width: 90%;
   margin: 0 auto;
+  max-width: 1297px;
 }
 
 @media screen and (max-width: 1400px) {
