@@ -42,6 +42,8 @@ $breakpoint-up: (
   'xl': 'screen and (min-width: 1441px)',
   'xxl': 'screen and (min-width: 1024px)',
   'xll': 'screen and (min-width: 1630px)',
+  'aaa': 'screen and (min-width: 1830px)',
+
   ) !default;
 
 // max-width
@@ -166,15 +168,20 @@ p {
 //各セクションの上下微調整
 
 header {
-  .header-container {
+  .header-color {
     width: 100%;
-    height: 100px;
     background-color: #fff;
     position: fixed;
+    height: 100px;
     z-index: 10;
     top: 0;
+  }
+
+  .header-container {
     display: flex;
     justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
 
     @include mq-down() {
       display: none;
@@ -552,6 +559,8 @@ header {
   .container {
     padding-left: 135px;
     padding-top: 158px;
+    margin: 0 auto;
+    max-width: 1440px;
 
     @include mq-down(xl) {
       padding-left: 80px;

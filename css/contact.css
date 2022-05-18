@@ -140,6 +140,8 @@ p {
 #contact-fv .container {
   padding-left: 135px;
   padding-top: 228px;
+  margin: 0 auto;
+  max-width: 1440px;
 }
 
 @media screen and (max-width: 760px) {

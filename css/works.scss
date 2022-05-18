@@ -189,6 +189,8 @@ p {
   .container {
     padding-left: 135px;
     padding-top: 228px;
+    margin: 0 auto;
+    max-width: 1440px;
 
     @include mq-down() {
       padding-left: 20px;

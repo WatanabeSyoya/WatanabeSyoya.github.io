@@ -92,19 +92,24 @@ header {
   /*　ハンバーガーボタン　*/
 }
 
-header .header-container {
+header .header-color {
   width: 100%;
-  height: 100px;
   background-color: #fff;
   position: fixed;
+  height: 100px;
   z-index: 10;
   top: 0;
+}
+
+header .header-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -534,6 +539,8 @@ header nav.globalMenuSp.active {
 #fv .container {
   padding-left: 135px;
   padding-top: 158px;
+  margin: 0 auto;
+  max-width: 1440px;
 }
 
 @media screen and (max-width: 1230px) {

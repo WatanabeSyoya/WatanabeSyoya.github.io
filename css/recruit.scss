@@ -176,6 +176,7 @@ p {
   height: 555px;
   margin-top: 280px;
   position: relative;
+  z-index: -2;
 
   @include mq-down(xxs) {
     height: 320px;
@@ -189,6 +190,7 @@ p {
     width: 1170px;
     height: 350px;
     position: absolute;
+    z-index: -1;
     top: -114px;
     left: 50%;
     transform: translateX(-50%);
@@ -224,14 +226,8 @@ p {
   .container {
     padding-left: 175px;
     padding-top: 48px;
-    position: absolute;
-    z-index: 2;
-
-
-
-    @include mq-up(xl) {
-      padding-left: 15%;
-    }
+    margin: 0 auto;
+    max-width: 1260px;
 
     @include mq-down(xl) {
       padding-left: 10%;
@@ -253,21 +249,9 @@ p {
       width: auto;
     }
 
-    @include mq-down(x) {
-      //padding-left: 47px;
-    }
-
-    @include mq-down(w) {
-      //padding-left: 28px;
-    }
-
     @include mq-down(xls) {
       padding-left: 20px;
       padding-top: 30px;
-    }
-
-    @include mq-up(xxll) {
-      padding-left: 18%;
     }
 
     h4 {

@@ -98,6 +98,7 @@ p {
   height: 555px;
   margin-top: 280px;
   position: relative;
+  z-index: -2;
 }
 
 @media screen and (max-width: 484px) {
@@ -114,6 +115,7 @@ p {
   width: 1170px;
   height: 350px;
   position: absolute;
+  z-index: -1;
   top: -114px;
   left: 50%;
   transform: translateX(-50%);
@@ -151,14 +153,8 @@ p {
 #recruit-fv .container {
   padding-left: 175px;
   padding-top: 48px;
-  position: absolute;
-  z-index: 2;
-}
-
-@media screen and (min-width: 1441px) {
-  #recruit-fv .container {
-    padding-left: 15%;
-  }
+  margin: 0 auto;
+  max-width: 1260px;
 }
 
 @media screen and (max-width: 1330px) {
@@ -193,12 +189,6 @@ p {
   #recruit-fv .container {
     padding-left: 20px;
     padding-top: 30px;
-  }
-}
-
-@media screen and (min-width: 1630px) {
-  #recruit-fv .container {
-    padding-left: 18%;
   }
 }
 
