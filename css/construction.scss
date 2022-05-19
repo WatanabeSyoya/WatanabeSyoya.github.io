@@ -1000,6 +1000,23 @@ header {
     width: 90%;
     margin: 0 auto;
 
+    @include mq-down(xxl) {
+      max-width: 802px;
+    }
+
+    @include mq-down(sm) {
+      grid-template-columns: repeat(auto-fit, 160px);
+      grid-auto-rows: 200px;
+      justify-content: center;
+      width: 100%;
+      max-width: 531px;
+    }
+
+    @include mq-down(xxs) {
+      grid-template-columns: repeat(auto-fit, 132px);
+      grid-auto-rows: 143px;
+      justify-content: center;
+    }
 
     .business-item {
       .business-img {
@@ -1008,6 +1025,16 @@ header {
         background-size: contain;
         width: 270px;
         height: 220px;
+
+        @include mq-down(sm) {
+          width: 160px;
+          height: 130px;
+        }
+
+        @include mq-down(xxs) {
+          width: 134px;
+          height: 110px;
+        }
       }
 
       .icon {
@@ -1019,6 +1046,20 @@ header {
         position: relative;
         top: -253px;
         left: 24px;
+
+        @include mq-down(sm) {
+          width: 40px;
+          height: 40px;
+          top: -148px;
+          left: 17px;
+        }
+
+        @include mq-down(xxs) {
+          width: 30px;
+          height: 30px;
+          top: -124px;
+          left: 9px;
+        }
       }
 
       .business-name {
@@ -1033,11 +1074,32 @@ header {
         padding: 7px 73px;
         transition: all 0.3s ease;
 
+        @include mq-down(sm) {
+          top: -59px;
+          left: 17px;
+          font-size: 16px;
+          padding: 1px 32px;
+        }
+
+        @include mq-down(xxs) {
+          top: -47px;
+          left: 12px;
+          font-size: 14px;
+          line-height: 27px;
+          background-color: #E38619;
+          border-radius: 25px;
+          padding: 1px 27px;
+        }
+
         span {
           @include font(16px, 500, #fff);
           line-height: 28px;
           letter-spacing: 1.5px;
           display: inline;
+
+          @include mq-down(sm) {
+            font-size: 13px;
+          }
         }
 
         &::after {
@@ -1054,6 +1116,20 @@ header {
           top: 20px;
           right: 30px;
           transition: all 0.3s ease;
+
+          @include mq-down(sm) {
+            width: 17px;
+            height: 10px;
+            top: 16px;
+            right: 14px;
+          }
+
+          @include mq-down(xxs) {
+            width: 15px;
+            height: 12px;
+            top: 12px;
+            right: 12px;
+          }
         }
 
         &:hover {
@@ -1063,6 +1139,16 @@ header {
             position: absolute;
             top: 20px;
             right: 20px;
+
+            @include mq-down(sm) {
+              top: 12px;
+              right: 10px;
+            }
+
+            @include mq-down(xxs) {
+              top: 12px;
+              right: 8px;
+            }
           }
         }
       }
@@ -1116,6 +1202,18 @@ header {
       .business-name {
         background-color: #876850;
         padding: 7px 66px 6px 22px;
+
+        @include mq-down(xxs) {
+          padding: 1px 28px 1px 10px;
+          font-size: 12px;
+          left: 8px;
+        }
+
+        span {
+          @include mq-down(xxs) {
+            font-size: 10px;
+          }
+        }
 
         &:hover {
           background-color: #9F8673;
@@ -1325,23 +1423,25 @@ header {
       grid-template-columns: repeat(auto-fit, 300px);
       grid-auto-rows: 280px;
       grid-gap: 70px;
+      max-width: 700px;
     }
 
     @include mq-down() {
       grid-template-columns: repeat(auto-fit, 250px);
       grid-auto-rows: 200px;
-      grid-gap: 60px;
+      column-gap: 40px;
+      row-gap: 60px;
       width: 100%;
     }
 
 
 
-    @include mq-down(xxs) {
+    @include mq-down(xs) {
       grid-template-columns: repeat(auto-fit, 160px);
       grid-auto-rows: 187px;
       grid-column-gap: 25px;
       grid-row-gap: 43px;
-
+      max-width: 520px;
     }
 
     @include mq-down(xls) {
@@ -1370,7 +1470,7 @@ header {
           height: 160px;
         }
 
-        @include mq-down(xxs) {
+        @include mq-down(xs) {
           width: 160px;
           height: 99.5px;
         }
@@ -1398,7 +1498,7 @@ header {
           left: 25px;
         }
 
-        @include mq-down(xxs) {
+        @include mq-down(xs) {
           width: 40px;
           height: 40px;
           top: -20px;
@@ -1426,7 +1526,7 @@ header {
           padding-left: 0;
         }
 
-        @include mq-down(xxs) {
+        @include mq-down(xs) {
           font-size: 14px;
           line-height: 40px;
           padding-top: 0;
@@ -1458,7 +1558,7 @@ header {
           font-size: 13px;
         }
 
-        @include mq-down(xxs) {
+        @include mq-down(xs) {
           font-size: 14px;
           line-height: 24px;
           padding-top: 0;
@@ -1480,7 +1580,7 @@ header {
           margin: 0px 61px 0 auto;
         }
 
-        @include mq-down(xxs) {
+        @include mq-down() {
           display: none;
         }
       }
@@ -1500,7 +1600,7 @@ header {
           }
         }
 
-        @include mq-up(xxs) {
+        @include mq-up() {
           pointer-events: none;
         }
 
@@ -1518,7 +1618,7 @@ header {
         background-image: url(../img/works3.jpg);
       }
 
-      @include mq-down(xxs) {
+      @include mq-down(xs) {
         .works-text {
           width: 155px;
         }
@@ -1545,7 +1645,7 @@ header {
   .recruit-name {
     margin: 80px auto 60px;
 
-    @include mq-down(xxs) {
+    @include mq-down(xs) {
       margin: 42px auto 56px;
     }
 

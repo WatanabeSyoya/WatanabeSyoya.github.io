@@ -1083,12 +1083,56 @@ header nav.globalMenuSp.active {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1400px) {
+  #business .business-box {
+    max-width: 802px;
+  }
+}
+
+@media screen and (max-width: 689px) {
+  #business .business-box {
+    -ms-grid-columns: (160px)[auto-fit];
+        grid-template-columns: repeat(auto-fit, 160px);
+    grid-auto-rows: 200px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    max-width: 531px;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  #business .business-box {
+    -ms-grid-columns: (132px)[auto-fit];
+        grid-template-columns: repeat(auto-fit, 132px);
+    grid-auto-rows: 143px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 #business .business-box .business-item .business-img {
   background-image: url(../img/architecture.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   width: 270px;
   height: 220px;
+}
+
+@media screen and (max-width: 689px) {
+  #business .business-box .business-item .business-img {
+    width: 160px;
+    height: 130px;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  #business .business-box .business-item .business-img {
+    width: 134px;
+    height: 110px;
+  }
 }
 
 #business .business-box .business-item .icon {
@@ -1100,6 +1144,24 @@ header nav.globalMenuSp.active {
   position: relative;
   top: -253px;
   left: 24px;
+}
+
+@media screen and (max-width: 689px) {
+  #business .business-box .business-item .icon {
+    width: 40px;
+    height: 40px;
+    top: -148px;
+    left: 17px;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  #business .business-box .business-item .icon {
+    width: 30px;
+    height: 30px;
+    top: -124px;
+    left: 9px;
+  }
 }
 
 #business .business-box .business-item .business-name {
@@ -1121,6 +1183,27 @@ header nav.globalMenuSp.active {
   transition: all 0.3s ease;
 }
 
+@media screen and (max-width: 689px) {
+  #business .business-box .business-item .business-name {
+    top: -59px;
+    left: 17px;
+    font-size: 16px;
+    padding: 1px 32px;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  #business .business-box .business-item .business-name {
+    top: -47px;
+    left: 12px;
+    font-size: 14px;
+    line-height: 27px;
+    background-color: #E38619;
+    border-radius: 25px;
+    padding: 1px 27px;
+  }
+}
+
 #business .business-box .business-item .business-name span {
   font-size: 16px;
   font-weight: 500;
@@ -1129,6 +1212,12 @@ header nav.globalMenuSp.active {
   line-height: 28px;
   letter-spacing: 1.5px;
   display: inline;
+}
+
+@media screen and (max-width: 689px) {
+  #business .business-box .business-item .business-name span {
+    font-size: 13px;
+  }
 }
 
 #business .business-box .business-item .business-name::after {
@@ -1148,6 +1237,24 @@ header nav.globalMenuSp.active {
   transition: all 0.3s ease;
 }
 
+@media screen and (max-width: 689px) {
+  #business .business-box .business-item .business-name::after {
+    width: 17px;
+    height: 10px;
+    top: 16px;
+    right: 14px;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  #business .business-box .business-item .business-name::after {
+    width: 15px;
+    height: 12px;
+    top: 12px;
+    right: 12px;
+  }
+}
+
 #business .business-box .business-item .business-name:hover {
   background-color: #E99E47;
 }
@@ -1156,6 +1263,20 @@ header nav.globalMenuSp.active {
   position: absolute;
   top: 20px;
   right: 20px;
+}
+
+@media screen and (max-width: 689px) {
+  #business .business-box .business-item .business-name:hover::after {
+    top: 12px;
+    right: 10px;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  #business .business-box .business-item .business-name:hover::after {
+    top: 12px;
+    right: 8px;
+  }
 }
 
 #business .business-box .business-item:nth-child(2) .business-img {
@@ -1201,6 +1322,20 @@ header nav.globalMenuSp.active {
 #business .business-box .business-item:nth-child(4) .business-name {
   background-color: #876850;
   padding: 7px 66px 6px 22px;
+}
+
+@media screen and (max-width: 484px) {
+  #business .business-box .business-item:nth-child(4) .business-name {
+    padding: 1px 28px 1px 10px;
+    font-size: 12px;
+    left: 8px;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  #business .business-box .business-item:nth-child(4) .business-name span {
+    font-size: 10px;
+  }
 }
 
 #business .business-box .business-item:nth-child(4) .business-name:hover {
@@ -1428,6 +1563,7 @@ header nav.globalMenuSp.active {
         grid-template-columns: repeat(auto-fit, 300px);
     grid-auto-rows: 280px;
     grid-gap: 70px;
+    max-width: 700px;
   }
 }
 
@@ -1436,18 +1572,21 @@ header nav.globalMenuSp.active {
     -ms-grid-columns: (250px)[auto-fit];
         grid-template-columns: repeat(auto-fit, 250px);
     grid-auto-rows: 200px;
-    grid-gap: 60px;
+    -webkit-column-gap: 40px;
+            column-gap: 40px;
+    row-gap: 60px;
     width: 100%;
   }
 }
 
-@media screen and (max-width: 484px) {
+@media screen and (max-width: 586px) {
   #works .works-box {
     -ms-grid-columns: (160px)[auto-fit];
         grid-template-columns: repeat(auto-fit, 160px);
     grid-auto-rows: 187px;
     grid-column-gap: 25px;
     grid-row-gap: 43px;
+    max-width: 520px;
   }
 }
 
@@ -1486,7 +1625,7 @@ header nav.globalMenuSp.active {
   }
 }
 
-@media screen and (max-width: 484px) {
+@media screen and (max-width: 586px) {
   #works .works-box .works-item .works-img {
     width: 160px;
     height: 99.5px;
@@ -1520,7 +1659,7 @@ header nav.globalMenuSp.active {
   }
 }
 
-@media screen and (max-width: 484px) {
+@media screen and (max-width: 586px) {
   #works .works-box .works-item .works-icon {
     width: 40px;
     height: 40px;
@@ -1556,7 +1695,7 @@ header nav.globalMenuSp.active {
   }
 }
 
-@media screen and (max-width: 484px) {
+@media screen and (max-width: 586px) {
   #works .works-box .works-item .works-date {
     font-size: 14px;
     line-height: 40px;
@@ -1598,7 +1737,7 @@ header nav.globalMenuSp.active {
   }
 }
 
-@media screen and (max-width: 484px) {
+@media screen and (max-width: 586px) {
   #works .works-box .works-item .works-text {
     font-size: 14px;
     line-height: 24px;
@@ -1626,7 +1765,7 @@ header nav.globalMenuSp.active {
   }
 }
 
-@media screen and (max-width: 484px) {
+@media screen and (max-width: 768px) {
   #works .works-box .works-item .page {
     display: none;
   }
@@ -1649,7 +1788,7 @@ header nav.globalMenuSp.active {
   color: rgba(31, 40, 51, 0.5);
 }
 
-@media screen and (min-width: 485px) {
+@media screen and (min-width: 769px) {
   #works .works-box .works-item .sp-w {
     pointer-events: none;
   }
@@ -1663,7 +1802,7 @@ header nav.globalMenuSp.active {
   background-image: url(../img/works3.jpg);
 }
 
-@media screen and (max-width: 484px) {
+@media screen and (max-width: 586px) {
   #works .works-box .works-item:nth-child(3) .works-text {
     width: 155px;
   }
@@ -1687,7 +1826,7 @@ header nav.globalMenuSp.active {
   margin: 80px auto 60px;
 }
 
-@media screen and (max-width: 484px) {
+@media screen and (max-width: 586px) {
   #works .recruit-name {
     margin: 42px auto 56px;
   }
