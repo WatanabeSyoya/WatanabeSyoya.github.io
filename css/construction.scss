@@ -54,6 +54,7 @@ $breakpoint-down: (
   'xxs': 'screen and (max-width: 484px)',
   'xs': 'screen and (max-width: 586px)',
   'sm': 'screen and (max-width: 689px)',
+  'mm': 'screen and (max-width: 718px)',
   'md': 'screen and (max-width: 768px)',
   'm': 'screen and (max-width: 900px)',
   'lg': 'screen and (max-width: 1023px)',
@@ -1002,20 +1003,37 @@ header {
 
     @include mq-down(xxl) {
       max-width: 802px;
+      grid-gap: 40px;
+    }
+
+    @include mq-down(mm) {
+      grid-template-columns: repeat(auto-fit, 264px);
+      grid-gap: 30px;
     }
 
     @include mq-down(sm) {
-      grid-template-columns: repeat(auto-fit, 160px);
-      grid-auto-rows: 200px;
+      grid-template-columns: repeat(auto-fit, 245px);
+      grid-auto-rows: 250px;
       justify-content: center;
       width: 100%;
       max-width: 531px;
+    }
+
+    @include mq-down(xs) {
+      grid-template-columns: repeat(auto-fit, 160px);
+      grid-auto-rows: 200px;
+      justify-content: center;
     }
 
     @include mq-down(xxs) {
       grid-template-columns: repeat(auto-fit, 132px);
       grid-auto-rows: 143px;
       justify-content: center;
+    }
+
+    @include mq-down(xls) {
+      grid-column-gap: 10px;
+      grid-row-gap: 30px;
     }
 
     .business-item {
@@ -1027,6 +1045,11 @@ header {
         height: 220px;
 
         @include mq-down(sm) {
+          width: 250px;
+          height: 203px;
+        }
+
+        @include mq-down(xs) {
           width: 160px;
           height: 130px;
         }
@@ -1048,6 +1071,13 @@ header {
         left: 24px;
 
         @include mq-down(sm) {
+          width: 50px;
+          height: 50px;
+          top: -227px;
+          left: 17px;
+        }
+
+        @include mq-down(xs) {
           width: 40px;
           height: 40px;
           top: -148px;
@@ -1075,6 +1105,12 @@ header {
         transition: all 0.3s ease;
 
         @include mq-down(sm) {
+          top: -72px;
+          left: 26px;
+          padding: 4px 60px;
+        }
+
+        @include mq-down(xs) {
           top: -59px;
           left: 17px;
           font-size: 16px;
@@ -1097,7 +1133,7 @@ header {
           letter-spacing: 1.5px;
           display: inline;
 
-          @include mq-down(sm) {
+          @include mq-down(xs) {
             font-size: 13px;
           }
         }
@@ -1118,6 +1154,10 @@ header {
           transition: all 0.3s ease;
 
           @include mq-down(sm) {
+            top: 18px;
+          }
+
+          @include mq-down(xs) {
             width: 17px;
             height: 10px;
             top: 16px;
@@ -1141,7 +1181,12 @@ header {
             right: 20px;
 
             @include mq-down(sm) {
-              top: 12px;
+              top: 18px;
+              right: 20px;
+            }
+
+            @include mq-down(xs) {
+              top: 16px;
               right: 10px;
             }
 
@@ -1203,25 +1248,73 @@ header {
         background-color: #876850;
         padding: 7px 66px 6px 22px;
 
+        @include mq-down(sm) {
+          top: -76px;
+          left: 15px;
+        }
+
+        @include mq-down(xs) {
+          top: -60px;
+          left: 9px;
+          font-size: 14px;
+          padding: 1px 34px 1px 10px;
+        }
+
         @include mq-down(xxs) {
           padding: 1px 28px 1px 10px;
           font-size: 12px;
           left: 8px;
+          top: -47px;
         }
 
         span {
+          @include mq-down(xs) {
+            font-size: 12px;
+          }
+
           @include mq-down(xxs) {
             font-size: 10px;
           }
         }
 
-        &:hover {
-          background-color: #9F8673;
-        }
-
         &::after {
           margin-left: 17px;
+
+          @include mq-down(sm) {
+            top: 21px;
+          }
+
+          @include mq-down(xs) {
+            top: 16px;
+            right: 15px;
+          }
+
+          @include mq-down(xxs) {
+            top: 13px;
+            right: 13px;
+          }
         }
+
+        &:hover {
+          background-color: #9F8673;
+
+          &::after {
+            @include mq-down(sm) {
+              right: 24px;
+            }
+
+            @include mq-down(xs) {
+              right: 12px;
+            }
+
+            @include mq-down(xxs) {
+              right: 10px;
+            }
+          }
+
+        }
+
+
       }
     }
   }
@@ -1448,6 +1541,7 @@ header {
       grid-template-columns: repeat(auto-fit, 134px);
       grid-auto-rows: 170px;
       grid-row-gap: 0px;
+      grid-column-gap: 10px;
     }
 
     .works-item {
