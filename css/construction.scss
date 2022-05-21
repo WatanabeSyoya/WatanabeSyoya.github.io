@@ -1531,7 +1531,7 @@ header {
 
     @include mq-down(xs) {
       grid-template-columns: repeat(auto-fit, 160px);
-      grid-auto-rows: 187px;
+      grid-auto-rows: 210px;
       grid-column-gap: 25px;
       grid-row-gap: 43px;
       max-width: 520px;
@@ -1622,7 +1622,7 @@ header {
 
         @include mq-down(xs) {
           font-size: 14px;
-          line-height: 40px;
+          line-height: 30px;
           padding-top: 0;
           padding-left: 0;
           font-weight: 500;
@@ -1632,7 +1632,6 @@ header {
           font-size: 12px;
           line-height: 12px;
         }
-
       }
 
       .works-text {
