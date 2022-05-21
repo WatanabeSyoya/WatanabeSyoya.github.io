@@ -337,6 +337,7 @@ p {
     width: 96%;
     font-size: 16px;
     top: -20px;
+    margin: 0 0 0 auto;
   }
 }
 
@@ -387,6 +388,7 @@ p {
 @media screen and (max-width: 484px) {
   #contact-page .page-container .tel {
     width: 96%;
+    margin: 0 0 0 auto;
   }
 }
 
@@ -463,14 +465,20 @@ p {
 }
 
 #contact-page .page-container form {
-  width: 58.5%;
+  width: 100%;
   margin: 0 auto;
+  max-width: 760px;
+}
+
+@media screen and (max-width: 900px) {
+  #contact-page .page-container form {
+    width: 70%;
+  }
 }
 
 @media screen and (max-width: 760px) {
   #contact-page .page-container form {
     width: 80%;
-    margin: 0 auto;
   }
 }
 
@@ -545,6 +553,8 @@ p {
   font-family: 'Noto Sans JP', sans-serif;
   letter-spacing: 1.5px;
   padding-left: 21px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 #contact-page .page-container form .contact-form .form-input::-webkit-input-placeholder {
@@ -566,7 +576,6 @@ p {
 @media screen and (max-width: 760px) {
   #contact-page .page-container form .contact-form .form-input {
     height: 47px;
-    width: 92%;
   }
 }
 
@@ -625,6 +634,8 @@ p {
   letter-spacing: 1.5px;
   padding-left: 21px;
   padding-top: 14px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 #contact-page .page-container form .form-textarea::-webkit-input-placeholder {
@@ -641,12 +652,6 @@ p {
 
 #contact-page .page-container form .form-textarea::placeholder {
   color: #D0D0D0;
-}
-
-@media screen and (max-width: 760px) {
-  #contact-page .page-container form .form-textarea {
-    width: 92%;
-  }
 }
 
 #contact-page .page-container form .any {
@@ -679,22 +684,21 @@ p {
 #contact-page .page-container form .check-btn {
   display: block;
   background-color: #F3F3F3;
-  padding: 13px 40px 20px 43px;
   border-radius: 8px;
   margin-bottom: 89px;
-}
-
-@media screen and (max-width: 760px) {
-  #contact-page .page-container form .check-btn {
-    width: 80%;
-  }
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 28px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 760px;
 }
 
 @media screen and (max-width: 484px) {
   #contact-page .page-container form .check-btn {
     padding: 19px 0px 32px 13px;
     margin-bottom: 64px;
-    width: 96%;
   }
 }
 

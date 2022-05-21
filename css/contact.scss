@@ -366,6 +366,7 @@ p {
         width: 96%;
         font-size: 16px;
         top: -20px;
+        margin: 0 0 0 auto;
       }
     }
 
@@ -403,6 +404,7 @@ p {
 
       @include mq-down(xxs) {
         width: 96%;
+        margin: 0 0 0 auto;
       }
 
       p {
@@ -462,12 +464,16 @@ p {
     }
 
     form {
-      width: 58.5%;
+      width: 100%;
       margin: 0 auto;
+      max-width: 760px;
+
+      @include mq-down(m) {
+        width: 70%;
+      }
 
       @include mq-down() {
         width: 80%;
-        margin: 0 auto;
       }
 
       @include mq-down(xxs) {
@@ -525,6 +531,7 @@ p {
           @include font(16px, 500);
           letter-spacing: 1.5px;
           padding-left: 21px;
+          box-sizing: border-box;
 
           &::placeholder {
             color: #D0D0D0;
@@ -534,7 +541,7 @@ p {
 
           @include mq-down() {
             height: 47px;
-            width: 92%;
+            //width: 92%;
           }
         }
 
@@ -580,13 +587,14 @@ p {
         letter-spacing: 1.5px;
         padding-left: 21px;
         padding-top: 14px;
+        box-sizing: border-box;
 
         &::placeholder {
           color: #D0D0D0;
         }
 
         @include mq-down() {
-          width: 92%;
+          //width: 92%;
         }
       }
 
@@ -619,18 +627,19 @@ p {
       .check-btn {
         display: block;
         background-color: #F3F3F3;
-        padding: 13px 40px 20px 43px;
+        //padding: 13px 40px 20px 43px;
         border-radius: 8px;
         margin-bottom: 89px;
-
-        @include mq-down() {
-          width: 80%;
-        }
+        padding-top: 13px;
+        padding-bottom: 13px;
+        padding-left: 28px;
+        width: 100%;
+        box-sizing: border-box;
+        max-width: 760px;
 
         @include mq-down(xxs) {
           padding: 19px 0px 32px 13px;
           margin-bottom: 64px;
-          width: 96%;
         }
 
         input {
