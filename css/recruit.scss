@@ -297,6 +297,14 @@ p {
     top: 212px;
     left: 135px;
 
+    @include mq-up(xxll) {
+      left: 50%;
+      transform: translateX(-120%);
+      -webkit-transform: translateX(-120%);
+      -ms-transform: translateX(-120%);
+
+    }
+
     @include mq-down(lg) {
       top: 427px;
       left: 74px;
@@ -565,7 +573,7 @@ p {
   }
 
   .recruit-text-sub {
-    display: flex;
+    //display: flex;
     padding-top: 125px;
     padding-bottom: 179px;
     position: relative;
@@ -574,19 +582,33 @@ p {
     border-bottom: 8px $section-color solid;
     z-index: 1;
     margin: 0 auto;
-    max-width: 1440px;
+    //max-width: 1440px;
 
     @include mq-down(lg) {
-      flex-direction: column;
+      //flex-direction: column;
       padding-bottom: 100px;
     }
 
     @include mq-down(xxs) {
       top: -244px;
       border-left: 6px $section-color solid;
-      border-bottom: 10px $section-color solid;
+      border-bottom: 6px $section-color solid;
       padding-top: 32px;
       padding-bottom: 123px;
+    }
+
+    .sub-inner {
+      display: flex;
+
+      @include mq-up(xl) {
+        margin: 0 auto;
+        max-width: 1440px;
+      }
+
+      @include mq-down(lg) {
+        flex-direction: column;
+        //padding-bottom: 100px;
+      }
     }
 
     .recruit-message {
