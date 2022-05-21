@@ -1118,7 +1118,7 @@ header {
         }
 
         @include mq-down(xxs) {
-          top: -86px;
+          top: -88px;
           left: 25px;
           font-size: 20px;
           line-height: 27px;
@@ -1171,7 +1171,7 @@ header {
           @include mq-down(xxs) {
             width: 22px;
             height: 14px;
-            top: 14px;
+            top: 17px;
             right: 28px;
           }
         }
@@ -1265,10 +1265,10 @@ header {
         }
 
         @include mq-down(xxs) {
-          padding: 8px 63px 8px 25px;
+          padding: 9px 63px 9px 25px;
           font-size: 20px;
           left: 24px;
-          top: -88px;
+          top: -89px;
         }
 
         span {
@@ -1294,7 +1294,7 @@ header {
           }
 
           @include mq-down(xxs) {
-            top: 16px;
+            top: 18px;
             right: 26px;
           }
         }
