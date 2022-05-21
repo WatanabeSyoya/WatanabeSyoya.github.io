@@ -237,10 +237,11 @@ p {
 
 @media screen and (min-width: 1630px) {
   #recruit-page::after {
+    top: 238px;
     left: 50%;
-    transform: translateX(-120%);
-    -webkit-transform: translateX(-120%);
-    -ms-transform: translateX(-120%);
+    transform: translateX(-104%);
+    -webkit-transform: translateX(-104%);
+    -ms-transform: translateX(-104%);
   }
 }
 
