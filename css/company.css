@@ -292,6 +292,13 @@ p {
   display: flex;
 }
 
+@media screen and (min-width: 1441px) {
+  #company-page .page-container .message {
+    margin: 0 auto;
+    max-width: 1300px;
+  }
+}
+
 @media screen and (max-width: 1400px) {
   #company-page .page-container .message {
     -webkit-box-pack: center;
@@ -323,6 +330,12 @@ p {
   margin-left: 240px;
   margin-top: 27px;
   position: relative;
+}
+
+@media screen and (min-width: 1441px) {
+  #company-page .page-container .message .president-img {
+    margin-left: 250px;
+  }
 }
 
 @media screen and (max-width: 1400px) {
@@ -402,6 +415,12 @@ p {
   font-family: 'Noto Sans JP', sans-serif;
   line-height: 28px;
   letter-spacing: 1.5px;
+}
+
+@media screen and (min-width: 1441px) {
+  #company-page .page-container .message .president-name {
+    margin-left: 250px;
+  }
 }
 
 @media screen and (max-width: 1400px) {
@@ -545,6 +564,7 @@ p {
 #company-page .page-container .info .kaisha {
   width: 60%;
   margin: 15px auto 0;
+  max-width: 900px;
 }
 
 @media screen and (max-width: 1400px) {

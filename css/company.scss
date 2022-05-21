@@ -333,6 +333,11 @@ p {
     .message {
       display: flex;
 
+      @include mq-up(xl) {
+        margin: 0 auto;
+        max-width: 1300px;
+      }
+
       @include mq-down(xxl) {
         justify-content: center;
       }
@@ -354,6 +359,10 @@ p {
           margin-left: 240px;
           margin-top: 27px;
           position: relative;
+
+          @include mq-up(xl) {
+            margin-left: 250px;
+          }
 
           @include mq-down(xxl) {
             margin-left: 0;
@@ -416,6 +425,10 @@ p {
           @include font(16px, 500, $main-color);
           line-height: 28px;
           letter-spacing: 1.5px;
+
+          @include mq-up(xl) {
+            margin-left: 250px;
+          }
 
           @include mq-down(xxl) {
             margin-left: 0;
@@ -530,6 +543,7 @@ p {
       .kaisha {
         width: 60%;
         margin: 15px auto 0;
+        max-width: 900px;
 
         @include mq-down(xxl) {
           width: 75%;
