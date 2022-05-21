@@ -1124,9 +1124,9 @@ header nav.globalMenuSp.active {
 
 @media screen and (max-width: 484px) {
   #business .business-box {
-    -ms-grid-columns: (132px)[auto-fit];
-        grid-template-columns: repeat(auto-fit, 132px);
-    grid-auto-rows: 143px;
+    -ms-grid-columns: (270px)[auto-fit];
+        grid-template-columns: repeat(auto-fit, 270px);
+    grid-auto-rows: 280px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1164,8 +1164,8 @@ header nav.globalMenuSp.active {
 
 @media screen and (max-width: 484px) {
   #business .business-box .business-item .business-img {
-    width: 134px;
-    height: 110px;
+    width: 270px;
+    height: 220px;
   }
 }
 
@@ -1200,10 +1200,10 @@ header nav.globalMenuSp.active {
 
 @media screen and (max-width: 484px) {
   #business .business-box .business-item .icon {
-    width: 30px;
-    height: 30px;
-    top: -124px;
-    left: 9px;
+    width: 66px;
+    height: 66px;
+    top: -253px;
+    left: 24px;
   }
 }
 
@@ -1245,13 +1245,13 @@ header nav.globalMenuSp.active {
 
 @media screen and (max-width: 484px) {
   #business .business-box .business-item .business-name {
-    top: -47px;
-    left: 12px;
-    font-size: 14px;
+    top: -86px;
+    left: 25px;
+    font-size: 20px;
     line-height: 27px;
     background-color: #E38619;
     border-radius: 25px;
-    padding: 1px 27px;
+    padding: 8px 73px;
   }
 }
 
@@ -1268,6 +1268,12 @@ header nav.globalMenuSp.active {
 @media screen and (max-width: 586px) {
   #business .business-box .business-item .business-name span {
     font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  #business .business-box .business-item .business-name span {
+    font-size: 16px;
   }
 }
 
@@ -1305,10 +1311,10 @@ header nav.globalMenuSp.active {
 
 @media screen and (max-width: 484px) {
   #business .business-box .business-item .business-name::after {
-    width: 15px;
-    height: 12px;
-    top: 12px;
-    right: 12px;
+    width: 22px;
+    height: 14px;
+    top: 14px;
+    right: 28px;
   }
 }
 
@@ -1338,8 +1344,8 @@ header nav.globalMenuSp.active {
 
 @media screen and (max-width: 484px) {
   #business .business-box .business-item .business-name:hover::after {
-    top: 12px;
-    right: 8px;
+    top: 14px;
+    right: 25px;
   }
 }
 
@@ -1406,10 +1412,10 @@ header nav.globalMenuSp.active {
 
 @media screen and (max-width: 484px) {
   #business .business-box .business-item:nth-child(4) .business-name {
-    padding: 1px 28px 1px 10px;
-    font-size: 12px;
-    left: 8px;
-    top: -47px;
+    padding: 8px 63px 8px 25px;
+    font-size: 20px;
+    left: 24px;
+    top: -88px;
   }
 }
 
@@ -1421,7 +1427,7 @@ header nav.globalMenuSp.active {
 
 @media screen and (max-width: 484px) {
   #business .business-box .business-item:nth-child(4) .business-name span {
-    font-size: 10px;
+    font-size: 16px;
   }
 }
 
@@ -1444,8 +1450,8 @@ header nav.globalMenuSp.active {
 
 @media screen and (max-width: 484px) {
   #business .business-box .business-item:nth-child(4) .business-name::after {
-    top: 13px;
-    right: 13px;
+    top: 16px;
+    right: 26px;
   }
 }
 
@@ -1467,7 +1473,7 @@ header nav.globalMenuSp.active {
 
 @media screen and (max-width: 484px) {
   #business .business-box .business-item:nth-child(4) .business-name:hover::after {
-    right: 10px;
+    right: 22px;
   }
 }
 

@@ -1026,8 +1026,8 @@ header {
     }
 
     @include mq-down(xxs) {
-      grid-template-columns: repeat(auto-fit, 132px);
-      grid-auto-rows: 143px;
+      grid-template-columns: repeat(auto-fit, 270px);
+      grid-auto-rows: 280px;
       justify-content: center;
     }
 
@@ -1055,8 +1055,8 @@ header {
         }
 
         @include mq-down(xxs) {
-          width: 134px;
-          height: 110px;
+          width: 270px;
+          height: 220px;
         }
       }
 
@@ -1085,10 +1085,10 @@ header {
         }
 
         @include mq-down(xxs) {
-          width: 30px;
-          height: 30px;
-          top: -124px;
-          left: 9px;
+          width: 66px;
+          height: 66px;
+          top: -253px;
+          left: 24px;
         }
       }
 
@@ -1118,13 +1118,13 @@ header {
         }
 
         @include mq-down(xxs) {
-          top: -47px;
-          left: 12px;
-          font-size: 14px;
+          top: -86px;
+          left: 25px;
+          font-size: 20px;
           line-height: 27px;
           background-color: #E38619;
           border-radius: 25px;
-          padding: 1px 27px;
+          padding: 8px 73px;
         }
 
         span {
@@ -1135,6 +1135,10 @@ header {
 
           @include mq-down(xs) {
             font-size: 13px;
+          }
+
+          @include mq-down(xxs) {
+            font-size: 16px;
           }
         }
 
@@ -1165,10 +1169,10 @@ header {
           }
 
           @include mq-down(xxs) {
-            width: 15px;
-            height: 12px;
-            top: 12px;
-            right: 12px;
+            width: 22px;
+            height: 14px;
+            top: 14px;
+            right: 28px;
           }
         }
 
@@ -1191,8 +1195,8 @@ header {
             }
 
             @include mq-down(xxs) {
-              top: 12px;
-              right: 8px;
+              top: 14px;
+              right: 25px;
             }
           }
         }
@@ -1261,10 +1265,10 @@ header {
         }
 
         @include mq-down(xxs) {
-          padding: 1px 28px 1px 10px;
-          font-size: 12px;
-          left: 8px;
-          top: -47px;
+          padding: 8px 63px 8px 25px;
+          font-size: 20px;
+          left: 24px;
+          top: -88px;
         }
 
         span {
@@ -1273,7 +1277,7 @@ header {
           }
 
           @include mq-down(xxs) {
-            font-size: 10px;
+            font-size: 16px;
           }
         }
 
@@ -1290,8 +1294,8 @@ header {
           }
 
           @include mq-down(xxs) {
-            top: 13px;
-            right: 13px;
+            top: 16px;
+            right: 26px;
           }
         }
 
@@ -1308,7 +1312,7 @@ header {
             }
 
             @include mq-down(xxs) {
-              right: 10px;
+              right: 22px;
             }
           }
 
